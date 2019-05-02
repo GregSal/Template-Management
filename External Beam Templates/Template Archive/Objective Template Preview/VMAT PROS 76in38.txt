@@ -1,0 +1,118 @@
+Objective Template  
+Id: VMAT PROS 76/38 
+Status: Approved 
+Last Modified: July 05 2017 11:04:42:954 
+Diagnosis:  
+Treatment Site:  
+Description:  
+
+--------------------------------------------------------------------------------
+
+Optimization Objectives
+IMRT
+Default Smoothing X: 40 Default Smoothing Y: 30 
+Default Minimize Dose: 0 Default Optimization Type: Beamlet 
+Max Iterations: 1000 Max Optimize Time [min]: 100 
+Default Fixed Jaws:  Interpolate:  
+Use Colors:  
+
+Beam Angle Optimization
+Initial Field Distribution: Coplanar 
+Minimum Number of Fields: 5 
+Maximum Number of Fields: 9 
+Maximum Elevation Angle for Non-Coplanar Fields: 10 
+Maximum Collimator Variation: 10 
+Local Geometric Optimization Mode: None 
+
+Normal Tissue Objective
+Use: true 
+Automatic: true 
+Priority: 80 
+Distance From Target Border: 1 
+Start Dose: 105 
+End Dose: 60 
+Fall-off: 0.05 
+
+Arc Optimization
+Use MU Objective:  
+MU Objective Strength: 100 
+Minimum MU: 650 
+Maximum MU: 800 
+Jaw Tracking:  
+
+Structure Objectives
+Structure Objective: Avoid a Rectum
+Volume Type: Control Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 2000.0 50 0 
+
+Structure Objective: Avoid b Rectum
+Volume Type: Control Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1000.0 50 0 
+
+Structure Objective: CTV
+Volume Type: CTV Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 7700.0 100 0 
+Point lower 100.00 7900.0 110 0 
+
+Structure Objective: Femoral Head L
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.50 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 5000.0 50 0 
+
+Structure Objective: Femoral Head R
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.50 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 5000.0 50 0 
+
+Structure Objective: opt Bladder
+Volume Type: Avoidance Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 60.00 3000.0 50 0 
+Point upper 25.00 5500.0 50 0 
+Point upper 15.00 6000.0 50 0 
+Point upper 5.00 6500.0 50 0 
+
+Structure Objective: opt PTV
+Volume Type: PTV Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 7400.0 100 0 
+Point upper 0 7400.0 100 0 
+Point lower 100.00 7900.0 120 0 
+
+Structure Objective: opt Rectum
+Volume Type: Avoidance Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 65.00 3000.0 70 0 
+Point upper 25.00 5500.0 70 0 
+Point upper 15.00 6000.0 70 0 
+Point upper 5.00 6500.0 70 0 
+
+
+--------------------------------------------------------------------------------

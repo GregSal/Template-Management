@@ -1,0 +1,296 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item ApprovalStatus in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('SimpleType', 'approvalstatus1');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>SimpleType</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>ApprovalStatus</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="protocoltypes_xsd.html">ProtocolTypes.xsd</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap"></map><img src="images/approvalstatus1.png" border="0" alt="XSD Diagram of ApprovalStatus" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:simpleType name="ApprovalStatus"&gt;
+    &lt;xsd:restriction base="xsd:string"&gt;
+        &lt;xsd:enumeration value="Approved" /&gt;
+        &lt;xsd:enumeration value="Unapproved" /&gt;
+        &lt;xsd:enumeration value="Reviewed" /&gt;
+        &lt;xsd:enumeration value="Retired" /&gt;
+        &lt;!--German--&gt;
+        &lt;xsd:enumeration value="Abgezeichnet" /&gt;
+        &lt;xsd:enumeration value="Nicht abgezeichnet" /&gt;
+        &lt;xsd:enumeration value="Gesichtet:" /&gt;
+        &lt;xsd:enumeration value="Zurückgezogen" /&gt;
+        &lt;!--French--&gt;
+        &lt;xsd:enumeration value="Approuvé" /&gt;
+        &lt;xsd:enumeration value="Non approuvé(e)" /&gt;
+        &lt;xsd:enumeration value="Revue" /&gt;
+        &lt;xsd:enumeration value="Retiré(e)" /&gt;
+        &lt;!--Italian--&gt;
+        &lt;xsd:enumeration value="Approvato" /&gt;
+        &lt;xsd:enumeration value="Non approvato" /&gt;
+        &lt;xsd:enumeration value="Controllato" /&gt;
+        &lt;xsd:enumeration value="Ritirato" /&gt;
+        &lt;!--Swedish--&gt;
+        &lt;xsd:enumeration value="Godkänd" /&gt;
+        &lt;xsd:enumeration value="Ej godkänd" /&gt;
+        &lt;xsd:enumeration value="Granskad:" /&gt;
+        &lt;xsd:enumeration value="Tillbakadragen" /&gt;
+        &lt;!--Spanish--&gt;
+        &lt;xsd:enumeration value="Aprobado" /&gt;
+        &lt;xsd:enumeration value="No aprobado" /&gt;
+        &lt;xsd:enumeration value="Revisado:" /&gt;
+        &lt;xsd:enumeration value="Retirado" /&gt;
+        &lt;!--Brazil Portuguese--&gt;
+        &lt;xsd:enumeration value="Aprovado" /&gt;
+        &lt;xsd:enumeration value="Desaprovado" /&gt;
+        &lt;xsd:enumeration value="Revisado" /&gt;
+        &lt;xsd:enumeration value="Aposentado" /&gt;
+        &lt;!--Japanese--&gt;
+        &lt;xsd:enumeration value="承認済み" /&gt;
+        &lt;xsd:enumeration value="未承認" /&gt;
+        &lt;xsd:enumeration value="レビュー済み" /&gt;
+        &lt;xsd:enumeration value="リタイヤ" /&gt;
+        &lt;!--Chinese--&gt;
+        &lt;xsd:enumeration value="已确认" /&gt;
+        &lt;xsd:enumeration value="未经确认" /&gt;
+        &lt;xsd:enumeration value="已审核" /&gt;
+        &lt;xsd:enumeration value="已中断" /&gt;
+    &lt;/xsd:restriction&gt;
+&lt;/xsd:simpleType&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="facets" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Facets:</b></td>
+            </tr>
+            <tr id="facets_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Facet</td>
+                        <td class="last">Value</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Approved</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Unapproved</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Reviewed</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Retired</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Abgezeichnet</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Nicht abgezeichnet</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Gesichtet:</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Zurückgezogen</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Approuvé</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Non approuvé(e)</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Revue</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Retiré(e)</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Approvato</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Non approvato</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Controllato</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Ritirato</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Godkänd</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Ej godkänd</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Granskad:</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Tillbakadragen</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Aprobado</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>No aprobado</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Revisado:</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Retirado</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Aprovado</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Desaprovado</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Revisado</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>Aposentado</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>承認済み</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>未承認</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>レビュー済み</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>リタイヤ</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>已确认</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>未经确认</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>已审核</td>
+                     </tr>
+                     <tr>
+                        <td class="label" width="120px;"><b>Enumeration</b></td>
+                        <td>已中断</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="derivationTree" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Derivation Tree:</b></td>
+            </tr>
+            <tr id="derivationTree_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><b><i>ApprovalStatus</i></b></li>
+                     <ul>
+                        <li><a href="approvalstatus.html">ApprovalStatus</a></li>
+                     </ul>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="references" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>References:</b></td>
+            </tr>
+            <tr id="references_body_id">
+               <td width="120px;"></td>
+               <td><a href="approvalstatus.html">ApprovalStatus</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

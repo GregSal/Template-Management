@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Block in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Element', 'block');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Block</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="plantemplate_xsd.html">PlanTemplate.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="156,244,298,269" href="target.html" alt="Drilldown into Target"></area>
+                     <area shape="rect" coords="156,193,320,237" href="blockmargin.html" alt="Drilldown into BlockMargin"></area>
+                     <area shape="rect" coords="156,161,298,186" href="material.html" alt="Drilldown into Material"></area>
+                     <area shape="rect" coords="156,129,298,154" href="tray.html" alt="Drilldown into Tray"></area>
+                     <area shape="rect" coords="156,97,298,122" href="type5.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="111,65,253,90" href="id4.html" alt="Drilldown into ID"></area>
+                     <area shape="rect" coords="111,33,282,58" href="divergingflag.html" alt="Drilldown into DivergingFlag"></area>
+                     <area shape="rect" coords="111,1,288,26" href="abovetrayflag.html" alt="Drilldown into AboveTrayFlag"></area></map><img src="images/block.png" border="0" alt="XSD Diagram of Block" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:element name="Block"&gt;
+    &lt;xsd:complexType&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="Type" type="xsd:string" /&gt;
+            &lt;xsd:element name="Tray" type="xsd:string" /&gt;
+            &lt;xsd:element name="Material" type="xsd:string" /&gt;
+            &lt;xsd:element name="BlockMargin" type="Margin" nillable="true" /&gt;
+            &lt;xsd:element name="Target" type="Volume" /&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="AboveTrayFlag" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="DivergingFlag" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ID" type="ID" use="required" /&gt;
+    &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type5.html">Type</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Tray</td>
+                        <td><a href="tray.html">Tray</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Material</td>
+                        <td><a href="material.html">Material</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">BlockMargin</td>
+                        <td><a href="blockmargin.html">BlockMargin</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Target</td>
+                        <td><a href="target.html">Target</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AboveTrayFlag</td>
+                        <td><a href="abovetrayflag.html">AboveTrayFlag</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DivergingFlag</td>
+                        <td><a href="divergingflag.html">DivergingFlag</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ID</td>
+                        <td><a href="id4.html">ID</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

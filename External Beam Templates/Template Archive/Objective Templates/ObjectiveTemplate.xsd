@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Studio 2019 (https://www.liquid-technologies.com) -->
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ObjectiveTemplate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Preview">
+          <xs:complexType>
+            <xs:attribute name="ID" type="xs:string" use="optional" />
+            <xs:attribute name="Type" type="xs:string" use="optional" />
+            <xs:attribute name="ApprovalStatus" type="xs:string" use="optional" />
+            <xs:attribute name="Diagnosis" type="xs:string" use="optional" />
+            <xs:attribute name="TreatmentSite" type="xs:string" use="optional" />
+            <xs:attribute name="AssignedUsers" type="xs:string" use="optional" />
+            <xs:attribute name="Description" type="xs:string" use="optional" />
+            <xs:attribute name="LastModified" type="xs:string" use="optional" />
+            <xs:attribute name="ApprovalHistory" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="Type" type="xs:string" />
+        <xs:element minOccurs="0" name="Helios">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="DefaultSmoothingX" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="DefaultSmoothingY" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="DefaultMinimizeDose" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="DefaultOptimizationType" type="xs:string" />
+              <xs:element minOccurs="0" name="MaxIterations" type="xs:unsignedShort" />
+              <xs:element minOccurs="0" name="MaxTime" type="xs:unsignedByte" />
+              <xs:element minOccurs="0" name="NormalTissueObjective">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="Use" type="xs:boolean" />
+                    <xs:element minOccurs="0" name="Priority" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="DistanceFromTargetBorder" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="StartDose" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="EndDose" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="FallOff" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="Auto" type="xs:boolean" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Geos">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="InitialFieldDistribution" type="xs:string" />
+                    <xs:element minOccurs="0" name="MinimumNumberOfFields" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="MaximumNumberOfFields" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="MaximumElevationAngleForNonCoplanarFields" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="MaximumCollimatorVariation" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="LocalGeometricOptimizationMode" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="Imat">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="MUWeight" type="xs:unsignedByte" />
+                    <xs:element minOccurs="0" name="MinMU" type="xs:unsignedShort" />
+                    <xs:element minOccurs="0" name="MaxMU" type="xs:unsignedShort" />
+                  </xs:sequence>
+                  <xs:attribute name="UseMU" type="xs:boolean" use="optional" />
+                  <xs:attribute name="JawTracking" type="xs:boolean" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="DefaultFixedJaws" type="xs:boolean" use="optional" />
+            <xs:attribute name="Interpolate" type="xs:boolean" use="optional" />
+            <xs:attribute name="UseColors" type="xs:boolean" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="ObjectivesAllStructures">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="ObjectivesOneStructure">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="StructureTarget">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="VolumeID" />
+                          <xs:element minOccurs="0" name="VolumeCode" type="xs:string" />
+                          <xs:element minOccurs="0" name="VolumeType" type="xs:string" />
+                          <xs:element minOccurs="0" name="VolumeCodeTable" type="xs:string" />
+                          <xs:element minOccurs="0" name="StructureCode">
+                            <xs:complexType>
+                              <xs:attribute name="Code" type="xs:string" use="optional" />
+                              <xs:attribute name="CodeScheme" type="xs:string" use="optional" />
+                              <xs:attribute name="CodeSchemeVersion" type="xs:decimal" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="Distance" nillable="true" type="xs:string" />
+                    <xs:element minOccurs="0" name="SamplePoints" nillable="true" />
+                    <xs:element minOccurs="0" name="Color" type="xs:unsignedInt" />
+                    <xs:element minOccurs="0" name="StructureObjectives">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="Objective">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" name="Type" type="xs:unsignedByte" />
+                                <xs:element minOccurs="0" name="Operator" type="xs:unsignedByte" />
+                                <xs:element minOccurs="0" name="Dose" type="xs:decimal" />
+                                <xs:element minOccurs="0" name="Volume" type="xs:unsignedByte" />
+                                <xs:element minOccurs="0" name="Priority" type="xs:unsignedByte" />
+                                <xs:element minOccurs="0" name="ParameterA" nillable="true" />
+                                <xs:element minOccurs="0" name="Group" type="xs:unsignedByte" />
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="ID" type="xs:string" use="optional" />
+                  <xs:attribute name="NAME" type="xs:string" use="optional" />
+                  <xs:attribute name="SurfaceOnly" type="xs:boolean" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="Version" type="xs:decimal" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,176 @@
+Clinical Protocol  
+Id: Test Protocol ALL 
+Status: Unapproved 
+Last Modified: April 12 2019 14:33:21:767 
+Diagnosis: Sick 
+Treatment Site: NOSE - nose 
+Description: A test protocol that has everything 
+
+--------------------------------------------------------------------------------
+
+Protocol Summary
+Plan Summary
+Plan Id Field Count Default Treament Unit Default Energy Mode Primary Fraction Dose [cGy] Fraction Count 
+LUNL Plan 2 TR1 6 Photon 200.0 30 
+
+Plan Primary Objectives Summary
+Plan Id Primary Prescription Prescription Fraction Dose [cGy] Fraction Count Total Dose [cGy] 
+LUNL Plan  PTV Minimum dose is more than 200.0 30 6000.0 
+
+Protocol Structure Summary
+Id Type Color and Style 
+PTV PTV z PTV 
+Aorta Avoidance Segment - Yellow 
+
+Plan Dose Optimization Objectives Summary
+Plan Id Structure Id Type Limit Volume [%] Total Dose [cGy] Priority 
+LUNL Plan PTV Point lower 90.00 6000.0 100 
+LUNL Plan PTV Point upper 100.00 6600.0 70 
+LUNL Plan PTV gEUD upper  0.0 100 
+LUNL Plan Aorta Point upper 50.00 1000.0 50 
+LUNL Plan Aorta Mean   5000.0 20 
+LUNL Plan Aorta Line upper [100.00, 0] [0.0, 6000.0] 50 
+
+
+
+--------------------------------------------------------------------------------
+
+Protocol Details
+Protocol Structure Details
+ID Name Identification Color CT Low CT High DVH Line Style DVH Line Color DVH Line Width 
+PTV PTV C34.9PTVICD-O-2 z PTV -700 -500 Dot  5 
+Aorta Aorta Avoidance Segment - Yellow 0 200 Dash Automatic 9 
+
+Protocol Plan Details
+Plan: LUNL Plan
+Plan Mode: Photon Default Treatment Unit: TR1 
+Default Energy: 6 Treatment Style: Dynamic ARC 
+Fraction Count: 30 Fractions Per Day:  
+Fractions Per Week:  
+Immobilization Device: Nail Localization Technique: Sonar 
+Field Alignment Rules:  
+
+Plan Objective Details
+Primary Prescription Fraction Dose [cGy] Total Dose [cGy] 
+ PTV At least 90 % receives more than 200.0 6000.0 
+ PTV Minimum dose is more than 200.0 6000.0 
+ Aorta At most 50 % receives more than 135.9 4076.9 
+
+Plan Measure Details
+Structure Measure Criterion Target Value 
+PTV Conformity Index is more than 1.00 
+PTV Gradient Measure [cm] is less than 2.00 
+Aorta V50.00 [% of volume] is less than 5000.00 
+Aorta D99.00 [cGy] is less than 2.00 
+
+Plan Fields Summary
+Id Technique Energy Primary Fluence Mode Gantry [deg] Collimator [deg] Couch [deg] MLC/Block Wedge Field Size [cm]  Isocenter 
+CW PROS ARC 6X  181.00 30.00 0.00 - - 8.73 x 8.61 Relative 
+CCW PROS ARC 6X  179.00 330.00 0.00 - - 8.73 x 8.61 Relative 
+
+
+Plan Field Details
+Field: CW PROS
+Treatment Unit: CL21B Using Dynamic MLC:  
+Energy: 6X Using Compensator:  
+Primary Fluence Mode:  
+Technique: ARC DRR Template:  
+Dose Rate [MU/min]: 600 SFED [cm]:  
+Tolerance Table:  Field Weight: 2.0296  
+Skin Flash Margin [cm]:  Boluses:  
+Gantry Angle [deg]: 181.00 Gantry Stop Angle [deg]: 179.00 
+Gantry Direction: CW Table Angle [deg]: 0.00 
+Target Volume: ()  
+Collimator Size [cm]: X1:-4.17 X2:4.56 Y1:-4.43 Y2:4.18 
+Collimator Angle [deg]: 30.00 Collimator Mode: AsymmetryX&Y 
+Field Margin [cm]:  
+Relative Isocenter, AIO [cm]: [0.00, 0.00, 0.00]  
+
+
+Field: CCW PROS
+Treatment Unit: CL21B Using Dynamic MLC:  
+Energy: 6X Using Compensator:  
+Primary Fluence Mode:  
+Technique: ARC DRR Template:  
+Dose Rate [MU/min]: 600 SFED [cm]:  
+Tolerance Table:  Field Weight: 1.90237  
+Skin Flash Margin [cm]:  Boluses:  
+Gantry Angle [deg]: 179.00 Gantry Stop Angle [deg]: 181.00 
+Gantry Direction: CC Table Angle [deg]: 0.00 
+Target Volume: ()  
+Collimator Size [cm]: X1:-4.56 X2:4.17 Y1:-4.43 Y2:4.18 
+Collimator Angle [deg]: 330.00 Collimator Mode: AsymmetryX&Y 
+Field Margin [cm]:  
+Relative Isocenter, AIO [cm]: [0.00, 0.00, 0.00]  
+
+
+Plan Optimization Objective Details
+IMRT
+Default Smoothing X: 40 Default Smoothing Y: 30 
+Default Minimize Dose: 0 Default Optimization Type: Beamlet 
+Max Iterations: 1000 Max Optimize Time [min]: 100.00 
+Default Fixed Jaws:  Interpolate:  
+Use Colors:  
+
+Beam Angle Optimization
+Initial Field Distribution: Coplanar 
+Minimum Number of Fields: 5 
+Maximum Number of Fields: 9 
+Maximum Elevation Angle for Non-Coplanar Fields: 10 
+Maximum Collimator Variation: 10 
+Local Geometric Optimization Mode: None 
+
+Normal Tissue Objective
+Use: true 
+Automatic: true 
+Priority: 100 
+Distance From Target Border: 1 
+Start Dose: 105 
+End Dose: 60 
+Fall-off: 0.05 
+
+Arc Optimization
+Use MU Objective:  
+MU Objective Strength: 100 
+Minimum MU: 650 
+Maximum MU: 800 
+Jaw Tracking:  
+
+Structure Objectives
+Structure Objective: PTV
+Volume Type: PTVC34.9ICD-O-2 Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point lower 90.00 6000.0 100 0 
+Point upper 100.00 6600.0 70 0 
+gEUD upper  0.0 100 0 
+
+Structure Objective: Aorta
+Volume Type: Avoidance Surface Only:  
+Resolution [mm]: 0.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 50.00 1000.0 50 0 
+Line upper 100.00 0.0 110 1 
+Line upper 75.00 2000.0 110 1 
+Line upper 50.00 4000.0 100 1 
+Line upper 25.00 5000.0 100 1 
+Line upper 0 6000.0 100 1 
+Mean   5000.0 20 0 
+
+Protocol Review Details
+Show Min:  Show Max:  
+Show Mean:  Show Modal:  
+Show Median:  Show Std Dev:  
+Show NDR:  
+
+DVH Structures
+Item Type 
+PTV Structure 
+=PTV sub Aorta Expr 
+
+
+--------------------------------------------------------------------------------

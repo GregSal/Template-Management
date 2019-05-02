@@ -1,0 +1,202 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs the schema ObjectiveTemplate.xsd in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Schema', 'objectivetemplate_xsd');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Schema Name:</b></td>
+               <td>ObjectiveTemplate.xsd</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>
+&lt;xsd:schema elementFormDefault="qualified" attributeFormDefault="qualified" version="1.7" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+	&lt;!-- 		
+			Filename:			ObjectiveTemplate.xsd
+			Copyright, Varian Medical systems, Inc., 2004
+			All Rights Reserved
+			Varian Proprietary
+--&gt;
+	&lt;!-- Common clinical protocol types --&gt;
+	&lt;xsd:include schemaLocation="ProtocolTypes.xsd"/&gt;
+	&lt;xsd:element name="NormalTissueObjective"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Use" type="xsd:boolean"/&gt;
+				&lt;xsd:element name="Priority" type="xsd:double"/&gt;
+				&lt;xsd:element name="DistanceFromTargetBorder" type="xsd:double"/&gt;
+				&lt;xsd:element name="StartDose" type="xsd:double"/&gt;
+				&lt;xsd:element name="EndDose" type="xsd:double"/&gt;
+				&lt;xsd:element name="FallOff" type="xsd:double"/&gt;
+				&lt;xsd:element name="Auto" type="xsd:boolean" minOccurs="0"/&gt;
+			&lt;/xsd:sequence&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;!-- Objective template schema elements --&gt;
+	&lt;xsd:element name="Objective"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Type" type="xsd:nonNegativeInteger"/&gt;
+				&lt;xsd:element name="Operator" type="xsd:nonNegativeInteger"/&gt;
+				&lt;xsd:element name="Dose" type="xsd:double"/&gt;
+				&lt;xsd:element name="Volume" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="Priority" type="xsd:double"/&gt;
+				&lt;xsd:element name="ParameterA" type="xsd:double" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+				&lt;xsd:element name="Group" type="xsd:nonNegativeInteger"/&gt;
+			&lt;/xsd:sequence&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="ObjectiveTemplate"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Preview" type="Status" minOccurs="0"/&gt;
+				&lt;xsd:element name="Type" type="OptimizationType"/&gt;
+				&lt;xsd:choice&gt;
+					&lt;xsd:element ref="Helios"/&gt;
+					&lt;xsd:element ref="Brachy"/&gt;
+				&lt;/xsd:choice&gt;
+				&lt;xsd:element ref="ObjectivesAllStructures"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="Hash" type="xsd:string" use="optional"/&gt;
+			&lt;xsd:attribute name="Version" type="xsd:string" use="optional"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="Helios"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="DefaultSmoothingX" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="DefaultSmoothingY" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="DefaultMinimizeDose" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="DefaultOptimizationType" type="DefaultOptimizationType"/&gt;
+				&lt;xsd:element name="MaxIterations" type="xsd:nonNegativeInteger" nillable="true"/&gt;
+				&lt;xsd:element name="MaxTime" type="xsd:double" nillable="true"/&gt; &lt;!-- Maximum optimization time in minutes --&gt;
+				&lt;xsd:element ref="NormalTissueObjective" minOccurs="0"/&gt;
+				&lt;xsd:element name="Geos" minOccurs="0"&gt;
+					&lt;xsd:complexType&gt;
+						&lt;xsd:sequence&gt;
+							&lt;xsd:element name="InitialFieldDistribution" type="xsd:string" nillable="true"/&gt;
+							&lt;xsd:element name="MinimumNumberOfFields" type="xsd:positiveInteger" nillable="true"/&gt;
+							&lt;xsd:element name="MaximumNumberOfFields" type="xsd:positiveInteger" nillable="true"/&gt;
+							&lt;xsd:element name="MaximumElevationAngleForNonCoplanarFields" type="xsd:double" nillable="true"/&gt;
+							&lt;xsd:element name="MaximumCollimatorVariation" type="xsd:double" nillable="true"/&gt;
+							&lt;xsd:element name="LocalGeometricOptimizationMode" type="xsd:string" nillable="true"/&gt;
+						&lt;/xsd:sequence&gt;
+					&lt;/xsd:complexType&gt;
+				&lt;/xsd:element&gt;
+				&lt;xsd:element name="Imat" minOccurs="0"&gt;
+					&lt;xsd:complexType&gt;
+						&lt;xsd:sequence&gt;
+							&lt;xsd:element name="MUWeight" type="xsd:double" nillable="true"/&gt;
+							&lt;xsd:element name="MinMU" type="xsd:double" nillable="true"/&gt;
+							&lt;xsd:element name="MaxMU" type="xsd:double" nillable="true"/&gt;
+						&lt;/xsd:sequence&gt;
+						&lt;xsd:attribute name="UseMU" type="xsd:boolean"/&gt;
+						&lt;xsd:attribute name="JawTracking" type="xsd:boolean"/&gt;
+					&lt;/xsd:complexType&gt;
+				&lt;/xsd:element&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="DefaultFixedJaws" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="Interpolate" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="UseColors" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="UseAutoBooleanTarget" type="xsd:boolean"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="Brachy"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Iterations" type="xsd:nonNegativeInteger" nillable="true"/&gt;
+				&lt;xsd:element name="MaxDwellTime" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="MinAllowedDwellTime" type="xsd:double" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+				&lt;xsd:element name="TimeConstraintWeight" type="xsd:double" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+				&lt;xsd:element name="OvertimePower" type="xsd:double" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+				&lt;xsd:element name="SmoothPower" type="xsd:double" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+				&lt;xsd:element name="HotspotConstraintWeight" type="xsd:double" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+				&lt;xsd:element name="BasalDesiredGy" type="xsd:double" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+        &lt;xsd:element name="ClearDoseInApplicator" type="xsd:boolean" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+        &lt;xsd:element name="CalculationMedium" type="xsd:string" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+        &lt;xsd:element name="ReportDoseToMedium" type="xsd:boolean" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+        &lt;xsd:element name="MassDensityCutOff" type="xsd:double" minOccurs="0" maxOccurs="1" nillable="true"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="HotspotEnabled" type="xsd:boolean" use="optional"/&gt;
+      &lt;xsd:attribute name="TouchedByAcurosBV" type="xsd:boolean" use="optional"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="ObjectivesAllStructures"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element ref="ObjectivesOneStructure" minOccurs="0" maxOccurs="unbounded"/&gt;
+			&lt;/xsd:sequence&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="ObjectivesOneStructure"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="StructureTarget" type="Volume"/&gt;
+				&lt;xsd:element name="Distance" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="SamplePoints" type="xsd:nonNegativeInteger" nillable="true"/&gt;
+				&lt;xsd:element name="Color" type="xsd:integer" nillable="true"/&gt;
+				&lt;xsd:element ref="StructureObjectives"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="ID" type="ID"/&gt;
+			&lt;xsd:attribute name="SurfaceOnly" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="NAME" type="xsd:string"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="StructureObjectives"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element ref="Objective" minOccurs="0" maxOccurs="unbounded"/&gt;
+			&lt;/xsd:sequence&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+&lt;/xsd:schema&gt;
+</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="Element" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Elements:</b></td>
+            </tr>
+            <tr id="Element_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="brachy.html">Brachy</a></li>
+                     <li><a href="helios.html">Helios</a></li>
+                     <li><a href="normaltissueobjective.html">NormalTissueObjective</a></li>
+                     <li><a href="objective.html">Objective</a></li>
+                     <li><a href="objectivetemplate.html">ObjectiveTemplate</a></li>
+                     <li><a href="objectivesallstructures.html">ObjectivesAllStructures</a></li>
+                     <li><a href="objectivesonestructure.html">ObjectivesOneStructure</a></li>
+                     <li><a href="structureobjectives.html">StructureObjectives</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Helios in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Element', 'helios');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Helios</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="objectivetemplate_xsd.html">ObjectiveTemplate.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="176,537,261,562" href="imat.html" alt="Drilldown into Imat"></area>
+                     <area shape="rect" coords="176,505,261,530" href="geos.html" alt="Drilldown into Geos"></area>
+                     <area shape="rect" coords="176,473,398,498" href="normaltissueobjective.html" alt="Drilldown into NormalTissueObjective"></area>
+                     <area shape="rect" coords="156,421,300,465" href="maxtime.html" alt="Drilldown into MaxTime"></area>
+                     <area shape="rect" coords="156,369,384,413" href="maxiterations.html" alt="Drilldown into MaxIterations"></area>
+                     <area shape="rect" coords="156,284,472,361" href="defaultoptimizationtype.html" alt="Drilldown into DefaultOptimizationType"></area>
+                     <area shape="rect" coords="156,232,366,276" href="defaultminimizedose.html" alt="Drilldown into DefaultMinimizeDose"></area>
+                     <area shape="rect" coords="156,180,357,224" href="defaultsmoothingy.html" alt="Drilldown into DefaultSmoothingY"></area>
+                     <area shape="rect" coords="156,129,357,173" href="defaultsmoothingx.html" alt="Drilldown into DefaultSmoothingX"></area>
+                     <area shape="rect" coords="111,97,333,122" href="useautobooleantarget.html" alt="Drilldown into UseAutoBooleanTarget"></area>
+                     <area shape="rect" coords="111,65,263,90" href="usecolors.html" alt="Drilldown into UseColors"></area>
+                     <area shape="rect" coords="111,33,265,58" href="interpolate.html" alt="Drilldown into Interpolate"></area>
+                     <area shape="rect" coords="111,1,302,26" href="defaultfixedjaws.html" alt="Drilldown into DefaultFixedJaws"></area></map><img src="images/helios.png" border="0" alt="XSD Diagram of Helios" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:element name="Helios"&gt;
+    &lt;xsd:complexType&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="DefaultSmoothingX" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element name="DefaultSmoothingY" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element name="DefaultMinimizeDose" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element name="DefaultOptimizationType" type="DefaultOptimizationType" /&gt;
+            &lt;xsd:element name="MaxIterations" type="xsd:nonNegativeInteger" nillable="true" /&gt;
+            &lt;xsd:element name="MaxTime" type="xsd:double" nillable="true" /&gt;
+            &lt;!-- Maximum optimization time in minutes --&gt;
+            &lt;xsd:element ref="NormalTissueObjective" minOccurs="0" /&gt;
+            &lt;xsd:element name="Geos" minOccurs="0"&gt;
+                &lt;xsd:complexType&gt;
+                    &lt;xsd:sequence&gt;
+                        &lt;xsd:element name="InitialFieldDistribution" type="xsd:string" nillable="true" /&gt;
+                        &lt;xsd:element name="MinimumNumberOfFields" type="xsd:positiveInteger" nillable="true" /&gt;
+                        &lt;xsd:element name="MaximumNumberOfFields" type="xsd:positiveInteger" nillable="true" /&gt;
+                        &lt;xsd:element name="MaximumElevationAngleForNonCoplanarFields" type="xsd:double" nillable="true" /&gt;
+                        &lt;xsd:element name="MaximumCollimatorVariation" type="xsd:double" nillable="true" /&gt;
+                        &lt;xsd:element name="LocalGeometricOptimizationMode" type="xsd:string" nillable="true" /&gt;
+                    &lt;/xsd:sequence&gt;
+                &lt;/xsd:complexType&gt;
+            &lt;/xsd:element&gt;
+            &lt;xsd:element name="Imat" minOccurs="0"&gt;
+                &lt;xsd:complexType&gt;
+                    &lt;xsd:sequence&gt;
+                        &lt;xsd:element name="MUWeight" type="xsd:double" nillable="true" /&gt;
+                        &lt;xsd:element name="MinMU" type="xsd:double" nillable="true" /&gt;
+                        &lt;xsd:element name="MaxMU" type="xsd:double" nillable="true" /&gt;
+                    &lt;/xsd:sequence&gt;
+                    &lt;xsd:attribute name="UseMU" type="xsd:boolean" /&gt;
+                    &lt;xsd:attribute name="JawTracking" type="xsd:boolean" /&gt;
+                &lt;/xsd:complexType&gt;
+            &lt;/xsd:element&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="DefaultFixedJaws" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="Interpolate" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="UseColors" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="UseAutoBooleanTarget" type="xsd:boolean" /&gt;
+    &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DefaultSmoothingX</td>
+                        <td><a href="defaultsmoothingx.html">DefaultSmoothingX</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DefaultSmoothingY</td>
+                        <td><a href="defaultsmoothingy.html">DefaultSmoothingY</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DefaultMinimizeDose</td>
+                        <td><a href="defaultminimizedose.html">DefaultMinimizeDose</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DefaultOptimizationType</td>
+                        <td><a href="defaultoptimizationtype.html">DefaultOptimizationType</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MaxIterations</td>
+                        <td><a href="maxiterations.html">MaxIterations</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MaxTime</td>
+                        <td><a href="maxtime.html">MaxTime</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">NormalTissueObjective</td>
+                        <td><a href="normaltissueobjective.html">NormalTissueObjective</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Geos</td>
+                        <td><a href="geos.html">Geos</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Imat</td>
+                        <td><a href="imat.html">Imat</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DefaultFixedJaws</td>
+                        <td><a href="defaultfixedjaws.html">DefaultFixedJaws</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Interpolate</td>
+                        <td><a href="interpolate.html">Interpolate</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">UseColors</td>
+                        <td><a href="usecolors.html">UseColors</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">UseAutoBooleanTarget</td>
+                        <td><a href="useautobooleantarget.html">UseAutoBooleanTarget</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

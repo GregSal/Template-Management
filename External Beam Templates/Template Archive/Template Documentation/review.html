@@ -1,0 +1,219 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Review in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Element', 'review');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Review</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="clinicalprotocol_xsd.html">ClinicalProtocol.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="176,417,367,442" href="reviewstructures.html" alt="Drilldown into ReviewStructures"></area>
+                     <area shape="rect" coords="111,385,329,410" href="showgradientmeasure.html" alt="Drilldown into ShowGradientMeasure"></area>
+                     <area shape="rect" coords="111,353,327,378" href="showconformityindex.html" alt="Drilldown into ShowConformityIndex"></area>
+                     <area shape="rect" coords="111,321,381,346" href="showequivalentspherediameter.html" alt="Drilldown into ShowEquivalentSphereDiameter"></area>
+                     <area shape="rect" coords="111,289,261,314" href="showndr.html" alt="Drilldown into ShowNDR"></area>
+                     <area shape="rect" coords="111,257,268,282" href="showntcp.html" alt="Drilldown into ShowNTCP"></area>
+                     <area shape="rect" coords="111,225,259,250" href="showtcp.html" alt="Drilldown into ShowTCP"></area>
+                     <area shape="rect" coords="111,193,261,218" href="showeud.html" alt="Drilldown into ShowEUD"></area>
+                     <area shape="rect" coords="111,161,276,186" href="showstddev.html" alt="Drilldown into ShowStdDev"></area>
+                     <area shape="rect" coords="111,129,276,154" href="showmedian.html" alt="Drilldown into ShowMedian"></area>
+                     <area shape="rect" coords="111,97,270,122" href="showmodal.html" alt="Drilldown into ShowModal"></area>
+                     <area shape="rect" coords="111,65,266,90" href="showmean.html" alt="Drilldown into ShowMean"></area>
+                     <area shape="rect" coords="111,33,259,58" href="showmax.html" alt="Drilldown into ShowMax"></area>
+                     <area shape="rect" coords="111,1,256,26" href="showmin.html" alt="Drilldown into ShowMin"></area></map><img src="images/review.png" border="0" alt="XSD Diagram of Review" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:element name="Review"&gt;
+    &lt;xsd:complexType&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element ref="ReviewStructures" minOccurs="0" /&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="ShowMin" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowMax" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowMean" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowModal" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowMedian" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowStdDev" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowEUD" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowTCP" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowNTCP" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowNDR" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowEquivalentSphereDiameter" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowConformityIndex" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="ShowGradientMeasure" type="xsd:boolean" /&gt;
+    &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ReviewStructures</td>
+                        <td><a href="reviewstructures.html">ReviewStructures</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowMin</td>
+                        <td><a href="showmin.html">ShowMin</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowMax</td>
+                        <td><a href="showmax.html">ShowMax</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowMean</td>
+                        <td><a href="showmean.html">ShowMean</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowModal</td>
+                        <td><a href="showmodal.html">ShowModal</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowMedian</td>
+                        <td><a href="showmedian.html">ShowMedian</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowStdDev</td>
+                        <td><a href="showstddev.html">ShowStdDev</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowEUD</td>
+                        <td><a href="showeud.html">ShowEUD</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowTCP</td>
+                        <td><a href="showtcp.html">ShowTCP</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowNTCP</td>
+                        <td><a href="showntcp.html">ShowNTCP</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowNDR</td>
+                        <td><a href="showndr.html">ShowNDR</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowEquivalentSphereDiameter</td>
+                        <td><a href="showequivalentspherediameter.html">ShowEquivalentSphereDiameter</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowConformityIndex</td>
+                        <td><a href="showconformityindex.html">ShowConformityIndex</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ShowGradientMeasure</td>
+                        <td><a href="showgradientmeasure.html">ShowGradientMeasure</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

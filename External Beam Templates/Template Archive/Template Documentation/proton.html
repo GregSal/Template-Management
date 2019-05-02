@@ -1,0 +1,179 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Proton in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Element', 'proton');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Proton</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="plantemplate_xsd.html">PlanTemplate.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="156,276,298,301" href="snoutid.html" alt="Drilldown into SnoutID"></area>
+                     <area shape="rect" coords="176,244,338,269" href="virtualsady.html" alt="Drilldown into VirtualSADY"></area>
+                     <area shape="rect" coords="176,212,338,237" href="virtualsadx.html" alt="Drilldown into VirtualSADX"></area>
+                     <area shape="rect" coords="176,180,336,205" href="gantrypitch.html" alt="Drilldown into GantryPitch"></area>
+                     <area shape="rect" coords="156,148,337,173" href="proximalmargin.html" alt="Drilldown into ProximalMargin"></area>
+                     <area shape="rect" coords="156,116,320,141" href="distalmargin.html" alt="Drilldown into DistalMargin"></area>
+                     <area shape="rect" coords="156,84,351,109" href="uncertaintymargin.html" alt="Drilldown into UncertaintyMargin"></area>
+                     <area shape="rect" coords="156,33,313,77" href="skinmargin.html" alt="Drilldown into SkinMargin"></area>
+                     <area shape="rect" coords="111,1,317,26" href="isocentermarginflag.html" alt="Drilldown into IsocenterMarginFlag"></area></map><img src="images/proton.png" border="0" alt="XSD Diagram of Proton" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:element name="Proton"&gt;
+    &lt;xsd:complexType&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="SkinMargin" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element ref="UncertaintyMargin" /&gt;
+            &lt;xsd:element name="DistalMargin" type="xsd:double" /&gt;
+            &lt;xsd:element name="ProximalMargin" type="xsd:double" /&gt;
+            &lt;xsd:element name="GantryPitch" type="xsd:double" minOccurs="0" /&gt;
+            &lt;xsd:element name="VirtualSADX" type="xsd:double" minOccurs="0" /&gt;
+            &lt;xsd:element name="VirtualSADY" type="xsd:double" minOccurs="0" /&gt;
+            &lt;xsd:element name="SnoutID" type="xsd:string" /&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="IsocenterMarginFlag" type="xsd:boolean" /&gt;
+    &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SkinMargin</td>
+                        <td><a href="skinmargin.html">SkinMargin</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">UncertaintyMargin</td>
+                        <td><a href="uncertaintymargin.html">UncertaintyMargin</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DistalMargin</td>
+                        <td><a href="distalmargin.html">DistalMargin</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ProximalMargin</td>
+                        <td><a href="proximalmargin.html">ProximalMargin</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">GantryPitch</td>
+                        <td><a href="gantrypitch.html">GantryPitch</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">VirtualSADX</td>
+                        <td><a href="virtualsadx.html">VirtualSADX</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">VirtualSADY</td>
+                        <td><a href="virtualsady.html">VirtualSADY</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SnoutID</td>
+                        <td><a href="snoutid.html">SnoutID</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">IsocenterMarginFlag</td>
+                        <td><a href="isocentermarginflag.html">IsocenterMarginFlag</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

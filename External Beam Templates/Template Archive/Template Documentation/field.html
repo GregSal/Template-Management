@@ -1,0 +1,339 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Field in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Element', 'field');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Field</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="plantemplate_xsd.html">PlanTemplate.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="156,1007,314,1032" href="applicators.html" alt="Drilldown into Applicators"></area>
+                     <area shape="rect" coords="156,975,298,1000" href="wedges.html" alt="Drilldown into Wedges"></area>
+                     <area shape="rect" coords="156,943,306,968" href="mlcplans.html" alt="Drilldown into MLCPlans"></area>
+                     <area shape="rect" coords="156,911,298,936" href="blocks.html" alt="Drilldown into Blocks"></area>
+                     <area shape="rect" coords="156,879,306,904" href="isocenter.html" alt="Drilldown into Isocenter"></area>
+                     <area shape="rect" coords="156,847,322,872" href="fieldboluses.html" alt="Drilldown into FieldBoluses"></area>
+                     <area shape="rect" coords="156,795,342,839" href="skinflashmargin.html" alt="Drilldown into SkinFlashMargin"></area>
+                     <area shape="rect" coords="156,763,315,788" href="fieldmargin.html" alt="Drilldown into FieldMargin"></area>
+                     <area shape="rect" coords="156,711,298,755" href="weight.html" alt="Drilldown into Weight"></area>
+                     <area shape="rect" coords="156,679,346,704" href="tolerancetableid.html" alt="Drilldown into ToleranceTableID"></area>
+                     <area shape="rect" coords="156,647,300,672" href="tablertn.html" alt="Drilldown into TableRtn"></area>
+                     <area shape="rect" coords="156,615,308,640" href="collimator.html" alt="Drilldown into Collimator"></area>
+                     <area shape="rect" coords="156,583,298,608" href="gantry.html" alt="Drilldown into Gantry"></area>
+                     <area shape="rect" coords="156,531,298,575" href="sfed.html" alt="Drilldown into SFED"></area>
+                     <area shape="rect" coords="156,479,363,523" href="doserate.html" alt="Drilldown into DoseRate"></area>
+                     <area shape="rect" coords="156,447,326,472" href="drrtemplate.html" alt="Drilldown into DRRTemplate"></area>
+                     <area shape="rect" coords="176,415,386,440" href="primaryfluencemode.html" alt="Drilldown into PrimaryFluenceMode"></area>
+                     <area shape="rect" coords="156,383,298,408" href="energy.html" alt="Drilldown into Energy"></area>
+                     <area shape="rect" coords="156,351,308,376" href="technique.html" alt="Drilldown into Technique"></area>
+                     <area shape="rect" coords="156,319,328,344" href="treatmentunit2.html" alt="Drilldown into TreatmentUnit"></area>
+                     <area shape="rect" coords="156,287,298,312" href="target1.html" alt="Drilldown into Target"></area>
+                     <area shape="rect" coords="176,255,318,280" href="proton.html" alt="Drilldown into Proton"></area>
+                     <area shape="rect" coords="156,193,304,248" href="type7.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="111,161,268,186" href="drrvisible.html" alt="Drilldown into DRRVisible"></area>
+                     <area shape="rect" coords="111,129,253,154" href="setup.html" alt="Drilldown into Setup"></area>
+                     <area shape="rect" coords="111,97,259,122" href="fixedssd.html" alt="Drilldown into FixedSSD"></area>
+                     <area shape="rect" coords="111,65,311,90" href="usingcompensator.html" alt="Drilldown into UsingCompensator"></area>
+                     <area shape="rect" coords="111,33,263,58" href="usingmlc.html" alt="Drilldown into UsingMLC"></area>
+                     <area shape="rect" coords="111,1,253,26" href="id9.html" alt="Drilldown into ID"></area></map><img src="images/field.png" border="0" alt="XSD Diagram of Field" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:element name="Field"&gt;
+    &lt;xsd:complexType&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="Type" type="FieldType" /&gt;
+            &lt;xsd:element ref="Proton" minOccurs="0" /&gt;
+            &lt;xsd:element name="Target" type="Volume" /&gt;
+            &lt;xsd:element name="TreatmentUnit" type="xsd:string" /&gt;
+            &lt;xsd:element name="Technique" type="xsd:string" /&gt;
+            &lt;xsd:element ref="Energy" /&gt;
+            &lt;xsd:element name="PrimaryFluenceMode" type="xsd:string" minOccurs="0" /&gt;
+            &lt;xsd:element name="DRRTemplate" type="xsd:string" /&gt;
+            &lt;xsd:element name="DoseRate" type="xsd:nonNegativeInteger" nillable="true" /&gt;
+            &lt;xsd:element name="SFED" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element ref="Gantry" /&gt;
+            &lt;xsd:element ref="Collimator" /&gt;
+            &lt;xsd:element name="TableRtn" type="xsd:double" /&gt;
+            &lt;xsd:element name="ToleranceTableID" type="xsd:string" /&gt;
+            &lt;xsd:element name="Weight" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element name="FieldMargin" type="Margin" /&gt;
+            &lt;xsd:element name="SkinFlashMargin" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element name="FieldBoluses" type="xsd:string" /&gt;
+            &lt;xsd:element name="Isocenter" type="Isocenter" /&gt;
+            &lt;xsd:element ref="Blocks" /&gt;
+            &lt;xsd:element ref="MLCPlans" /&gt;
+            &lt;xsd:element ref="Wedges" /&gt;
+            &lt;xsd:element ref="Applicators" /&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="ID" type="ID" use="required" /&gt;
+        &lt;xsd:attribute name="UsingMLC" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="UsingCompensator" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="FixedSSD" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="Setup" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="DRRVisible" type="xsd:boolean" /&gt;
+    &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type7.html">Type</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Proton</td>
+                        <td><a href="proton.html">Proton</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Target</td>
+                        <td><a href="target1.html">Target</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TreatmentUnit</td>
+                        <td><a href="treatmentunit2.html">TreatmentUnit</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Technique</td>
+                        <td><a href="technique.html">Technique</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Energy</td>
+                        <td><a href="energy.html">Energy</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PrimaryFluenceMode</td>
+                        <td><a href="primaryfluencemode.html">PrimaryFluenceMode</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DRRTemplate</td>
+                        <td><a href="drrtemplate.html">DRRTemplate</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DoseRate</td>
+                        <td><a href="doserate.html">DoseRate</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SFED</td>
+                        <td><a href="sfed.html">SFED</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Gantry</td>
+                        <td><a href="gantry.html">Gantry</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Collimator</td>
+                        <td><a href="collimator.html">Collimator</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TableRtn</td>
+                        <td><a href="tablertn.html">TableRtn</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ToleranceTableID</td>
+                        <td><a href="tolerancetableid.html">ToleranceTableID</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Weight</td>
+                        <td><a href="weight.html">Weight</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FieldMargin</td>
+                        <td><a href="fieldmargin.html">FieldMargin</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">SkinFlashMargin</td>
+                        <td><a href="skinflashmargin.html">SkinFlashMargin</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FieldBoluses</td>
+                        <td><a href="fieldboluses.html">FieldBoluses</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Isocenter</td>
+                        <td><a href="isocenter.html">Isocenter</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Blocks</td>
+                        <td><a href="blocks.html">Blocks</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">MLCPlans</td>
+                        <td><a href="mlcplans.html">MLCPlans</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Wedges</td>
+                        <td><a href="wedges.html">Wedges</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Applicators</td>
+                        <td><a href="applicators.html">Applicators</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ID</td>
+                        <td><a href="id9.html">ID</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">UsingMLC</td>
+                        <td><a href="usingmlc.html">UsingMLC</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">UsingCompensator</td>
+                        <td><a href="usingcompensator.html">UsingCompensator</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FixedSSD</td>
+                        <td><a href="fixedssd.html">FixedSSD</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Setup</td>
+                        <td><a href="setup.html">Setup</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DRRVisible</td>
+                        <td><a href="drrvisible.html">DRRVisible</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

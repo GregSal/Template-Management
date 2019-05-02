@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanTemplate Version="1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Preview ID="6-arcs-LR-CW" Type="Plan" ApprovalStatus="Approved" Diagnosis="" TreatmentSite="" TreatmentStyle="SRS" AssignedUsers="" Mode="Photon" Description="6-arcs-LR" LastModified="" ApprovalHistory=""/>
+  <PrescribedPercentage>1</PrescribedPercentage>
+  <DosePerFraction xsi:nil="true"></DosePerFraction>
+  <FractionCount xsi:nil="true"></FractionCount>
+  <FieldAlignmentRules></FieldAlignmentRules>
+  <PrescriptionSite>
+    <VolumeID>PTV</VolumeID>
+    <VolumeCode></VolumeCode>
+    <VolumeType>PTV</VolumeType>
+    <VolumeCodeTable></VolumeCodeTable>
+  </PrescriptionSite>
+  <Boluses/>
+  <Fields>
+    <Field ID="Field 1" FixedSSD="false" UsingCompensator="false" UsingMLC="false" Setup="false" DRRVisible="false">
+      <Type>BeamLinac</Type>
+      <Target>
+        <VolumeID>PTV</VolumeID>
+        <VolumeCode></VolumeCode>
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable></VolumeCodeTable>
+      </Target>
+      <TreatmentUnit></TreatmentUnit>
+      <Technique>ARC</Technique>
+      <Energy>
+        <Type>X</Type>
+        <EnergyKV>6000</EnergyKV>
+        <MaxEnergyKV xsi:nil="true"></MaxEnergyKV>
+      </Energy>
+      <PrimaryFluenceMode></PrimaryFluenceMode>
+      <DRRTemplate></DRRTemplate>
+      <DoseRate>300</DoseRate>
+      <SFED xsi:nil="true"></SFED>
+      <Gantry>
+        <Rtn>20</Rtn>
+        <StopRtn>120</StopRtn>
+        <RtnDirection>CW</RtnDirection>
+      </Gantry>
+      <Collimator>
+        <Rtn>0</Rtn>
+        <Mode>Symmetry</Mode>
+        <X1>-2.5</X1>
+        <X2>2.5</X2>
+        <Y1>-2.5</Y1>
+        <Y2>2.5</Y2>
+      </Collimator>
+      <TableRtn>350</TableRtn>
+      <ToleranceTableID></ToleranceTableID>
+      <Weight>1</Weight>
+      <FieldMargin BEVMarginFlag="false" EllipticalMarginFlag="false" OptimizeCollRtnFlag="false">
+        <Left xsi:nil="true"></Left>
+        <Right xsi:nil="true"></Right>
+        <Top xsi:nil="true"></Top>
+        <Bottom xsi:nil="true"></Bottom>
+      </FieldMargin>
+      <SkinFlashMargin xsi:nil="true"></SkinFlashMargin>
+      <FieldBoluses></FieldBoluses>
+      <Isocenter Placement="RFTS" X="0" Y="0" Z="0"/>
+      <Blocks/>
+      <MLCPlans/>
+      <Wedges/>
+      <Applicators>
+        <Applicator>
+          <XSize>2</XSize>
+          <YSize>2</YSize>
+          <Slot>2</Slot>
+        </Applicator>
+      </Applicators>
+    </Field>
+    <Field ID="Field 2" FixedSSD="false" UsingCompensator="false" UsingMLC="false" Setup="false" DRRVisible="false">
+      <Type>BeamLinac</Type>
+      <Target>
+        <VolumeID>PTV</VolumeID>
+        <VolumeCode></VolumeCode>
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable></VolumeCodeTable>
+      </Target>
+      <TreatmentUnit></TreatmentUnit>
+      <Technique>ARC</Technique>
+      <Energy>
+        <Type>X</Type>
+        <EnergyKV>6000</EnergyKV>
+        <MaxEnergyKV xsi:nil="true"></MaxEnergyKV>
+      </Energy>
+      <PrimaryFluenceMode></PrimaryFluenceMode>
+      <DRRTemplate></DRRTemplate>
+      <DoseRate>300</DoseRate>
+      <SFED xsi:nil="true"></SFED>
+      <Gantry>
+        <Rtn>20</Rtn>
+        <StopRtn>120</StopRtn>
+        <RtnDirection>CW</RtnDirection>
+      </Gantry>
+      <Collimator>
+        <Rtn>0</Rtn>
+        <Mode>Symmetry</Mode>
+        <X1>-2.5</X1>
+        <X2>2.5</X2>
+        <Y1>-2.5</Y1>
+        <Y2>2.5</Y2>
+      </Collimator>
+      <TableRtn>330</TableRtn>
+      <ToleranceTableID></ToleranceTableID>
+      <Weight>1</Weight>
+      <FieldMargin BEVMarginFlag="false" EllipticalMarginFlag="false" OptimizeCollRtnFlag="false">
+        <Left xsi:nil="true"></Left>
+        <Right xsi:nil="true"></Right>
+        <Top xsi:nil="true"></Top>
+        <Bottom xsi:nil="true"></Bottom>
+      </FieldMargin>
+      <SkinFlashMargin xsi:nil="true"></SkinFlashMargin>
+      <FieldBoluses></FieldBoluses>
+      <Isocenter Placement="RFTS" X="0" Y="0" Z="0"/>
+      <Blocks/>
+      <MLCPlans/>
+      <Wedges/>
+      <Applicators>
+        <Applicator>
+          <XSize>2</XSize>
+          <YSize>2</YSize>
+          <Slot>2</Slot>
+        </Applicator>
+      </Applicators>
+    </Field>
+    <Field ID="Field 3" FixedSSD="false" UsingCompensator="false" UsingMLC="false" Setup="false" DRRVisible="false">
+      <Type>BeamLinac</Type>
+      <Target>
+        <VolumeID>PTV</VolumeID>
+        <VolumeCode></VolumeCode>
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable></VolumeCodeTable>
+      </Target>
+      <TreatmentUnit></TreatmentUnit>
+      <Technique>ARC</Technique>
+      <Energy>
+        <Type>X</Type>
+        <EnergyKV>6000</EnergyKV>
+        <MaxEnergyKV xsi:nil="true"></MaxEnergyKV>
+      </Energy>
+      <PrimaryFluenceMode></PrimaryFluenceMode>
+      <DRRTemplate></DRRTemplate>
+      <DoseRate>300</DoseRate>
+      <SFED xsi:nil="true"></SFED>
+      <Gantry>
+        <Rtn>20</Rtn>
+        <StopRtn>120</StopRtn>
+        <RtnDirection>CW</RtnDirection>
+      </Gantry>
+      <Collimator>
+        <Rtn>0</Rtn>
+        <Mode>Symmetry</Mode>
+        <X1>-2.5</X1>
+        <X2>2.5</X2>
+        <Y1>-2.5</Y1>
+        <Y2>2.5</Y2>
+      </Collimator>
+      <TableRtn>310</TableRtn>
+      <ToleranceTableID></ToleranceTableID>
+      <Weight>1</Weight>
+      <FieldMargin BEVMarginFlag="false" EllipticalMarginFlag="false" OptimizeCollRtnFlag="false">
+        <Left xsi:nil="true"></Left>
+        <Right xsi:nil="true"></Right>
+        <Top xsi:nil="true"></Top>
+        <Bottom xsi:nil="true"></Bottom>
+      </FieldMargin>
+      <SkinFlashMargin xsi:nil="true"></SkinFlashMargin>
+      <FieldBoluses></FieldBoluses>
+      <Isocenter Placement="RFTS" X="0" Y="0" Z="0"/>
+      <Blocks/>
+      <MLCPlans/>
+      <Wedges/>
+      <Applicators>
+        <Applicator>
+          <XSize>2</XSize>
+          <YSize>2</YSize>
+          <Slot>2</Slot>
+        </Applicator>
+      </Applicators>
+    </Field>
+    <Field ID="Field 4" FixedSSD="false" UsingCompensator="false" UsingMLC="false" Setup="false" DRRVisible="false">
+      <Type>BeamLinac</Type>
+      <Target>
+        <VolumeID>PTV</VolumeID>
+        <VolumeCode></VolumeCode>
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable></VolumeCodeTable>
+      </Target>
+      <TreatmentUnit></TreatmentUnit>
+      <Technique>ARC</Technique>
+      <Energy>
+        <Type>X</Type>
+        <EnergyKV>6000</EnergyKV>
+        <MaxEnergyKV xsi:nil="true"></MaxEnergyKV>
+      </Energy>
+      <PrimaryFluenceMode></PrimaryFluenceMode>
+      <DRRTemplate></DRRTemplate>
+      <DoseRate>300</DoseRate>
+      <SFED xsi:nil="true"></SFED>
+      <Gantry>
+        <Rtn>240</Rtn>
+        <StopRtn>340</StopRtn>
+        <RtnDirection>CW</RtnDirection>
+      </Gantry>
+      <Collimator>
+        <Rtn>0</Rtn>
+        <Mode>Symmetry</Mode>
+        <X1>-2.5</X1>
+        <X2>2.5</X2>
+        <Y1>-2.5</Y1>
+        <Y2>2.5</Y2>
+      </Collimator>
+      <TableRtn>10</TableRtn>
+      <ToleranceTableID></ToleranceTableID>
+      <Weight>1</Weight>
+      <FieldMargin BEVMarginFlag="false" EllipticalMarginFlag="false" OptimizeCollRtnFlag="false">
+        <Left xsi:nil="true"></Left>
+        <Right xsi:nil="true"></Right>
+        <Top xsi:nil="true"></Top>
+        <Bottom xsi:nil="true"></Bottom>
+      </FieldMargin>
+      <SkinFlashMargin xsi:nil="true"></SkinFlashMargin>
+      <FieldBoluses></FieldBoluses>
+      <Isocenter Placement="RFTS" X="0" Y="0" Z="0"/>
+      <Blocks/>
+      <MLCPlans/>
+      <Wedges/>
+      <Applicators>
+        <Applicator>
+          <XSize>2</XSize>
+          <YSize>2</YSize>
+          <Slot>2</Slot>
+        </Applicator>
+      </Applicators>
+    </Field>
+    <Field ID="Field 5" FixedSSD="false" UsingCompensator="false" UsingMLC="false" Setup="false" DRRVisible="false">
+      <Type>BeamLinac</Type>
+      <Target>
+        <VolumeID>PTV</VolumeID>
+        <VolumeCode></VolumeCode>
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable></VolumeCodeTable>
+      </Target>
+      <TreatmentUnit></TreatmentUnit>
+      <Technique>ARC</Technique>
+      <Energy>
+        <Type>X</Type>
+        <EnergyKV>6000</EnergyKV>
+        <MaxEnergyKV xsi:nil="true"></MaxEnergyKV>
+      </Energy>
+      <PrimaryFluenceMode></PrimaryFluenceMode>
+      <DRRTemplate></DRRTemplate>
+      <DoseRate>300</DoseRate>
+      <SFED xsi:nil="true"></SFED>
+      <Gantry>
+        <Rtn>240</Rtn>
+        <StopRtn>340</StopRtn>
+        <RtnDirection>CW</RtnDirection>
+      </Gantry>
+      <Collimator>
+        <Rtn>0</Rtn>
+        <Mode>Symmetry</Mode>
+        <X1>-2.5</X1>
+        <X2>2.5</X2>
+        <Y1>-2.5</Y1>
+        <Y2>2.5</Y2>
+      </Collimator>
+      <TableRtn>30</TableRtn>
+      <ToleranceTableID></ToleranceTableID>
+      <Weight>1</Weight>
+      <FieldMargin BEVMarginFlag="false" EllipticalMarginFlag="false" OptimizeCollRtnFlag="false">
+        <Left xsi:nil="true"></Left>
+        <Right xsi:nil="true"></Right>
+        <Top xsi:nil="true"></Top>
+        <Bottom xsi:nil="true"></Bottom>
+      </FieldMargin>
+      <SkinFlashMargin xsi:nil="true"></SkinFlashMargin>
+      <FieldBoluses></FieldBoluses>
+      <Isocenter Placement="RFTS" X="0" Y="0" Z="0"/>
+      <Blocks/>
+      <MLCPlans/>
+      <Wedges/>
+      <Applicators>
+        <Applicator>
+          <XSize>2</XSize>
+          <YSize>2</YSize>
+          <Slot>2</Slot>
+        </Applicator>
+      </Applicators>
+    </Field>
+    <Field ID="Field 6" FixedSSD="false" UsingCompensator="false" UsingMLC="false" Setup="false" DRRVisible="false">
+      <Type>BeamLinac</Type>
+      <Target>
+        <VolumeID>PTV</VolumeID>
+        <VolumeCode></VolumeCode>
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable></VolumeCodeTable>
+      </Target>
+      <TreatmentUnit></TreatmentUnit>
+      <Technique>ARC</Technique>
+      <Energy>
+        <Type>X</Type>
+        <EnergyKV>6000</EnergyKV>
+        <MaxEnergyKV xsi:nil="true"></MaxEnergyKV>
+      </Energy>
+      <PrimaryFluenceMode></PrimaryFluenceMode>
+      <DRRTemplate></DRRTemplate>
+      <DoseRate>300</DoseRate>
+      <SFED xsi:nil="true"></SFED>
+      <Gantry>
+        <Rtn>240</Rtn>
+        <StopRtn>340</StopRtn>
+        <RtnDirection>CW</RtnDirection>
+      </Gantry>
+      <Collimator>
+        <Rtn>0</Rtn>
+        <Mode>Symmetry</Mode>
+        <X1>-2.5</X1>
+        <X2>2.5</X2>
+        <Y1>-2.5</Y1>
+        <Y2>2.5</Y2>
+      </Collimator>
+      <TableRtn>50</TableRtn>
+      <ToleranceTableID></ToleranceTableID>
+      <Weight>1</Weight>
+      <FieldMargin BEVMarginFlag="false" EllipticalMarginFlag="false" OptimizeCollRtnFlag="false">
+        <Left xsi:nil="true"></Left>
+        <Right xsi:nil="true"></Right>
+        <Top xsi:nil="true"></Top>
+        <Bottom xsi:nil="true"></Bottom>
+      </FieldMargin>
+      <SkinFlashMargin xsi:nil="true"></SkinFlashMargin>
+      <FieldBoluses></FieldBoluses>
+      <Isocenter Placement="RFTS" X="0" Y="0" Z="0"/>
+      <Blocks/>
+      <MLCPlans/>
+      <Wedges/>
+      <Applicators>
+        <Applicator>
+          <XSize>2</XSize>
+          <YSize>2</YSize>
+          <Slot>2</Slot>
+        </Applicator>
+      </Applicators>
+    </Field>
+  </Fields>
+</PlanTemplate>

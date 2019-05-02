@@ -1,0 +1,212 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Margin in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('ComplexType', 'margin');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>ComplexType</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Margin</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="protocoltypes_xsd.html">ProtocolTypes.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="156,316,298,360" href="bottom.html" alt="Drilldown into Bottom"></area>
+                     <area shape="rect" coords="156,264,298,308" href="top.html" alt="Drilldown into Top"></area>
+                     <area shape="rect" coords="156,212,298,256" href="right.html" alt="Drilldown into Right"></area>
+                     <area shape="rect" coords="156,161,298,205" href="left.html" alt="Drilldown into Left"></area>
+                     <area shape="rect" coords="111,129,292,154" href="jawfittingmode.html" alt="Drilldown into JawFittingMode"></area>
+                     <area shape="rect" coords="111,97,305,122" href="optimizejawsflag.html" alt="Drilldown into OptimizeJawsFlag"></area>
+                     <area shape="rect" coords="111,65,318,90" href="optimizecollrtnflag.html" alt="Drilldown into OptimizeCollRtnFlag"></area>
+                     <area shape="rect" coords="111,33,290,58" href="bevmarginflag.html" alt="Drilldown into BEVMarginFlag"></area>
+                     <area shape="rect" coords="111,1,314,26" href="ellipticalmarginflag.html" alt="Drilldown into EllipticalMarginFlag"></area></map><img src="images/margin.png" border="0" alt="XSD Diagram of Margin" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:complexType name="Margin"&gt;
+    &lt;xsd:sequence&gt;
+        &lt;xsd:element name="Left" type="xsd:double" nillable="true" /&gt;
+        &lt;xsd:element name="Right" type="xsd:double" nillable="true" /&gt;
+        &lt;xsd:element name="Top" type="xsd:double" nillable="true" /&gt;
+        &lt;xsd:element name="Bottom" type="xsd:double" nillable="true" /&gt;
+    &lt;/xsd:sequence&gt;
+    &lt;xsd:attribute name="EllipticalMarginFlag" type="xsd:boolean" /&gt;
+    &lt;xsd:attribute name="BEVMarginFlag" type="xsd:boolean" /&gt;
+    &lt;xsd:attribute name="OptimizeCollRtnFlag" type="xsd:boolean" /&gt;
+    &lt;xsd:attribute name="OptimizeJawsFlag" type="xsd:boolean" /&gt;
+    &lt;xsd:attribute name="JawFittingMode" type="xsd:integer" use="optional" /&gt;
+&lt;/xsd:complexType&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Left</td>
+                        <td><a href="left.html">Left</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Right</td>
+                        <td><a href="right.html">Right</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Top</td>
+                        <td><a href="top.html">Top</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Bottom</td>
+                        <td><a href="bottom.html">Bottom</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">EllipticalMarginFlag</td>
+                        <td><a href="ellipticalmarginflag.html">EllipticalMarginFlag</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">BEVMarginFlag</td>
+                        <td><a href="bevmarginflag.html">BEVMarginFlag</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">OptimizeCollRtnFlag</td>
+                        <td><a href="optimizecollrtnflag.html">OptimizeCollRtnFlag</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">OptimizeJawsFlag</td>
+                        <td><a href="optimizejawsflag.html">OptimizeJawsFlag</a></td>
+                        <td class="mid"></td>
+                        <td class="last">(Optional)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">JawFittingMode</td>
+                        <td><a href="jawfittingmode.html">JawFittingMode</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="derivationTree" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Derivation Tree:</b></td>
+            </tr>
+            <tr id="derivationTree_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><b><i>Margin</i></b></li>
+                     <ul>
+                        <li><a href="blockmargin.html">BlockMargin</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="fieldmargin.html">FieldMargin</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="mlcmargin.html">MLCMargin</a></li>
+                     </ul>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="references" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>References:</b></td>
+            </tr>
+            <tr id="references_body_id">
+               <td width="120px;"></td>
+               <td><a href="blockmargin.html">BlockMargin</a>, <a href="fieldmargin.html">FieldMargin</a>, <a href="mlcmargin.html">MLCMargin</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

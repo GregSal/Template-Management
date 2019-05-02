@@ -1,0 +1,211 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Phase in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Element', 'phase');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Phase</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="clinicalprotocol_xsd.html">ClinicalProtocol.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="176,464,372,489" href="objectivetemplate.html" alt="Drilldown into ObjectiveTemplate"></area>
+                     <area shape="rect" coords="156,432,325,457" href="plantemplate.html" alt="Drilldown into PlanTemplate"></area>
+                     <area shape="rect" coords="156,400,318,425" href="prescription.html" alt="Drilldown into Prescription"></area>
+                     <area shape="rect" coords="176,368,394,393" href="localizationtechnique.html" alt="Drilldown into LocalizationTechnique"></area>
+                     <area shape="rect" coords="176,336,387,361" href="immobilizationdevice.html" alt="Drilldown into ImmobilizationDevice"></area>
+                     <area shape="rect" coords="156,304,333,329" href="treatmentstyle.html" alt="Drilldown into TreatmentStyle"></area>
+                     <area shape="rect" coords="156,272,328,297" href="treatmentunit.html" alt="Drilldown into TreatmentUnit"></area>
+                     <area shape="rect" coords="156,220,401,264" href="fractionsperday.html" alt="Drilldown into FractionsPerDay"></area>
+                     <area shape="rect" coords="156,168,410,212" href="fractionsperweek.html" alt="Drilldown into FractionsPerWeek"></area>
+                     <area shape="rect" coords="156,116,388,160" href="fractioncount.html" alt="Drilldown into FractionCount"></area>
+                     <area shape="rect" coords="156,65,344,109" href="defaultenergykv.html" alt="Drilldown into DefaultEnergyKV"></area>
+                     <area shape="rect" coords="156,33,298,58" href="mode.html" alt="Drilldown into Mode"></area>
+                     <area shape="rect" coords="111,1,253,26" href="id2.html" alt="Drilldown into ID"></area></map><img src="images/phase.png" border="0" alt="XSD Diagram of Phase" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:element name="Phase"&gt;
+    &lt;xsd:complexType&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="Mode" type="xsd:string" /&gt;
+            &lt;xsd:element name="DefaultEnergyKV" type="xsd:integer" nillable="true" /&gt;
+            &lt;xsd:element name="FractionCount" type="xsd:nonNegativeInteger" nillable="true" /&gt;
+            &lt;xsd:element name="FractionsPerWeek" type="xsd:nonNegativeInteger" nillable="true" /&gt;
+            &lt;xsd:element name="FractionsPerDay" type="xsd:nonNegativeInteger" nillable="true" /&gt;
+            &lt;xsd:element name="TreatmentUnit" type="xsd:string" /&gt;
+            &lt;xsd:element name="TreatmentStyle" type="xsd:string" /&gt;
+            &lt;xsd:element name="ImmobilizationDevice" type="xsd:string" minOccurs="0" /&gt;
+            &lt;xsd:element name="LocalizationTechnique" type="xsd:string" minOccurs="0" /&gt;
+            &lt;xsd:element ref="Prescription" /&gt;
+            &lt;xsd:element ref="PlanTemplate" /&gt;
+            &lt;xsd:element ref="ObjectiveTemplate" minOccurs="0" /&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="ID" type="ID" use="required" /&gt;
+    &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Mode</td>
+                        <td><a href="mode.html">Mode</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">DefaultEnergyKV</td>
+                        <td><a href="defaultenergykv.html">DefaultEnergyKV</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FractionCount</td>
+                        <td><a href="fractioncount.html">FractionCount</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FractionsPerWeek</td>
+                        <td><a href="fractionsperweek.html">FractionsPerWeek</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">FractionsPerDay</td>
+                        <td><a href="fractionsperday.html">FractionsPerDay</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TreatmentUnit</td>
+                        <td><a href="treatmentunit.html">TreatmentUnit</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TreatmentStyle</td>
+                        <td><a href="treatmentstyle.html">TreatmentStyle</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ImmobilizationDevice</td>
+                        <td><a href="immobilizationdevice.html">ImmobilizationDevice</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">LocalizationTechnique</td>
+                        <td><a href="localizationtechnique.html">LocalizationTechnique</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Prescription</td>
+                        <td><a href="prescription.html">Prescription</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">PlanTemplate</td>
+                        <td><a href="plantemplate.html">PlanTemplate</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ObjectiveTemplate</td>
+                        <td><a href="objectivetemplate.html">ObjectiveTemplate</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ID</td>
+                        <td><a href="id2.html">ID</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

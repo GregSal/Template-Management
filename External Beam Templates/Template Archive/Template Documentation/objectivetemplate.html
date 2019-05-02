@@ -1,0 +1,179 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item ObjectiveTemplate in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Element', 'objectivetemplate');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>Element</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>ObjectiveTemplate</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="objectivetemplate_xsd.html">ObjectiveTemplate.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="210,800,434,825" href="objectivesallstructures.html" alt="Drilldown into ObjectivesAllStructures"></area>
+                     <area shape="rect" coords="255,765,397,790" href="brachy.html" alt="Drilldown into Brachy"></area>
+                     <area shape="rect" coords="507,721,592,746" href="imat.html" alt="Drilldown into Imat"></area>
+                     <area shape="rect" coords="507,689,592,714" href="geos.html" alt="Drilldown into Geos"></area>
+                     <area shape="rect" coords="507,657,729,682" href="normaltissueobjective.html" alt="Drilldown into NormalTissueObjective"></area>
+                     <area shape="rect" coords="487,605,631,649" href="maxtime.html" alt="Drilldown into MaxTime"></area>
+                     <area shape="rect" coords="487,553,715,597" href="maxiterations.html" alt="Drilldown into MaxIterations"></area>
+                     <area shape="rect" coords="487,468,803,545" href="defaultoptimizationtype.html" alt="Drilldown into DefaultOptimizationType"></area>
+                     <area shape="rect" coords="487,416,697,460" href="defaultminimizedose.html" alt="Drilldown into DefaultMinimizeDose"></area>
+                     <area shape="rect" coords="487,364,688,408" href="defaultsmoothingy.html" alt="Drilldown into DefaultSmoothingY"></area>
+                     <area shape="rect" coords="487,313,688,357" href="defaultsmoothingx.html" alt="Drilldown into DefaultSmoothingX"></area>
+                     <area shape="rect" coords="442,281,664,306" href="useautobooleantarget.html" alt="Drilldown into UseAutoBooleanTarget"></area>
+                     <area shape="rect" coords="442,249,594,274" href="usecolors.html" alt="Drilldown into UseColors"></area>
+                     <area shape="rect" coords="442,217,596,242" href="interpolate.html" alt="Drilldown into Interpolate"></area>
+                     <area shape="rect" coords="442,185,633,210" href="defaultfixedjaws.html" alt="Drilldown into DefaultFixedJaws"></area>
+                     <area shape="rect" coords="422,160,811,759" href="helios.html" alt="Drilldown into Helios"></area>
+                     <area shape="rect" coords="255,447,397,472" href="helios.html" alt="Drilldown into Helios"></area>
+                     <area shape="rect" coords="210,97,401,152" href="type4.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="230,65,372,90" href="preview1.html" alt="Drilldown into Preview"></area>
+                     <area shape="rect" coords="165,33,307,58" href="version1.html" alt="Drilldown into Version"></area>
+                     <area shape="rect" coords="165,1,307,26" href="hash1.html" alt="Drilldown into Hash"></area></map><img src="images/objectivetemplate.png" border="0" alt="XSD Diagram of ObjectiveTemplate" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:element name="ObjectiveTemplate"&gt;
+    &lt;xsd:complexType&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="Preview" type="Status" minOccurs="0" /&gt;
+            &lt;xsd:element name="Type" type="OptimizationType" /&gt;
+            &lt;xsd:choice&gt;
+                &lt;xsd:element ref="Helios" /&gt;
+                &lt;xsd:element ref="Brachy" /&gt;
+            &lt;/xsd:choice&gt;
+            &lt;xsd:element ref="ObjectivesAllStructures" /&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="Hash" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="Version" type="xsd:string" use="optional" /&gt;
+    &lt;/xsd:complexType&gt;
+&lt;/xsd:element&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childElements" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Elements:</b></td>
+            </tr>
+            <tr id="childElements_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Min Occurs</td>
+                        <td class="last">Max Occurs</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Preview</td>
+                        <td><a href="preview1.html">Preview</a></td>
+                        <td class="mid">0</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type4.html">Type</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Helios</td>
+                        <td><a href="helios.html">Helios</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Brachy</td>
+                        <td><a href="brachy.html">Brachy</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ObjectivesAllStructures</td>
+                        <td><a href="objectivesallstructures.html">ObjectivesAllStructures</a></td>
+                        <td class="mid">(1)</td>
+                        <td class="last">(1)</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Hash</td>
+                        <td><a href="hash1.html">Hash</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Version</td>
+                        <td><a href="version1.html">Version</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

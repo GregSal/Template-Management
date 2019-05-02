@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><PrintConfiguration version="1.1" computer="CTX-VARIAN-PV3.KGH.ON.CA" display-name="test plan export jd" user-comments="" treatment-type="undefined">
+	<PrintSetups>
+	<PrintSetup id="1" name="plan-report" print="true">
+	<PrinterProperties>
+	<PrinterName>\\ZBUR0-VAR-Z282\Lexmark C920 PS (MS)</PrinterName>
+	<DriverVersion>0</DriverVersion>
+	<Copies>1</Copies>
+	<Collate>0</Collate>
+	<Color>1</Color>
+	<PaperSize>9</PaperSize>
+	<PaperLength>0</PaperLength>
+	<PaperWidth>0</PaperWidth>
+	<PaperOrientation>1</PaperOrientation>
+	<Quality>-4</Quality>
+	<Scale>100</Scale>
+	<DefaultSource>7</DefaultSource>
+	<Duplex>1</Duplex>
+	<Resolution x="0" y="0"/>
+	<TrueTypeOption>1</TrueTypeOption>
+	<Nup>1</Nup>
+	<IcmMethod>1</IcmMethod>
+	<IcmIntent>1</IcmIntent>
+	<MediaType>1</MediaType>
+	<DitherType>1</DitherType>
+	<LeftMargin>0</LeftMargin>
+	<RightMargin>0</RightMargin>
+	<TopMargin>0</TopMargin>
+	<BottomMargin>0</BottomMargin>
+	<DevModeExtra/></PrinterProperties>
+	<PrintOptions>
+	<Comment></Comment>
+	<Template>ShortSummaryTabular.tml</Template>
+	<CouchShift>true</CouchShift></PrintOptions></PrintSetup>
+	<PrintSetup id="2" name="bev" print="true">
+	<PrinterProperties>
+	<PrinterName>\\ZBUR0-VAR-Z282\Lexmark C920 PS (MS)</PrinterName>
+	<DriverVersion>0</DriverVersion>
+	<Copies>1</Copies>
+	<Collate>0</Collate>
+	<Color>1</Color>
+	<PaperSize>9</PaperSize>
+	<PaperLength>0</PaperLength>
+	<PaperWidth>0</PaperWidth>
+	<PaperOrientation>1</PaperOrientation>
+	<Quality>-4</Quality>
+	<Scale>100</Scale>
+	<DefaultSource>7</DefaultSource>
+	<Duplex>1</Duplex>
+	<Resolution x="0" y="0"/>
+	<TrueTypeOption>1</TrueTypeOption>
+	<Nup>1</Nup>
+	<IcmMethod>1</IcmMethod>
+	<IcmIntent>1</IcmIntent>
+	<MediaType>1</MediaType>
+	<DitherType>1</DitherType>
+	<LeftMargin>0</LeftMargin>
+	<RightMargin>0</RightMargin>
+	<TopMargin>0</TopMargin>
+	<BottomMargin>0</BottomMargin>
+	<DevModeExtra/></PrinterProperties>
+	<PrintOptions>
+	<TurnAllLinesBlack>false</TurnAllLinesBlack>
+	<IncludeFieldSummary>true</IncludeFieldSummary>
+	<TurnImageBackgroundWhite>false</TurnImageBackgroundWhite>
+	<StartImageFromEmptyPage>false</StartImageFromEmptyPage>
+	<IncludeImage>false</IncludeImage>
+	<Pages auto-arrange="false" n="1" m="1"/>
+	<Zoom mode="ssd" distance="100"/>
+	<Comment></Comment>
+	<Fields range="all"/></PrintOptions></PrintSetup>
+	<PrintSetup id="0" name="dvh" print="true">
+	<PrinterProperties>
+	<PrinterName>\\ZBUR0-VAR-Z282\Lexmark C920 PS (MS)</PrinterName>
+	<DriverVersion>0</DriverVersion>
+	<Copies>1</Copies>
+	<Collate>0</Collate>
+	<Color>1</Color>
+	<PaperSize>9</PaperSize>
+	<PaperLength>0</PaperLength>
+	<PaperWidth>0</PaperWidth>
+	<PaperOrientation>1</PaperOrientation>
+	<Quality>-4</Quality>
+	<Scale>100</Scale>
+	<DefaultSource>7</DefaultSource>
+	<Duplex>1</Duplex>
+	<Resolution x="0" y="0"/>
+	<TrueTypeOption>1</TrueTypeOption>
+	<Nup>1</Nup>
+	<IcmMethod>1</IcmMethod>
+	<IcmIntent>1</IcmIntent>
+	<MediaType>1</MediaType>
+	<DitherType>1</DitherType>
+	<LeftMargin>0</LeftMargin>
+	<RightMargin>0</RightMargin>
+	<TopMargin>0</TopMargin>
+	<BottomMargin>0</BottomMargin>
+	<DevModeExtra/></PrinterProperties>
+	<PrintOptions>
+	<Comment></Comment>
+	<Template>DVH.tml</Template></PrintOptions></PrintSetup>
+	<PrintSetup id="3" name="model-view" print="true">
+	<PrinterProperties>
+	<PrinterName>\\ZBUR0-VAR-Z282\Lexmark C920 PS (MS)</PrinterName>
+	<DriverVersion>0</DriverVersion>
+	<Copies>1</Copies>
+	<Collate>0</Collate>
+	<Color>1</Color>
+	<PaperSize>9</PaperSize>
+	<PaperLength>0</PaperLength>
+	<PaperWidth>0</PaperWidth>
+	<PaperOrientation>1</PaperOrientation>
+	<Quality>-4</Quality>
+	<Scale>100</Scale>
+	<DefaultSource>7</DefaultSource>
+	<Duplex>1</Duplex>
+	<Resolution x="0" y="0"/>
+	<TrueTypeOption>1</TrueTypeOption>
+	<Nup>1</Nup>
+	<IcmMethod>1</IcmMethod>
+	<IcmIntent>1</IcmIntent>
+	<MediaType>1</MediaType>
+	<DitherType>1</DitherType>
+	<LeftMargin>0</LeftMargin>
+	<RightMargin>0</RightMargin>
+	<TopMargin>0</TopMargin>
+	<BottomMargin>0</BottomMargin>
+	<DevModeExtra/></PrinterProperties>
+	<PrintOptions>
+	<TurnAllLinesBlack>false</TurnAllLinesBlack>
+	<IncludeFieldSummary>true</IncludeFieldSummary>
+	<TurnImageBackgroundWhite>false</TurnImageBackgroundWhite>
+	<StartImageFromEmptyPage>false</StartImageFromEmptyPage>
+	<IncludeImage>false</IncludeImage>
+	<Pages auto-arrange="false" n="1" m="1"/>
+	<Zoom mode="user-defined" distance="1"/>
+	<Comment></Comment></PrintOptions></PrintSetup>
+	<PrintSetup id="4" name="slice" print="true">
+	<PrinterProperties>
+	<PrinterName>\\ZBUR0-VAR-Z282\Lexmark C920 PS (MS)</PrinterName>
+	<DriverVersion>0</DriverVersion>
+	<Copies>1</Copies>
+	<Collate>0</Collate>
+	<Color>1</Color>
+	<PaperSize>9</PaperSize>
+	<PaperLength>0</PaperLength>
+	<PaperWidth>0</PaperWidth>
+	<PaperOrientation>1</PaperOrientation>
+	<Quality>-4</Quality>
+	<Scale>100</Scale>
+	<DefaultSource>7</DefaultSource>
+	<Duplex>1</Duplex>
+	<Resolution x="0" y="0"/>
+	<TrueTypeOption>1</TrueTypeOption>
+	<Nup>1</Nup>
+	<IcmMethod>1</IcmMethod>
+	<IcmIntent>1</IcmIntent>
+	<MediaType>1</MediaType>
+	<DitherType>1</DitherType>
+	<LeftMargin>0</LeftMargin>
+	<RightMargin>0</RightMargin>
+	<TopMargin>0</TopMargin>
+	<BottomMargin>0</BottomMargin>
+	<DevModeExtra/></PrinterProperties>
+	<PrintOptions>
+	<TurnAllLinesBlack>false</TurnAllLinesBlack>
+	<IncludeFieldSummary>true</IncludeFieldSummary>
+	<TurnImageBackgroundWhite>true</TurnImageBackgroundWhite>
+	<StartImageFromEmptyPage>false</StartImageFromEmptyPage>
+	<IncludeImage>false</IncludeImage>
+	<Pages auto-arrange="false" n="1" m="1"/>
+	<Zoom mode="user-defined" distance="1"/>
+	<Comment></Comment>
+	<Slices range="all-displayed"/></PrintOptions></PrintSetup>
+	<PrintSetup id="7" name="apv" print="true">
+	<PrinterProperties>
+	<PrinterName>\\ZBUR0-VAR-Z282\Lexmark C920 PS (MS)</PrinterName>
+	<DriverVersion>0</DriverVersion>
+	<Copies>1</Copies>
+	<Collate>0</Collate>
+	<Color>1</Color>
+	<PaperSize>9</PaperSize>
+	<PaperLength>0</PaperLength>
+	<PaperWidth>0</PaperWidth>
+	<PaperOrientation>1</PaperOrientation>
+	<Quality>-4</Quality>
+	<Scale>100</Scale>
+	<DefaultSource>7</DefaultSource>
+	<Duplex>1</Duplex>
+	<Resolution x="0" y="0"/>
+	<TrueTypeOption>1</TrueTypeOption>
+	<Nup>1</Nup>
+	<IcmMethod>1</IcmMethod>
+	<IcmIntent>1</IcmIntent>
+	<MediaType>1</MediaType>
+	<DitherType>1</DitherType>
+	<LeftMargin>0</LeftMargin>
+	<RightMargin>0</RightMargin>
+	<TopMargin>0</TopMargin>
+	<BottomMargin>0</BottomMargin>
+	<DevModeExtra/></PrinterProperties>
+	<PrintOptions>
+	<TurnAllLinesBlack>false</TurnAllLinesBlack>
+	<IncludeFieldSummary>true</IncludeFieldSummary>
+	<TurnImageBackgroundWhite>true</TurnImageBackgroundWhite>
+	<StartImageFromEmptyPage>false</StartImageFromEmptyPage>
+	<IncludeImage>false</IncludeImage>
+	<Pages auto-arrange="false" n="1" m="1"/>
+	<Zoom mode="user-defined" distance="1"/>
+	<Comment></Comment>
+	<Slices range="all-displayed"/></PrintOptions></PrintSetup>
+	<PrintSetup id="5" name="dicom" print="true">
+	<PrinterProperties>
+	<PrinterName></PrinterName>
+	<DriverVersion>0</DriverVersion>
+	<Copies>1</Copies>
+	<Collate>0</Collate>
+	<Color>1</Color>
+	<PaperSize>9</PaperSize>
+	<PaperLength>0</PaperLength>
+	<PaperWidth>0</PaperWidth>
+	<PaperOrientation>1</PaperOrientation>
+	<Quality>-4</Quality>
+	<Scale>100</Scale>
+	<DefaultSource>7</DefaultSource>
+	<Duplex>1</Duplex>
+	<Resolution x="0" y="0"/>
+	<TrueTypeOption>1</TrueTypeOption>
+	<Nup>1</Nup>
+	<IcmMethod>1</IcmMethod>
+	<IcmIntent>1</IcmIntent>
+	<MediaType>1</MediaType>
+	<DitherType>1</DitherType>
+	<LeftMargin>0</LeftMargin>
+	<RightMargin>0</RightMargin>
+	<TopMargin>0</TopMargin>
+	<BottomMargin>0</BottomMargin>
+	<DevModeExtra/></PrinterProperties>
+	<PrintOptions>
+	<Fields range="all"/>
+	<Aperture>true</Aperture>
+	<TurnAllLinesBlack>false</TurnAllLinesBlack>
+	<IncludeFieldSummary>true</IncludeFieldSummary>
+	<Graticule>true</Graticule>
+	<Jaws>true</Jaws>
+	<TurnImageBackgroundWhite>true</TurnImageBackgroundWhite>
+	<PlanInfo>true</PlanInfo>
+	<StartImageFromEmptyPage>false</StartImageFromEmptyPage>
+	<IncludeImage>false</IncludeImage>
+	<Ruler>true</Ruler>
+	<StructureOutlines>true</StructureOutlines>
+	<Pages n="2" m="2"/>
+	<Zoom mode="fit-to-page" distance="1"/>
+	<Comment></Comment></PrintOptions></PrintSetup></PrintSetups></PrintConfiguration>

@@ -1,0 +1,79 @@
+Objective Template  
+Id: VMAT LARY 5250 
+Status: Approved 
+Last Modified: June 01 2017 15:48:14:557 
+Diagnosis:  
+Treatment Site:  
+Description:  
+
+--------------------------------------------------------------------------------
+
+Optimization Objectives
+IMRT
+Default Smoothing X: 40 Default Smoothing Y: 30 
+Default Minimize Dose: 0 Default Optimization Type: Beamlet 
+Max Iterations: 1000 Max Optimize Time [min]: 100 
+Default Fixed Jaws:  Interpolate:  
+Use Colors:  
+
+Beam Angle Optimization
+Initial Field Distribution: Coplanar 
+Minimum Number of Fields: 5 
+Maximum Number of Fields: 9 
+Maximum Elevation Angle for Non-Coplanar Fields: 90 
+Maximum Collimator Variation: 0 
+Local Geometric Optimization Mode: Simplex 
+
+Normal Tissue Objective
+Use: false 
+Automatic: true 
+Priority: 80 
+Distance From Target Border: 1 
+Start Dose: 105 
+End Dose: 60 
+Fall-off: 0.05 
+
+Arc Optimization
+Use MU Objective:  
+MU Objective Strength: 50 
+Minimum MU: 0 
+Maximum MU: 2000 
+Jaw Tracking:  
+
+Structure Objectives
+Structure Objective: CTV
+Volume Type: CTV Surface Only:  
+Resolution [mm]: 1.92 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 5250.0 100 0 
+Point lower 100.00 5400.0 120 0 
+
+Structure Objective: PRV5 SpinalCanal
+Volume Type: Avoidance Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 500.0 50 0 
+
+Structure Objective: PTV
+Volume Type: PTV Surface Only:  
+Resolution [mm]: 2.78 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 5250.0 100 0 
+Point lower 100.00 5250.0 120 0 
+
+Structure Objective: SpinalCanal
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 2.14 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 100.0 100 0 
+
+
+--------------------------------------------------------------------------------

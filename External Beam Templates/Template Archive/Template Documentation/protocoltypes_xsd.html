@@ -1,0 +1,269 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs the schema ProtocolTypes.xsd in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Schema', 'protocoltypes_xsd');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Schema Name:</b></td>
+               <td>ProtocolTypes.xsd</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>
+&lt;!--Created with Liquid Studio 2019 (https://www.liquid-technologies.com)--&gt;
+&lt;xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" version="1.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+    &lt;!-- 		
+			Filename:			ProtocolTypes.xsd
+			Copyright, Varian Medical systems, Inc., 2004 - 2005
+			All Rights Reserved
+			Varian Proprietary
+--&gt;
+    &lt;xsd:simpleType name="XCoordinate"&gt;
+        &lt;xsd:restriction base="xsd:double" /&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="YCoordinate"&gt;
+        &lt;xsd:restriction base="xsd:double" /&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="ZCoordinate"&gt;
+        &lt;xsd:restriction base="xsd:double" /&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:complexType name="CoordinatePoint"&gt;
+        &lt;xsd:attribute name="X" type="XCoordinate" use="required" /&gt;
+        &lt;xsd:attribute name="Y" type="YCoordinate" use="required" /&gt;
+        &lt;xsd:attribute name="Z" type="ZCoordinate" use="required" /&gt;
+    &lt;/xsd:complexType&gt;
+    &lt;xsd:simpleType name="IsocenterPlacement"&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+            &lt;xsd:enumeration value="None" /&gt;
+            &lt;xsd:enumeration value="RFTS" /&gt;
+            &lt;xsd:enumeration value="AFTS" /&gt;
+            &lt;xsd:enumeration value="RIO" /&gt;
+            &lt;xsd:enumeration value="AIO" /&gt;
+            &lt;xsd:enumeration value="RIC" /&gt;
+            &lt;xsd:enumeration value="AIC" /&gt;
+            &lt;xsd:enumeration value="RVPI" /&gt;
+            &lt;xsd:enumeration value="AVPI" /&gt;
+        &lt;/xsd:restriction&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:complexType name="Isocenter"&gt;
+        &lt;xsd:attribute name="Placement" type="IsocenterPlacement" use="optional" /&gt;
+        &lt;xsd:attribute name="X" type="XCoordinate" use="optional" /&gt;
+        &lt;xsd:attribute name="Y" type="YCoordinate" use="optional" /&gt;
+        &lt;xsd:attribute name="Z" type="ZCoordinate" use="optional" /&gt;
+    &lt;/xsd:complexType&gt;
+    &lt;xsd:complexType name="Matrix"&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="UnitAxisX" type="CoordinatePoint" /&gt;
+            &lt;xsd:element name="UnitAxisY" type="CoordinatePoint" /&gt;
+            &lt;xsd:element name="UnitAxisZ" type="CoordinatePoint" /&gt;
+            &lt;xsd:element name="Translation" type="CoordinatePoint" /&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="Scale" type="xsd:double" /&gt;
+    &lt;/xsd:complexType&gt;
+    &lt;xsd:complexType name="StructureCode"&gt;
+        &lt;xsd:attribute name="Code" type="xsd:string" /&gt;
+        &lt;xsd:attribute name="CodeScheme" type="xsd:string" /&gt;
+        &lt;xsd:attribute name="CodeSchemeVersion" type="xsd:string" /&gt;
+    &lt;/xsd:complexType&gt;
+    &lt;xsd:complexType name="Volume"&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="VolumeID" type="xsd:string" /&gt;
+            &lt;xsd:element name="VolumeCode" type="xsd:string" /&gt;
+            &lt;xsd:element name="VolumeType" type="xsd:string" /&gt;
+            &lt;xsd:element name="VolumeCodeTable" type="xsd:string" /&gt;
+            &lt;xsd:element name="StructureCode" type="StructureCode" minOccurs="0" maxOccurs="unbounded" /&gt;
+        &lt;/xsd:sequence&gt;
+    &lt;/xsd:complexType&gt;
+    &lt;xsd:complexType name="Margin"&gt;
+        &lt;xsd:sequence&gt;
+            &lt;xsd:element name="Left" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element name="Right" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element name="Top" type="xsd:double" nillable="true" /&gt;
+            &lt;xsd:element name="Bottom" type="xsd:double" nillable="true" /&gt;
+        &lt;/xsd:sequence&gt;
+        &lt;xsd:attribute name="EllipticalMarginFlag" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="BEVMarginFlag" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="OptimizeCollRtnFlag" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="OptimizeJawsFlag" type="xsd:boolean" /&gt;
+        &lt;xsd:attribute name="JawFittingMode" type="xsd:integer" use="optional" /&gt;
+    &lt;/xsd:complexType&gt;
+    &lt;xsd:simpleType name="EnergyType"&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+            &lt;xsd:enumeration value="E" /&gt;
+            &lt;xsd:enumeration value="P" /&gt;
+            &lt;xsd:enumeration value="X" /&gt;
+        &lt;/xsd:restriction&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="ID"&gt;
+        &lt;xsd:restriction base="xsd:string" /&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="OptimizationType"&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+            &lt;xsd:enumeration value="Brachy" /&gt;
+            &lt;xsd:enumeration value="Helios" /&gt;
+        &lt;/xsd:restriction&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="DefaultOptimizationType"&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+            &lt;xsd:enumeration value="" /&gt;
+            &lt;xsd:enumeration value="None" /&gt;
+            &lt;xsd:enumeration value="Beamlet" /&gt;
+            &lt;xsd:enumeration value="Field weight" /&gt;
+        &lt;/xsd:restriction&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="FieldType"&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+            &lt;xsd:enumeration value="BeamProton" /&gt;
+            &lt;xsd:enumeration value="BeamLinac" /&gt;
+        &lt;/xsd:restriction&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="TemplateType"&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+            &lt;xsd:enumeration value="Objective" /&gt;
+            &lt;xsd:enumeration value="Protocol" /&gt;
+            &lt;xsd:enumeration value="Plan" /&gt;
+            &lt;xsd:enumeration value="Structure" /&gt;
+        &lt;/xsd:restriction&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="ReviewType"&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+            &lt;xsd:enumeration value="Structure" /&gt;
+            &lt;xsd:enumeration value="Expr" /&gt;
+        &lt;/xsd:restriction&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:simpleType name="ApprovalStatus"&gt;
+        &lt;xsd:restriction base="xsd:string"&gt;
+            &lt;xsd:enumeration value="Approved" /&gt;
+            &lt;xsd:enumeration value="Unapproved" /&gt;
+            &lt;xsd:enumeration value="Reviewed" /&gt;
+            &lt;xsd:enumeration value="Retired" /&gt;
+            &lt;!--German--&gt;
+            &lt;xsd:enumeration value="Abgezeichnet" /&gt;
+            &lt;xsd:enumeration value="Nicht abgezeichnet" /&gt;
+            &lt;xsd:enumeration value="Gesichtet:" /&gt;
+            &lt;xsd:enumeration value="Zurückgezogen" /&gt;
+            &lt;!--French--&gt;
+            &lt;xsd:enumeration value="Approuvé" /&gt;
+            &lt;xsd:enumeration value="Non approuvé(e)" /&gt;
+            &lt;xsd:enumeration value="Revue" /&gt;
+            &lt;xsd:enumeration value="Retiré(e)" /&gt;
+            &lt;!--Italian--&gt;
+            &lt;xsd:enumeration value="Approvato" /&gt;
+            &lt;xsd:enumeration value="Non approvato" /&gt;
+            &lt;xsd:enumeration value="Controllato" /&gt;
+            &lt;xsd:enumeration value="Ritirato" /&gt;
+            &lt;!--Swedish--&gt;
+            &lt;xsd:enumeration value="Godkänd" /&gt;
+            &lt;xsd:enumeration value="Ej godkänd" /&gt;
+            &lt;xsd:enumeration value="Granskad:" /&gt;
+            &lt;xsd:enumeration value="Tillbakadragen" /&gt;
+            &lt;!--Spanish--&gt;
+            &lt;xsd:enumeration value="Aprobado" /&gt;
+            &lt;xsd:enumeration value="No aprobado" /&gt;
+            &lt;xsd:enumeration value="Revisado:" /&gt;
+            &lt;xsd:enumeration value="Retirado" /&gt;
+            &lt;!--Brazil Portuguese--&gt;
+            &lt;xsd:enumeration value="Aprovado" /&gt;
+            &lt;xsd:enumeration value="Desaprovado" /&gt;
+            &lt;xsd:enumeration value="Revisado" /&gt;
+            &lt;xsd:enumeration value="Aposentado" /&gt;
+            &lt;!--Japanese--&gt;
+            &lt;xsd:enumeration value="承認済み" /&gt;
+            &lt;xsd:enumeration value="未承認" /&gt;
+            &lt;xsd:enumeration value="レビュー済み" /&gt;
+            &lt;xsd:enumeration value="リタイヤ" /&gt;
+            &lt;!--Chinese--&gt;
+            &lt;xsd:enumeration value="已确认" /&gt;
+            &lt;xsd:enumeration value="未经确认" /&gt;
+            &lt;xsd:enumeration value="已审核" /&gt;
+            &lt;xsd:enumeration value="已中断" /&gt;
+        &lt;/xsd:restriction&gt;
+    &lt;/xsd:simpleType&gt;
+    &lt;xsd:complexType name="Status"&gt;
+        &lt;xsd:attribute name="ID" type="xsd:string" use="required" /&gt;
+        &lt;xsd:attribute name="Type" type="TemplateType" use="required" /&gt;
+        &lt;xsd:attribute name="ApprovalStatus" type="ApprovalStatus" use="required" /&gt;
+        &lt;xsd:attribute name="Diagnosis" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="TreatmentSite" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="AssignedUsers" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="Description" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="Mode" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="TreatmentStyle" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="LastModified" type="xsd:string" use="optional" /&gt;
+        &lt;xsd:attribute name="ApprovalHistory" type="xsd:string" use="required" /&gt;
+    &lt;/xsd:complexType&gt;
+&lt;/xsd:schema&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="ComplexType" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>ComplexTypes:</b></td>
+            </tr>
+            <tr id="ComplexType_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="coordinatepoint.html">CoordinatePoint</a></li>
+                     <li><a href="isocenter1.html">Isocenter</a></li>
+                     <li><a href="margin.html">Margin</a></li>
+                     <li><a href="matrix.html">Matrix</a></li>
+                     <li><a href="status.html">Status</a></li>
+                     <li><a href="structurecode.html">StructureCode</a></li>
+                     <li><a href="volume1.html">Volume</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="SimpleType" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>SimpleTypes:</b></td>
+            </tr>
+            <tr id="SimpleType_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="approvalstatus1.html">ApprovalStatus</a></li>
+                     <li><a href="defaultoptimizationtype1.html">DefaultOptimizationType</a></li>
+                     <li><a href="energytype.html">EnergyType</a></li>
+                     <li><a href="fieldtype.html">FieldType</a></li>
+                     <li><a href="id15.html">ID</a></li>
+                     <li><a href="isocenterplacement.html">IsocenterPlacement</a></li>
+                     <li><a href="optimizationtype.html">OptimizationType</a></li>
+                     <li><a href="reviewtype.html">ReviewType</a></li>
+                     <li><a href="templatetype.html">TemplateType</a></li>
+                     <li><a href="xcoordinate.html">XCoordinate</a></li>
+                     <li><a href="ycoordinate.html">YCoordinate</a></li>
+                     <li><a href="zcoordinate.html">ZCoordinate</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

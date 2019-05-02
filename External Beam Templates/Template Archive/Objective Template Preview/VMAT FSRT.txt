@@ -1,0 +1,201 @@
+Objective Template  
+Id: VMAT FSRT 
+Status: Approved 
+Last Modified: July 06 2017 12:14:31:515 
+Diagnosis:  
+Treatment Site:  
+Description:  
+
+--------------------------------------------------------------------------------
+
+Optimization Objectives
+IMRT
+Default Smoothing X: 40 Default Smoothing Y: 30 
+Default Minimize Dose: 0 Default Optimization Type: Beamlet 
+Max Iterations: 1000 Max Optimize Time [min]: 100 
+Default Fixed Jaws:  Interpolate:  
+Use Colors:  
+
+Beam Angle Optimization
+Initial Field Distribution: Coplanar 
+Minimum Number of Fields: 5 
+Maximum Number of Fields: 9 
+Maximum Elevation Angle for Non-Coplanar Fields: 10 
+Maximum Collimator Variation: 10 
+Local Geometric Optimization Mode: None 
+
+Normal Tissue Objective
+Use: false 
+Automatic: false 
+Priority: 150 
+Distance From Target Border: 1 
+Start Dose: 105 
+End Dose: 60 
+Fall-off: 0.05 
+
+Arc Optimization
+Use MU Objective:  
+MU Objective Strength: 100 
+Minimum MU: 0 
+Maximum MU: 1500 
+Jaw Tracking:  
+
+Structure Objectives
+Structure Objective: Avoid INNER
+Volume Type: Control Surface Only:  
+Resolution [mm]: 1.77 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 3185.0 50 0 
+
+Structure Objective: Avoid MID
+Volume Type: Control Surface Only:  
+Resolution [mm]: 2.17 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1625.0 50 0 
+
+Structure Objective: Avoid OUTER
+Volume Type: Control Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1300.0 50 0 
+
+Structure Objective: BrainStem
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 2.41 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1200.0 50 0 
+
+Structure Objective: Cochlea L
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1200.0 50 0 
+
+Structure Objective: Cochlea R
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1200.0 50 0 
+
+Structure Objective: Globe L
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.53 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1200.0 50 0 
+
+Structure Objective: Globe R
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.53 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1200.0 50 0 
+
+Structure Objective: Lens L
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 400.0 50 0 
+
+Structure Objective: Lens R
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 400.0 50 0 
+
+Structure Objective: opt Brain
+Volume Type: Avoidance Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 1.00 540.0 125 0 
+
+Structure Objective: OpticChiasm
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1200.0 50 0 
+
+Structure Objective: OpticNerve L
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1200.0 50 0 
+
+Structure Objective: OpticNerve R
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1200.0 50 0 
+
+Structure Objective: PTV 1
+Volume Type: PTV Surface Only:  
+Resolution [mm]: 1.33 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 3250.0 70 0 
+Point lower 100.00 3250.0 70 0 
+
+Structure Objective: PTV 2
+Volume Type: PTV Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 3250.0 70 0 
+Point lower 100.00 3250.0 70 0 
+
+Structure Objective: PTV 3
+Volume Type: PTV Surface Only:  
+Resolution [mm]: 1.20 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 3250.0 70 0 
+Point lower 100.00 3250.0 70 0 
+
+Structure Objective: PTV 4
+Volume Type: PTV Surface Only:  
+Resolution [mm]: 1.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 3250.0 70 0 
+Point lower 100.00 3250.0 70 0 
+
+Structure Objective: Skin
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1000.0 50 0 
+
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,94 @@
+Objective Template  
+Id: VMAT SABR 60/8 
+Status: Approved 
+Last Modified: June 01 2017 12:05:25:666 
+Diagnosis:  
+Treatment Site:  
+Description:  
+
+--------------------------------------------------------------------------------
+
+Optimization Objectives
+IMRT
+Default Smoothing X: 40 Default Smoothing Y: 30 
+Default Minimize Dose: 0 Default Optimization Type: Beamlet 
+Max Iterations: 1000 Max Optimize Time [min]: 100 
+Default Fixed Jaws:  Interpolate:  
+Use Colors:  
+
+Beam Angle Optimization
+Initial Field Distribution: Coplanar 
+Minimum Number of Fields: 5 
+Maximum Number of Fields: 9 
+Maximum Elevation Angle for Non-Coplanar Fields: 10 
+Maximum Collimator Variation: 10 
+Local Geometric Optimization Mode: None 
+
+Normal Tissue Objective
+Use: true 
+Automatic: true 
+Priority: 80 
+Distance From Target Border: 0.3 
+Start Dose: 103 
+End Dose: 40 
+Fall-off: 0.07 
+
+Arc Optimization
+Use MU Objective:  
+MU Objective Strength: 100 
+Minimum MU: 0 
+Maximum MU: 5000 
+Jaw Tracking:  
+
+Structure Objectives
+Structure Objective: Body-PTV+20
+Volume Type: Avoidance Surface Only:  
+Resolution [mm]: 4.50 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1250.0 120 0 
+
+Structure Objective: Chest Wall
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 2.05 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 5750.0 50 0 
+
+Structure Objective: Lung B
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 2.05 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 8.00 2000.0 50 0 
+
+Structure Objective: PTV
+Volume Type: PTV Surface Only:  
+Resolution [mm]: 2.68 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 6000.0 100 0 
+Point lower 100.00 6000.0 120 0 
+
+Structure Objective: Skin
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 3.00 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 1500.0 100 0 
+
+Structure Objective: Spinal Canal
+Volume Type: Organ Surface Only:  
+Resolution [mm]: 2.05 
+
+Objectives
+Type Limit Volume [%] Total Dose [cGy] Priority Group 
+Point upper 0 2000.0 50 0 
+
+
+--------------------------------------------------------------------------------

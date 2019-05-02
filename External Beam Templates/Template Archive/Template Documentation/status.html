@@ -1,0 +1,209 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs for schema item Status in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link rel="stylesheet" type="text/css" href="styles/site.css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('ComplexType', 'status');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Definition Type:</b></td>
+               <td>ComplexType</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Name:</b></td>
+               <td>Status</td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Containing Schema:</b></td>
+               <td><a href="protocoltypes_xsd.html">ProtocolTypes.xsd</a></td>
+            </tr>
+            <tr>
+               <td class="label" width="120px;"><b>Abstract</b></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdDiagram" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Diagram:</b> 
+               </td>
+            </tr>
+            <tr id="xsdDiagram_body_id">
+               <td><map name="DiagramMap" id="DiagramMap">
+                     <area shape="rect" coords="168,492,352,517" href="approvalhistory.html" alt="Drilldown into ApprovalHistory"></area>
+                     <area shape="rect" coords="168,460,333,485" href="lastmodified.html" alt="Drilldown into LastModified"></area>
+                     <area shape="rect" coords="168,428,345,453" href="treatmentstyle1.html" alt="Drilldown into TreatmentStyle"></area>
+                     <area shape="rect" coords="168,396,310,421" href="mode2.html" alt="Drilldown into Mode"></area>
+                     <area shape="rect" coords="168,364,326,389" href="description.html" alt="Drilldown into Description"></area>
+                     <area shape="rect" coords="168,332,346,357" href="assignedusers.html" alt="Drilldown into AssignedUsers"></area>
+                     <area shape="rect" coords="168,300,339,325" href="treatmentsite.html" alt="Drilldown into TreatmentSite"></area>
+                     <area shape="rect" coords="168,268,318,293" href="diagnosis.html" alt="Drilldown into Diagnosis"></area>
+                     <area shape="rect" coords="168,117,385,260" href="approvalstatus.html" alt="Drilldown into ApprovalStatus"></area>
+                     <area shape="rect" coords="168,33,340,110" href="type10.html" alt="Drilldown into Type"></area>
+                     <area shape="rect" coords="168,1,310,26" href="id14.html" alt="Drilldown into ID"></area></map><img src="images/status.png" border="0" alt="XSD Diagram of Status" usemap="#DiagramMap"></img></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>&lt;xsd:complexType name="Status"&gt;
+    &lt;xsd:attribute name="ID" type="xsd:string" use="required" /&gt;
+    &lt;xsd:attribute name="Type" type="TemplateType" use="required" /&gt;
+    &lt;xsd:attribute name="ApprovalStatus" type="ApprovalStatus" use="required" /&gt;
+    &lt;xsd:attribute name="Diagnosis" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="TreatmentSite" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="AssignedUsers" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="Description" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="Mode" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="TreatmentStyle" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="LastModified" type="xsd:string" use="optional" /&gt;
+    &lt;xsd:attribute name="ApprovalHistory" type="xsd:string" use="required" /&gt;
+&lt;/xsd:complexType&gt;</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="childAttributes" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Child Attributes:</b></td>
+            </tr>
+            <tr id="childAttributes_body_id">
+               <td width="120px;"></td>
+               <td class="childTableHolder">
+                  <table class="childTable">
+                     <tr class="header">
+                        <td class="label first">Name</td>
+                        <td>Type</td>
+                        <td class="mid">Default Value</td>
+                        <td class="last">Use</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ID</td>
+                        <td><a href="id14.html">ID</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Type</td>
+                        <td><a href="type10.html">Type</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ApprovalStatus</td>
+                        <td><a href="approvalstatus.html">ApprovalStatus</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Diagnosis</td>
+                        <td><a href="diagnosis.html">Diagnosis</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TreatmentSite</td>
+                        <td><a href="treatmentsite.html">TreatmentSite</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">AssignedUsers</td>
+                        <td><a href="assignedusers.html">AssignedUsers</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Description</td>
+                        <td><a href="description.html">Description</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">Mode</td>
+                        <td><a href="mode2.html">Mode</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">TreatmentStyle</td>
+                        <td><a href="treatmentstyle1.html">TreatmentStyle</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">LastModified</td>
+                        <td><a href="lastmodified.html">LastModified</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Optional</td>
+                     </tr>
+                     <tr>
+                        <td class="first">ApprovalHistory</td>
+                        <td><a href="approvalhistory.html">ApprovalHistory</a></td>
+                        <td class="mid"></td>
+                        <td class="last">Required</td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="derivationTree" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Derivation Tree:</b></td>
+            </tr>
+            <tr id="derivationTree_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><b><i>Status</i></b></li>
+                     <ul>
+                        <li><a href="preview.html">Preview</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="preview1.html">Preview</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="preview2.html">Preview</a></li>
+                     </ul>
+                     <ul>
+                        <li><a href="preview3.html">Preview</a></li>
+                     </ul>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="references" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>References:</b></td>
+            </tr>
+            <tr id="references_body_id">
+               <td width="120px;"></td>
+               <td><a href="preview.html">Preview</a>, <a href="preview1.html">Preview</a>, <a href="preview2.html">Preview</a>, <a href="preview3.html">Preview</a></td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/" rel="nofollow">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

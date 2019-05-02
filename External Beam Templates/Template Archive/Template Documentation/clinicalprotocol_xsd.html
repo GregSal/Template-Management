@@ -1,0 +1,197 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
+      <title>Docs the schema ClinicalProtocol.xsd in Clinical Protocol Design</title>
+      <!-- saved from url=(0014)about:internet -->
+      <link href="styles/site.css" rel="stylesheet" type="text/css"></link><script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script><script type="text/javascript" src="scripts/highlight.pack.js"></script><script type="text/javascript" src="scripts/xmlstudio.js"></script><script type="text/javascript" src="scripts/jquery.cookie.js"></script></head>
+   <body style="margin:10px"><script type="text/javascript">
+         <!--
+                            EnsureInFrame('Schema', 'clinicalprotocol_xsd');
+                        --></script><div class="pageheader">
+         Documentation for Clinical Protocol Design
+      </div>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" width="120px;"><b>Schema Name:</b></td>
+               <td>ClinicalProtocol.xsd</td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label"><img id="xsdCode" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>XSD Schema Code:</b> 
+               </td>
+            </tr>
+            <tr id="xsdCode_body_id">
+               <td><pre><code>
+&lt;xsd:schema elementFormDefault="qualified" attributeFormDefault="qualified" version="1.9" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+	&lt;!-- 		
+			Filename:			ClinicalProtocol.xsd
+			Copyright, Varian Medical systems, Inc., 2004
+			All Rights Reserved
+			Varian Proprietary
+--&gt;
+	&lt;!-- Common protocol types --&gt;
+	&lt;xsd:include schemaLocation="ProtocolTypes.xsd"/&gt;
+	&lt;!-- Schema for structures --&gt;
+	&lt;xsd:include schemaLocation="StructureTemplate.xsd"/&gt;
+	&lt;!-- Schema for plan geometry --&gt;
+	&lt;xsd:include schemaLocation="PlanTemplate.xsd"/&gt;
+	&lt;!-- Schema for objectives --&gt;
+	&lt;xsd:include schemaLocation="ObjectiveTemplate.xsd"/&gt;
+	&lt;!-- Clinical protocol schema elements --&gt;
+	&lt;xsd:element name="Item"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Type" type="xsd:nonNegativeInteger"/&gt;
+				&lt;xsd:element name="Modifier" type="xsd:nonNegativeInteger" nillable="true"/&gt;
+				&lt;xsd:element name="Parameter" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="Dose" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="TotalDose" type="xsd:double" nillable="true"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="ID" type="ID"/&gt;
+			&lt;xsd:attribute name="Primary" type="xsd:boolean"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="MeasureItem"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Type" type="xsd:nonNegativeInteger"/&gt;
+				&lt;xsd:element name="Modifier" type="xsd:nonNegativeInteger" nillable="true"/&gt;
+				&lt;xsd:element name="Value" type="xsd:double" nillable="true"/&gt;
+				&lt;xsd:element name="TypeSpecifier" type="xsd:double" nillable="true" minOccurs="0" maxOccurs="1"/&gt;
+				&lt;xsd:element name="ReportDQPValueInAbsoluteUnits" type="xsd:boolean" nillable="true"  minOccurs="0" maxOccurs="1"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="ID" type="ID"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="Phase"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Mode" type="xsd:string"/&gt;
+				&lt;xsd:element name="DefaultEnergyKV" type="xsd:integer" nillable="true"/&gt;
+				&lt;xsd:element name="FractionCount" type="xsd:nonNegativeInteger" nillable="true"/&gt;
+				&lt;xsd:element name="FractionsPerWeek" type="xsd:nonNegativeInteger" nillable="true"/&gt;
+				&lt;xsd:element name="FractionsPerDay" type="xsd:nonNegativeInteger" nillable="true"/&gt;
+				&lt;xsd:element name="TreatmentUnit" type="xsd:string"/&gt;
+				&lt;xsd:element name="TreatmentStyle" type="xsd:string"/&gt;
+				&lt;xsd:element name="ImmobilizationDevice" type="xsd:string" minOccurs="0"/&gt;
+				&lt;xsd:element name="LocalizationTechnique" type="xsd:string" minOccurs="0"/&gt;
+				&lt;xsd:element ref="Prescription"/&gt;
+				&lt;xsd:element ref="PlanTemplate"/&gt;
+				&lt;xsd:element ref="ObjectiveTemplate" minOccurs="0"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="ID" type="ID" use="required"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="Phases"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element ref="Phase" minOccurs="0" maxOccurs="unbounded"/&gt;
+			&lt;/xsd:sequence&gt;
+		&lt;/xsd:complexType&gt;
+		&lt;xsd:unique name="UniquePhaseId"&gt;
+			&lt;xsd:selector xpath="Phase"/&gt;
+			&lt;xsd:field xpath="@ID"/&gt;
+		&lt;/xsd:unique&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="Prescription"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element ref="Item" minOccurs="0" maxOccurs="unbounded"/&gt;
+				&lt;xsd:element ref="MeasureItem" minOccurs="0" maxOccurs="unbounded"/&gt;
+			&lt;/xsd:sequence&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="Protocol"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Preview" type="Status"/&gt;
+				&lt;xsd:element ref="StructureTemplate"/&gt;
+				&lt;xsd:element name="FieldAlignmentRules" type="xsd:string"/&gt;
+				&lt;xsd:element ref="Phases"/&gt;
+				&lt;xsd:element ref="Review"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="Hash" type="xsd:string" use="optional"/&gt;
+			&lt;xsd:attribute name="Version" type="xsd:string" use="required"/&gt;
+			&lt;xsd:attribute name="Key" type="xsd:integer" use="optional"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="Review"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element ref="ReviewStructures" minOccurs="0"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="ShowMin" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowMax" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowMean" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowModal" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowMedian" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowStdDev" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowEUD" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowTCP" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowNTCP" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowNDR" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowEquivalentSphereDiameter" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowConformityIndex" type="xsd:boolean"/&gt;
+			&lt;xsd:attribute name="ShowGradientMeasure" type="xsd:boolean"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="ReviewStructure"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element name="Type" type="ReviewType"/&gt;
+				&lt;xsd:element name="Item" type="xsd:string"/&gt;
+			&lt;/xsd:sequence&gt;
+			&lt;xsd:attribute name="Selected" type="xsd:boolean" use="optional"/&gt;
+		&lt;/xsd:complexType&gt;
+	&lt;/xsd:element&gt;
+	&lt;xsd:element name="ReviewStructures"&gt;
+		&lt;xsd:complexType&gt;
+			&lt;xsd:sequence&gt;
+				&lt;xsd:element ref="ReviewStructure" minOccurs="0" maxOccurs="unbounded"/&gt;
+			&lt;/xsd:sequence&gt;
+		&lt;/xsd:complexType&gt;
+		&lt;xsd:unique name="UniqueItem"&gt;
+			&lt;xsd:selector xpath="ReviewStructure"/&gt;
+			&lt;xsd:field xpath="@Item"/&gt;
+		&lt;/xsd:unique&gt;
+	&lt;/xsd:element&gt;
+&lt;/xsd:schema&gt;
+</code></pre></td>
+            </tr>
+         </tbody>
+      </table>
+      <table cellpadding="0" cellspacing="0" class="mainHelp2">
+         <tbody>
+            <tr>
+               <td class="label" colspan="2"><img id="Element" class="expand" height="11" width="11" src="images/minus.gif" alt="Collapse"></img> <b>Elements:</b></td>
+            </tr>
+            <tr id="Element_body_id">
+               <td width="120px;"></td>
+               <td>
+                  <ul>
+                     <li><a href="item.html">Item</a></li>
+                     <li><a href="measureitem.html">MeasureItem</a></li>
+                     <li><a href="phase.html">Phase</a></li>
+                     <li><a href="phases.html">Phases</a></li>
+                     <li><a href="prescription.html">Prescription</a></li>
+                     <li><a href="protocol.html">Protocol</a></li>
+                     <li><a href="review.html">Review</a></li>
+                     <li><a href="reviewstructure.html">ReviewStructure</a></li>
+                     <li><a href="reviewstructures.html">ReviewStructures</a></li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      <div class="pagefooter">
+         			Documentation for Clinical Protocol Design<br/>
+         Generated using 
+         <a href="https://www.liquid-technologies.com/">Liquid Studio 2019 - Developer Bundle (Trial) 17.0.5.9320</a></div>
+   </body>
+</html>

@@ -1,0 +1,535 @@
+IMRT CNS 40/15 	BrainStem	Point	upper	0	3000.0	60	0	
+IMRT CNS 40/15 	CTV	Point	upper	0	4000.0	100	0	
+IMRT CNS 40/15 	CTV	Point	lower	100.00	4000.0	120	0	
+IMRT CNS 40/15 	Globe L	Point	upper	0	2000.0	50	0	
+IMRT CNS 40/15 	Globe R	Point	upper	0	2000.0	50	0	
+IMRT CNS 40/15 	Lens L	Point	upper	0	250.0	50	0	
+IMRT CNS 40/15 	Lens R	Point	upper	0	250.0	50	0	
+IMRT CNS 40/15 	opt Brain	Point	upper	60.00	1000.0	50	0	
+IMRT CNS 40/15 	opt Brain	Point	upper	25.00	2500.0	50	0	
+IMRT CNS 40/15 	opt Brain	Point	upper	5.00	4000.0	50	0	
+IMRT CNS 40/15 	opt PTV	Point	upper	0	4000.0	100	0	
+IMRT CNS 40/15 	opt PTV	Point	lower	100.00	4000.0	120	0	
+IMRT CNS 40/15 	OpticChiasm	Point	upper	0	3000.0	60	0	
+IMRT CNS 40/15 	OpticNerve L	Point	upper	0	3000.0	60	0	
+IMRT CNS 40/15 	OpticNerve R	Point	upper	0	3000.0	60	0	
+IMRT CNS 40/15 	SpinalCanal	Point	upper	0	2000.0	60	0	
+IMRT CNS 60/30 	BrainStem	Point	upper	0	3000.0	60	0	
+IMRT CNS 60/30 	CTV	Point	upper	0	6000.0	100	0	
+IMRT CNS 60/30 	CTV	Point	lower	100.00	6000.0	120	0	
+IMRT CNS 60/30 	Globe L	Point	upper	0	2000.0	50	0	
+IMRT CNS 60/30 	Globe R	Point	upper	0	2000.0	50	0	
+IMRT CNS 60/30 	Lens L	Point	upper	0	250.0	50	0	
+IMRT CNS 60/30 	Lens R	Point	upper	0	250.0	50	0	
+IMRT CNS 60/30 	opt Brain	Point	upper	60.00	1000.0	50	0	
+IMRT CNS 60/30 	opt Brain	Point	upper	25.00	2500.0	50	0	
+IMRT CNS 60/30 	opt Brain	Point	upper	5.00	4000.0	50	0	
+IMRT CNS 60/30 	opt PTV	Point	upper	0	6000.0	100	0	
+IMRT CNS 60/30 	opt PTV	Point	lower	100.00	6000.0	120	0	
+IMRT CNS 60/30 	OpticChiasm	Point	upper	0	3000.0	60	0	
+IMRT CNS 60/30 	OpticNerve L	Point	upper	0	3000.0	60	0	
+IMRT CNS 60/30 	OpticNerve R	Point	upper	0	3000.0	60	0	
+IMRT CNS 60/30 	SpinalCanal	Point	upper	0	2000.0	60	0	
+VMAT ABDO 	CTV	Point	upper	0	4600.0	110	0	
+VMAT ABDO 	CTV	Point	lower	100.00	4600.0	120	0	
+VMAT ABDO 	Kidney L	Point	upper	50.00	1000.0	70	0	
+VMAT ABDO 	Kidney L	Point	upper	30.00	1300.0	70	0	
+VMAT ABDO 	Kidney L	Point	upper	10.00	1600.0	70	0	
+VMAT ABDO 	Kidney R	Point	upper	50.00	1000.0	70	0	
+VMAT ABDO 	Kidney R	Point	upper	30.00	1300.0	70	0	
+VMAT ABDO 	Kidney R	Point	upper	10.00	1600.0	70	0	
+VMAT ABDO 	Liver	Point	upper	10.00	2000.0	50	0	
+VMAT ABDO 	PTV	Point	upper	0	4500.0	100	0	
+VMAT ABDO 	PTV	Point	lower	100.00	4500.0	120	0	
+VMAT ABDO 	Spinal Canal	Point	upper	0	2500.0	60	0	
+VMAT ANAL CANAL 	Small Bowel	Point	upper	50.00	2000.0	50	0	
+VMAT ANAL CANAL 	Small Bowel	Point	upper	25.00	3000.0	50	0	
+VMAT ANAL CANAL 	Small Bowel	Point	upper	10.00	3300.0	50	0	
+VMAT ANAL CANAL 	Small Bowel	Point	upper	0	3600.0	50	0	
+VMAT ANAL CANAL 	opt PTV 36	Point	upper	0	3600.0	100	0	
+VMAT ANAL CANAL 	opt PTV 36	Point	lower	100.00	3600.0	120	0	
+VMAT ANAL CANAL 	Large Bowel	Point	upper	60.00	3000.0	50	0	
+VMAT ANAL CANAL 	Large Bowel	Point	upper	0	3400.0	50	0	
+VMAT ANAL CANAL 	iliac crest R	Point	upper	60.00	1000.0	50	0	
+VMAT ANAL CANAL 	iliac crest R	Point	upper	35.00	2500.0	50	0	
+VMAT ANAL CANAL 	iliac crest R	Point	upper	20.00	3000.0	50	0	
+VMAT ANAL CANAL 	iliac crest R	Point	upper	5.00	3500.0	50	0	
+VMAT ANAL CANAL 	iliac crest L	Point	upper	60.00	1000.0	50	0	
+VMAT ANAL CANAL 	iliac crest L	Point	upper	35.00	2500.0	50	0	
+VMAT ANAL CANAL 	iliac crest L	Point	upper	20.00	3000.0	50	0	
+VMAT ANAL CANAL 	iliac crest L	Point	upper	5.00	3500.0	50	0	
+VMAT ANAL CANAL 	Genitalia	Point	upper	0	3240.0	50	0	
+VMAT ANAL CANAL 	Femoral Head R	Point	upper	0	3200.0	50	0	
+VMAT ANAL CANAL 	Femoral Head L	Point	upper	0	3200.0	50	0	
+VMAT ANAL CANAL 	CTV 36	Point	upper	0	3600.0	100	0	
+VMAT ANAL CANAL 	CTV 36	Point	lower	100.00	3600.0	120	0	
+VMAT ANAL CANAL 	Bladder	Point	upper	0	3600.0	65	0	
+VMAT ANAL CANAL 	opt Bladder	Point	upper	60.00	2000.0	50	0	
+VMAT ANAL CANAL 	opt Bladder	Point	upper	35.00	2500.0	50	0	
+VMAT ANAL CANAL 	opt Bladder	Point	upper	20.00	3000.0	50	0	
+VMAT ANAL CANAL 	opt Bladder	Point	upper	0	3600.0	50	0	
+VMAT ANAL CANAL 	BODY-PTV+10	Point	upper	0	3240.0	50	0	
+VMAT BLAD 20/5 	Avoid a Rectum	Point	upper	0	800.0	50	0	
+VMAT BLAD 20/5 	Avoid b Rectum	Point	upper	0	400.0	50	0	
+VMAT BLAD 20/5 	CTV	Point	upper	0	2050.0	100	0	
+VMAT BLAD 20/5 	CTV	Point	lower	100.00	2100.0	110	0	
+VMAT BLAD 20/5 	opt PTV	Point	upper	0	1950.0	100	0	
+VMAT BLAD 20/5 	opt PTV	Point	upper	0	1950.0	100	0	
+VMAT BLAD 20/5 	opt PTV	Point	lower	100.00	2100.0	120	0	
+VMAT BLAD 20/5 	opt Rectum	Point	upper	50.00	1000.0	50	0	
+VMAT BLAD 20/5 	opt Rectum	Point	upper	25.00	1400.0	50	0	
+VMAT BLAD 20/5 	opt Rectum	Point	upper	15.00	1600.0	50	0	
+VMAT BLAD 20/5 	opt Rectum	Point	upper	5.00	1800.0	50	0	
+VMAT BLAD 40/15 	Avoid a Rectum	Point	upper	0	1600.0	50	0	
+VMAT BLAD 40/15 	Avoid b Rectum	Point	upper	0	800.0	50	0	
+VMAT BLAD 40/15 	CTV	Point	upper	0	4100.0	100	0	
+VMAT BLAD 40/15 	CTV	Point	lower	100.00	4200.0	120	0	
+VMAT BLAD 40/15 	opt PTV	Point	upper	0	3900.0	100	0	
+VMAT BLAD 40/15 	opt PTV	Point	upper	0	3900.0	100	0	
+VMAT BLAD 40/15 	opt PTV	Point	lower	100.00	4100.0	120	0	
+VMAT BLAD 40/15 	opt Rectum	Point	upper	50.00	1500.0	50	0	
+VMAT BLAD 40/15 	opt Rectum	Point	upper	25.00	2200.0	50	0	
+VMAT BLAD 40/15 	opt Rectum	Point	upper	15.00	3000.0	50	0	
+VMAT BLAD 40/15 	opt Rectum	Point	upper	5.00	3500.0	50	0	
+VMAT BLAD 40/15 	Small Bowel	Point	upper	0	3800.0	50	0	
+VMAT BLAD 52.5/2 	Avoid a Rectum	Point	upper	0	1500.0	50	0	
+VMAT BLAD 52.5/2 	Avoid b Rectum	Point	upper	0	800.0	50	0	
+VMAT BLAD 52.5/2 	CTV	Point	upper	0	5300.0	100	0	
+VMAT BLAD 52.5/2 	CTV	Point	lower	100.00	5450.0	100	0	
+VMAT BLAD 52.5/2 	opt PTV	Point	upper	0	5100.0	100	0	
+VMAT BLAD 52.5/2 	opt PTV	Point	upper	0	5100.0	100	0	
+VMAT BLAD 52.5/2 	opt PTV	Point	lower	100.00	5450.0	120	0	
+VMAT BLAD 52.5/2 	opt Rectum	Point	upper	40.00	2000.0	50	0	
+VMAT BLAD 52.5/2 	opt Rectum	Point	upper	25.00	2500.0	50	0	
+VMAT BLAD 52.5/2 	opt Rectum	Point	upper	15.00	3000.0	50	0	
+VMAT BLAD 52.5/2 	opt Rectum	Point	upper	5.00	3200.0	50	0	
+VMAT BLAD 52.5/2 	Small Bowel	Point	upper	0	4800.0	50	0	
+VMAT CNS 40/15 	BrainStem	Point	upper	0	3000.0	60	0	
+VMAT CNS 40/15 	CTV	Point	upper	0	4000.0	100	0	
+VMAT CNS 40/15 	CTV	Point	lower	100.00	4000.0	120	0	
+VMAT CNS 40/15 	Globe L	Point	upper	0	2000.0	50	0	
+VMAT CNS 40/15 	Globe R	Point	upper	0	2000.0	50	0	
+VMAT CNS 40/15 	Lens L	Point	upper	0	250.0	50	0	
+VMAT CNS 40/15 	Lens R	Point	upper	0	250.0	50	0	
+VMAT CNS 40/15 	opt Brain	Point	upper	60.00	1000.0	50	0	
+VMAT CNS 40/15 	opt Brain	Point	upper	25.00	2500.0	50	0	
+VMAT CNS 40/15 	opt Brain	Point	upper	5.00	4000.0	50	0	
+VMAT CNS 40/15 	opt PTV	Point	upper	0	4000.0	100	0	
+VMAT CNS 40/15 	opt PTV	Point	lower	100.00	4000.0	120	0	
+VMAT CNS 40/15 	OpticChiasm	Point	upper	0	3000.0	60	0	
+VMAT CNS 40/15 	OpticNerve L	Point	upper	0	3000.0	60	0	
+VMAT CNS 40/15 	OpticNerve R	Point	upper	0	3000.0	60	0	
+VMAT CNS 40/15 	SpinalCanal	Point	upper	0	2000.0	60	0	
+VMAT CNS 60/30 	BrainStem	Point	upper	0	3000.0	50	0	
+VMAT CNS 60/30 	CTV	Point	upper	0	6000.0	100	0	
+VMAT CNS 60/30 	CTV	Point	lower	100.00	6000.0	120	0	
+VMAT CNS 60/30 	Globe L	Point	upper	0	2000.0	50	0	
+VMAT CNS 60/30 	Globe R	Point	upper	0	2000.0	50	0	
+VMAT CNS 60/30 	Lens L	Point	upper	0	250.0	50	0	
+VMAT CNS 60/30 	Lens R	Point	upper	0	250.0	50	0	
+VMAT CNS 60/30 	opt PTV	Point	upper	0	6000.0	110	0	
+VMAT CNS 60/30 	opt PTV	Point	lower	100.00	6000.0	120	0	
+VMAT CNS 60/30 	OpticChiasm	Point	upper	0	3000.0	50	0	
+VMAT CNS 60/30 	OpticNerve L	Point	upper	0	3000.0	50	0	
+VMAT CNS 60/30 	OpticNerve R	Point	upper	0	3000.0	50	0	
+VMAT CNS 60/30 	SpinalCanal	Point	upper	0	2000.0	50	0	
+VMAT ESO 	CTV	Point	lower	100.00	5000.0	120	0	
+VMAT ESO 	CTV	Point	upper	0	5000.0	100	0	
+VMAT ESO 	Heart	Point	upper	50.00	2500.0	50	0	
+VMAT ESO 	Heart	Point	upper	10.00	4000.0	50	0	
+VMAT ESO 	Lung B	Point	upper	50.00	500.0	100	0	
+VMAT ESO 	Lung B	Point	upper	20.00	2000.0	100	0	
+VMAT ESO 	PTV	Point	upper	0	5000.0	100	0	
+VMAT ESO 	PTV	Point	lower	100.00	5000.0	120	0	
+VMAT ESO 	Spinal Canal	Point	upper	0	2000.0	60	0	
+VMAT ESO 	Liver	Point	upper	10.00	2000.0	50	0	
+VMAT ESO 	Kidney L	Point	upper	10.00	1600.0	50	0	
+VMAT ESO 	Kidney L	Point	upper	30.00	1300.0	50	0	
+VMAT ESO 	Kidney L	Point	upper	50.00	1000.0	50	0	
+VMAT ESO 	Kidney R	Point	upper	10.00	1600.0	50	0	
+VMAT ESO 	Kidney R	Point	upper	30.00	1300.0	50	0	
+VMAT ESO 	Kidney R	Point	upper	50.00	1000.0	50	0	
+VMAT FSRT 	Avoid INNER	Point	upper	0	3185.0	50	0	
+VMAT FSRT 	Avoid MID	Point	upper	0	1625.0	50	0	
+VMAT FSRT 	Avoid OUTER	Point	upper	0	1300.0	50	0	
+VMAT FSRT 	BrainStem	Point	upper	0	1200.0	50	0	
+VMAT FSRT 	Cochlea L	Point	upper	0	1200.0	50	0	
+VMAT FSRT 	Cochlea R	Point	upper	0	1200.0	50	0	
+VMAT FSRT 	Globe L	Point	upper	0	1200.0	50	0	
+VMAT FSRT 	Globe R	Point	upper	0	1200.0	50	0	
+VMAT FSRT 	Lens L	Point	upper	0	400.0	50	0	
+VMAT FSRT 	Lens R	Point	upper	0	400.0	50	0	
+VMAT FSRT 	opt Brain	Point	upper	1.00	540.0	125	0	
+VMAT FSRT 	OpticChiasm	Point	upper	0	1200.0	50	0	
+VMAT FSRT 	OpticNerve L	Point	upper	0	1200.0	50	0	
+VMAT FSRT 	OpticNerve R	Point	upper	0	1200.0	50	0	
+VMAT FSRT 	PTV 1	Point	upper	0	3250.0	70	0	
+VMAT FSRT 	PTV 1	Point	lower	100.00	3250.0	70	0	
+VMAT FSRT 	PTV 2	Point	upper	0	3250.0	70	0	
+VMAT FSRT 	PTV 2	Point	lower	100.00	3250.0	70	0	
+VMAT FSRT 	PTV 3	Point	upper	0	3250.0	70	0	
+VMAT FSRT 	PTV 3	Point	lower	100.00	3250.0	70	0	
+VMAT FSRT 	PTV 4	Point	upper	0	3250.0	70	0	
+VMAT FSRT 	PTV 4	Point	lower	100.00	3250.0	70	0	
+VMAT FSRT 	Skin	Point	upper	0	1000.0	50	0	
+VMAT GYNE 45/25 	Femoral Head L	Point	upper	10.00	2500.0	50	0	
+VMAT GYNE 45/25 	Femoral Head R	Point	upper	10.00	2500.0	50	0	
+VMAT GYNE 45/25 	opt Bladder	Point	upper	60.00	2500.0	50	0	
+VMAT GYNE 45/25 	opt Bladder	Point	upper	35.00	3500.0	50	0	
+VMAT GYNE 45/25 	opt Bladder	Point	upper	20.00	4000.0	50	0	
+VMAT GYNE 45/25 	opt Bladder	Point	upper	5.00	4500.0	50	0	
+VMAT GYNE 45/25 	opt Bone Marrow	Point	upper	80.00	1000.0	50	0	
+VMAT GYNE 45/25 	opt Bone Marrow	Point	upper	50.00	2500.0	50	0	
+VMAT GYNE 45/25 	opt Bone Marrow	Point	upper	20.00	3000.0	50	0	
+VMAT GYNE 45/25 	opt Bone Marrow	Point	upper	10.00	3500.0	50	0	
+VMAT GYNE 45/25 	opt Bowel Space	Point	upper	50.00	1000.0	50	0	
+VMAT GYNE 45/25 	opt Bowel Space	Point	upper	25.00	2000.0	50	0	
+VMAT GYNE 45/25 	opt Bowel Space	Point	upper	10.00	3000.0	50	0	
+VMAT GYNE 45/25 	opt Bowel Space	Point	upper	0	4000.0	50	0	
+VMAT GYNE 45/25 	opt Rectum	Point	upper	60.00	2500.0	50	0	
+VMAT GYNE 45/25 	opt Rectum	Point	upper	50.00	3000.0	50	0	
+VMAT GYNE 45/25 	opt Rectum	Point	upper	30.00	3500.0	50	0	
+VMAT GYNE 45/25 	opt Rectum	Point	upper	10.00	4000.0	50	0	
+VMAT GYNE 45/25 	opt PTV	Point	upper	0	4500.0	100	0	
+VMAT GYNE 45/25 	opt PTV	Point	lower	100.00	4500.0	120	0	
+VMAT H&N 50/20 	OpticChiasm	Point	upper	0	4000.0	50	0	
+VMAT H&N 50/20 	OpticNerve L	Point	upper	0	4500.0	50	0	
+VMAT H&N 50/20 	OpticNerve R	Point	upper	0	4500.0	50	0	
+VMAT H&N 50/20 	Lens R	Point	upper	0	500.0	70	0	
+VMAT H&N 50/20 	Lens L	Point	upper	0	500.0	70	0	
+VMAT H&N 50/20 	Larynx	Point	upper	20.00	2000.0	50	0	
+VMAT H&N 50/20 	Larynx	Point	upper	2.00	4500.0	50	0	
+VMAT H&N 50/20 	Cochlea R	Point	upper	20.00	1500.0	50	0	
+VMAT H&N 50/20 	Cochlea R	Point	upper	2.00	3000.0	50	0	
+VMAT H&N 50/20 	Cochlea L	Point	upper	20.00	1500.0	50	0	
+VMAT H&N 50/20 	Cochlea L	Point	upper	2.00	3000.0	50	0	
+VMAT H&N 50/20 	BrainStem	Point	upper	0	2000.0	80	0	
+VMAT H&N 50/20 	SpinalCanal	Point	upper	0	1500.0	80	0	
+VMAT H&N 50/20 	SpinalCanal	Point	upper	20.00	500.0	80	0	
+VMAT H&N 50/20 	SpinalCanal PRV5	Point	upper	0	3500.0	80	0	
+VMAT H&N 50/20 	opt Parotid L	Point	upper	20.00	1000.0	50	0	
+VMAT H&N 50/20 	opt Parotid L	Point	upper	5.00	3000.0	50	0	
+VMAT H&N 50/20 	opt Parotid L	Point	upper	2.00	4500.0	50	0	
+VMAT H&N 50/20 	opt Parotid R	Point	upper	20.00	1000.0	50	0	
+VMAT H&N 50/20 	opt Parotid R	Point	upper	5.00	3000.0	50	0	
+VMAT H&N 50/20 	opt Parotid R	Point	upper	2.00	4500.0	50	0	
+VMAT H&N 50/20 	CTV	Point	upper	0	5000.0	100	0	
+VMAT H&N 50/20 	CTV	Point	lower	100.00	5100.0	120	0	
+VMAT H&N 50/20 	Globe L	Point	upper	0	4000.0	50	0	
+VMAT H&N 50/20 	Globe R	Point	upper	0	4000.0	50	0	
+VMAT H&N 50/20 	opt PTV	Point	upper	0	5000.0	100	0	
+VMAT H&N 50/20 	opt PTV	Point	lower	100.00	5100.0	120	0	
+VMAT H&N 60/30 	BrainStem	Point	upper	0	2000.0	80	0	
+VMAT H&N 60/30 	Cochlea L	Point	upper	20.00	1500.0	50	0	
+VMAT H&N 60/30 	Cochlea L	Point	upper	2.00	3000.0	50	0	
+VMAT H&N 60/30 	Cochlea R	Point	upper	20.00	1500.0	50	0	
+VMAT H&N 60/30 	Cochlea R	Point	upper	2.00	3000.0	50	0	
+VMAT H&N 60/30 	CTV 60	Point	upper	0	6000.0	100	0	
+VMAT H&N 60/30 	CTV 60	Point	lower	100.00	6100.0	120	0	
+VMAT H&N 60/30 	Globe L	Point	upper	0	4000.0	50	0	
+VMAT H&N 60/30 	Globe R	Point	upper	0	4000.0	50	0	
+VMAT H&N 60/30 	Larynx	Point	upper	20.00	2000.0	50	0	
+VMAT H&N 60/30 	Larynx	Point	upper	2.00	5400.0	50	0	
+VMAT H&N 60/30 	Lens L	Point	upper	0	500.0	70	0	
+VMAT H&N 60/30 	Lens R	Point	upper	0	500.0	70	0	
+VMAT H&N 60/30 	opt Parotid L	Point	upper	20.00	1000.0	50	0	
+VMAT H&N 60/30 	opt Parotid L	Point	upper	5.00	3000.0	50	0	
+VMAT H&N 60/30 	opt Parotid L	Point	upper	2.00	5000.0	50	0	
+VMAT H&N 60/30 	opt Parotid R	Point	upper	20.00	1000.0	50	0	
+VMAT H&N 60/30 	opt Parotid R	Point	upper	5.00	3000.0	50	0	
+VMAT H&N 60/30 	opt Parotid R	Point	upper	2.00	5000.0	50	0	
+VMAT H&N 60/30 	opt PTV 54 L a	Point	upper	5.00	5400.0	100	0	
+VMAT H&N 60/30 	opt PTV 54 L a	Point	upper	0	5800.0	100	0	
+VMAT H&N 60/30 	opt PTV 54 L a	Point	lower	100.00	5500.0	120	0	
+VMAT H&N 60/30 	opt PTV 54 L b	Point	upper	0	5400.0	100	0	
+VMAT H&N 60/30 	opt PTV 54 L b	Point	lower	100.00	5500.0	120	0	
+VMAT H&N 60/30 	opt PTV 54 R a	Point	upper	5.00	5400.0	100	0	
+VMAT H&N 60/30 	opt PTV 54 R a	Point	upper	0	5800.0	100	0	
+VMAT H&N 60/30 	opt PTV 54 R a	Point	lower	100.00	5500.0	120	0	
+VMAT H&N 60/30 	opt PTV 54 R b	Point	upper	0	5400.0	100	0	
+VMAT H&N 60/30 	opt PTV 54 R b	Point	lower	100.00	5500.0	120	0	
+VMAT H&N 60/30 	OpticChiasm	Point	upper	0	4000.0	50	0	
+VMAT H&N 60/30 	OpticNerve L	Point	upper	0	4500.0	50	0	
+VMAT H&N 60/30 	OpticNerve R	Point	upper	0	4500.0	50	0	
+VMAT H&N 60/30 	PTV 60	Point	upper	0	6000.0	100	0	
+VMAT H&N 60/30 	PTV 60	Point	lower	100.00	6100.0	140	0	
+VMAT H&N 60/30 	SpinalCanal	Point	upper	0	1500.0	80	0	
+VMAT H&N 60/30 	SpinalCanal	Point	upper	20.00	500.0	80	0	
+VMAT H&N 60/30 	SpinalCanal PRV5	Point	upper	0	3500.0	80	0	
+VMAT H&N 66/33 	BrainStem	Point	upper	0	2000.0	80	0	
+VMAT H&N 66/33 	Cochlea L	Point	upper	20.00	1500.0	50	0	
+VMAT H&N 66/33 	Cochlea L	Point	upper	2.00	3000.0	50	0	
+VMAT H&N 66/33 	Cochlea R	Point	upper	20.00	1500.0	50	0	
+VMAT H&N 66/33 	Cochlea R	Point	upper	2.00	3000.0	50	0	
+VMAT H&N 66/33 	CTV 66	Point	upper	0	6600.0	100	0	
+VMAT H&N 66/33 	CTV 66	Point	lower	100.00	6700.0	120	0	
+VMAT H&N 66/33 	Globe L	Point	upper	0	4000.0	50	0	
+VMAT H&N 66/33 	Globe R	Point	upper	0	4000.0	50	0	
+VMAT H&N 66/33 	Larynx	Point	upper	20.00	2000.0	50	0	
+VMAT H&N 66/33 	Larynx	Point	upper	2.00	5400.0	50	0	
+VMAT H&N 66/33 	Lens L	Point	upper	0	500.0	70	0	
+VMAT H&N 66/33 	Lens R	Point	upper	0	500.0	70	0	
+VMAT H&N 66/33 	opt Parotid L	Point	upper	20.00	1000.0	60	0	
+VMAT H&N 66/33 	opt Parotid L	Point	upper	5.00	3000.0	60	0	
+VMAT H&N 66/33 	opt Parotid L	Point	upper	2.00	5000.0	60	0	
+VMAT H&N 66/33 	opt Parotid R	Point	upper	20.00	1000.0	60	0	
+VMAT H&N 66/33 	opt Parotid R	Point	upper	5.00	3000.0	60	0	
+VMAT H&N 66/33 	opt Parotid R	Point	upper	2.00	5000.0	60	0	
+VMAT H&N 66/33 	opt PTV 54 L a	Point	upper	0	5800.0	100	0	
+VMAT H&N 66/33 	opt PTV 54 L a	Point	upper	5.00	5400.0	100	0	
+VMAT H&N 66/33 	opt PTV 54 L a	Point	lower	100.00	5500.0	120	0	
+VMAT H&N 66/33 	opt PTV 54 L b	Point	upper	0	5400.0	100	0	
+VMAT H&N 66/33 	opt PTV 54 L b	Point	lower	100.00	5500.0	120	0	
+VMAT H&N 66/33 	opt PTV 54 R a	Point	upper	5.00	5400.0	100	0	
+VMAT H&N 66/33 	opt PTV 54 R a	Point	upper	0	5800.0	100	0	
+VMAT H&N 66/33 	opt PTV 54 R a	Point	lower	100.00	5500.0	120	0	
+VMAT H&N 66/33 	opt PTV 54 R b	Point	upper	0	5400.0	100	0	
+VMAT H&N 66/33 	opt PTV 54 R b	Point	lower	100.00	5500.0	120	0	
+VMAT H&N 66/33 	opt PTV 60 a	Point	upper	5.00	6000.0	100	0	
+VMAT H&N 66/33 	opt PTV 60 a	Point	upper	0	6300.0	100	0	
+VMAT H&N 66/33 	opt PTV 60 a	Point	lower	100.00	6100.0	120	0	
+VMAT H&N 66/33 	opt PTV 60 b	Point	upper	0	6000.0	100	0	
+VMAT H&N 66/33 	opt PTV 60 b	Point	lower	100.00	6100.0	120	0	
+VMAT H&N 66/33 	opt PTV 66	Point	upper	0	6600.0	100	0	
+VMAT H&N 66/33 	opt PTV 66	Point	lower	100.00	6700.0	140	0	
+VMAT H&N 66/33 	OpticChiasm	Point	upper	0	4000.0	50	0	
+VMAT H&N 66/33 	OpticNerve L	Point	upper	0	4500.0	50	0	
+VMAT H&N 66/33 	OpticNerve R	Point	upper	0	4500.0	50	0	
+VMAT H&N 66/33 	Orbit L	Point	upper	0	4000.0	50	0	
+VMAT H&N 66/33 	Orbit R	Point	upper	0	4000.0	50	0	
+VMAT H&N 66/33 	PRV5 SpinalCanal	Point	upper	0	3500.0	80	0	
+VMAT H&N 66/33 	SpinalCanal	Point	upper	20.00	500.0	80	0	
+VMAT H&N 66/33 	SpinalCanal	Point	upper	0	1500.0	80	0	
+VMAT H&N 66/33 	SpinalCanal PRV5	Point	upper	0	3500.0	80	0	
+VMAT H&N 70/35 	BrainStem	Point	upper	0	2000.0	80	0	
+VMAT H&N 70/35 	Cochlea L	Point	upper	20.00	1500.0	50	0	
+VMAT H&N 70/35 	Cochlea L	Point	upper	2.00	3000.0	50	0	
+VMAT H&N 70/35 	Cochlea R	Point	upper	20.00	1500.0	50	0	
+VMAT H&N 70/35 	Cochlea R	Point	upper	2.00	3000.0	50	0	
+VMAT H&N 70/35 	CTV 70	Point	upper	0	7000.0	100	0	
+VMAT H&N 70/35 	CTV 70	Point	lower	100.00	7100.0	120	0	
+VMAT H&N 70/35 	Globe L	Point	upper	0	4000.0	50	0	
+VMAT H&N 70/35 	Globe R	Point	upper	0	4000.0	50	0	
+VMAT H&N 70/35 	Larynx	Point	upper	20.00	2000.0	50	0	
+VMAT H&N 70/35 	Larynx	Point	upper	2.00	5400.0	50	0	
+VMAT H&N 70/35 	Lens L	Point	upper	0	500.0	70	0	
+VMAT H&N 70/35 	Lens R	Point	upper	0	500.0	70	0	
+VMAT H&N 70/35 	opt Parotid L	Point	upper	20.00	1000.0	60	0	
+VMAT H&N 70/35 	opt Parotid L	Point	upper	5.00	3000.0	60	0	
+VMAT H&N 70/35 	opt Parotid L	Point	upper	2.00	5000.0	60	0	
+VMAT H&N 70/35 	opt Parotid R	Point	upper	20.00	1000.0	60	0	
+VMAT H&N 70/35 	opt Parotid R	Point	upper	5.00	3000.0	60	0	
+VMAT H&N 70/35 	opt Parotid R	Point	upper	2.00	5000.0	60	0	
+VMAT H&N 70/35 	opt PTV 56 L a	Point	upper	0	6500.0	100	0	
+VMAT H&N 70/35 	opt PTV 56 L a	Point	upper	5.00	5600.0	100	0	
+VMAT H&N 70/35 	opt PTV 56 L a	Point	lower	100.00	5700.0	120	0	
+VMAT H&N 70/35 	opt PTV 56 L b	Point	upper	0	5600.0	100	0	
+VMAT H&N 70/35 	opt PTV 56 L b	Point	lower	100.00	5700.0	120	0	
+VMAT H&N 70/35 	opt PTV 56 R a	Point	upper	5.00	5600.0	100	0	
+VMAT H&N 70/35 	opt PTV 56 R a	Point	upper	0	6500.0	100	0	
+VMAT H&N 70/35 	opt PTV 56 R a	Point	lower	100.00	5700.0	120	0	
+VMAT H&N 70/35 	opt PTV 56 R b	Point	upper	0	5600.0	100	0	
+VMAT H&N 70/35 	opt PTV 56 R b	Point	lower	100.00	5700.0	120	0	
+VMAT H&N 70/35 	opt PTV 70	Point	upper	0	7000.0	100	0	
+VMAT H&N 70/35 	opt PTV 70	Point	lower	100.00	7100.0	140	0	
+VMAT H&N 70/35 	OpticChiasm	Point	upper	0	4500.0	50	0	
+VMAT H&N 70/35 	OpticNerve L	Point	upper	0	4500.0	50	0	
+VMAT H&N 70/35 	OpticNerve R	Point	upper	0	4500.0	50	0	
+VMAT H&N 70/35 	PRV5 SpinalCanal	Point	upper	0	3500.0	80	0	
+VMAT H&N 70/35 	PTV 63	Point	upper	0	6300.0	100	0	
+VMAT H&N 70/35 	PTV 63	Point	lower	100.00	6400.0	120	0	
+VMAT H&N 70/35 	SpinalCanal	Point	upper	0	1500.0	80	0	
+VMAT H&N 70/35 	SpinalCanal	Point	upper	20.00	500.0	80	0	
+VMAT LARY 5250 	CTV	Point	upper	0	5250.0	100	0	
+VMAT LARY 5250 	CTV	Point	lower	100.00	5400.0	120	0	
+VMAT LARY 5250 	PRV5 SpinalCanal	Point	upper	0	500.0	50	0	
+VMAT LARY 5250 	PTV	Point	upper	0	5250.0	100	0	
+VMAT LARY 5250 	PTV	Point	lower	100.00	5250.0	120	0	
+VMAT LARY 5250 	SpinalCanal	Point	upper	0	100.0	100	0	
+VMAT LUNG 45/30 	Esophagus	Point	upper	0	4400.0	100	0	
+VMAT LUNG 45/30 	Esophagus	Point	upper	15.00	3000.0	100	0	
+VMAT LUNG 45/30 	Heart	Point	upper	0	4000.0	50	0	
+VMAT LUNG 45/30 	Heart	Point	upper	10.00	2000.0	50	0	
+VMAT LUNG 45/30 	ITV	Point	upper	0	4500.0	100	0	
+VMAT LUNG 45/30 	ITV	Point	lower	100.00	4500.0	120	0	
+VMAT LUNG 45/30 	Lung B	Point	upper	20.00	1600.0	100	0	
+VMAT LUNG 45/30 	Lung B	Point	upper	50.00	500.0	100	0	
+VMAT LUNG 45/30 	opt PTV	Point	upper	0	4500.0	100	0	
+VMAT LUNG 45/30 	opt PTV	Point	lower	100.00	4500.0	120	0	
+VMAT LUNG 45/30 	PRV5 SpinalCanal	Point	upper	0	3000.0	60	0	
+VMAT LUNG 45/30 	Spinal Canal	Point	upper	0	1800.0	60	0	
+VMAT LUNG 55/20 	Esophagus	Point	upper	0	5500.0	100	0	
+VMAT LUNG 55/20 	Esophagus	Point	upper	15.00	4500.0	100	0	
+VMAT LUNG 55/20 	ITV	Point	upper	0	5500.0	100	0	
+VMAT LUNG 55/20 	ITV	Point	lower	100.00	5500.0	120	0	
+VMAT LUNG 55/20 	Lung B	Point	upper	20.00	1600.0	100	0	
+VMAT LUNG 55/20 	Lung B	Point	upper	50.00	500.0	100	0	
+VMAT LUNG 55/20 	PTV	Point	upper	0	5500.0	100	0	
+VMAT LUNG 55/20 	PTV	Point	lower	100.00	5500.0	120	0	
+VMAT LUNG 55/20 	Spinal Canal	Point	upper	0	2000.0	60	0	
+VMAT LUNG 60/15 	Esophagus	Point	upper	0	5000.0	50	0	
+VMAT LUNG 60/15 	Esophagus	Point	upper	15.00	4000.0	50	0	
+VMAT LUNG 60/15 	ITV	Point	upper	0	6000.0	100	0	
+VMAT LUNG 60/15 	ITV	Point	lower	100.00	6000.0	120	0	
+VMAT LUNG 60/15 	Lung B	Point	upper	20.00	1000.0	100	0	
+VMAT LUNG 60/15 	Lung B	Point	upper	40.00	500.0	100	0	
+VMAT LUNG 60/15 	opt PTV	Point	upper	0	6000.0	100	0	
+VMAT LUNG 60/15 	opt PTV	Point	lower	100.00	6000.0	120	0	
+VMAT LUNG 60/15 	Spinal Canal	Point	upper	0	2000.0	60	0	
+VMAT LUNG 60/30 	Esophagus	Point	upper	0	6000.0	100	0	
+VMAT LUNG 60/30 	Esophagus	Point	upper	15.00	5500.0	100	0	
+VMAT LUNG 60/30 	ITV	Point	upper	0	6000.0	100	0	
+VMAT LUNG 60/30 	ITV	Point	lower	100.00	6000.0	120	0	
+VMAT LUNG 60/30 	Lung B	Point	upper	20.00	2000.0	100	0	
+VMAT LUNG 60/30 	Lung B	Point	upper	50.00	500.0	100	0	
+VMAT LUNG 60/30 	opt PTV	Point	upper	0	6000.0	110	0	
+VMAT LUNG 60/30 	opt PTV	Point	lower	100.00	6000.0	120	0	
+VMAT LUNG 60/30 	Spinal Canal	Point	upper	0	2000.0	60	0	
+VMAT PELB 46/23 	CTV46	Point	upper	0	4700.0	100	0	
+VMAT PELB 46/23 	CTV46	Point	lower	100.00	4700.0	110	0	
+VMAT PELB 46/23 	Femoral Head L	Point	upper	0	2500.0	50	0	
+VMAT PELB 46/23 	Femoral Head R	Point	upper	0	2500.0	50	0	
+VMAT PELB 46/23 	opt Bladder	Point	upper	60.00	2500.0	50	0	
+VMAT PELB 46/23 	opt Bladder	Point	upper	35.00	3500.0	50	0	
+VMAT PELB 46/23 	opt Bladder	Point	upper	20.00	4000.0	50	0	
+VMAT PELB 46/23 	opt Bladder	Point	upper	5.00	4500.0	50	0	
+VMAT PELB 46/23 	opt PTV46	Point	upper	0	4600.0	100	0	
+VMAT PELB 46/23 	opt PTV46	Point	upper	0	4600.0	100	0	
+VMAT PELB 46/23 	opt PTV46	Point	lower	100.00	4600.0	120	0	
+VMAT PELB 46/23 	opt Rectum	Point	upper	60.00	2500.0	60	0	
+VMAT PELB 46/23 	opt Rectum	Point	upper	50.00	3000.0	60	0	
+VMAT PELB 46/23 	opt Rectum	Point	upper	25.00	3500.0	60	0	
+VMAT PELB 46/23 	opt Rectum	Point	upper	5.00	4000.0	60	0	
+VMAT PELB 46/23 	Small Bowel	Point	upper	0	4500.0	80	0	
+VMAT PROS 20/10 	Avoid a Rectum	Point	upper	0	800.0	50	0	
+VMAT PROS 20/10 	Avoid b Rectum	Point	upper	0	400.0	50	0	
+VMAT PROS 20/10 	CTV	Point	upper	0	2050.0	100	0	
+VMAT PROS 20/10 	CTV	Point	lower	100.00	2100.0	110	0	
+VMAT PROS 20/10 	opt Bladder	Point	upper	40.00	1000.0	50	0	
+VMAT PROS 20/10 	opt Bladder	Point	upper	25.00	1400.0	50	0	
+VMAT PROS 20/10 	opt Bladder	Point	upper	15.00	1600.0	50	0	
+VMAT PROS 20/10 	opt Bladder	Point	upper	5.00	1800.0	50	0	
+VMAT PROS 20/10 	opt PTV	Point	upper	0	1950.0	100	0	
+VMAT PROS 20/10 	opt PTV	Point	upper	0	1950.0	100	0	
+VMAT PROS 20/10 	opt PTV	Point	lower	100.00	2100.0	120	0	
+VMAT PROS 20/10 	opt Rectum	Point	upper	40.00	1000.0	70	0	
+VMAT PROS 20/10 	opt Rectum	Point	upper	25.00	1400.0	70	0	
+VMAT PROS 20/10 	opt Rectum	Point	upper	15.00	1600.0	70	0	
+VMAT PROS 20/10 	opt Rectum	Point	upper	5.00	1800.0	70	0	
+VMAT PROS 24/12 	Avoid a Rectum	Point	upper	0	800.0	50	0	
+VMAT PROS 24/12 	Avoid b Rectum	Point	upper	0	400.0	50	0	
+VMAT PROS 24/12 	CTV	Point	upper	0	2450.0	100	0	
+VMAT PROS 24/12 	CTV	Point	lower	100.00	2550.0	110	0	
+VMAT PROS 24/12 	opt Bladder	Point	upper	40.00	1500.0	50	0	
+VMAT PROS 24/12 	opt Bladder	Point	upper	25.00	2000.0	50	0	
+VMAT PROS 24/12 	opt Bladder	Point	upper	15.00	2500.0	50	0	
+VMAT PROS 24/12 	opt Bladder	Point	upper	5.00	3000.0	50	0	
+VMAT PROS 24/12 	opt PTV	Point	upper	0	2300.0	100	0	
+VMAT PROS 24/12 	opt PTV	Point	upper	0	2300.0	100	0	
+VMAT PROS 24/12 	opt PTV	Point	lower	100.00	2550.0	120	0	
+VMAT PROS 24/12 	opt Rectum	Point	upper	40.00	1500.0	70	0	
+VMAT PROS 24/12 	opt Rectum	Point	upper	25.00	2000.0	70	0	
+VMAT PROS 24/12 	opt Rectum	Point	upper	15.00	2500.0	70	0	
+VMAT PROS 24/12 	opt Rectum	Point	upper	5.00	3000.0	70	0	
+VMAT PROS 30/15 	Avoid a Rectum	Point	upper	0	800.0	50	0	
+VMAT PROS 30/15 	Avoid b Rectum	Point	upper	0	400.0	50	0	
+VMAT PROS 30/15 	CTV	Point	upper	0	3050.0	100	0	
+VMAT PROS 30/15 	CTV	Point	lower	100.00	3150.0	110	0	
+VMAT PROS 30/15 	opt Bladder	Point	upper	40.00	1500.0	50	0	
+VMAT PROS 30/15 	opt Bladder	Point	upper	25.00	2000.0	50	0	
+VMAT PROS 30/15 	opt Bladder	Point	upper	15.00	2500.0	50	0	
+VMAT PROS 30/15 	opt Bladder	Point	upper	5.00	3000.0	50	0	
+VMAT PROS 30/15 	opt PTV	Point	upper	0	2900.0	100	0	
+VMAT PROS 30/15 	opt PTV	Point	upper	0	2900.0	100	0	
+VMAT PROS 30/15 	opt PTV	Point	lower	100.00	3150.0	120	0	
+VMAT PROS 30/15 	opt Rectum	Point	upper	40.00	1500.0	70	0	
+VMAT PROS 30/15 	opt Rectum	Point	upper	25.00	2000.0	70	0	
+VMAT PROS 30/15 	opt Rectum	Point	upper	15.00	2500.0	70	0	
+VMAT PROS 30/15 	opt Rectum	Point	upper	5.00	3000.0	70	0	
+VMAT PROS 37/15 	Avoid a Rectum	Point	upper	0	1000.0	50	0	
+VMAT PROS 37/15 	Avoid b Rectum	Point	upper	0	500.0	50	0	
+VMAT PROS 37/15 	CTV	Point	upper	0	3800.0	100	0	
+VMAT PROS 37/15 	CTV	Point	lower	100.00	3900.0	110	0	
+VMAT PROS 37/15 	opt Bladder	Point	upper	40.00	1000.0	50	0	
+VMAT PROS 37/15 	opt Bladder	Point	upper	25.00	1500.0	50	0	
+VMAT PROS 37/15 	opt Bladder	Point	upper	15.00	2000.0	50	0	
+VMAT PROS 37/15 	opt Bladder	Point	upper	5.00	2500.0	50	0	
+VMAT PROS 37/15 	opt PTV	Point	upper	0	3650.0	100	0	
+VMAT PROS 37/15 	opt PTV	Point	upper	0	3650.0	100	0	
+VMAT PROS 37/15 	opt PTV	Point	lower	100.00	3900.0	120	0	
+VMAT PROS 37/15 	opt Rectum	Point	upper	40.00	1500.0	70	0	
+VMAT PROS 37/15 	opt Rectum	Point	upper	25.00	2000.0	70	0	
+VMAT PROS 37/15 	opt Rectum	Point	upper	15.00	2500.0	70	0	
+VMAT PROS 37/15 	opt Rectum	Point	upper	5.00	3000.0	70	0	
+VMAT PROS 60/20 	Avoid a Rectum	Point	upper	0	2000.0	50	0	
+VMAT PROS 60/20 	Avoid b Rectum	Point	upper	0	1000.0	50	0	
+VMAT PROS 60/20 	CTV	Point	upper	0	6100.0	100	0	
+VMAT PROS 60/20 	CTV	Point	lower	100.00	6250.0	110	0	
+VMAT PROS 60/20 	Femoral Head L	Point	upper	0	3000.0	50	0	
+VMAT PROS 60/20 	Femoral Head R	Point	upper	0	3000.0	50	0	
+VMAT PROS 60/20 	opt Bladder	Point	upper	60.00	2500.0	50	0	
+VMAT PROS 60/20 	opt Bladder	Point	upper	25.00	4500.0	50	0	
+VMAT PROS 60/20 	opt Bladder	Point	upper	15.00	5000.0	50	0	
+VMAT PROS 60/20 	opt Bladder	Point	upper	5.00	5500.0	50	0	
+VMAT PROS 60/20 	opt PTV	Point	upper	0	5850.0	100	0	
+VMAT PROS 60/20 	opt PTV	Point	upper	0	5850.0	100	0	
+VMAT PROS 60/20 	opt PTV	Point	lower	100.00	6250.0	120	0	
+VMAT PROS 60/20 	opt Rectum	Point	upper	60.00	2500.0	70	0	
+VMAT PROS 60/20 	opt Rectum	Point	upper	25.00	4500.0	70	0	
+VMAT PROS 60/20 	opt Rectum	Point	upper	15.00	5000.0	70	0	
+VMAT PROS 60/20 	opt Rectum	Point	upper	5.00	5500.0	70	0	
+VMAT PROS 66/33 	Avoid a Rectum	Point	upper	0	2000.0	50	0	
+VMAT PROS 66/33 	Avoid b Rectum	Point	upper	0	1000.0	50	0	
+VMAT PROS 66/33 	CTV	Point	upper	0	6700.0	100	0	
+VMAT PROS 66/33 	CTV	Point	lower	100.00	6900.0	110	0	
+VMAT PROS 66/33 	Femoral Head L	Point	upper	0	5000.0	50	0	
+VMAT PROS 66/33 	Femoral Head R	Point	upper	0	5000.0	50	0	
+VMAT PROS 66/33 	opt Bladder	Point	upper	60.00	3000.0	50	0	
+VMAT PROS 66/33 	opt Bladder	Point	upper	25.00	5500.0	50	0	
+VMAT PROS 66/33 	opt Bladder	Point	upper	15.00	6000.0	50	0	
+VMAT PROS 66/33 	opt Bladder	Point	upper	5.00	6500.0	50	0	
+VMAT PROS 66/33 	opt PTV	Point	upper	0	6400.0	100	0	
+VMAT PROS 66/33 	opt PTV	Point	upper	0	6400.0	100	0	
+VMAT PROS 66/33 	opt PTV	Point	lower	100.00	6900.0	120	0	
+VMAT PROS 66/33 	opt Rectum	Point	upper	60.00	3000.0	70	0	
+VMAT PROS 66/33 	opt Rectum	Point	upper	25.00	5500.0	70	0	
+VMAT PROS 66/33 	opt Rectum	Point	upper	15.00	6000.0	70	0	
+VMAT PROS 66/33 	opt Rectum	Point	upper	5.00	6500.0	70	0	
+VMAT PROS 76/38 	Avoid a Rectum	Point	upper	0	2000.0	50	0	
+VMAT PROS 76/38 	Avoid b Rectum	Point	upper	0	1000.0	50	0	
+VMAT PROS 76/38 	CTV	Point	upper	0	7700.0	100	0	
+VMAT PROS 76/38 	CTV	Point	lower	100.00	7900.0	110	0	
+VMAT PROS 76/38 	Femoral Head L	Point	upper	0	5000.0	50	0	
+VMAT PROS 76/38 	Femoral Head R	Point	upper	0	5000.0	50	0	
+VMAT PROS 76/38 	opt Bladder	Point	upper	60.00	3000.0	50	0	
+VMAT PROS 76/38 	opt Bladder	Point	upper	25.00	5500.0	50	0	
+VMAT PROS 76/38 	opt Bladder	Point	upper	15.00	6000.0	50	0	
+VMAT PROS 76/38 	opt Bladder	Point	upper	5.00	6500.0	50	0	
+VMAT PROS 76/38 	opt PTV	Point	upper	0	7400.0	100	0	
+VMAT PROS 76/38 	opt PTV	Point	upper	0	7400.0	100	0	
+VMAT PROS 76/38 	opt PTV	Point	lower	100.00	7900.0	120	0	
+VMAT PROS 76/38 	opt Rectum	Point	upper	65.00	3000.0	70	0	
+VMAT PROS 76/38 	opt Rectum	Point	upper	25.00	5500.0	70	0	
+VMAT PROS 76/38 	opt Rectum	Point	upper	15.00	6000.0	70	0	
+VMAT PROS 76/38 	opt Rectum	Point	upper	5.00	6500.0	70	0	
+VMAT SABR 48/4 	Body-PTV+20	Point	upper	0	1000.0	120	0	
+VMAT SABR 48/4 	Chest Wall	Point	upper	0	4600.0	50	0	
+VMAT SABR 48/4 	Lung B	Point	upper	8.00	2000.0	50	0	
+VMAT SABR 48/4 	PTV	Point	upper	0	4800.0	100	0	
+VMAT SABR 48/4 	PTV	Point	lower	100.00	4800.0	120	0	
+VMAT SABR 48/4 	Skin	Point	upper	0	1500.0	100	0	
+VMAT SABR 48/4 	Spinal Canal	Point	upper	0	2000.0	60	0	
+VMAT SABR 54/3 	Body-PTV+20	Point	upper	0	1000.0	120	0	
+VMAT SABR 54/3 	Chest Wall	Point	upper	0	4600.0	50	0	
+VMAT SABR 54/3 	Lung B	Point	upper	8.00	2000.0	50	0	
+VMAT SABR 54/3 	PTV	Point	upper	0	5400.0	100	0	
+VMAT SABR 54/3 	PTV	Point	lower	100.00	5400.0	120	0	
+VMAT SABR 54/3 	Skin	Point	upper	0	1500.0	100	0	
+VMAT SABR 54/3 	Spinal Canal	Point	upper	0	2000.0	50	0	
+VMAT SABR 60/8 	Body-PTV+20	Point	upper	0	1250.0	120	0	
+VMAT SABR 60/8 	Chest Wall	Point	upper	0	5750.0	50	0	
+VMAT SABR 60/8 	Lung B	Point	upper	8.00	2000.0	50	0	
+VMAT SABR 60/8 	PTV	Point	upper	0	6000.0	100	0	
+VMAT SABR 60/8 	PTV	Point	lower	100.00	6000.0	120	0	
+VMAT SABR 60/8 	Skin	Point	upper	0	1500.0	100	0	
+VMAT SABR 60/8 	Spinal Canal	Point	upper	0	2000.0	50	0	
