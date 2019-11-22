@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FilterInstances xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsExport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaE:VFilterIndependentOptionsExport>
+          <fioMediaE:Plan_PrimaryRefImgs>false</fioMediaE:Plan_PrimaryRefImgs>
+          <fioMediaE:Plan_AllRefImgs>false</fioMediaE:Plan_AllRefImgs>
+          <fioMediaE:Plan_PlanningImgs>false</fioMediaE:Plan_PlanningImgs>
+          <fioMediaE:Plan_PlanningSS>false</fioMediaE:Plan_PlanningSS>
+          <fioMediaE:Plan_MM>false</fioMediaE:Plan_MM>
+          <fioMediaE:Plan_PlanDose>false</fioMediaE:Plan_PlanDose>
+          <fioMediaE:Plan_FieldDoses>false</fioMediaE:Plan_FieldDoses>
+          <fioMediaE:Plan_TR>false</fioMediaE:Plan_TR>
+          <fioMediaE:Volume_IncludeSS>false</fioMediaE:Volume_IncludeSS>
+          <fioMediaE:SS_IncludeImgs>false</fioMediaE:SS_IncludeImgs>
+          <fioMediaE:SR_IncludeImgs>false</fioMediaE:SR_IncludeImgs>
+          <fioMediaE:MM_IncludePlan>false</fioMediaE:MM_IncludePlan>
+          <fioMediaE:MM_IncludeRefMM>false</fioMediaE:MM_IncludeRefMM>
+          <fioMediaE:EPPlan_ExportFluences>false</fioMediaE:EPPlan_ExportFluences>
+          <fioMediaE:EPPlan_GenSO>false</fioMediaE:EPPlan_GenSO>
+          <fioMediaE:EPPlan_SinglePatSSI>false</fioMediaE:EPPlan_SinglePatSSI>
+          <fioMediaE:EPPlan_OmitSCones>false</fioMediaE:EPPlan_OmitSCones>
+          <fioMediaE:BrachyPlan_GenSO>false</fioMediaE:BrachyPlan_GenSO>
+          <fioMediaE:IonPlan_GenSO>false</fioMediaE:IonPlan_GenSO>
+          <fioMediaE:IonPlan_RepSFields>false</fioMediaE:IonPlan_RepSFields>
+          <fioMediaE:Dose_Abs>true</fioMediaE:Dose_Abs>
+          <fioMediaE:DVHType>Cumulative</fioMediaE:DVHType>
+          <fioMediaE:DVHVolumeUnit>CM3</fioMediaE:DVHVolumeUnit>
+          <fioMediaE:DoseBinWidth>0.01</fioMediaE:DoseBinWidth>
+          <fioMediaE:OmitPartiallyCalculatedStructures>false</fioMediaE:OmitPartiallyCalculatedStructures>
+          <fioMediaE:TreatmentConsole>Release8_8</fioMediaE:TreatmentConsole>
+          <fioMediaE:PerformIHEROCompliantExport>true</fioMediaE:PerformIHEROCompliantExport>
+          <fioMediaE:TransferSyntaxUsedForExport>ImplicitVRLittleEndian</fioMediaE:TransferSyntaxUsedForExport>
+          <fioMediaE:Automated>false</fioMediaE:Automated>
+        </fioMediaE:VFilterIndependentOptionsExport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport>
+          <fsoMedia:CharacterSetOverride>ISO_IR 192</fsoMedia:CharacterSetOverride>
+          <fsoMedia:ShowAsISOIR100>false</fsoMedia:ShowAsISOIR100>
+          <fsoMedia:OmitDICOMCS>false</fsoMedia:OmitDICOMCS>
+          <fsoMedia:FilenameCreationOption>PatientID_ObjectId</fsoMedia:FilenameCreationOption>
+          <fsoMedia:PatientIDObjectIDOption4RTImage>RTImageLabel</fsoMedia:PatientIDObjectIDOption4RTImage>
+          <fsoMedia:WorkingDirectory>D:\Varian\Export</fsoMedia:WorkingDirectory>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>DICOM Media File Export Filter</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsExport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaE:VFilterIndependentOptionsExport>
+          <fioMediaE:Plan_PrimaryRefImgs>false</fioMediaE:Plan_PrimaryRefImgs>
+          <fioMediaE:Plan_AllRefImgs>false</fioMediaE:Plan_AllRefImgs>
+          <fioMediaE:Plan_PlanningImgs>false</fioMediaE:Plan_PlanningImgs>
+          <fioMediaE:Plan_PlanningSS>false</fioMediaE:Plan_PlanningSS>
+          <fioMediaE:Plan_MM>false</fioMediaE:Plan_MM>
+          <fioMediaE:Plan_PlanDose>false</fioMediaE:Plan_PlanDose>
+          <fioMediaE:Plan_FieldDoses>false</fioMediaE:Plan_FieldDoses>
+          <fioMediaE:Plan_TR>false</fioMediaE:Plan_TR>
+          <fioMediaE:Volume_IncludeSS>false</fioMediaE:Volume_IncludeSS>
+          <fioMediaE:SS_IncludeImgs>false</fioMediaE:SS_IncludeImgs>
+          <fioMediaE:SR_IncludeImgs>false</fioMediaE:SR_IncludeImgs>
+          <fioMediaE:MM_IncludePlan>false</fioMediaE:MM_IncludePlan>
+          <fioMediaE:MM_IncludeRefMM>false</fioMediaE:MM_IncludeRefMM>
+          <fioMediaE:EPPlan_ExportFluences>false</fioMediaE:EPPlan_ExportFluences>
+          <fioMediaE:EPPlan_GenSO>false</fioMediaE:EPPlan_GenSO>
+          <fioMediaE:EPPlan_SinglePatSSI>false</fioMediaE:EPPlan_SinglePatSSI>
+          <fioMediaE:EPPlan_OmitSCones>false</fioMediaE:EPPlan_OmitSCones>
+          <fioMediaE:BrachyPlan_GenSO>false</fioMediaE:BrachyPlan_GenSO>
+          <fioMediaE:IonPlan_GenSO>false</fioMediaE:IonPlan_GenSO>
+          <fioMediaE:IonPlan_RepSFields>false</fioMediaE:IonPlan_RepSFields>
+          <fioMediaE:Dose_Abs>true</fioMediaE:Dose_Abs>
+          <fioMediaE:DVHType>Cumulative</fioMediaE:DVHType>
+          <fioMediaE:DVHVolumeUnit>CM3</fioMediaE:DVHVolumeUnit>
+          <fioMediaE:DoseBinWidth>0.01</fioMediaE:DoseBinWidth>
+          <fioMediaE:OmitPartiallyCalculatedStructures>false</fioMediaE:OmitPartiallyCalculatedStructures>
+          <fioMediaE:TreatmentConsole>Release8_8</fioMediaE:TreatmentConsole>
+          <fioMediaE:PerformIHEROCompliantExport>true</fioMediaE:PerformIHEROCompliantExport>
+          <fioMediaE:TransferSyntaxUsedForExport>ImplicitVRLittleEndian</fioMediaE:TransferSyntaxUsedForExport>
+          <fioMediaE:Automated>false</fioMediaE:Automated>
+        </fioMediaE:VFilterIndependentOptionsExport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport>
+          <fsoMedia:CharacterSetOverride>ISO_IR 192</fsoMedia:CharacterSetOverride>
+          <fsoMedia:ShowAsISOIR100>false</fsoMedia:ShowAsISOIR100>
+          <fsoMedia:OmitDICOMCS>false</fsoMedia:OmitDICOMCS>
+          <fsoMedia:FilenameCreationOption>UID</fsoMedia:FilenameCreationOption>
+          <fsoMedia:PatientIDObjectIDOption4RTImage>RTImageLabel</fsoMedia:PatientIDObjectIDOption4RTImage>
+          <fsoMedia:WorkingDirectory>\\krcc-3\home\PHYSICS\QA\QA Images</fsoMedia:WorkingDirectory>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>PHYSICS QA IMAGES</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsExport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaE:VFilterIndependentOptionsExport>
+          <fioMediaE:Plan_PrimaryRefImgs>false</fioMediaE:Plan_PrimaryRefImgs>
+          <fioMediaE:Plan_AllRefImgs>false</fioMediaE:Plan_AllRefImgs>
+          <fioMediaE:Plan_PlanningImgs>false</fioMediaE:Plan_PlanningImgs>
+          <fioMediaE:Plan_PlanningSS>false</fioMediaE:Plan_PlanningSS>
+          <fioMediaE:Plan_MM>false</fioMediaE:Plan_MM>
+          <fioMediaE:Plan_PlanDose>false</fioMediaE:Plan_PlanDose>
+          <fioMediaE:Plan_FieldDoses>false</fioMediaE:Plan_FieldDoses>
+          <fioMediaE:Plan_TR>false</fioMediaE:Plan_TR>
+          <fioMediaE:Volume_IncludeSS>false</fioMediaE:Volume_IncludeSS>
+          <fioMediaE:SS_IncludeImgs>false</fioMediaE:SS_IncludeImgs>
+          <fioMediaE:SR_IncludeImgs>false</fioMediaE:SR_IncludeImgs>
+          <fioMediaE:MM_IncludePlan>false</fioMediaE:MM_IncludePlan>
+          <fioMediaE:MM_IncludeRefMM>false</fioMediaE:MM_IncludeRefMM>
+          <fioMediaE:EPPlan_ExportFluences>false</fioMediaE:EPPlan_ExportFluences>
+          <fioMediaE:EPPlan_GenSO>false</fioMediaE:EPPlan_GenSO>
+          <fioMediaE:EPPlan_SinglePatSSI>false</fioMediaE:EPPlan_SinglePatSSI>
+          <fioMediaE:EPPlan_OmitSCones>false</fioMediaE:EPPlan_OmitSCones>
+          <fioMediaE:BrachyPlan_GenSO>false</fioMediaE:BrachyPlan_GenSO>
+          <fioMediaE:IonPlan_GenSO>false</fioMediaE:IonPlan_GenSO>
+          <fioMediaE:IonPlan_RepSFields>false</fioMediaE:IonPlan_RepSFields>
+          <fioMediaE:Dose_Abs>true</fioMediaE:Dose_Abs>
+          <fioMediaE:DVHType>Cumulative</fioMediaE:DVHType>
+          <fioMediaE:DVHVolumeUnit>CM3</fioMediaE:DVHVolumeUnit>
+          <fioMediaE:DoseBinWidth>0.01</fioMediaE:DoseBinWidth>
+          <fioMediaE:OmitPartiallyCalculatedStructures>false</fioMediaE:OmitPartiallyCalculatedStructures>
+          <fioMediaE:TreatmentConsole>Release8_8</fioMediaE:TreatmentConsole>
+          <fioMediaE:PerformIHEROCompliantExport>true</fioMediaE:PerformIHEROCompliantExport>
+          <fioMediaE:TransferSyntaxUsedForExport>ImplicitVRLittleEndian</fioMediaE:TransferSyntaxUsedForExport>
+          <fioMediaE:Automated>false</fioMediaE:Automated>
+        </fioMediaE:VFilterIndependentOptionsExport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoStorage="http://xsd.baden.varian.com/VFilterSpecificOptionsStorage.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsStorage, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoStorage:VFilterSpecificOptionsStorage Version="1">
+          <fsoStorage:DefaultCharacterSet>ISO_IR 192</fsoStorage:DefaultCharacterSet>
+          <fsoStorage:OmitDICOMCS>false</fsoStorage:OmitDICOMCS>
+          <fsoStorage:SCUAETitle>VDCMD</fsoStorage:SCUAETitle>
+          <fsoStorage:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider">
+            <pacs:SCPAETitle>VMSGRID1184</pacs:SCPAETitle>
+            <pacs:SCPIP>10.40.15.17</pacs:SCPIP>
+            <pacs:SCPPort>104</pacs:SCPPort>
+            <pacs:SCPAdvanced>false</pacs:SCPAdvanced>
+            <pacs:AssociationTimeout>5000</pacs:AssociationTimeout>
+            <q1:ISQRFilter>true</q1:ISQRFilter>
+            <q1:ISStorageFilter>true</q1:ISStorageFilter>
+          </fsoStorage:SelectedPACS>
+        </fsoStorage:VFilterSpecificOptionsStorage>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMStorageExportFilterID</Id>
+    <Name>Velocity Grid</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsExport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaE:VFilterIndependentOptionsExport>
+          <fioMediaE:Plan_PrimaryRefImgs>true</fioMediaE:Plan_PrimaryRefImgs>
+          <fioMediaE:Plan_AllRefImgs>true</fioMediaE:Plan_AllRefImgs>
+          <fioMediaE:Plan_PlanningImgs>true</fioMediaE:Plan_PlanningImgs>
+          <fioMediaE:Plan_PlanningSS>true</fioMediaE:Plan_PlanningSS>
+          <fioMediaE:Plan_MM>true</fioMediaE:Plan_MM>
+          <fioMediaE:Plan_PlanDose>true</fioMediaE:Plan_PlanDose>
+          <fioMediaE:Plan_FieldDoses>false</fioMediaE:Plan_FieldDoses>
+          <fioMediaE:Plan_TR>true</fioMediaE:Plan_TR>
+          <fioMediaE:Volume_IncludeSS>true</fioMediaE:Volume_IncludeSS>
+          <fioMediaE:SS_IncludeImgs>true</fioMediaE:SS_IncludeImgs>
+          <fioMediaE:SR_IncludeImgs>true</fioMediaE:SR_IncludeImgs>
+          <fioMediaE:MM_IncludePlan>false</fioMediaE:MM_IncludePlan>
+          <fioMediaE:MM_IncludeRefMM>false</fioMediaE:MM_IncludeRefMM>
+          <fioMediaE:EPPlan_ExportFluences>false</fioMediaE:EPPlan_ExportFluences>
+          <fioMediaE:EPPlan_GenSO>false</fioMediaE:EPPlan_GenSO>
+          <fioMediaE:EPPlan_SinglePatSSI>false</fioMediaE:EPPlan_SinglePatSSI>
+          <fioMediaE:EPPlan_OmitSCones>false</fioMediaE:EPPlan_OmitSCones>
+          <fioMediaE:BrachyPlan_GenSO>false</fioMediaE:BrachyPlan_GenSO>
+          <fioMediaE:IonPlan_GenSO>false</fioMediaE:IonPlan_GenSO>
+          <fioMediaE:IonPlan_RepSFields>false</fioMediaE:IonPlan_RepSFields>
+          <fioMediaE:Dose_Abs>true</fioMediaE:Dose_Abs>
+          <fioMediaE:DVHType>Cumulative</fioMediaE:DVHType>
+          <fioMediaE:DVHVolumeUnit>CM3</fioMediaE:DVHVolumeUnit>
+          <fioMediaE:DoseBinWidth>0.01</fioMediaE:DoseBinWidth>
+          <fioMediaE:OmitPartiallyCalculatedStructures>false</fioMediaE:OmitPartiallyCalculatedStructures>
+          <fioMediaE:TreatmentConsole>Release8_8</fioMediaE:TreatmentConsole>
+          <fioMediaE:PerformIHEROCompliantExport>true</fioMediaE:PerformIHEROCompliantExport>
+          <fioMediaE:TransferSyntaxUsedForExport>ImplicitVRLittleEndian</fioMediaE:TransferSyntaxUsedForExport>
+          <fioMediaE:Automated>true</fioMediaE:Automated>
+        </fioMediaE:VFilterIndependentOptionsExport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport>
+          <fsoMedia:CharacterSetOverride>ISO_IR 192</fsoMedia:CharacterSetOverride>
+          <fsoMedia:ShowAsISOIR100>false</fsoMedia:ShowAsISOIR100>
+          <fsoMedia:OmitDICOMCS>false</fsoMedia:OmitDICOMCS>
+          <fsoMedia:FilenameCreationOption>UID</fsoMedia:FilenameCreationOption>
+          <fsoMedia:PatientIDObjectIDOption4RTImage>RTImageLabel</fsoMedia:PatientIDObjectIDOption4RTImage>
+          <fsoMedia:WorkingDirectory>\\dkphysicspv1\Radiation_Therapy\DICOM_Import\For Anonymization</fsoMedia:WorkingDirectory>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>Export for Anonymization</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsExport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaE:VFilterIndependentOptionsExport>
+          <fioMediaE:Plan_PrimaryRefImgs>true</fioMediaE:Plan_PrimaryRefImgs>
+          <fioMediaE:Plan_AllRefImgs>true</fioMediaE:Plan_AllRefImgs>
+          <fioMediaE:Plan_PlanningImgs>true</fioMediaE:Plan_PlanningImgs>
+          <fioMediaE:Plan_PlanningSS>true</fioMediaE:Plan_PlanningSS>
+          <fioMediaE:Plan_MM>true</fioMediaE:Plan_MM>
+          <fioMediaE:Plan_PlanDose>true</fioMediaE:Plan_PlanDose>
+          <fioMediaE:Plan_FieldDoses>false</fioMediaE:Plan_FieldDoses>
+          <fioMediaE:Plan_TR>true</fioMediaE:Plan_TR>
+          <fioMediaE:Volume_IncludeSS>true</fioMediaE:Volume_IncludeSS>
+          <fioMediaE:SS_IncludeImgs>true</fioMediaE:SS_IncludeImgs>
+          <fioMediaE:SR_IncludeImgs>true</fioMediaE:SR_IncludeImgs>
+          <fioMediaE:MM_IncludePlan>false</fioMediaE:MM_IncludePlan>
+          <fioMediaE:MM_IncludeRefMM>false</fioMediaE:MM_IncludeRefMM>
+          <fioMediaE:EPPlan_ExportFluences>false</fioMediaE:EPPlan_ExportFluences>
+          <fioMediaE:EPPlan_GenSO>true</fioMediaE:EPPlan_GenSO>
+          <fioMediaE:EPPlan_SinglePatSSI>false</fioMediaE:EPPlan_SinglePatSSI>
+          <fioMediaE:EPPlan_OmitSCones>false</fioMediaE:EPPlan_OmitSCones>
+          <fioMediaE:BrachyPlan_GenSO>false</fioMediaE:BrachyPlan_GenSO>
+          <fioMediaE:IonPlan_GenSO>false</fioMediaE:IonPlan_GenSO>
+          <fioMediaE:IonPlan_RepSFields>false</fioMediaE:IonPlan_RepSFields>
+          <fioMediaE:Dose_Abs>true</fioMediaE:Dose_Abs>
+          <fioMediaE:DVHType>Cumulative</fioMediaE:DVHType>
+          <fioMediaE:DVHVolumeUnit>CM3</fioMediaE:DVHVolumeUnit>
+          <fioMediaE:DoseBinWidth>0.01</fioMediaE:DoseBinWidth>
+          <fioMediaE:OmitPartiallyCalculatedStructures>false</fioMediaE:OmitPartiallyCalculatedStructures>
+          <fioMediaE:TreatmentConsole>Release8_8</fioMediaE:TreatmentConsole>
+          <fioMediaE:PerformIHEROCompliantExport>true</fioMediaE:PerformIHEROCompliantExport>
+          <fioMediaE:TransferSyntaxUsedForExport>ImplicitVRLittleEndian</fioMediaE:TransferSyntaxUsedForExport>
+          <fioMediaE:Automated>false</fioMediaE:Automated>
+        </fioMediaE:VFilterIndependentOptionsExport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoStorage="http://xsd.baden.varian.com/VFilterSpecificOptionsStorage.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsStorage, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoStorage:VFilterSpecificOptionsStorage Version="1">
+          <fsoStorage:DefaultCharacterSet>ISO_IR 192</fsoStorage:DefaultCharacterSet>
+          <fsoStorage:OmitDICOMCS>false</fsoStorage:OmitDICOMCS>
+          <fsoStorage:SCUAETitle>DICOM_CLEANER</fsoStorage:SCUAETitle>
+          <fsoStorage:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider">
+            <pacs:SCPAETitle>DICOM_CLEANER</pacs:SCPAETitle>
+            <pacs:SCPIP>10.40.15.141</pacs:SCPIP>
+            <pacs:SCPPort>11112</pacs:SCPPort>
+            <pacs:SCPAdvanced>false</pacs:SCPAdvanced>
+            <pacs:AssociationTimeout>5000</pacs:AssociationTimeout>
+            <q1:ISQRFilter>true</q1:ISQRFilter>
+            <q1:ISStorageFilter>true</q1:ISStorageFilter>
+          </fsoStorage:SelectedPACS>
+        </fsoStorage:VFilterSpecificOptionsStorage>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMStorageExportFilterID</Id>
+    <Name>DICOM Cleaner</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsExport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaE:VFilterIndependentOptionsExport>
+          <fioMediaE:Plan_PrimaryRefImgs>false</fioMediaE:Plan_PrimaryRefImgs>
+          <fioMediaE:Plan_AllRefImgs>false</fioMediaE:Plan_AllRefImgs>
+          <fioMediaE:Plan_PlanningImgs>true</fioMediaE:Plan_PlanningImgs>
+          <fioMediaE:Plan_PlanningSS>true</fioMediaE:Plan_PlanningSS>
+          <fioMediaE:Plan_MM>false</fioMediaE:Plan_MM>
+          <fioMediaE:Plan_PlanDose>false</fioMediaE:Plan_PlanDose>
+          <fioMediaE:Plan_FieldDoses>false</fioMediaE:Plan_FieldDoses>
+          <fioMediaE:Plan_TR>false</fioMediaE:Plan_TR>
+          <fioMediaE:Volume_IncludeSS>true</fioMediaE:Volume_IncludeSS>
+          <fioMediaE:SS_IncludeImgs>false</fioMediaE:SS_IncludeImgs>
+          <fioMediaE:SR_IncludeImgs>true</fioMediaE:SR_IncludeImgs>
+          <fioMediaE:MM_IncludePlan>false</fioMediaE:MM_IncludePlan>
+          <fioMediaE:MM_IncludeRefMM>false</fioMediaE:MM_IncludeRefMM>
+          <fioMediaE:EPPlan_ExportFluences>false</fioMediaE:EPPlan_ExportFluences>
+          <fioMediaE:EPPlan_GenSO>false</fioMediaE:EPPlan_GenSO>
+          <fioMediaE:EPPlan_SinglePatSSI>false</fioMediaE:EPPlan_SinglePatSSI>
+          <fioMediaE:EPPlan_OmitSCones>false</fioMediaE:EPPlan_OmitSCones>
+          <fioMediaE:BrachyPlan_GenSO>false</fioMediaE:BrachyPlan_GenSO>
+          <fioMediaE:IonPlan_GenSO>false</fioMediaE:IonPlan_GenSO>
+          <fioMediaE:IonPlan_RepSFields>false</fioMediaE:IonPlan_RepSFields>
+          <fioMediaE:Dose_Abs>true</fioMediaE:Dose_Abs>
+          <fioMediaE:DVHType>Cumulative</fioMediaE:DVHType>
+          <fioMediaE:DVHVolumeUnit>CM3</fioMediaE:DVHVolumeUnit>
+          <fioMediaE:DoseBinWidth>0.01</fioMediaE:DoseBinWidth>
+          <fioMediaE:OmitPartiallyCalculatedStructures>false</fioMediaE:OmitPartiallyCalculatedStructures>
+          <fioMediaE:TreatmentConsole>Release8_8</fioMediaE:TreatmentConsole>
+          <fioMediaE:PerformIHEROCompliantExport>true</fioMediaE:PerformIHEROCompliantExport>
+          <fioMediaE:TransferSyntaxUsedForExport>ImplicitVRLittleEndian</fioMediaE:TransferSyntaxUsedForExport>
+          <fioMediaE:Automated>false</fioMediaE:Automated>
+        </fioMediaE:VFilterIndependentOptionsExport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoStorage="http://xsd.baden.varian.com/VFilterSpecificOptionsStorage.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsStorage, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoStorage:VFilterSpecificOptionsStorage Version="1">
+          <fsoStorage:DefaultCharacterSet>ISO_IR 192</fsoStorage:DefaultCharacterSet>
+          <fsoStorage:OmitDICOMCS>false</fsoStorage:OmitDICOMCS>
+          <fsoStorage:SCUAETitle>PlanningCT</fsoStorage:SCUAETitle>
+          <fsoStorage:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider">
+            <pacs:SCPAETitle>OTP_INCOMING</pacs:SCPAETitle>
+            <pacs:SCPIP>10.40.62.172</pacs:SCPIP>
+            <pacs:SCPPort>104</pacs:SCPPort>
+            <pacs:SCPAdvanced>false</pacs:SCPAdvanced>
+            <pacs:AssociationTimeout>5000</pacs:AssociationTimeout>
+            <q1:ISQRFilter>false</q1:ISQRFilter>
+            <q1:ISStorageFilter>true</q1:ISStorageFilter>
+          </fsoStorage:SelectedPACS>
+        </fsoStorage:VFilterSpecificOptionsStorage>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMStorageExportFilterID</Id>
+    <Name>DICOM Export to HDR</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsImport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaI:VFilterIndependentOptionsImport>
+          <fioMediaI:UseIDMapping>false</fioMediaI:UseIDMapping>
+        </fioMediaI:VFilterIndependentOptionsImport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+          <fsoMedia:DefaultCharacterSet />
+          <fsoMedia:EnforceOverride>false</fsoMedia:EnforceOverride>
+          <fsoMedia:BackupDirectory />
+          <fsoMedia:IncludeSubdirectories>true</fsoMedia:IncludeSubdirectories>
+          <fsoMedia:UseBackupDirectory>false</fsoMedia:UseBackupDirectory>
+          <fsoMedia:WorkingDirectory>\\VARIMGPV1\va_transfer\Gating</fsoMedia:WorkingDirectory>
+          <fsoMedia:ImageConversionOption>DRR</fsoMedia:ImageConversionOption>
+          <fsoMedia:ImageConversionEnabled>false</fsoMedia:ImageConversionEnabled>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>RPM Import</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsImport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaI:VFilterIndependentOptionsImport>
+          <fioMediaI:UseIDMapping>false</fioMediaI:UseIDMapping>
+        </fioMediaI:VFilterIndependentOptionsImport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+          <fsoMedia:DefaultCharacterSet />
+          <fsoMedia:EnforceOverride>false</fsoMedia:EnforceOverride>
+          <fsoMedia:BackupDirectory>\\Varimgpv1\va_data$\DICOM\To_Be_Deleted</fsoMedia:BackupDirectory>
+          <fsoMedia:IncludeSubdirectories>false</fsoMedia:IncludeSubdirectories>
+          <fsoMedia:UseBackupDirectory>true</fsoMedia:UseBackupDirectory>
+          <fsoMedia:WorkingDirectory>\\Varimgpv1\va_data$\Dicom</fsoMedia:WorkingDirectory>
+          <fsoMedia:ImageConversionOption>DRR</fsoMedia:ImageConversionOption>
+          <fsoMedia:ImageConversionEnabled>false</fsoMedia:ImageConversionEnabled>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>Import from CT scanner</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsImport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaI:VFilterIndependentOptionsImport>
+          <fioMediaI:UseIDMapping>false</fioMediaI:UseIDMapping>
+        </fioMediaI:VFilterIndependentOptionsImport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+          <fsoMedia:DefaultCharacterSet />
+          <fsoMedia:EnforceOverride>false</fsoMedia:EnforceOverride>
+          <fsoMedia:BackupDirectory>\\Varimgpv1\va_data$\DICOM\To_Be_Deleted</fsoMedia:BackupDirectory>
+          <fsoMedia:IncludeSubdirectories>false</fsoMedia:IncludeSubdirectories>
+          <fsoMedia:UseBackupDirectory>true</fsoMedia:UseBackupDirectory>
+          <fsoMedia:WorkingDirectory>\\dkphysicspv1\e$\DICOM EXPORT\Import Repair\Repaired</fsoMedia:WorkingDirectory>
+          <fsoMedia:ImageConversionOption>DRR</fsoMedia:ImageConversionOption>
+          <fsoMedia:ImageConversionEnabled>false</fsoMedia:ImageConversionEnabled>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>Import Repair</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsImport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaI:VFilterIndependentOptionsImport>
+          <fioMediaI:UseIDMapping>false</fioMediaI:UseIDMapping>
+        </fioMediaI:VFilterIndependentOptionsImport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoQuery="http://xsd.baden.varian.com/VFilterSpecificOptionsQueryRetrieve.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsQueryRetrieve, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoQuery:VFilterSpecificOptionsQueryRetrieve Version="1">
+          <fsoQuery:SCUAETitle>VDCMD</fsoQuery:SCUAETitle>
+          <fsoQuery:SCUPort>104</fsoQuery:SCUPort>
+          <fsoQuery:InstanceDate>true</fsoQuery:InstanceDate>
+          <fsoQuery:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider">
+            <pacs:SCPAETitle>VMSGRID1184</pacs:SCPAETitle>
+            <pacs:SCPIP>10.40.15.17</pacs:SCPIP>
+            <pacs:SCPPort>104</pacs:SCPPort>
+            <pacs:SCPAdvanced>false</pacs:SCPAdvanced>
+            <pacs:AssociationTimeout>5000</pacs:AssociationTimeout>
+            <q1:ISQRFilter>true</q1:ISQRFilter>
+            <q1:ISStorageFilter>true</q1:ISStorageFilter>
+          </fsoQuery:SelectedPACS>
+          <fsoQuery:EnforceOverride>false</fsoQuery:EnforceOverride>
+          <fsoQuery:RetrieveLevel>Automatic</fsoQuery:RetrieveLevel>
+        </fsoQuery:VFilterSpecificOptionsQueryRetrieve>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMQueryRetrieveImportFilterID</Id>
+    <Name>Velocity Grid</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsImport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaI:VFilterIndependentOptionsImport>
+          <fioMediaI:UseIDMapping>false</fioMediaI:UseIDMapping>
+        </fioMediaI:VFilterIndependentOptionsImport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+          <fsoMedia:DefaultCharacterSet />
+          <fsoMedia:EnforceOverride>false</fsoMedia:EnforceOverride>
+          <fsoMedia:BackupDirectory>\\VARIMGPV1\va_data$\Dicom\To_Be_Deleted</fsoMedia:BackupDirectory>
+          <fsoMedia:IncludeSubdirectories>true</fsoMedia:IncludeSubdirectories>
+          <fsoMedia:UseBackupDirectory>true</fsoMedia:UseBackupDirectory>
+          <fsoMedia:WorkingDirectory>\\dkphysicspv1\Radiation_Therapy\DICOM_Import\HDIRS</fsoMedia:WorkingDirectory>
+          <fsoMedia:ImageConversionOption>DRR</fsoMedia:ImageConversionOption>
+          <fsoMedia:ImageConversionEnabled>false</fsoMedia:ImageConversionEnabled>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>Import from HDIRS</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsImport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaI:VFilterIndependentOptionsImport>
+          <fioMediaI:UseIDMapping>false</fioMediaI:UseIDMapping>
+        </fioMediaI:VFilterIndependentOptionsImport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+          <fsoMedia:DefaultCharacterSet>ISO_IR 192</fsoMedia:DefaultCharacterSet>
+          <fsoMedia:EnforceOverride>false</fsoMedia:EnforceOverride>
+          <fsoMedia:BackupDirectory>\\dkphysicspv1\Radiation_Therapy\DICOM_IMPORT\To_Be_Deleted</fsoMedia:BackupDirectory>
+          <fsoMedia:IncludeSubdirectories>true</fsoMedia:IncludeSubdirectories>
+          <fsoMedia:UseBackupDirectory>true</fsoMedia:UseBackupDirectory>
+          <fsoMedia:WorkingDirectory>\\dkphysicspv1\Radiation_Therapy\DICOM_IMPORT\Anonymization</fsoMedia:WorkingDirectory>
+          <fsoMedia:ImageConversionOption>DRR</fsoMedia:ImageConversionOption>
+          <fsoMedia:ImageConversionEnabled>false</fsoMedia:ImageConversionEnabled>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>DICOM Cleaner</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsImport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaI:VFilterIndependentOptionsImport>
+          <fioMediaI:UseIDMapping>true</fioMediaI:UseIDMapping>
+        </fioMediaI:VFilterIndependentOptionsImport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+          <fsoMedia:DefaultCharacterSet />
+          <fsoMedia:EnforceOverride>false</fsoMedia:EnforceOverride>
+          <fsoMedia:BackupDirectory>\\dkphysicspv1\Radiation_Therapy\DICOM_IMPORT\To_Be_Deleted</fsoMedia:BackupDirectory>
+          <fsoMedia:IncludeSubdirectories>false</fsoMedia:IncludeSubdirectories>
+          <fsoMedia:UseBackupDirectory>true</fsoMedia:UseBackupDirectory>
+          <fsoMedia:WorkingDirectory>\\dkphysicspv1\Radiation_Therapy\DICOM_IMPORT</fsoMedia:WorkingDirectory>
+          <fsoMedia:ImageConversionOption>DRR</fsoMedia:ImageConversionOption>
+          <fsoMedia:ImageConversionEnabled>false</fsoMedia:ImageConversionEnabled>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>External Plan Import</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>
+      <VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.BL.Filter.VFilterIndependentOptionsExport, VMS.DCIE.BL, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fioMediaE:VFilterIndependentOptionsExport>
+          <fioMediaE:Plan_PrimaryRefImgs>false</fioMediaE:Plan_PrimaryRefImgs>
+          <fioMediaE:Plan_AllRefImgs>false</fioMediaE:Plan_AllRefImgs>
+          <fioMediaE:Plan_PlanningImgs>false</fioMediaE:Plan_PlanningImgs>
+          <fioMediaE:Plan_PlanningSS>false</fioMediaE:Plan_PlanningSS>
+          <fioMediaE:Plan_MM>false</fioMediaE:Plan_MM>
+          <fioMediaE:Plan_PlanDose>false</fioMediaE:Plan_PlanDose>
+          <fioMediaE:Plan_FieldDoses>false</fioMediaE:Plan_FieldDoses>
+          <fioMediaE:Plan_TR>false</fioMediaE:Plan_TR>
+          <fioMediaE:Volume_IncludeSS>false</fioMediaE:Volume_IncludeSS>
+          <fioMediaE:SS_IncludeImgs>false</fioMediaE:SS_IncludeImgs>
+          <fioMediaE:SR_IncludeImgs>false</fioMediaE:SR_IncludeImgs>
+          <fioMediaE:MM_IncludePlan>false</fioMediaE:MM_IncludePlan>
+          <fioMediaE:MM_IncludeRefMM>false</fioMediaE:MM_IncludeRefMM>
+          <fioMediaE:EPPlan_ExportFluences>false</fioMediaE:EPPlan_ExportFluences>
+          <fioMediaE:EPPlan_GenSO>false</fioMediaE:EPPlan_GenSO>
+          <fioMediaE:EPPlan_SinglePatSSI>false</fioMediaE:EPPlan_SinglePatSSI>
+          <fioMediaE:EPPlan_OmitSCones>false</fioMediaE:EPPlan_OmitSCones>
+          <fioMediaE:BrachyPlan_GenSO>false</fioMediaE:BrachyPlan_GenSO>
+          <fioMediaE:IonPlan_GenSO>false</fioMediaE:IonPlan_GenSO>
+          <fioMediaE:IonPlan_RepSFields>false</fioMediaE:IonPlan_RepSFields>
+          <fioMediaE:Dose_Abs>true</fioMediaE:Dose_Abs>
+          <fioMediaE:DVHType>Cumulative</fioMediaE:DVHType>
+          <fioMediaE:DVHVolumeUnit>CM3</fioMediaE:DVHVolumeUnit>
+          <fioMediaE:DoseBinWidth>0.01</fioMediaE:DoseBinWidth>
+          <fioMediaE:OmitPartiallyCalculatedStructures>false</fioMediaE:OmitPartiallyCalculatedStructures>
+          <fioMediaE:TreatmentConsole>Release8_8</fioMediaE:TreatmentConsole>
+          <fioMediaE:PerformIHEROCompliantExport>true</fioMediaE:PerformIHEROCompliantExport>
+          <fioMediaE:TransferSyntaxUsedForExport>ImplicitVRLittleEndian</fioMediaE:TransferSyntaxUsedForExport>
+          <fioMediaE:Automated>false</fioMediaE:Automated>
+        </fioMediaE:VFilterIndependentOptionsExport>
+      </VXmlObject>
+    </FilterIndependentOptions>
+    <FilterSpecificOptions>
+      <VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=1.4.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856">
+        <fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport>
+          <fsoMedia:CharacterSetOverride>ISO_IR 192</fsoMedia:CharacterSetOverride>
+          <fsoMedia:ShowAsISOIR100>false</fsoMedia:ShowAsISOIR100>
+          <fsoMedia:OmitDICOMCS>false</fsoMedia:OmitDICOMCS>
+          <fsoMedia:FilenameCreationOption>UID</fsoMedia:FilenameCreationOption>
+          <fsoMedia:PatientIDObjectIDOption4RTImage>RTImageLabel</fsoMedia:PatientIDObjectIDOption4RTImage>
+          <fsoMedia:WorkingDirectory>\\Client\P$\QA\QA Images</fsoMedia:WorkingDirectory>
+        </fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport>
+      </VXmlObject>
+    </FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>QA Images</Name>
+    <Shared>false</Shared>
+  </VFilterInstanceXml>
+</FilterInstances>
