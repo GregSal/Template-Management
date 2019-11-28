@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ObjectiveTemplate Version="1.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Preview ID="VMAT PROS SIB 70" Type="Objective" ApprovalStatus="Reviewed" Diagnosis="" TreatmentSite="" AssignedUsers="told" Description="" LastModified=" November 26 2019 10:22:51:830" ApprovalHistory="told Created [ November 26 2019 10:22:51:828 ];told Approved [ November 26 2019 10:22:51:829 ]" />
+  <Type>Helios</Type>
+  <Helios DefaultFixedJaws="false" Interpolate="false" UseColors="true">
+    <DefaultSmoothingX>40</DefaultSmoothingX>
+    <DefaultSmoothingY>30</DefaultSmoothingY>
+    <DefaultMinimizeDose>0</DefaultMinimizeDose>
+    <DefaultOptimizationType>Beamlet</DefaultOptimizationType>
+    <MaxIterations>1000</MaxIterations>
+    <MaxTime>100</MaxTime>
+    <NormalTissueObjective>
+      <Use>true</Use>
+      <Priority>80</Priority>
+      <DistanceFromTargetBorder>1</DistanceFromTargetBorder>
+      <StartDose>105</StartDose>
+      <EndDose>60</EndDose>
+      <FallOff>0.05</FallOff>
+      <Auto>true</Auto>
+    </NormalTissueObjective>
+    <Geos>
+      <InitialFieldDistribution>Coplanar</InitialFieldDistribution>
+      <MinimumNumberOfFields>5</MinimumNumberOfFields>
+      <MaximumNumberOfFields>9</MaximumNumberOfFields>
+      <MaximumElevationAngleForNonCoplanarFields>10</MaximumElevationAngleForNonCoplanarFields>
+      <MaximumCollimatorVariation>10</MaximumCollimatorVariation>
+      <LocalGeometricOptimizationMode>None</LocalGeometricOptimizationMode>
+    </Geos>
+    <Imat UseMU="false" JawTracking="false">
+      <MUWeight>100</MUWeight>
+      <MinMU>650</MinMU>
+      <MaxMU>800</MaxMU>
+    </Imat>
+  </Helios>
+  <ObjectivesAllStructures>
+    <ObjectivesOneStructure ID="Body" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>BODY</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>65280</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>72</Dose>
+          <Volume>0</Volume>
+          <Priority>50</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="Avoid a Rectum" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Control</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>9639167</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>50</Dose>
+          <Volume>0</Volume>
+          <Priority>50</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="Avoid b Rectum" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Control</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>13828244</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>40</Dose>
+          <Volume>0</Volume>
+          <Priority>50</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="Bladder" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Organ</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>42495</Color>
+      <StructureObjectives />
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="opt Bladder" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Avoidance</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance>3</Distance>
+      <SamplePoints xsi:nil="true" />
+      <Color>42495</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>30</Dose>
+          <Volume>60</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>40</Dose>
+          <Volume>35</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>50</Dose>
+          <Volume>20</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>60</Dose>
+          <Volume>5</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="Rectum" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Organ</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>2763429</Color>
+      <StructureObjectives />
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="opt Rectum" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Avoidance</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance>3</Distance>
+      <SamplePoints xsi:nil="true" />
+      <Color>2763429</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>25</Dose>
+          <Volume>60</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>35</Dose>
+          <Volume>45</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>45</Dose>
+          <Volume>25</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>60</Dose>
+          <Volume>5</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="Femoral Head R" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Organ</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance>1.501</Distance>
+      <SamplePoints xsi:nil="true" />
+      <Color>9221330</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>37</Dose>
+          <Volume>0</Volume>
+          <Priority>50</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="Femoral Head L" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Organ</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance>1.501</Distance>
+      <SamplePoints xsi:nil="true" />
+      <Color>32896</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>37</Dose>
+          <Volume>0</Volume>
+          <Priority>50</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="CTV" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>CTV</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>65535</Color>
+      <StructureObjectives />
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="PTV" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>16776960</Color>
+      <StructureObjectives />
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="Small Bowel" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>Organ</VolumeType>
+        <VolumeCodeTable />
+        <StructureCode Code="7200" CodeScheme="FMA" CodeSchemeVersion="3.2" />
+      </StructureTarget>
+      <Distance>1.501</Distance>
+      <SamplePoints xsi:nil="true" />
+      <Color>14524637</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>45</Dose>
+          <Volume>0</Volume>
+          <Priority>70</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="CTV48" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>CTV</VolumeType>
+        <VolumeCodeTable />
+        <StructureCode Code="CTV_Intermediate" CodeScheme="99VMS_STRUCTCODE" CodeSchemeVersion="1.0" />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>9639167</Color>
+      <StructureObjectives />
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="PTV70" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable />
+        <StructureCode Code="PTV_High" CodeScheme="99VMS_STRUCTCODE" CodeSchemeVersion="1.0" />
+      </StructureTarget>
+      <Distance>1.501</Distance>
+      <SamplePoints xsi:nil="true" />
+      <Color>16776960</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>70</Dose>
+          <Volume>0</Volume>
+          <Priority>100</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>1</Operator>
+          <Dose>70</Dose>
+          <Volume>100</Volume>
+          <Priority>120</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="PTV48" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable />
+        <StructureCode Code="PTV_Intermediate" CodeScheme="99VMS_STRUCTCODE" CodeSchemeVersion="1.0" />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>8388736</Color>
+      <StructureObjectives />
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="opt PTV48" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable />
+        <StructureCode Code="PTV_Intermediate" CodeScheme="99VMS_STRUCTCODE" CodeSchemeVersion="1.0" />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>8388736</Color>
+      <StructureObjectives />
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="opt PTV48a" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable />
+        <StructureCode Code="PTV_Intermediate" CodeScheme="99VMS_STRUCTCODE" CodeSchemeVersion="1.0" />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>8388736</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>69</Dose>
+          <Volume>0</Volume>
+          <Priority>100</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>48</Dose>
+          <Volume>5</Volume>
+          <Priority>100</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>1</Operator>
+          <Dose>49</Dose>
+          <Volume>100</Volume>
+          <Priority>120</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+    <ObjectivesOneStructure ID="opt PTV48b" NAME="" SurfaceOnly="false">
+      <StructureTarget>
+        <VolumeID />
+        <VolumeCode />
+        <VolumeType>PTV</VolumeType>
+        <VolumeCodeTable />
+        <StructureCode Code="PTV_Intermediate" CodeScheme="99VMS_STRUCTCODE" CodeSchemeVersion="1.0" />
+      </StructureTarget>
+      <Distance xsi:nil="true" />
+      <SamplePoints xsi:nil="true" />
+      <Color>8388736</Color>
+      <StructureObjectives>
+        <Objective>
+          <Type>0</Type>
+          <Operator>0</Operator>
+          <Dose>48</Dose>
+          <Volume>0</Volume>
+          <Priority>100</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+        <Objective>
+          <Type>0</Type>
+          <Operator>1</Operator>
+          <Dose>48</Dose>
+          <Volume>100</Volume>
+          <Priority>120</Priority>
+          <ParameterA xsi:nil="true" />
+          <Group>0</Group>
+        </Objective>
+      </StructureObjectives>
+    </ObjectivesOneStructure>
+  </ObjectivesAllStructures>
+</ObjectiveTemplate>

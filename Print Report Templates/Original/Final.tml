@@ -1,3 +1,6 @@
+﻿###
+### Converted from code page 1252 into Unicode UTF-8 by ConvertTml on 2017-06-04T17:23:28
+###
 ##############################################################################
 # Treatment Plan Report Template File 
 # 
@@ -670,11 +673,11 @@ Else
   LineText=Frct Dose
   Move=730
   LineText=Location X,Y,Z
-  Move=1160
+  Move=1210
   LineText=PSSD
-  Move=1360
+  Move=1410
   LineText=Depth
-  Move=1550
+  Move=1600
   LineText=Eq. Path Length
 EndIf
 EndLoop
@@ -716,11 +719,11 @@ Loop=Fields
 			Move=830
 			LineText=$RefPointType
 			LineText=$RefPointX , $RefPointY , $REfPointZ
-			Move=1260
+			Move=1310
 			LineText=$FieldRefPointSSD
-			Move=1460
+			Move=1510
 			LineText=$FieldRefPointPointDepth
-			Move=1660
+			Move=1710
 			Text=$FieldRefPointEffectiveDepth
 			EndLoop
 			Move=0	

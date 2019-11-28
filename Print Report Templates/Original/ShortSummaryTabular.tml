@@ -1,9 +1,10 @@
+﻿###
+### Converted from code page 1252 into Unicode UTF-8 by ConvertTml on 2017-06-04T17:23:28
+###
 ##############################################################################
 # Treatment Plan Report Template File 
 #
-# Created: May 8, 2002 by Mikko Laitinen
-#
-# Copyright, Varian Medical Systems, Inc., 1995 - 2002
+# Copyright, Varian Medical Systems, Inc., 1995 - 2007
 # All Rights Reserved
 #
 # ---------------------------------------------------------------------------
@@ -50,7 +51,7 @@ PaperOrientation=Landscape
 #   Portrait
 #   Landscape
 
-Height=250
+Height=200
 # Defines the height of the space reserved for the header.
 
 LineSpacing=1.10
@@ -93,7 +94,7 @@ RelativeMove=0;10
 ##############################################################################
 Section=Footer
 
-Height=300
+Height=250
 # Defines the height of the space reserved for footer.
 # The form is printed between +headerHeight and PaperLength - FooterHeight.
 # The legtht and the width of the paper are taken from the printer properties.
@@ -176,21 +177,26 @@ Margin=150
 Move=0
 Font=30;700;Arial
 LineText=Name:
-Move=300
+Move=340
 Font=30;400;Arial
-LineText=$PatientFirstName  $PatientMiddleName  $PatientLastName
+LineText=$PatientLastName , $PatientFirstName
 Move=900
 Font=30;700;Arial
 LineText=IDs:
 Font=30;400;Arial
 Move=1200
-Text=$PatientId , $PatientId2
+LineText=$PatientId
+If=$PatientId2
+  Text=, $PatientId2
+Else
+  Text=
+EndIf
 
 # Line 2: Birth Date and sex
 Move=0
 Font=30;700;Arial
 LineText=Birthdate:
-Move=300
+Move=340
 Font=30;400;Arial
 LineText=$PatientDateOfBirth
 Move=900
@@ -204,15 +210,23 @@ Text=$PatientSex
 Move=0
 Font=30;700;Arial
 LineText=Primary Oncologist:
-Move=300
+Move=340
 Font=30;400;Arial
-Text=$PrimaryOncologist
+LineText=$PrimaryOncologist
+
+# and Primary physician
+Move=900
+Font=30;700;Arial
+LineText=Primary Physician:
+Move=1200
+Font=30;400;Arial
+Text=$PrimaryReferringPhysician
 
 # Lines 4-: comments
 Move=0
 Font=30;700;Arial
-LineText=Report Comment:
-Move=300
+Text=Report Comment:
+Move=0
 Font=30;400;Arial
 If=$Comment
   Text=$Comment
@@ -223,8 +237,8 @@ EndIf
 If=$PatientComment
   Move=0
   Font=30;700;Arial
-  LineText=Patient Comment:
-  Move=300
+  Text=Patient Comment:
+  Move=0
   Font=30;400;Arial
   Text=$PatientComment
 EndIf
@@ -237,26 +251,37 @@ Font=42;700;Arial
 Text=Plan
 Margin=150
 
-# Line 1: Plan ID and name
+# Plan ID and intent
 Move=0
 Font=30;700;Arial
-LineText=Plan ID:
-Move=300
+LineText=Plan Id:
+Move=340
 Font=30;400;Arial
 Text=$PlanId
-Font=30;700;Arial
+
 Move=0
-LineText=Plan Name:
-Move=300
+Font=30;700;Arial
+LineText=Plan Intent:
+Move=340
 Font=30;400;Arial
-Text=$PlanName
+Text=$PlanIntent
+
+#Line 2: Plan Name
+If=$PlanName
+  Move=0
+  Font=30;700;Arial
+  LineText=Plan Name:
+  Move=340
+  Font=30;400;Arial
+  Text=$PlanName
+EndIf
 
 # Line 1b: Plan comment, if defined
 If=$PlanComment
   Move=0
   Font=30;700;Arial
-  LineText=Plan Comment:
-  Move=300
+  Text=Plan Comment:
+  Move=0
   Font=30;400;Arial
   Text=$PlanComment
 EndIf
@@ -265,13 +290,13 @@ EndIf
 Move=0
 Font=30;700;Arial
 LineText=Course ID:
-Move=300
+Move=340
 Font=30;400;Arial
 Text=$CourseId
 Font=30;700;Arial
 Move=0
 LineText=Course Intent:
-Move=300
+Move=340
 Font=30;400;Arial
 Text=$CourseIntent
 
@@ -279,8 +304,8 @@ Text=$CourseIntent
 If=$CourseComment
   Move=0
   Font=30;700;Arial
-  LineText=Course Comment:
-  Move=300
+  Text=Course Comment:
+  Move=0
   Font=30;400;Arial
   Text=$CourseComment
 EndIf
@@ -291,31 +316,25 @@ Else
   Move=0
   Font=30;700;Arial
   LineText=Image ID:
-  Move=300
+  Move=340
   Font=30;400;Arial
   Text=$ImageId
-  Font=30;700;Arial
-  Move=0
-  LineText=Image Name:
-  Move=300
-  Font=30;400;Arial
-  Text=$ImageName
+  
+  If=$ImageName
+    Font=30;700;Arial
+    Move=0
+    LineText=Image Name:
+    Move=340
+    Font=30;400;Arial
+    Text=$ImageName
+  EndIf
 EndIf
 
-# Line 3b: Image comment, if defined
-If=$ImageComment
-  Move=0
-  Font=30;700;Arial
-  LineText=Image Comment:
-  Move=300
-  Font=30;400;Arial
-  Text=$ImageComment
-EndIf
 
 Move=0
 Font=30;700;Arial
 LineText=Treatment Orientation:
-Move=300
+Move=340
 Font=30;400;Arial
 Text=$PatientTreatmentOrientation
 
@@ -325,7 +344,7 @@ Else
   Font=30;700;Arial
   Move=0
   LineText=Image Origin:
-  Move=300
+  Move=340
   Font=30;400;Arial
   Text=$ImageUserOrigin
 EndIf
@@ -333,24 +352,24 @@ EndIf
 RelativeMoveText=0;-9
 
 ##### PRESCRIPTION & FRACTIONATION DATA
-Margin=1250
+Margin=1550
 Move=0
 Font=42;700;Arial
 Text=Dose Prescription
 
-Margin=1300
+Margin=1600
 Move=0
 
 Font=30;700;Arial
 LineText=Target Volume:
-Move=500
+Move=530
 Font=30;400;Arial
 Text=$TargetVolume
 
 Move=0
 Font=30;700;Arial
 LineText=Primary Reference Point:
-Move=300
+Move=530
 Font=30;400;Arial
 
 If=$IsIRREGPlan
@@ -361,24 +380,29 @@ Else
   Move=0
   Font=30;700;Arial
   LineText=Prescribed Dose Percentage:
-  Move=500
+  Move=530
   Font=30;400;Arial
   Text=$PrescribedDosePerCent
   Move=0
   Font=30;700;Arial
   LineText=Plan Normalization Value:
-  Move=500
+  Move=530
   Font=30;400;Arial
   Text=$PlanNormValue
 EndIf
 
+FractionationPageLimit=8
+# The number of columns that fit to the page is limited. If the number of fields times fractionations
+# is bigger than the limit specified with FractionationPageLimit an error is printed instead of 
+# printing fractionations and fields. The usage of this limit is highly recommended to avoid situations
+# where just part of the fractionations or fields are printed.
 
 Move=0
 Loop=Fractionations
   Move=0
   Font=30;700;Arial
   LineText=Fractionation: 
-  Move=500
+  Move=530
   Text=$FractionationId
 
   If=$IsIRREGPlan
@@ -386,22 +410,23 @@ Loop=Fractionations
     Move=50
     Font=30;400;Arial
     LineText=Prescribed Dose:
-    Move=500
+    Move=530
     Text=$PrescribedDose  ($PrescribedDosePerFraction  / fraction)
   EndIf
   Move=50
   Font=30;400;Arial
   LineText=Dose at primary reference point:
-  Move=500
+  Move=530
   Text=$DoseInPrimaryRefPoint  ($DosePerFractionInPrimaryRefPoint  / fraction)
   Move=50
   LineText=Number of Fractions:
-  Move=500
+  Move=530
   Text=$Fractions 
 EndLoop
+
 RelativeMoveText=0;1
 
-PageBreak=0.7
+PageBreak=0.65
 ##### FIELD DATA
 Margin=100
 Move=0
@@ -409,8 +434,8 @@ Font=42;700;Arial
 Text=Fields
 Font=30;400;Arial
 Margin=150
-Loop=Fractionations
-Text=
+Text=Field ID
+Text=Fractionation ID
 Text=Machine ID
 Text=Energy
 Text=Field Size
@@ -418,7 +443,8 @@ Text=Gantry Angle
 Text=Collimator Rtn
 Text=Couch Rtn
 Text=Scale
-Text=Wedge
+Text=Wedge 1
+Text=Wedge 2
 Text=Isocenter X
 Text=Isocenter Y
 Text=Isocenter Z
@@ -426,7 +452,10 @@ Text=SSD
 Text=Weight
 Text=MU
 #we need multiple moves here because of a rounding error of the relative move text
-RelativeMoveText=10;-1
+RelativeMove=300
+RelativeMoveText=0;-1
+RelativeMoveText=0;-1
+RelativeMoveText=0;-1
 RelativeMoveText=0;-1
 RelativeMoveText=0;-1
 RelativeMoveText=0;-1
@@ -442,8 +471,11 @@ RelativeMoveText=0;-1
 RelativeMoveText=0;-1
 RelativeMoveText=0;-1
 
+Loop=Fractionations
+
 Loop=Fields
   Text=$FieldId
+  Text=$FractionationId
   Text=$FieldMachineId
   Text=$FieldEnergyMode  
   Text=$FieldSizeX  x $FieldSizeY
@@ -455,16 +487,30 @@ Loop=Fields
     Loop=Wedges
       Text=$WedgeId
     EndLoop
-  Else
-    Text=
-  EndIf
+    Loop=Wedges
+      RelativeMoveText=0;-1
+    EndLoop
+  Endif
+  Text=
+  Text=
   Text=$FieldIsocentreX
   Text=$FieldIsocentreY
   Text=$FieldIsocentreZ
   Text=$FieldSSD
   Text=$FieldWeightFactor
-  Text=$FieldMonitorUnits
-  RelativeMoveText=12;-1
+  If=$IsMotorizedWedgeField
+    Text=$OpenFieldMonitorUnits
+    Text=$WedgedFieldMonitorUnits
+    Text=$VirtualFieldMonitorUnits
+    RelativeMoveText=0;-1
+    RelativeMoveText=0;-1
+  Else
+    Text=$FieldMonitorUnits
+  Endif
+  RelativeMove=300
+  RelativeMoveText=0;-1
+  RelativeMoveText=0;-1
+  RelativeMoveText=0;-1
   RelativeMoveText=0;-1
   RelativeMoveText=0;-1
   RelativeMoveText=0;-1
@@ -481,7 +527,7 @@ Loop=Fields
   RelativeMoveText=0;-1
 EndLoop
 EndLoop
-RelativeMoveText=0;16
+RelativeMoveText=0;19
 Text=
 
 RelativeMoveText=0;1
@@ -522,33 +568,33 @@ Move=0
 Font=30;700;Arial
 Move=0
 LineText=Fractionation
-Move=200
+Move=300
 LineText=Point
-Move=500
+Move=650
 LineText=3D-coordinates
-Move=1000
+Move=1210
 LineText=Fraction
-Move=1150
+Move=1400
 LineText=Total
-Move=1300
+Move=1590
 Text=Volume
 
 # Header Line 2
 Move=0
 LineText=ID
-Move=200
+Move=300
 LineText=ID
-Move=500
-LineText=X
 Move=650
+LineText=X
+Move=820
 LineText=Y
-Move=800
+Move=990
 LineText=Z
-Move=1000
+Move=1210
 LineText=Dose
-Move=1150
+Move=1400
 LineText=Dose
-Move=1300
+Move=1590
 Text=ID
 
 RelativeMove=0;10
@@ -561,19 +607,19 @@ Loop=Fractionations
   LineText=$FractionationId
   If=$RefPoints
     Loop=RefPoints
-      Move=200
+      Move=300
       LineText=$RefPointId
-      Move=500
-      LineText=$RefPointX
       Move=650
+      LineText=$RefPointX
+      Move=820
       LineText=$RefPointY
-      Move=800
+      Move=990
       LineText=$RefPointZ
-      Move=1000
+      Move=1210
       LineText=$RefPointTotalDosePerFraction
-      Move=1150
+      Move=1400
       LineText=$RefPointTotalDose
-      Move=1300
+      Move=1590
       Text=$RefPointPatientVolumeId
     EndLoop
   Else

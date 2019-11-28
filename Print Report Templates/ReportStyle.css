@@ -1,0 +1,156 @@
+﻿body, tr, td, p { 
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	margin-top: 0px;
+}
+
+h1, h2, h3, h4 { 
+	background-color: #BFDFFF;
+	font-family: Arial, sans-serif;
+}
+
+h1 { 
+	font-size: x-large;
+	margin-top: 20px;
+	margin-bottom: 2px;
+}
+
+h2 { 
+	font-size: medium;
+	margin-top: 20px;
+	margin-bottom: 2px;
+}
+
+h3 { 
+	font-size: small;
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+
+h4 { 
+	font-size: small;
+	margin-top: 10px;
+	margin-bottom: 1px;
+}
+
+.boxed {
+	border: 1px solid black; 
+	padding: 2px;
+	margin-top: 0px;
+}
+
+.indented {
+	margin-left: 20px; 
+}
+
+.normal { 
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: left;
+}
+
+.fixed { 
+	font-family: Courier New, Consolas, Lucida Console;
+	white-space: nowrap;
+}
+
+.right { 
+	text-align: right;
+}
+
+.left { 
+	text-align: left;
+}
+
+.center { 
+	text-align: center;
+}
+
+.small { 
+	font-size: 10px;
+}
+
+.emphasize 
+{
+	background-color: #BFDFFF;
+}
+.highlight {
+	background-color: #EAF4FF;
+}
+
+.white {
+	background-color: Transparent; 
+}
+
+.pagebreak {
+	page-break-before: always ;
+}
+
+.pagebreakAfter {
+	page-break-after: always;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 5px;
+	page-break-inside: avoid;
+}
+
+td.heading {
+	background-color: #BFDFFF;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	text-indent: 0px;
+	vertical-align: top;
+	width: 200px;
+	padding-right: 6px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
+td.indented { 
+	padding-left: 6px;
+}
+
+td.box { 
+	border-width: 2px;
+	border-color: black;
+	border-style: solid;
+	background-color: white;
+	width: 15px;
+	height: 20px;
+}
+
+td.emptybox { 
+	border-width: 2px;
+	border-color: black;
+	border-style: none;
+	width: 20px;
+	height: 20px;
+}
+
+th {
+	background-color: #BFDFFF;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+th.underlined {
+	border-bottom: 1px black solid;
+}
+
+@page  
+{
+	margin-left: 1cm; 
+	margin-right: 1cm; 
+	margin-top: 3cm; 
+	margin-bottom: 3cm; 
+	orphans: 3;
+	widows: 3;
+}
+
+

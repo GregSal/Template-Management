@@ -1,8 +1,10 @@
+﻿###
+### Converted from code page 1252 into Unicode UTF-8 by ConvertTml on 2017-06-04T17:23:28
+###
 ##############################################################################
 # DVH Report Template File 
 #
-#
-# Copyright, Varian Medical Systems, Inc., 2004-2005
+# Copyright, Varian Medical Systems, Inc., 2004-2007
 # All Rights Reserved
 #
 # ---------------------------------------------------------------------------
@@ -36,7 +38,7 @@ Section=Header
 Description=This is a report form for DVH graph and its statistics.
 # Description of the template, shown in print report dialog.
 
-PaperSize=A4
+PaperSize=Letter
 # Defines the paper size.  Allowed sizes are:
 #   A4
 #   A3
@@ -100,6 +102,7 @@ Font=30;700;Arial
 LineText=Patient:
 Move=250
 Text=$PatientLastName , $PatientFirstName  $PatientMiddleName 
+
 Move=0
 LineText=Patient IDs:
 Move=250
@@ -109,6 +112,7 @@ If=$PatientId2
 Else
   Text=
 EndIf
+
 Move=0
 LineText=Comment:
 Move=250
@@ -118,7 +122,44 @@ Else
   Text=
 EndIf
 
+RelativeMoveText=0;-1
+RelativeMoveText=0;-1
+RelativeMoveText=0;-1
+
+Font=30;700;Arial
+Move=1800
+LineText=Plan Id
+Move=2050
+LineText=Plan Status
+Move=2300
+LineText=Course Id
+
+RelativeMoveText=0;1
+HorizontalLine=1800;2490
+Font=30;400;Arial
+
+Loop=DVHPlanSummaryRows
+  Move=1710
+  Color=$DVHColor
+  Move=1800
+  If=$PlanSumId
+    LineText=$PlanSumId
+    Move=2050
+    LineText=-
+    Move=2300
+    Text=$PlanSumCourseId
+  Else
+    LineText=$PlanId
+    Move=2050
+    LineText=$ApprovalStatus
+    Move=2300
+    Text=$CourseId
+EndIf
+EndLoop
+
+
 # DVH Graph and it's width and height
+RelativeMoveText=0;1
 Move=0
 RelativeMove=0;20
 DVHGraph=2400;1200
@@ -127,6 +168,7 @@ RelativeMove=0;20
 # DVH Summary Header
 
 # Indicates start of DVH statistics table header
+PageBreak=0.95
 BeginDVHTableHeader
 
 Font=30;700;Arial
@@ -134,53 +176,31 @@ Move=0
 Move=90
 LineText=Structure
 Move=420
-If=$PlanSumId
-  LineText=Plan Sum
-  Move=750
-  LineText=Plan Sum Status
-Else
-  LineText=Plan
-  Move=750
-  LineText=Plan Status
-EndIf
-Move=1000
-LineText=Course
-Move=1260
+LineText=Structure Status
+
+Move=800
 LineText=Coverage [%/%]
+Move=1040
+LineText=Volume
+Move=1250
+LineText=Min Dose
+Move=1440
+LineText=Max Dose
+Move=1640
+LineText=Mean Dose
+Move=1830
+LineText=Modal Dose
+Move=2020
+LineText=Median Dose
+Move=2220
 If=$DVHNDR
-  Move=1475
-  LineText=Volume
-  Move=1660
-  LineText=Min Dose
-  Move=1825
-  LineText=Max Dose
-  Move=2000
-  LineText=Mean Dose
-  Move=2165
-  LineText=Modal Dose
-  Move=2330
-  LineText=Median Dose
-  Move=2505
   LineText=Std Dev
-  Move=2670
+  Move=2410
   Text=NDR
 Else
-  Move=1500
-  LineText=Volume
-  Move=1700
-  LineText=Min Dose
-  Move=1880
-  LineText=Max Dose
-  Move=2060
-  LineText=Mean Dose
-  Move=2240
-  LineText=Modal Dose
-  Move=2420
-  LineText=Median Dose
-  Move=2600
   Text=Std Dev
 EndIf  
-HorizontalLine=0;2750
+HorizontalLine=0;2490
 Font=30;400;Arial
 
 # Indicates end of DVH statistics table header
@@ -188,67 +208,41 @@ EndDVHTableHeader
 
 # DVH Summary Rows
 Loop=DVHSummaryRows
-  PageBreak=0.95
+  PageBreak=0.97
   Move=0
   Color=$DVHColor
   Move=90
   LineText=$DVHStructure
+
   Move=420
-  If=$PlanSumId
-     LineText=$PlanSumId  ($PlanSumName
-     LineText=)
-     Move=750
-     LineText=-
-  Else
-     LineText=$PlanId  ($PlanName
-     LineText=)
-     Move=750
-     LineText=$ApprovalStatus
-  EndIf   
-  Move=1000
-  If=$PlanSumCourseId
-    LineText=$PlanSumCourseId
-  Else
-     LineText=$CourseId
-  EndIf 
-  Move=1260
+  LineText=$StructureStatus
+
+  Move=800
   LineText=$DVHCoverage
+  Move=1040
+  LineText=$DVHVolume
+  Move=1250
+  LineText=$DVHMin
+  Move=1440
+  LineText=$DVHMax
+  Move=1640
+  LineText=$DVHMean
+  Move=1830
+  LineText=$DVHModal
+  Move=2020
+  LineText=$DVHMedian
+  Move=2220
   If=$DVHNDR
-    Move=1475
-    LineText=$DVHVolume
-    Move=1660
-    LineText=$DVHMin
-    Move=1825
-    LineText=$DVHMax
-    Move=2000
-    LineText=$DVHMean
-    Move=2165
-    LineText=$DVHModal
-    Move=2330
-    LineText=$DVHMedian
-    Move=2505
     LineText=$DVHStdDev
-    Move=2670
+    Move=2410
     Text=$DVHNDR
   Else
-    Move=1500
-    LineText=$DVHVolume
-    Move=1700
-    LineText=$DVHMin
-    Move=1880
-    LineText=$DVHMax
-    Move=2060
-    LineText=$DVHMean
-    Move=2240
-    LineText=$DVHModal
-    Move=2420
-    LineText=$DVHMedian
-    Move=2600
     Text=$DVHStdDev
   EndIf
 EndLoop
 
-HorizontalLine=0;2750
+
+HorizontalLine=0;2490
 
 ##############################################################################
 Section=Footer
@@ -264,7 +258,7 @@ LineSpacing=1.10
 Margin=50
 # Only small margins in footer.
 
-Move=0;-250
+Move=0;-160
 # Negative y-value in Move-command implicates distance measured from the bottom 
 # of the page.
 
