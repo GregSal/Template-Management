@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema targetNamespace="http://xsd.baden.varian.com/BeamLineModifierIdMapping.xsd" elementFormDefault="qualified"
+  xmlns="http://xsd.baden.varian.com/BeamLineModifierIdMapping.xsd" xmlns:mstns="http://xsd.baden.varian.com/BeamLineModifierIdMapping.xsd"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Mapping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MachineModel" type="MachineModel"></xs:element>
+        <xs:element name="Version" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="MapTable">
+    <xs:sequence>
+      <xs:element name="MapEntry" type="MapEntry"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MapEntry">
+    <xs:sequence>
+      <xs:element name="InternalId">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="16" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ExternalId">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:maxLength value="16" />
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="AddOn">
+    <xs:sequence>
+      <xs:element name="AddOnType" type="xs:string" />
+      <xs:element name="MapTable" type="MapTable" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Machine">
+    <xs:sequence>
+      <xs:element name="MachineId" type="xs:string" />
+      <xs:element name="AddOn" type="AddOn" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="MachineModel">
+    <xs:sequence>
+      <xs:element name="ModelName" type="xs:string" />
+      <xs:element name="Machine" type="Machine" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

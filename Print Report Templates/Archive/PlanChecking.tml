@@ -1,0 +1,274 @@
+﻿Section=Form
+PaperSize=Letter
+PaperOrientation=Portrait
+Margin=0
+Move=0
+
+#########
+Text=PlanCheck;$PatientLastName  $PatientId  $PlanId
+Text=Patient Name;$PatientLastName , $PatientFirstName  $PatientMiddleName
+Text=Patient Id; $PatientId
+If=$PatientId2
+  Text=PatientId2; $PatientId2
+EndIf
+Text=Date Of Birth;$PatientDateOfBirth
+If=$PatientComment
+  Text=PatientComment;$PatientComment
+EndIf
+Text=Sex;$PatientSex
+#########
+Text=Primary Oncologist;$PrimaryOncologistName
+Text=Plan Status;$ApprovalStatus
+If=$PlanningApprovalDate
+  Text=Plan Approved On;$PlanningApprovalDate
+  Text=Approved By;$PlanningApprover
+EndIf
+#########
+Text=Checking Date;$CurrentDate
+Text=Checked By;$UserName
+Text=Is Plan Modified?;$IsPlanModified
+Text=Valid;$IsAllMUperGyValid
+If=$TreatmentApprovalDate
+  Text=TreatmentApprovalDate;$TreatmentApprovalDate
+  Text=TreatmentApprover;$TreatmentApprover
+EndIf
+#########
+Text=Course;$CourseId
+Text=Intent;$CourseIntent
+If=$CourseComment
+  Text=Course Comment;$CourseComment
+EndIf
+Text=Plan Id;$PlanId
+Text=Plan Name;$PlanName
+If=$PlanComment
+  Text=Plan Comment;$PlanComment
+EndIf
+Text=Plan Intent;$PlanIntent
+Text=Technique;$TreatmentTechnique
+#########
+Text=PRESCRIPTION
+#########
+Text=Patient Identifiers; 
+Text=Patient Name;$PatientLastName , $PatientFirstName  $PatientMiddleName
+Text=PatientId; $PatientId
+Text=Date Of Birth;$PatientDateOfBirth
+Text=Sex;$PatientSex
+Text=Primary Oncologist;$PrimaryOncologistName
+Text=Prescription; 
+Text=Intent;$CourseIntent
+Text=Prescribed Dose;$PrescribedDose
+Text=Fractions;$Fractions
+Text=Start Delay;$FractionStartDelay
+Text=Fractions Per Week;$FractionsPerWeek
+Text=Fractions Per Day;$FractionsPerDay
+Text=Dose Per Fraction;$PrescribedDosePerFraction
+Text=Normalization; 
+Text=Normalization;$PlanNormalizationValue
+Text=Normalization Method;$PlanNormalizationMethod
+Text=Warning;$PlanNormMethodWarning
+If=$PlanNormPoint
+  Text=Normalization Location
+  Text=X;$PlanNormPointX
+  Text=Y;$PlanNormPointY
+  Text=Z;$PlanNormPointZ
+EndIf
+Text=Reference Point; 
+Text=Primary Ref Point;$PrimaryRefPointId
+Text=Primary Ref Point Dose;$DoseInPrimaryRefPoint
+Text=Primary Ref Point Relative Dose;$RelativeDoseInPrimaryRefPoint
+Text=Primary Ref Point Dose Per Fraction;$DosePerFractionInPrimaryRefPoint
+Text=TargetVolume;$TargetVolume
+#########
+Text=IMAGE
+#########
+Text=ImageId;$ImageId
+If=$ImageComment
+  Text=Image Comment;$ImageComment
+EndIf
+Text=Image Modality;$ImageModality
+Text=ImageSeriesId;$ImageSeriesId
+If=$ImageSeriesComment
+  Text=ImageSeriesComment;$ImageSeriesComment
+EndIf
+Text=Contrast Exists;$ImageContrastBolusAgentExists
+Text=Imaging Device;$ImagingDeviceId
+Text=User Origin;$ImageUserOrigin
+If=$ImageUserOriginComment
+  Text=Origin Comment;$ImageUserOriginComment
+EndIf
+Text=Imaging Orientation;$PatientImagingOrientation
+Text=Treatment Orientation;$PatientTreatmentOrientation
+Text=Coordinate System;$PlanningCoordinateSystemName
+Text=StructureSetId;$StructureSetId
+If=$StructureSetComment
+  Text=StructureSetComment;$StructureSetComment
+EndIf
+#########
+Text=CALCULATIONS
+#########
+Loop=PlanningValidationWarnings
+  Text=$PlanningValidationWarningsLine
+EndLoop
+If=$PhotonFields
+  Text=PhotonAlg; $PhotonAlg
+  Loop=PhotonAlgOptions
+    Text=$AlgOptionName ;$AlgOptionValue
+  EndLoop
+EndIf
+If=$ElectronFields
+  Text=ElectronAlg; $ElectronAlg
+  Loop=ElectronAlgOptions
+    Text=$AlgOptionName ;$AlgOptionValue
+  EndLoop
+EndIf
+If=$VMATFields
+  Text=Optimizer;$PhotonVMATOptimizationAlg
+  Loop=PhotonVMATOptimizationAlgOptions
+    Text=$AlgOptionName ;$AlgOptionValue
+  EndLoop
+EndIf
+Text=Calculation Medium;$DoseCalculationMedium
+Text=Calculation Method;$DoseCalculationMethod
+#########
+Text=WARNINGS
+#########
+Loop=PlanningValidationWarnings
+  Text=$PlanningValidationWarningsLine
+EndLoop
+Loop=Fields
+  If=$IsSetupField
+  Else
+    Loop=CalculationWarnings
+      Text=Calculation Warnings for $FieldId ;$LogLine
+    EndLoop
+    If=$IsFieldIMRT
+      If=$MLCPlanType
+        Loop=IMRTOptimizationWarnings
+          Text=Optimization Warnings for $FieldName ;$LogLine
+        EndLoop
+      Else
+        Loop=VMATOptimizationWarnings
+          Text=Optimization Warnings for $FieldName ;$LogLine
+        EndLoop
+        Loop=LmcCalculationWarnings
+          Text=LMC Warnings for $FieldName ;$LogLine
+        EndLoop
+      EndIf
+    EndIf
+    Loop=PostProcessingCalculationWarnings
+      Text=Post Processing Warnings for $FieldName ;$LogLine
+    EndLoop
+  EndIf
+EndLoop
+#########
+Text=FIELDS DATA
+#########
+Loop=Fields
+  Text=FieldId;$FieldId
+  Text=FieldName;$FieldName
+    Text=Technique;$FieldTechnique
+    Text=Linac;$FieldMachineId
+  If=$IsSetupField
+  Else
+    Text=Energy;$FieldEnergyMode
+    Text=Plan Type;$MLCPlanType
+  EndIf
+  If=$FieldGantryStopAngle
+    Text=Gantry;$FieldGantryAngle $FieldGantryRotationDir  to $FieldGantryStopAngle
+  Else
+    Text=Gantry;$FieldGantryAngle
+  EndIf
+  Text=Collimator;$FieldCollimatorAngle
+  Text=Couch;$FieldTableAngle
+  Text=Field Size
+  If=$IsFieldSymmetric
+    Text=X;$FieldSizeX
+    Text=Y;$FieldSizeY
+  Else
+    Text=$FieldX1
+    Text=$FieldX2
+    Text=$FieldY1
+    Text=$FieldY2
+  EndIf
+  Text=Isocenter
+  Text=Iso X;$FieldIsocenterX
+  Text=Iso Y;$FieldIsocenterY
+  Text=Iso Z;$FieldIsocenterZ
+  Text=SAD;$FieldSAD
+  If=$FieldGantryStopAngle
+    Text=Start SSD;$FieldCalculatedSSD
+    Text=Stop SSD;$FieldSSDAtStopAngle
+    Text=Average SSD;$FieldSSDAverage
+  Else
+    Text=SSD;$FieldCalculatedSSD
+  EndIf
+  Text=Actual SSD;$FieldActualSSD
+  Text=SFED ;$FieldSFED
+  Text=Virtual SAD X;$VirtualSADX
+  Text=Virtual SAD Y;$VirtualSADY
+  If=$FieldBoluses
+    Loop=Boluses
+      Text=BolusId;$BolusId
+      Text=Source To Bolus Distance;$FieldSBD
+      Text=Bolus HU;$BolusMaterialCTValue
+    EndLoop
+  EndIf
+  If=$IsSetupField
+  Else
+    Text=Field Norm Factor;$FieldNormFactor
+    Text=Norm Method;$FieldNormMethod
+    Text=Field Weight;$FieldWeightFactor
+    Text=Dose Rate;$FieldDoseRate
+    Text=MU;$FieldMonitorUnits
+    Text=MU/Gy;$FieldMonitorUnitsPerGy
+    Text=Ref Dose;$FieldRefDose
+    Text=Gating On;$BeamGatingOn
+    Text=Gating Off;$BeamGatingOff
+    Text=MLC Segments;$MLCPlanSegments
+    If=$FieldApplicators
+      Text=ApplicatorId; $ApplicatorId
+    EndIf
+    If=$FieldWedges
+      Loop=Wedges
+        Text=WedgeId;$WedgeId
+        Text=WedgeType;$WedgeType
+        Text=WedgeDirection;$WedgeDirection
+        Text=WedgeAngle;$WedgeAngle
+      EndLoop
+    EndIf
+    If=$FieldBlocks
+      Loop=Blocks
+        Text=BlockId;$BlockId
+        Text=Block Type;$BlockType
+        Text=Block Tray;$BlockTray
+        Text=Tray Transmission Factor;$BlockTrayTransmissionFactor
+      EndLoop
+    EndIf
+  EndIf
+##
+Text=END FIELD
+##
+EndLoop
+#########
+Text=POINTS LOCATIONS
+#########
+Text=Point;X;Y;Z;
+Loop=RefPoints
+  Text=$RefPointId ;$RefPointX ;$RefPointY ;$RefPointZ ;
+EndLoop
+Text=FIELD POINTS
+Text=Field;Point;Dose;SSD;Depth;Effective Depth;
+Loop=RefPoints
+  Text=Plan;$RefPointId ;$RefPointTotalDose ;;;
+EndLoop
+Loop=Fields
+  If=$IsSetupField
+  Else
+    If=$RefPoints
+      Loop=RefPoints
+        Text=$FieldId ;$RefPointId ;$FieldDose ;$FieldRefPointSSD ;$FieldRefPointPointDepth ;$FieldRefPointEffectiveDepth ;
+      EndLoop
+    EndIf
+  EndIf
+EndLoop
+
