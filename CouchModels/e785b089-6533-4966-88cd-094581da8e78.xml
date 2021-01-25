@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VCouchModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ModelUid>e785b089-6533-4966-88cd-094581da8e78</ModelUid>
+  <ModelName>Exact IGRT Couch, medium</ModelName>
+  <Public>true</Public>
+  <CreationDate>2015-11-04T15:10:42.7020926+01:00</CreationDate>
+  <CreationUser>Varian</CreationUser>
+  <ModelType>CrossSection</ModelType>
+  <PatientPosition>HFS</PatientPosition>
+  <ModelStructures>
+    <ModelStructure DisplayName="CouchSurface" StructureId="CouchSurface" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchInterior" StructureId="CouchInterior" StructureRep="Volume" />
+  </ModelStructures>
+  <StructureHuMappings>
+    <StructureHuMapping StructureId="CouchSurface" AssignedHuValue="-300" />
+    <StructureHuMapping StructureId="CouchInterior" AssignedHuValue="-1000" />
+  </StructureHuMappings>
+</VCouchModelInfo>

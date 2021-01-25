@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrossSectionData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CutStructures>
+    <CutStructure>
+      <StructureName>CouchSurface</StructureName>
+      <Contours>
+        <Contour>
+			<ContourPoints>
+			<Point X="-232.5" Y="0" />
+			<Point X="-255" Y="0" />
+			<Point X="-256.736" Y="0.152" />
+			<Point X="-258.42" Y="0.603" />
+			<Point X="-260" Y="1.34" />
+			<Point X="-261.428" Y="2.34" />
+			<Point X="-262.66" Y="3.572" />
+			<Point X="-263.66" Y="5" />
+			<Point X="-264.397" Y="6.58" />
+			<Point X="-264.848" Y="8.264" />
+			<Point X="-265" Y="10" />
+			<Point X="-265" Y="19" />
+			<Point X="-264.898" Y="19.776" />
+			<Point X="-264.598" Y="20.5" />
+			<Point X="-264.121" Y="21.121" />
+			<Point X="-263.5" Y="21.598" />
+			<Point X="-262.776" Y="21.898" />
+			<Point X="-262" Y="22" />
+			<Point X="-232.5" Y="22" />
+			<Point X="232.5" Y="22" />
+			<Point X="262" Y="22" />
+			<Point X="262.776" Y="21.898" />
+			<Point X="263.5" Y="21.598" />
+			<Point X="264.121" Y="21.121" />
+			<Point X="264.598" Y="20.5" />
+			<Point X="264.898" Y="19.776" />
+			<Point X="265" Y="19" />
+			<Point X="265" Y="10" />
+			<Point X="264.848" Y="8.264" />
+			<Point X="264.397" Y="6.58" />
+			<Point X="263.66" Y="5" />
+			<Point X="262.66" Y="3.572" />
+			<Point X="261.428" Y="2.34" />
+			<Point X="260" Y="1.34" />
+			<Point X="258.42" Y="0.603" />
+			<Point X="256.736" Y="0.152" />
+			<Point X="255" Y="0" />
+			<Point X="232.5" Y="0" />
+          </ContourPoints>
+        </Contour>
+		<Contour>
+			<ContourPoints>
+			<Point X="-232.5" Y="4" />
+			<Point X="-255" Y="4" />
+			<Point X="-256.042" Y="4.091" />
+			<Point X="-257.052" Y="4.362" />
+			<Point X="-258" Y="4.804" />
+			<Point X="-258.857" Y="5.404" />
+			<Point X="-259.596" Y="6.143" />
+			<Point X="-260.196" Y="7" />
+			<Point X="-260.638" Y="7.948" />
+			<Point X="-260.909" Y="8.958" />
+			<Point X="-261" Y="10" />
+			<Point X="-261" Y="17" />
+			<Point X="-260.966" Y="17.259" />
+			<Point X="-260.866" Y="17.5" />
+			<Point X="-260.707" Y="17.707" />
+			<Point X="-260.5" Y="17.866" />
+			<Point X="-260.259" Y="17.966" />
+			<Point X="-260" Y="18" />
+			<Point X="-232.5" Y="18" />
+			<Point X="232.5" Y="18" />
+			<Point X="260" Y="18" />
+			<Point X="260.259" Y="17.966" />
+			<Point X="260.5" Y="17.866" />
+			<Point X="260.707" Y="17.707" />
+			<Point X="260.866" Y="17.5" />
+			<Point X="260.966" Y="17.259" />
+			<Point X="261" Y="17" />
+			<Point X="261" Y="10" />
+			<Point X="260.909" Y="8.958" />
+			<Point X="260.638" Y="7.948" />
+			<Point X="260.196" Y="7" />
+			<Point X="259.596" Y="6.143" />
+			<Point X="258.857" Y="5.404" />
+			<Point X="258" Y="4.804" />
+			<Point X="257.052" Y="4.362" />
+			<Point X="256.042" Y="4.091" />
+			<Point X="255" Y="4" />
+			<Point X="232.5" Y="4" />
+          </ContourPoints>
+        </Contour>
+      </Contours>
+    </CutStructure>
+    <CutStructure>
+      <StructureName>CouchInterior</StructureName>
+      <Contours>
+        <Contour>
+			<ContourPoints>
+			<Point X="-232.5" Y="4" />
+			<Point X="-255" Y="4" />
+			<Point X="-256.042" Y="4.091" />
+			<Point X="-257.052" Y="4.362" />
+			<Point X="-258" Y="4.804" />
+			<Point X="-258.857" Y="5.404" />
+			<Point X="-259.596" Y="6.143" />
+			<Point X="-260.196" Y="7" />
+			<Point X="-260.638" Y="7.948" />
+			<Point X="-260.909" Y="8.958" />
+			<Point X="-261" Y="10" />
+			<Point X="-261" Y="17" />
+			<Point X="-260.966" Y="17.259" />
+			<Point X="-260.866" Y="17.5" />
+			<Point X="-260.707" Y="17.707" />
+			<Point X="-260.5" Y="17.866" />
+			<Point X="-260.259" Y="17.966" />
+			<Point X="-260" Y="18" />
+			<Point X="-232.5" Y="18" />
+			<Point X="232.5" Y="18" />
+			<Point X="260" Y="18" />
+			<Point X="260.259" Y="17.966" />
+			<Point X="260.5" Y="17.866" />
+			<Point X="260.707" Y="17.707" />
+			<Point X="260.866" Y="17.5" />
+			<Point X="260.966" Y="17.259" />
+			<Point X="261" Y="17" />
+			<Point X="261" Y="10" />
+			<Point X="260.909" Y="8.958" />
+			<Point X="260.638" Y="7.948" />
+			<Point X="260.196" Y="7" />
+			<Point X="259.596" Y="6.143" />
+			<Point X="258.857" Y="5.404" />
+			<Point X="258" Y="4.804" />
+			<Point X="257.052" Y="4.362" />
+			<Point X="256.042" Y="4.091" />
+			<Point X="255" Y="4" />
+			<Point X="232.5" Y="4" />
+          </ContourPoints>
+        </Contour>
+      </Contours>
+    </CutStructure>
+    <CutStructure>
+      <StructureName>CouchRailLeftIn</StructureName>
+      <Contours>
+        <Contour>
+          <ContourPoints>
+			<Point X="-66.258" Y="25.9" />
+			<Point X="-67.519" Y="26.07" />
+			<Point X="-68.627" Y="26.57" />
+			<Point X="-69.507" Y="27.364" />
+			<Point X="-70.099" Y="28.4" />
+			<Point X="-70.362" Y="29.606" />
+			<Point X="-70.279" Y="30.9" />
+			<Point X="-55.583" Y="105.9" />
+			<Point X="-55.159" Y="107.194" />
+			<Point X="-54.423" Y="108.4" />
+			<Point X="-53.425" Y="109.436" />
+			<Point X="-52.234" Y="110.23" />
+			<Point X="-50.93" Y="110.73" />
+			<Point X="-49.603" Y="110.9" />
+			<Point X="-24.103" Y="110.9" />
+			<Point X="-22.842" Y="110.73" />
+			<Point X="-21.734" Y="110.23" />
+			<Point X="-20.854" Y="109.436" />
+			<Point X="-20.263" Y="108.4" />
+			<Point X="-20" Y="107.194" />
+			<Point X="-20.083" Y="105.9" />
+			<Point X="-34.779" Y="30.9" />
+			<Point X="-35.203" Y="29.606" />
+			<Point X="-35.938" Y="28.4" />
+			<Point X="-36.936" Y="27.364" />
+			<Point X="-38.127" Y="26.57" />
+			<Point X="-39.431" Y="26.07" />
+			<Point X="-40.758" Y="25.9" />
+          </ContourPoints>
+        </Contour>
+        <Contour>
+          <ContourPoints>
+			<Point X="-49.159" Y="35.4" />
+			<Point X="-52.057" Y="35.632" />
+			<Point X="-54.625" Y="36.32" />
+			<Point X="-57.034" Y="37.443" />
+			<Point X="-59.211" Y="38.968" />
+			<Point X="-61.091" Y="40.847" />
+			<Point X="-62.366" Y="43.025" />
+			<Point X="-63.489" Y="45.434" />
+			<Point X="-63.927" Y="48.002" />
+			<Point X="-63.909" Y="50.65" />
+			<Point X="-56.953" Y="86.15" />
+			<Point X="-56.471" Y="88.798" />
+			<Point X="-55.533" Y="91.366" />
+			<Point X="-54.41" Y="93.775" />
+			<Point X="-52.885" Y="95.953" />
+			<Point X="-51.005" Y="97.832" />
+			<Point X="-48.828" Y="99.357" />
+			<Point X="-46.418" Y="100.48" />
+			<Point X="-43.851" Y="101.168" />
+			<Point X="-41.203" Y="101.4" />
+			<Point X="-41.203" Y="101.4" />
+			<Point X="-38.305" Y="101.168" />
+			<Point X="-35.737" Y="100.48" />
+			<Point X="-33.328" Y="99.357" />
+			<Point X="-31.15" Y="97.832" />
+			<Point X="-29.27" Y="95.953" />
+			<Point X="-27.996" Y="93.775" />
+			<Point X="-26.872" Y="91.366" />
+			<Point X="-26.434" Y="88.798" />
+			<Point X="-26.453" Y="86.15" />
+			<Point X="-33.409" Y="50.65" />
+			<Point X="-33.89" Y="48.002" />
+			<Point X="-34.828" Y="45.434" />
+			<Point X="-35.952" Y="43.025" />
+			<Point X="-37.477" Y="40.847" />
+			<Point X="-39.356" Y="38.968" />
+			<Point X="-41.534" Y="37.443" />
+			<Point X="-43.943" Y="36.32" />
+			<Point X="-46.511" Y="35.632" />
+			<Point X="-49.159" Y="35.4" />
+          </ContourPoints>
+        </Contour>
+      </Contours>
+    </CutStructure>
+    <CutStructure>
+      <StructureName>CouchRailRightIn</StructureName>
+      <Contours>
+        <Contour>
+          <ContourPoints>
+			<Point X="66.258" Y="25.9" />
+			<Point X="67.519" Y="26.07" />
+			<Point X="68.627" Y="26.57" />
+			<Point X="69.507" Y="27.364" />
+			<Point X="70.099" Y="28.4" />
+			<Point X="70.362" Y="29.606" />
+			<Point X="70.279" Y="30.9" />
+			<Point X="55.583" Y="105.9" />
+			<Point X="55.159" Y="107.194" />
+			<Point X="54.423" Y="108.4" />
+			<Point X="53.425" Y="109.436" />
+			<Point X="52.234" Y="110.23" />
+			<Point X="50.93" Y="110.73" />
+			<Point X="49.603" Y="110.9" />
+			<Point X="24.103" Y="110.9" />
+			<Point X="22.842" Y="110.73" />
+			<Point X="21.734" Y="110.23" />
+			<Point X="20.854" Y="109.436" />
+			<Point X="20.263" Y="108.4" />
+			<Point X="20" Y="107.194" />
+			<Point X="20.083" Y="105.9" />
+			<Point X="34.779" Y="30.9" />
+			<Point X="35.203" Y="29.606" />
+			<Point X="35.938" Y="28.4" />
+			<Point X="36.936" Y="27.364" />
+			<Point X="38.127" Y="26.57" />
+			<Point X="39.431" Y="26.07" />
+			<Point X="40.758" Y="25.9" />
+          </ContourPoints>
+        </Contour>
+        <Contour>
+          <ContourPoints>
+			<Point X="49.159" Y="35.4" />
+			<Point X="52.057" Y="35.632" />
+			<Point X="54.625" Y="36.32" />
+			<Point X="57.034" Y="37.443" />
+			<Point X="59.211" Y="38.968" />
+			<Point X="61.091" Y="40.847" />
+			<Point X="62.366" Y="43.025" />
+			<Point X="63.489" Y="45.434" />
+			<Point X="63.927" Y="48.002" />
+			<Point X="63.909" Y="50.65" />
+			<Point X="56.953" Y="86.15" />
+			<Point X="56.471" Y="88.798" />
+			<Point X="55.533" Y="91.366" />
+			<Point X="54.41" Y="93.775" />
+			<Point X="52.885" Y="95.953" />
+			<Point X="51.005" Y="97.832" />
+			<Point X="48.828" Y="99.357" />
+			<Point X="46.418" Y="100.48" />
+			<Point X="43.851" Y="101.168" />
+			<Point X="41.203" Y="101.4" />
+			<Point X="41.203" Y="101.4" />
+			<Point X="38.305" Y="101.168" />
+			<Point X="35.737" Y="100.48" />
+			<Point X="33.328" Y="99.357" />
+			<Point X="31.15" Y="97.832" />
+			<Point X="29.27" Y="95.953" />
+			<Point X="27.996" Y="93.775" />
+			<Point X="26.872" Y="91.366" />
+			<Point X="26.434" Y="88.798" />
+			<Point X="26.453" Y="86.15" />
+			<Point X="33.409" Y="50.65" />
+			<Point X="33.89" Y="48.002" />
+			<Point X="34.828" Y="45.434" />
+			<Point X="35.952" Y="43.025" />
+			<Point X="37.477" Y="40.847" />
+			<Point X="39.356" Y="38.968" />
+			<Point X="41.534" Y="37.443" />
+			<Point X="43.943" Y="36.32" />
+			<Point X="46.511" Y="35.632" />
+			<Point X="49.159" Y="35.4" />
+          </ContourPoints>
+        </Contour>
+      </Contours>
+    </CutStructure>
+	    <CutStructure>
+      <StructureName>CouchRailLeftOut</StructureName>
+      <Contours>
+        <Contour>
+          <ContourPoints>
+			<Point X="-246.258" Y="25.9" />
+			<Point X="-247.519" Y="26.07" />
+			<Point X="-248.627" Y="26.57" />
+			<Point X="-249.507" Y="27.364" />
+			<Point X="-250.099" Y="28.4" />
+			<Point X="-250.362" Y="29.606" />
+			<Point X="-250.279" Y="30.9" />
+			<Point X="-235.583" Y="105.9" />
+			<Point X="-235.159" Y="107.194" />
+			<Point X="-234.423" Y="108.4" />
+			<Point X="-233.425" Y="109.436" />
+			<Point X="-232.234" Y="110.23" />
+			<Point X="-230.93" Y="110.73" />
+			<Point X="-229.603" Y="110.9" />
+			<Point X="-204.103" Y="110.9" />
+			<Point X="-202.842" Y="110.73" />
+			<Point X="-201.734" Y="110.23" />
+			<Point X="-200.854" Y="109.436" />
+			<Point X="-200.263" Y="108.4" />
+			<Point X="-200" Y="107.194" />
+			<Point X="-200.083" Y="105.9" />
+			<Point X="-214.779" Y="30.9" />
+			<Point X="-215.203" Y="29.606" />
+			<Point X="-215.938" Y="28.4" />
+			<Point X="-216.936" Y="27.364" />
+			<Point X="-218.127" Y="26.57" />
+			<Point X="-219.431" Y="26.07" />
+			<Point X="-220.758" Y="25.9" />
+          </ContourPoints>
+        </Contour>
+        <Contour>
+          <ContourPoints>
+			<Point X="-229.159" Y="35.4" />
+			<Point X="-232.057" Y="35.632" />
+			<Point X="-234.625" Y="36.32" />
+			<Point X="-237.034" Y="37.443" />
+			<Point X="-239.211" Y="38.968" />
+			<Point X="-241.091" Y="40.847" />
+			<Point X="-242.366" Y="43.025" />
+			<Point X="-243.489" Y="45.434" />
+			<Point X="-243.927" Y="48.002" />
+			<Point X="-243.909" Y="50.65" />
+			<Point X="-236.953" Y="86.15" />
+			<Point X="-236.471" Y="88.798" />
+			<Point X="-235.533" Y="91.366" />
+			<Point X="-234.41" Y="93.775" />
+			<Point X="-232.885" Y="95.953" />
+			<Point X="-231.005" Y="97.832" />
+			<Point X="-228.828" Y="99.357" />
+			<Point X="-226.418" Y="100.48" />
+			<Point X="-223.851" Y="101.168" />
+			<Point X="-221.203" Y="101.4" />
+			<Point X="-221.203" Y="101.4" />
+			<Point X="-218.305" Y="101.168" />
+			<Point X="-215.737" Y="100.48" />
+			<Point X="-213.328" Y="99.357" />
+			<Point X="-211.15" Y="97.832" />
+			<Point X="-209.27" Y="95.953" />
+			<Point X="-207.996" Y="93.775" />
+			<Point X="-206.872" Y="91.366" />
+			<Point X="-206.434" Y="88.798" />
+			<Point X="-206.453" Y="86.15" />
+			<Point X="-213.409" Y="50.65" />
+			<Point X="-213.89" Y="48.002" />
+			<Point X="-214.828" Y="45.434" />
+			<Point X="-215.952" Y="43.025" />
+			<Point X="-217.477" Y="40.847" />
+			<Point X="-219.356" Y="38.968" />
+			<Point X="-221.534" Y="37.443" />
+			<Point X="-223.943" Y="36.32" />
+			<Point X="-226.511" Y="35.632" />
+			<Point X="-229.159" Y="35.4" />
+          </ContourPoints>
+        </Contour>
+      </Contours>
+    </CutStructure>
+    <CutStructure>
+      <StructureName>CouchRailRightOut</StructureName>
+      <Contours>
+        <Contour>
+          <ContourPoints>
+			<Point X="246.258" Y="25.9" />
+			<Point X="247.519" Y="26.07" />
+			<Point X="248.627" Y="26.57" />
+			<Point X="249.507" Y="27.364" />
+			<Point X="250.099" Y="28.4" />
+			<Point X="250.362" Y="29.606" />
+			<Point X="250.279" Y="30.9" />
+			<Point X="235.583" Y="105.9" />
+			<Point X="235.159" Y="107.194" />
+			<Point X="234.423" Y="108.4" />
+			<Point X="233.425" Y="109.436" />
+			<Point X="232.234" Y="110.23" />
+			<Point X="230.93" Y="110.73" />
+			<Point X="229.603" Y="110.9" />
+			<Point X="204.103" Y="110.9" />
+			<Point X="202.842" Y="110.73" />
+			<Point X="201.734" Y="110.23" />
+			<Point X="200.854" Y="109.436" />
+			<Point X="200.263" Y="108.4" />
+			<Point X="200" Y="107.194" />
+			<Point X="200.083" Y="105.9" />
+			<Point X="214.779" Y="30.9" />
+			<Point X="215.203" Y="29.606" />
+			<Point X="215.938" Y="28.4" />
+			<Point X="216.936" Y="27.364" />
+			<Point X="218.127" Y="26.57" />
+			<Point X="219.431" Y="26.07" />
+			<Point X="220.758" Y="25.9" />
+          </ContourPoints>
+        </Contour>
+        <Contour>
+          <ContourPoints>
+			<Point X="229.159" Y="35.4" />
+			<Point X="232.057" Y="35.632" />
+			<Point X="234.625" Y="36.32" />
+			<Point X="237.034" Y="37.443" />
+			<Point X="239.211" Y="38.968" />
+			<Point X="241.091" Y="40.847" />
+			<Point X="242.366" Y="43.025" />
+			<Point X="243.489" Y="45.434" />
+			<Point X="243.927" Y="48.002" />
+			<Point X="243.909" Y="50.65" />
+			<Point X="236.953" Y="86.15" />
+			<Point X="236.471" Y="88.798" />
+			<Point X="235.533" Y="91.366" />
+			<Point X="234.41" Y="93.775" />
+			<Point X="232.885" Y="95.953" />
+			<Point X="231.005" Y="97.832" />
+			<Point X="228.828" Y="99.357" />
+			<Point X="226.418" Y="100.48" />
+			<Point X="223.851" Y="101.168" />
+			<Point X="221.203" Y="101.4" />
+			<Point X="221.203" Y="101.4" />
+			<Point X="218.305" Y="101.168" />
+			<Point X="215.737" Y="100.48" />
+			<Point X="213.328" Y="99.357" />
+			<Point X="211.15" Y="97.832" />
+			<Point X="209.27" Y="95.953" />
+			<Point X="207.996" Y="93.775" />
+			<Point X="206.872" Y="91.366" />
+			<Point X="206.434" Y="88.798" />
+			<Point X="206.453" Y="86.15" />
+			<Point X="213.409" Y="50.65" />
+			<Point X="213.89" Y="48.002" />
+			<Point X="214.828" Y="45.434" />
+			<Point X="215.952" Y="43.025" />
+			<Point X="217.477" Y="40.847" />
+			<Point X="219.356" Y="38.968" />
+			<Point X="221.534" Y="37.443" />
+			<Point X="223.943" Y="36.32" />
+			<Point X="226.511" Y="35.632" />
+			<Point X="229.159" Y="35.4" />
+          </ContourPoints>
+        </Contour>
+      </Contours>
+    </CutStructure>
+  </CutStructures>
+</CrossSectionData>

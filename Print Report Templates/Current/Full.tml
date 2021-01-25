@@ -1,0 +1,2399 @@
+﻿###
+### Converted from code page 1252 into Unicode UTF-8 by ConvertTml on 2017-06-04T17:23:28
+###
+##############################################################################
+# Treatment Plan Report Template File 
+#
+# Copyright, Varian Medical Systems, Inc., 1995 - 2007
+# All Rights Reserved
+#
+# ---------------------------------------------------------------------------
+# Instructions:
+#
+# All measurements are in 1/10 mm's. E.g 2000 = 200mm = 20cm
+#
+# Font size is also in 1/10 mm's.  Typical sizes are:
+#   94 = 28 pt
+#   84 = 24 pt
+#   60 = 18 pt
+#   42 = 12 pt 
+#   38 = 11 pt
+#   34 = 10 pt
+#   30 =  9 pt
+#
+# Font weight is in logical units. Number can be anything between 1 and 999.
+# Usual values used are:
+#  100 = THIN
+#  300 = LIGHT
+#  400 = NORMAL
+#  700 = BOLD
+#  900 = HEAVY
+#
+#
+##############################################################################
+Section=CoverPage
+PaperSize=Letter
+# Defines the paper size.  Allowed sizes are:
+#   A4
+#   A3
+#   Legal
+#   Letter
+#   Tabloid
+# This command is valid only in Header-section
+
+PaperOrientation=Portrait
+# Defines paper orientation.  Allowed options are:
+#   Portrait
+#   Landscape
+# This command is valid only in Header-section
+
+Height=300
+# Defines the height of the space reserved for the header.
+
+LineSpacing=1.50
+# Linespace is 1.1 times height of the font.
+
+#HorizontalLine=0
+# Draw a line from column 0 to the width of the page.
+
+Move=0
+# Move-command without y-value moves only in x direction and keeps the y intact.
+# This one moves the cursor to the beginning of current line.
+
+Move=0;200
+
+LineSpacing=1.3
+Margin=200
+# 2 cm left margin in the form.
+
+Move=0
+Font=94;900;Arial
+Text=PLAN SUM REPORT
+RelativeMove=0;-10
+HorizontalLine=0;1750
+RelativeMove=0;2
+HorizontalLine=0;1750
+RelativeMove=0;10
+Text=
+
+Font=34;400;Arial
+LineText=Patient:
+Move=250
+Font=60;700;Arial
+Text=$PatientLastName , $PatientFirstName  $PatientMiddleName 
+Move=0
+Font=34;400;Arial
+LineText=Patient IDs:
+Move=250
+Font=60;700;Arial
+LineText=$PatientId
+If=$PatientId2
+  Text=, $PatientId2
+Else
+  Text=
+EndIf
+
+Move=0
+Font=34;400;Arial
+LineText=Date:
+Move=250
+Font=60;700;Arial
+Text=$CurrentDateShort
+
+Move=0
+Font=34;400;Arial
+LineText=Plan Sum Id:
+Font=60;700;Arial
+Move=250
+Text=$PlanSumId
+
+Move=0
+Font=34;400;Arial
+LineText=Plan Sum Name:
+Font=60;700;Arial
+Move=250
+Text=$PlanSumName
+
+Move=0
+Font=34;400;Arial
+LineText=Course:
+Font=60;700;Arial
+Move=250
+Text=$PlanSumCourseId
+
+LineSpacing=1.1
+
+Loop=SumPlans
+  Font=34;400;Arial
+  Text=
+  Move=0
+  LineText=Plan Id:
+  Move=250
+  Font=42;400;Arial
+  Text=$PlanIdOfSum
+  Font=34;400;Arial
+  Move=0
+  LineText=Plan Name:
+  Move=250
+  Font=42;400;Arial
+  Text=$PlanNameOfSum
+  Move=0
+  Font=34;400;Arial
+  LineText=Fractionation Id
+  Move=400
+  LineText=Prescription dose
+  Move=1000
+  LineText=Nbr of Fractions
+  Move=1300 
+  Text=Dose at primary reference point
+  Font=42;400;Arial
+  HorizontalLine=0;1750
+  Loop=SumFractions
+    Move=0
+    LineText=$FractionationIdOfSum
+    Move=400
+    LineText=$TotalDose_ForSum ($DosePerFraction_ForSum  / fraction)
+    Move=1000
+    LineText=$NbrOfFrac_ForSum
+    Move=1300
+    Text=$TotalDoseAtPrimary_ForSum
+  EndLoop
+EndLoop
+
+
+PageBreak=0
+##############################################################################
+# end of the plan sum cover page
+##############################################################################
+
+Section=Header
+# Defines that this section of commands is for the header which is printed on 
+# top of each page
+
+Description=This is a report form for a complete report of the plan. 
+# Description of the template, shown in print report dialog.
+
+PaperSize=Letter
+# Defines the paper size.  Allowed sizes are:
+#   A4
+#   A3
+#   Legal
+#   Letter
+#   Tabloid
+# This command is valid only in Header-section
+
+PaperOrientation=Portrait
+# Defines paper orientation.  Allowed options are:
+#   Portrait
+#   Landscape
+# This command is valid only in Header-section
+
+Height=250
+# Defines the height of the space reserved for the header.
+
+LineSpacing=1.10
+# Linespace is 1.1 times height of the font.
+
+Margin=50
+# Only small margins in header.
+
+Font=60;900;Arial
+# 18 pt heavy Arial font
+
+Move=0;50
+# Move to the left margin and down 5 mm
+
+Text=$ApplicationName
+# Write text and do Line Feed + Carriage Return
+
+Font=30;400;Arial
+# 9 pt normal Arial font
+
+LineText=$TaskName  $TaskVersion 
+# Text is written without Line Feed + Carriage Return
+
+Move=-10
+# Negative x-value in Move-command implicates distance measured from the right edge.
+
+TextRight=$Hospital
+# Text is written so that it ends on the current cursor location, (-10).
+# Line Feed + Carriage Return
+
+RelativeMove=0;10
+# Move down 1 mm
+
+HorizontalLine=0
+# Draw a line from column 0 to the width of the page.
+
+RelativeMove=0;10
+# Move down 1 mm
+
+##############################################################################
+Section=Footer
+
+Height=300
+# Defines the height of the space reserved for footer.
+# The form is printed between +headerHeight and PaperLength - FooterHeight.
+# The legtht and the width of the paper are taken from the printer properties.
+
+LineSpacing=1.10
+# Linespace is 1.1 times height of the font.
+
+Margin=50
+# Only small margins in footer.
+
+Move=0;-250
+# Negative y-value in Move-command implicates distance measured from the bottom 
+# of the page.
+
+RelativeMove=0;10
+# Move down 1 mm
+
+HorizontalLine=0
+# Draw a line from column 0 to the width of the page.
+
+RelativeMove=0;10
+# Move down 1 mm
+
+Move=0
+# Move-command without y-value moves only in x direction and keeps the y intact.
+# This one moves the cursor to the beginning of current line.
+
+Font=30;400;Arial
+# 9 pt normal Arial font
+
+LineText=Patient: 
+Move=150
+LineText=$PatientLastName , $PatientFirstName  $PatientMiddleName  ($PatientId 
+If=$PatientId2
+  LineText=, $PatientId2
+EndIf
+LineText=)
+# Write Patient Id 2 only if it has been defined for this patient.
+
+Move=-10 
+# Negative x-value in Move-command implicates distance measured from the right edge.
+TextRight=Printed $CurrentDateShort  by $UserId
+
+If=$NotCoverPage
+  Move=0
+  LineText=Course:
+  Move=150
+  Text=$CourseId
+
+  Move=0
+  LineText=Plan:
+  Move=150
+  LineText=$PlanId   -  $ApprovalStatus
+Else 
+  Move=0
+  LineText=Plan Sum:
+  Move=150
+  Text=$PlanSumName
+EndIf
+
+Move=-10
+TextRight=Page: $PageNumber
+
+##############################################################################
+Section=Form
+LineSpacing=1.3
+Margin=200
+# 2 cm left margin in the form.
+
+Move=0
+Font=94;900;Arial
+Text=TREATMENT PLAN REPORT
+RelativeMove=0;-10
+HorizontalLine=0;1750
+RelativeMove=0;2
+HorizontalLine=0;1750
+RelativeMove=0;10
+
+##### PATIENT DATA
+Move=0
+Font=60;700;Arial
+Text=
+Text=PATIENT
+
+Margin=250
+# Line 1: patient name and IDs
+Move=0
+Font=30;700;Arial
+LineText=Name:
+Move=300
+Font=30;400;Arial
+LineText=$PatientLastName , $PatientFirstName  $PatientMiddleName  
+Move=900
+Font=30;700;Arial
+LineText=IDs:
+Font=30;400;Arial
+Move=1200
+LineText=$PatientId
+If=$PatientId2
+  Text=, $PatientId2
+Else
+  Text=
+EndIf
+
+# Line 2: Birth Date and sex
+Move=0
+Font=30;700;Arial
+LineText=Birthdate:
+Move=300
+Font=30;400;Arial
+LineText=$PatientDateOfBirth
+Move=900
+Font=30;700;Arial
+LineText=Sex:
+Move=1200
+Font=30;400;Arial
+Text=$PatientSex
+
+# Line3: Primary Oncologist
+Move=0
+Font=30;700;Arial
+LineText=Primary Oncologist:
+Move=300
+Font=30;400;Arial
+Text=$PrimaryOncologist
+
+# Line4: Primary Referring Physician
+Move=0
+Font=30;700;Arial
+LineText=Primary Physician:
+Move=300
+Font=30;400;Arial
+Text=$PrimaryReferringPhysician
+
+# Lines 5-: comments
+If=$Comment
+  Move=0
+  Font=30;700;Arial
+  Text=Report Comment:
+  Move=50
+  Font=30;400;Arial
+  Text=$Comment
+EndIf
+
+If=$PatientComment
+  Move=0
+  Font=30;700;Arial
+  Text=Patient Comment:
+  Move=50
+  Font=30;400;Arial
+  Text=$PatientComment
+EndIf
+RelativeMoveText=0;1
+
+PageBreak=0.9
+
+##### PROTOCOL DATA
+
+If=$ProtocolId
+  Margin=200
+  Move=0
+  Font=60;700;Arial
+  Text=PROTOCOL
+
+  Margin=250
+  Move=0
+  Font=30;700;Arial
+  LineText=Protocol Id:
+  Move=300
+  Font=30;400;Arial
+  Text=$ProtocolId
+
+  Move=0
+  Font=30;700;Arial
+  Font=30;400;Arial
+  LineText=Status:
+  Move=300
+  Text=$ProtocolStatus
+
+  # Phases
+  Loop=Phases
+
+    If=$IsPlanPhase
+      # Phase information
+      Move=0
+      Font=30;700;Arial
+      LineText=Protocol Plan Id:
+      Move=300
+      Font=30;400;Arial
+      Text=$PhaseId
+
+      Move=0
+      Font=30;700;Arial
+      LineText=Total Fractions:
+      Move=300
+      Font=30;400;Arial
+      Text=$PhaseTotalFractions
+
+      Move=0
+      Font=30;700;Arial
+      LineText=Fractions Per Week:
+      Move=300
+      Font=30;400;Arial
+      Text=$PhaseFractionsPerWeek
+
+      Move=0
+      Font=30;700;Arial
+      LineText=Fractions Per Day:
+      Move=300
+      Font=30;400;Arial
+      Text=$PhaseFractionsPerDay
+    
+      Move=0
+      Font=30;700;Arial
+      LineText=Immobilization Device:
+      Move=300
+      Font=30;400;Arial
+      Text=$ImmobilizationDevice
+    
+      Move=0
+      Font=30;700;Arial
+      LineText=Localization Technique:
+      Move=300
+      Font=30;400;Arial
+      Text=$LocalizationTechnique
+      RelativeMoveText=0;1  	
+    
+      # Phase prescriptions    
+      Move=0
+      Font=30;700;Arial
+      Text=Prescriptions:
+
+      # Header Line
+      Move=30
+      Font=30;400;Arial
+      LineText=Prescription
+      Move=1150
+      Text=Dose
+      Font=30;400;Arial
+      HorizontalLine=30;1320
+
+      # Prescription items
+      Loop=PrescriptionItems
+        Move=30
+        LineText=$PrescriptionType
+        Move=330
+        LineText=$PrescriptionModifier
+        Move=630
+        LineText=$PrescriptionText
+        Move=1150
+        Text=$PrescriptionDose
+      EndLoop
+      RelativeMoveText=0;1 
+
+      # Header Line
+      Move=30
+      Font=30;400;Arial
+      LineText=Index
+      Move=1150
+      Text=Value
+      Font=30;400;Arial
+      HorizontalLine=30;1320
+
+      # Index items
+      Loop=IndexItems
+        Move=30
+        LineText=$IndexStructure
+        Move=330
+        LineText=$IndexType
+        Move=630
+        LineText=$IndexModifier
+        Move=1150
+        Text=$IndexValue
+      EndLoop
+      RelativeMoveText=0;1 
+    EndIf
+  EndLoop
+EndIf
+
+#### PLAN & COURSE DATA
+
+Margin=200
+Move=0
+Font=60;700;Arial
+Text=PLAN
+
+Font=42;700;Arial
+Text=General
+Margin=250
+
+
+# Line 1: Plan Id and intent
+Move=0
+Font=30;700;Arial
+LineText=Plan Id:
+Move=300
+Font=30;400;Arial
+LineText=$PlanId
+Move=900
+Font=30;700;Arial
+LineText=Plan Intent:
+Move=1200
+Font=30;400;Arial
+Text=$PlanIntent
+
+#Line 2: Plan Name
+If=$PlanName
+  Move=0
+  Font=30;700;Arial
+  LineText=Plan Name:
+  Move=300
+  Font=30;400;Arial
+  Text=$PlanName
+EndIf
+
+# Line 3: Course Id and intent
+Move=0
+Font=30;700;Arial
+LineText=Course Id:
+Move=300
+Font=30;400;Arial
+LineText=$CourseId
+Move=900
+Font=30;700;Arial
+LineText=Course Intent:
+Move=1200
+Font=30;400;Arial
+Text=$CourseIntent
+
+If=$PlanComment
+  Move=0
+  Font=30;700;Arial
+  Text=Plan Comment:
+  Move=50
+  Font=30;400;Arial
+  Text=$PlanComment
+EndIf
+
+If=$CourseComment
+  Move=0
+  Font=30;700;Arial
+  Text=Course Comment:
+  Move=50
+  Font=30;400;Arial
+  Text=$CourseComment
+EndIf
+
+Move=0
+Font=30;700;Arial
+LineText=Plan Created:
+Move=300
+Font=30;400;Arial
+Text=$PlanCreationDate  by $PlanCreator
+
+Move=0
+Font=30;700;Arial
+LineText=Plan Last Modified:
+Move=300
+Font=30;400;Arial
+Text=$PlanModificationDate  by $PlanModifier
+
+
+#### PATIENT ORIENTATION & IMAGE ORIGIN & PLANNING COORDINATE SYSTEM
+
+If=$IsIRREGPlan
+  Move=0
+  Font=30;700;Arial
+  LineText=Patient Treatment Orientation:
+  Move=600
+  Font=30;400;Arial
+  Text=$PatientTreatmentOrientation
+  RelativeMoveText=0;1
+Else
+  RelativeMoveText=0;1
+
+	Margin=200
+  Move=0
+  Font=42;700;Arial
+  Text=Image
+
+  Margin=250
+
+  # Image Id
+  Move=0
+  Font=30;700;Arial
+  LineText=Image Id:
+  Move=600
+  Font=30;400;Arial
+  Text=$ImageId
+  
+  # Image name, if defined
+  If=$ImageName  
+    Move=0
+    Font=30;700;Arial
+    LineText=Image Name:
+    Move=600
+    Font=30;400;Arial
+    Text=$ImageName
+  EndIf
+  
+  Move=0
+  Font=30;700;Arial
+  LineText=Image Series Id:
+  Move=600
+  Font=30;400;Arial
+  Text=$ImageSeriesId
+  
+  # Image Series Comment, if defined
+  If=$ImageSeriesComment  
+    Move=0
+    Font=30;700;Arial
+    Text=Series Comment:
+    Move=50
+    Font=30;400;Arial
+    Text=$ImageSeriesComment
+  EndIf  
+  
+  Move=0
+  Font=30;700;Arial
+  LineText=Image Modality:
+  Move=600
+  Font=30;400;Arial
+  Text=$ImageModality
+
+  # Image comment, if defined
+  If=$ImageComment
+    Move=0
+    Font=30;700;Arial
+    Text=Image Comment:
+    Move=50
+    Font=30;400;Arial
+    Text=$ImageComment
+  EndIf
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Imaging Device:
+  Move=600
+  Text=$ImagingDeviceId
+  Font=30;400;Arial
+  Move=50
+  LineText=Model:
+  Move=600
+  Text=$ImagingDeviceModel
+  Move=50
+  LineText=Manufacturer:
+  Move=600
+  Text=$ImagingDeviceManufacturer
+  Move=50
+  LineText=Serial Number:
+  Move=600
+  Text=$ImagingDeviceSerialNumber
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Patient Imaging Orientation:
+  Move=600
+  Font=30;400;Arial
+  Text=$PatientImagingOrientation
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Patient Treatment Orientation:
+  Move=600
+  Font=30;400;Arial
+  Text=$PatientTreatmentOrientation
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Planning Coordinate System:
+  Move=600
+  Font=30;400;Arial
+  Text=$PlanningCoordinateSystemName
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Image Origin:
+  Move=600
+  Font=30;400;Arial
+  Text=$ImageUserOrigin
+
+  If=$ImageUserOriginComment
+    Move=0
+    Font=30;700;Arial
+    Text=Image Origin Comment:
+    Move=50
+    Font=30;400;Arial
+    Text=$ImageUserOriginComment
+  EndIf
+
+
+#  If=$ImageContrastBolusAgent
+#    Move=0
+#    Font=30;700;Arial
+#    LineText=Contrast Agent Ingredient:
+#    Move=600
+#    Font=30;400;Arial
+#    Text=$ImageContrastBolusAgentIngredient
+#  EndIf
+
+
+  Move=0
+  Font=30;700;Arial
+  If=$ImageApprovalDate
+    LineText=Image Approval:
+    Move=600
+    Font=30;400;Arial
+    Text=$ImageApprovalDate  by $ImageApprover
+  Else
+    Text=IMAGE NOT APPROVED
+  EndIf
+
+  RelativeMoveText=0;1
+
+  ##### COUCH SHIFT
+  If=$TableShift
+  PageBreak=0.8
+  Margin=200
+  Move=0
+  Font=42;700;Arial
+  Text=Couch Shift
+  Move=0
+  Move=50
+  Font=30;700;Arial
+  Move=0
+  Move=50
+  Text=WARNING: VERIFY THAT SETUP REFERENCE POSITION IS SET CORRECTLY TO USER ORIGIN
+  Move=0
+  Move=50
+  Text=BEFORE USING COUCH SHIFT INFORMATION 
+  Move=0
+  Move=50
+  LineText=User Origin: 
+  Move=550 
+  Font=30;400;Arial
+  Text=$ImageUserOrigin
+  Move=0
+  Move=50
+  Font=30;700;Arial
+  LineText=Couch Shift Viewing Direction: 
+  Move=550 
+  Font=30;400;Arial
+  Text=From foot of couch looking toward gantry
+  Text=
+  CouchShiftTable
+  ##### HERE ENDS THE COUCH SHIFT
+  EndIf
+
+  PageBreak=0.8
+
+  #### STRUCTURE DATA
+  Margin=200
+  Move=0
+  Font=42;700;Arial
+  Text=Structures
+ 
+  Margin=250
+  
+  Move=0
+  Font=30;700;Arial
+  LineText=Structure Set Id:
+  Move=600
+  Font=30;400;Arial
+  Text=$StructureSetId
+  
+  If=$StructureSetComment
+    Move=0
+    Font=30;700;Arial
+    Text=Structure Set Comment:
+    Move=50
+    Font=30;400;Arial
+    Text=$StructureSetComment
+  EndIf 
+
+  Font=30;700;Arial
+  # Header Line 1
+  Move=0
+  LineText=Id
+  Move=300
+  LineText=Type
+  Move=1000
+  LineText=CT Value
+  Move=1200
+  Text=Approval Status
+  Font=30;400;Arial
+  HorizontalLine=0;1500
+  Loop=Structures
+    Move=0
+    LineText=$StructureId
+    Move=300
+    LineText=$StructureType    
+    Move=1000
+    If=$IsStructureCTValue
+      LineText=$StructureCTValue
+    Else
+      LineText=from image
+    EndIf    
+    Move=1200
+    Text=$StructureStatus
+  EndLoop
+  HorizontalLine=0;1500
+  RelativeMoveText=0;1
+EndIf
+
+PageBreak=0.9
+
+##### PRESCRIPTION & FRACTIONATION DATA
+Margin=200
+Move=0
+Font=42;700;Arial
+Text=Dose Prescription
+
+Margin=250
+Move=0
+
+Font=30;700;Arial
+LineText=Target Volume:
+Move=600
+Font=30;400;Arial
+Text=$TargetVolume
+
+If=$IsIRREGPlan
+#  Font=30;700;Arial
+#  Text=THIS IS AN IRREG PLAN
+#  Font=30;400;Arial
+Else
+  Move=0
+  Font=30;700;Arial
+  LineText=Plan Normalization Value:
+  Move=600
+  Font=30;400;Arial
+  Text=$PlanNormValue
+
+  If=$PlanNormMethod
+    Move=0
+    Font=30;700;Arial
+    LineText=Plan Normalization Method:
+    Move=600
+    Font=30;400;Arial
+    Text=$PlanNormMethod
+    If=$PlanNormMethodWarning
+      Move= 600
+      Font=30;700;Arial
+      LineText=Warning: Normalization failed
+      Text=
+    EndIf
+    If=$PlanNormPoint
+      Move=0
+      Font=30;700;Arial
+      LineText=Plan Normalization Point:
+      Move=600
+      Font=30;400;Arial
+      Text=$PlanNormPointX , $PlanNormPointY , $PlanNormPointZ
+    EndIf
+  EndIf
+  Move=0
+  Font=30;700;Arial
+  LineText=Prescribed Dose Percentage:
+  Move=600
+  Font=30;400;Arial
+  Text=$PrescribedDosePercent
+EndIf
+
+
+Move=0
+Font=30;700;Arial
+LineText=Primary Reference Point:
+Move=600
+Font=30;400;Arial
+Text=$PrimaryRefPointId
+
+If=$IsIRREGPlan
+Else
+  Move=0
+  Font=30;700;Arial
+  LineText=Relative Dose in Primary Reference Point:
+  Move=600
+  Font=30;400;Arial
+  Text=$RelativeDoseInPrimaryRefPoint
+EndIf
+
+Move=0
+Font=30;700;Arial
+
+Move=0
+Move=0
+Font=30;700;Arial
+LineText=Fractionation: 
+Move=600
+
+If=$IsIRREGPlan
+Else
+  Move=50
+  Font=30;400;Arial
+  LineText=Prescribed Dose:
+  Move=600
+  Text=$PrescribedDose  ($PrescribedDosePerFraction  / fraction)
+EndIf
+Move=50
+Font=30;400;Arial
+LineText=Dose at primary reference point:
+Move=600
+Text=$DoseInPrimaryRefPoint  ($DosePerFractionInPrimaryRefPoint  / fraction)
+Move=50
+LineText=Number of Fractions:
+Move=600
+Text=$Fractions
+#if=$FractionIntervalDays
+#  Move=50
+#  LineText=Interval Days:
+#  Move=600
+#  Text=$FractionIntervalDays
+#EndIf
+if=$FractionsPerDay
+  Move=50
+  LineText=Fractions Per Day:
+  Move=600
+  Text=$FractionsPerDay
+EndIf
+if=$FractionsPerWeek
+  Move=50
+  LineText=Fractions Per Week:
+  Move=600
+  Text=$FractionsPerWeek
+EndIf
+If=$FractionStartDelay
+  Move=50
+  LineText=Start Delay:
+  Move=600
+  Text=$FractionStartDelay
+EndIf
+RelativeMoveText=0;1
+
+PageBreak=0.9
+##### ALG OPTIONS
+Margin=200
+Move=0
+Font=42;700;Arial
+Text=Calculation Options
+
+Margin=250
+Move=0
+If=$PhotonFields
+  Move=0
+  Font=30;700;Arial
+  LineText=Photon Algorithm:
+  Font=30;400;Arial
+  Move=900
+  Text=$PhotonAlg
+
+  Font=30;400;Arial
+  Loop=PhotonAlgOptions
+    Move=50
+    LineText=$AlgOptionName
+    Move=900
+    Text=$AlgOptionValue
+  EndLoop
+EndIf
+
+If=$ElectronFields
+  Move=0
+  Font=30;700;Arial
+  LineText=Electron Algorithm:
+  Font=30;400;Arial
+  Move=900
+  Text=$ElectronAlg
+
+  Font=30;400;Arial
+  Loop=ElectronAlgOptions
+    Move=50
+    LineText=$AlgOptionName
+    Move=900
+    Text=$AlgOptionValue
+  EndLoop
+EndIf
+
+If=$ProtonFields
+  Move=0
+  Font=30;700;Arial
+  LineText=Proton Algorithm:
+  Font=30;400;Arial
+  Move=900
+  Text=$ProtonAlg
+
+  Move=0
+  Font=30;700;Arial
+  Text=Calculation Algorithm Options:
+  Font=30;400;Arial
+  Loop=ProtonAlgOptions
+    Move=50
+    LineText=$AlgOptionName
+    Move=900
+    Text=$AlgOptionValue
+  EndLoop
+EndIf
+RelativeMoveText=0;1
+
+##### FIELD DATA
+Loop=Fields
+  PageBreak=0.9
+
+  Margin=200
+  Move=0
+  Font=42;700;Arial
+  Move=0
+  Text=$FieldId  ($FieldName )
+
+  Margin=250
+  
+  If=$IsSetupField
+    Move=0
+    Font=30;700;Arial
+    Text=Setup field
+  EndIf
+  
+  Move=0
+  Font=30;700;Arial
+  LineText=Machine Id:
+  Move=600
+  Font=30;400;Arial
+  Text=$FieldMachineId
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Machine Model:
+  Move=600
+  Font=30;400;Arial
+  Text=$FieldMachineModel
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Machine Scale:
+  Move=600
+  Font=30;400;Arial
+  Text=$FieldMachineScale
+
+  Move=0
+  If=$ProtonFields
+    Font=30;700;Arial
+    LineText=Nominal Energy:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldNominalEnergy
+  Else
+    Font=30;700;Arial
+    LineText=Energy Mode:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldEnergyMode
+  EndIf
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Dose Rate:
+  Move=600
+  Font=30;400;Arial
+  Text=$FieldDoseRate
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Technique: 
+  Move=600
+  Font=30;400;Arial
+  LineText=$FieldTechnique  
+  If=$IsFieldFixedSSD
+    Text=$IsFieldFixedSSD      $FieldIMRT
+  Else
+    Text=$FieldIMRT
+  EndIf
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Source-Axis-Distance (SAD):
+  Move=600
+  Font=30;400;Arial
+  Text=$FieldSAD
+
+  If=$ProtonFields
+    Move=0
+    Font=30;700;Arial
+    LineText=Virtual SADX:
+    Move=600
+    Font=30;400;Arial
+    Text=$VirtualSADX
+    Move=0
+    Font=30;700;Arial
+    LineText=Virtual SADY:
+    Move=600
+    Font=30;400;Arial
+    Text=$VirtualSADY
+  EndIf
+
+  If=$IsIRREGPlan
+    Move=0
+    Font=30;700;Arial
+    LineText=Calculated Source-Skin-Distance (SSD):
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldCalculatedSSD
+    Move=0
+    Font=30;700;Arial
+    LineText=Planned Source-Skin-Distance (SSD):
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldPlannedSSD
+  Else
+    Move=0
+    Font=30;700;Arial
+    LineText=Calculated Source-Skin-Distance (SSD):
+    Move=600
+    Font=30;400;Arial
+    If=$FieldGantryRotationDir
+      Text=$FieldCalculatedSSD  - $FieldSSDAtStopAngle  avg: $FieldSSDAverage  $FieldGantryRotationDir
+    Else
+      Text=$FieldCalculatedSSD
+    EndIf
+    Move=0
+    Font=30;700;Arial
+    LineText=Planned Source-Skin-Distance (SSD):
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldPlannedSSD
+    If=$FieldSFED
+      Move=0
+      Font=30;700;Arial
+      LineText=Source-Field-Entry-Distance (SFED):
+      Move=600
+      Font=30;400;Arial
+      Text=$FieldSFED
+    EndIf
+  EndIf
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Field Size:
+  Move=600
+  Font=30;400;Arial
+  If=$IsFieldSymmetric
+    Text=$FieldSizeX  x $FieldSizeY
+  Else
+    Text=$FieldSizeX  x $FieldSizeY  ($FieldX1 , $FieldX2 , $FieldY1 , $FieldY2 ) 
+    Text=$FieldSymmetry
+  EndIf
+
+
+  Move=0
+  If=$IsFieldIMRT
+    Font=30;700;Arial
+    LineText=Field Size of Carriage Groups:
+    Text=
+    Loop=CarriageGroups
+      Move=50
+      Font=30;400;Arial
+      LineText=$FieldCarriageGroup
+      Move=600
+      Text= $FieldCPX1 $FieldCPX2 $FieldCPY1 $FieldCPY2
+    EndLoop
+  EndIf
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Gantry Angle:
+  Move=600
+  Font=30;400;Arial
+  If=$FieldGantryRotationDir
+    Text=$FieldGantryAngle  - $FieldGantryStopAngle  $FieldGantryRotationDir
+  Else
+    Text=$FieldGantryAngle
+  EndIf
+
+  Move=0
+  If=$FieldHasGantryPitchAngle
+    Font=30;700;Arial
+    LineText=Gantry Pitch Angle:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldGantryPitchAngle
+  EndIf
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Collimator Angle:
+  Move=600
+  Font=30;400;Arial
+  Text=$FieldCollimatorAngle
+
+  Move=0
+  Font=30;700;Arial
+  LineText=Patient Support Angle:
+  Move=600
+  Font=30;400;Arial
+  Text=$FieldTableAngle
+
+  Move=0
+  Font=30;700;Arial
+  If=$IsFieldFixedSSD
+    LineText=Entry Point:
+  Else
+    LineText=Isocenter:
+  EndIf
+  Move=600
+  Font=30;400;Arial
+  Text=X: $FieldIsocentreX , Y: $FieldIsocentreY , Z: $FieldIsocentreZ
+
+  If=$FieldImageId
+    Move=0
+    Font=30;700;Arial
+    LineText=Reference Image:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldImageId  ($FieldImageName )
+  EndIf
+
+  Move=0
+  If=$FieldNormMethod
+    Font=30;700;Arial
+    LineText=Field Normalization Method:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldNormMethod
+  EndIf
+
+  Move=0
+  If=$FieldNormFactor
+    Font=30;700;Arial
+    LineText=Field Normalization Factor:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldNormFactor
+  EndIf
+
+  Move=0
+  If=$IsIRREGPlan
+  Else
+    Font=30;700;Arial
+    LineText=Field Weight Factor:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldWeightFactor
+  EndIf
+
+  ##### PROTON FIELD
+  If=$NominalSOBPWidth
+    Move=0
+    Font=30;700;Arial
+    LineText=Nominal SOBP Width:
+    Move=600
+    Font=30;400;Arial
+    Text=$NominalSOBPWidth
+  EndIf
+
+  If=$PlannedDistalTargetDistance
+    Move=0
+    Font=30;700;Arial
+    LineText=Planned Distal Target Distance:
+    Move=600
+    Font=30;400;Arial
+    Text=$PlannedDistalTargetDistance
+  EndIf
+  
+  ##### PROTON PATCH FIELD DATA - INSIDE FIELD
+  If=$IsProtonPatchField
+    Move=0
+    Font=30;700;Arial
+    Text=Patch Field
+	
+    Move=50
+    Font=30;400;Arial
+    LineText=Patch to:
+    Move=600
+    Font=30;400;Arial
+    Text=$ProtonPatchTo
+	
+    Move=50
+    Font=30;700;Arial
+    LineText=Number of sub-fields:
+    Move=600
+    Font=30;400;Arial
+    Text=$ProtonNumSubfields
+	
+	Loop=ProtonSubfields
+  	  Move=50
+	  Font=30;700;Arial
+	  LineText=Subfield
+	  Text=$ProtonSubfieldNumber
+	
+	  Move=100
+	  Font=30;400;Arial
+	  LineText=Nominal Energy:
+	  Move=600
+	  Font=30;400;Arial
+	  Text=$ProtonSubfieldNominalEnergy
+	
+      If=$IsProtonSpotTuneVisible
+        Move=100
+	    Font=30;400;Arial
+	    LineText=Spot Tune:
+	    Move=600
+	    Font=30;400;Arial
+	    Text=$ProtonSubfieldSpotTune
+	  EndIf
+	EndLoop
+  EndIf
+  
+  ##### SNOUT DATA - INSIDE FIELD
+  Move=0
+  If=$SnoutId
+    Move=0
+    Font=30;700;Arial
+    LineText=Snout:
+    Move=600
+    Font=30;400;Arial
+    Text=$SnoutId
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Air Gap:
+    Move=600
+    Font=30;400;Arial
+    Text=$SnoutAirGap
+    
+    Move=50
+    Font=30;400;Arial
+    LineText=Snout Position:
+    Move=600
+    Font=30;400;Arial
+    Text=$SnoutPosition
+  EndIf
+  
+  ##### PROTON FIELD BEAM-LINE MODIFIERS - INSIDE FIELD
+  If=$IsProtonField
+    Move=0
+    Font=30;700;Arial
+    Text=Beam-Line Modifiers:
+
+    If=$IsBeamLineModifiers
+      Move=50
+      Margin=250
+      Font=30;700;Arial
+      # Header Line 1
+      Move=50
+      LineText=Type
+      Move=350
+      LineText=Id
+      Move=650
+      Text=Value
+      Font=30;400;Arial
+      HorizontalLine=50;900
+      Loop=BeamLineModifiers
+        Move=50
+        LineText=$BLMType
+        Move=360
+        LineText=$BLMId
+        Move=650
+        Text=$BLMValue
+      EndLoop
+      HorizontalLine=50;900
+    EndIf
+    
+    If=$IsProtonSpotTuneVisible
+      Move=50
+      Font=30;400;Arial
+      LineText=Spot Tune:
+      Move=600
+      Font=30;400;Arial
+      Text=$SpotTune
+    EndIf
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Range Modulator:
+    Move=600
+    Font=30;400;Arial
+    Text=$RangeModulator
+    
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Beam current Modulation:
+    Move=600
+    Font=30;400;Arial
+    Text=$BeamCurrentModulation
+    
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Beam Gating On:
+    Move=600
+    Font=30;400;Arial
+    Text=$BeamGatingOn
+    
+    Move=50
+    Font=30;400;Arial
+    LineText=Beam Gating Off:
+    Move=600
+    Font=30;400;Arial
+    Text=$BeamGatingOff
+    
+  EndIf
+
+  ##### APPLICATOR DATA - INSIDE FIELD
+  Move=0
+  If=$FieldApplicators
+    Font=30;700;Arial
+    Text=Applicator:
+    Move=600
+    Font=30;400;Arial
+    Text=$ApplicatorId
+  EndIf
+
+  ##### WEDGE DATA - INSIDE FIELD
+  Move=0
+  If=$FieldWedges
+    Font=30;700;Arial
+    LineText=Number of Wedges:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldWedges
+
+    Loop=Wedges
+      Move=0
+      Font=30;700;Arial
+      LineText=Wedge:
+      Move=600
+      Font=30;400;Arial
+      Text=$WedgeId
+
+      Move=50
+      Font=30;400;Arial
+      LineText=Type:
+      Move=600
+      Font=30;400;Arial
+      Text=$WedgeType
+
+      Move=50
+      Font=30;400;Arial
+      LineText=Angle:
+      Move=600
+      Font=30;400;Arial
+      Text=$WedgeAngle
+
+      Move=50
+      Font=30;400;Arial
+      LineText=Direction:
+      Move=600
+      Font=30;400;Arial
+      Text=$WedgeDirection
+
+      Move=50
+      Font=30;400;Arial
+      LineText=Wedge Factor:
+      Move=600
+      Font=30;400;Arial
+      Text=$WedgeFactor
+
+      Move=50
+      Font=30;400;Arial
+      LineText=Material:
+      Move=600
+      Font=30;400;Arial
+      Text=$WedgeMaterialName  ($WedgeMaterialId )
+
+      Move=50
+      #If=$WedgeSlot
+        Font=30;400;Arial
+        LineText=Slot:
+        Move=600
+        Font=30;400;Arial
+        Text=$WedgeSlot
+      #EndIf
+
+      Move=50
+      If=$MotorizedWedgeWeightFactor
+        Font=30;400;Arial
+        LineText=Motorized Wedge Weight Factor:
+        Move=600
+        Font=30;400;Arial
+        Text=$MotorizedWedgeWeightFactor
+      EndIf 
+
+      Move=50
+      If=$MotorizedWedgeMUFactor
+        Font=30;400;Arial
+        LineText=Motorized Wedge MU Factor:
+        Move=600
+        Font=30;400;Arial
+        Text=$MotorizedWedgeMUFactor
+      EndIf
+      
+      Move=50
+      If=$OmniWedgeMotorFactor
+        Font=30;400;Arial
+        LineText=OmniWedge Motor MU Factor:
+        Move=600
+        Font=30;400;Arial
+        Text=$OmniWedgeMotorFactor
+      EndIf
+      
+      Move=50
+      If=$OmniWedgeOpenFactor
+        Font=30;400;Arial
+        LineText=OmniWedge Open MU Factor:
+        Move=600
+        Font=30;400;Arial
+        Text=$OmniWedgeOpenFactor
+      EndIf
+      
+      Move=50
+      If=$OmniWedgeVirtualFactor
+        Font=30;400;Arial
+        LineText=OmniWedge Virtual MU Factor:
+        Move=600
+        Font=30;400;Arial
+        Text=$OmniWedgeVirtualFactor
+      EndIf
+
+      Move=0
+    EndLoop
+  EndIf
+
+  ##### MLC DATA - INSIDE FIELD
+  Move=0
+  If=$FieldMLCs
+    Move=0
+    Font=30;700;Arial
+    LineText=MLC:
+    Move=600
+    Font=30;400;Arial
+    Text=$MLCId
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Manufacturer:
+    Move=600
+    Font=30;400;Arial
+    Text=$MLCManufacturer
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Model:
+    Move=600
+    Font=30;400;Arial
+    Text=$MLCModel
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Rotation:
+    Move=600
+    Font=30;400;Arial
+    Text=$MLCRotation
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Material:
+    Move=600
+    Font=30;400;Arial
+    Text=$MLCMaterialName  ($MLCMaterialId )
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Transmission Factor:
+    Move=600
+    Font=30;400;Arial
+    Text=$MLCTransmissionFactor
+
+    Move=50
+    Font=30;400;Arial
+    LineText=MLC Plan Type:
+    Move=600
+    Font=30;400;Arial
+    Text=$MLCPlanType
+
+    Move=50
+    If=$IsMLCPlanStatic
+    Else
+      Font=30;400;Arial
+      LineText=Number of segments:
+      Move=600
+      Font=30;400;Arial
+      Text=$MLCPlanSegments
+    EndIf 
+
+    Move=50
+    If=$IsFieldIMRT
+      Font=30;400;Arial
+      LineText=Minimum Leaf Gap:
+      Move=600
+      Font=30;400;Arial
+      Text=$MinDoseLeafDynamicLeafGap
+    EndIf
+
+    Move=50
+    If=$IsFieldIMRT
+      Font=30;400;Arial
+      LineText=Dosimetric Leaf Gap:
+      Move=600
+      Font=30;400;Arial
+      Text=$DosimetricLeafGap
+    EndIf
+
+    #Move=50
+    #If=$MLCSerialNumber
+    #  Font=30;400;Arial
+    #  LineText=Serial Number:
+    #  Move=600
+    #  Font=30;400;Arial
+    #  Text=$MLCSerialNumber
+    #EndIf
+    Move=0
+  EndIf
+
+  ##### COMPENSATOR DATA - INSIDE FIELD
+  Move=0
+  If=$FieldCompensators
+    Move=0
+    Font=30;700;Arial
+    LineText=Compensator:
+    Move=600
+    Font=30;400;Arial
+    Text=$CompensatorId
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Type:
+    Move=600
+    Font=30;400;Arial
+    Text=$CompensatorType
+
+    Move=50
+    If=$ProtonFields
+      Font=30;400;Arial
+      LineText=Border Smoothing:
+      Move=600
+      Font=30;400;Arial
+      Text=$CompensatorBorderSmoothing
+    Else
+      Font=30;400;Arial
+      LineText=Penumbra Margin:
+      Move=600
+      Font=30;400;Arial
+      Text=$CompensatorPenumbraMargin
+    EndIf
+
+    If=$ProtonFields
+      Move=50
+      Font=30;400;Arial
+      LineText=Smearing Margin:
+      Move=600
+      Font=30;400;Arial
+      Text=$CompensatorSmearingMargins
+    EndIf 
+
+    If=$ProtonFields
+    Else
+      Move=50
+      Font=30;400;Arial
+      LineText=Distance from Isocenter:
+      Move=600
+      Font=30;400;Arial
+      Text=$CompensatorPlaneDistance
+    EndIf
+
+    Move=50
+    Font=30;400;Arial
+    LineText=CAX Thickness:
+    Move=600
+    Font=30;400;Arial
+    Text=$CompensatorCentralAxisThickness
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Material:
+    Move=600
+    Font=30;400;Arial
+    Text=$CompensatorMaterialName  ($CompensatorMaterialId )
+
+    If=$ProtonFields
+      Move=50
+      Font=30;400;Arial
+      LineText=Stopping Power Ratio:
+      Move=600
+      Font=30;400;Arial
+      Text=$CompensatorStoppingPowerRatio
+    Else
+      Move=50
+      Font=30;400;Arial
+      LineText=Linear Attenuation Factor:
+      Move=600
+      Font=30;400;Arial
+      Text=$CompensatorLinearAttenuationFactor
+    EndIf
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Tray:
+    Move=600
+    Font=30;400;Arial
+    Text=$CompensatorTray
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Tray Transmission Factor:
+    Move=600
+    Font=30;400;Arial
+    Text=$CompensatorTrayTransmissionFactor
+
+    Move=50
+    Font=30;400;Arial
+    LineText=Slot:
+    Move=600
+    Font=30;400;Arial
+    Text=$CompensatorSlot
+  EndIf
+
+  ##### BLOCK DATA - INSIDE FIELD
+  Move=0
+  If=$FieldBlocks
+    Font=30;700;Arial
+    LineText=Number of Blocks:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldBlocks
+
+    Loop=Blocks
+      Move=0
+      Font=30;700;Arial
+      LineText=Block:
+      Move=600
+      Font=30;400;Arial
+      Text=$BlockId
+
+      Move=50
+      Font=30;400;Arial
+      LineText=Type:
+      Move=600
+      Font=30;400;Arial
+      Text=$BlockType  $BlockDivergence
+
+      Move=50
+      Font=30;400;Arial
+      LineText=Material:
+      Move=600
+      Font=30;400;Arial
+      Text=$BlockMaterialName  ($BlockMaterialId )
+
+      Move=50
+      Font=30;400;Arial
+      LineText=Transmission Factor:
+      Move=600
+      Font=30;400;Arial
+      Text=$BlockTransmissionFactor
+
+      Move=50
+      #If=$BlockTray
+        Font=30;400;Arial
+        LineText=Tray:
+        Move=600
+        Font=30;400;Arial
+        Text=$BlockTray
+
+        Move=50
+        Font=30;400;Arial
+        LineText=Tray Transmission Factor:
+        Move=600
+        Font=30;400;Arial
+        Text=$BlockTrayTransmissionFactor
+      #EndIf
+
+      Move=50
+      #If=$BlockSlot
+        Font=30;400;Arial
+        LineText=Slot
+        Move=600
+        Font=30;400;Arial
+        Text=$BlockSlot
+      #EndIf
+    EndLoop
+
+    Move=0
+  EndIf
+
+  ##### BOLUS DATA - INSIDE FIELD
+  Move=0
+  If=$FieldBoluses
+    Font=30;700;Arial
+    LineText=Number of Boluses:
+    Move=600
+    Font=30;400;Arial
+    Text=$FieldBoluses
+
+    Loop=Boluses
+      Move=0
+      LineText=Bolus:
+      Move=600
+      Text=$BolusId
+
+      Move=50
+      LineText=Name:
+      Move=600
+      Text=$BolusName
+
+      Move=50
+      LineText=Approval Status:
+      Move=600
+      Text=$StructureStatus
+
+      Move=50
+      LineText=Material CT Value:
+      Move=600
+      Text=$BolusMaterialCTValue
+
+      Move=50
+      LineText=Source-to-Bolus Distance:
+      Move=600
+      Text=$FieldSBD
+
+      Move=50
+      LineText=CAX Path Length in Bolus:
+      Move=600
+      Text=$FieldCAXPLB
+
+    EndLoop
+
+    Move=0
+  EndIf
+
+  ##### FRACTIONATION DOSE DATA - INSIDE FIELD
+  If=$IsSetupField
+  Else
+		Text=Fractionation
+	Move=50
+	Font=30;400;Arial
+	LineText=Monitor Units:
+	Move=600
+	Text=$FieldMonitorUnits
+
+	Move=50
+	Font=30;400;Arial
+	LineText=Coefficient:
+	Move=600
+	Text=$FieldMonitorUnitsPerGy
+
+	If=$IsIRREGPlan
+	Else
+	Move=50
+	Font=30;400;Arial
+	LineText=Reference Dose:
+	Move=600
+	Text=$FieldRefDose
+	EndIf
+
+	##### REFPOINT DATA - INSIDE FIELD & FRACTIONATION
+	If=$RefPoints
+	Move=50
+	Font=30;400;Arial
+	LineText=Reference Points:
+	Move=600
+	Text=$RefPoints
+	If=$IsIRREGPlan
+		# For IRREG plan print out point location and dose from field
+		# Header Line 1
+		Move=50
+		LineText= 
+		Move=400
+		LineText=Field Coordinates
+		Move=700
+		LineText= 
+		Move=850
+		LineText= 
+		Move=1050
+		LineText=Fraction
+		Move=1200
+		Text= 
+
+		# Header Line 2
+		Move=50
+		LineText=Id
+		Move=400
+		LineText=X
+		Move=550
+		LineText=Y
+		Move=700
+		LineText=Depth
+		Move=850
+		LineText=PSSD
+		Move=1050
+		LineText=Dose
+		Move=1200
+		Text=Type
+
+		HorizontalLine=50;1600
+		Loop=RefPoints
+		Move=50
+		LineText=$RefPointId
+		Move=400
+		LineText=$FieldRefPointX
+		Move=550
+		LineText=$FieldRefPointY
+		Move=700
+		LineText=$FieldRefPointDepth
+		Move=850
+		LineText=$FieldRefPointPSSD
+		Move=1050
+		LineText=$FieldDose
+		Move=1200
+		Text=$FieldRefPointType
+		EndLoop
+		HorizontalLine=50;1600
+		RelativeMoveText=0;1
+	Else
+		# For ordinary plan print out ref point doses from each field
+		If=$IsOmniwedgeField
+			# For omniwedge field, give more space for Fraction Dose
+			# Header Line 1
+			Move=50
+			LineText=Id
+			Move=300
+			LineText=Fraction Dose
+			Move=800
+			LineText=Point Type
+			Move=1020
+			LineText=PSSD
+			Move=1200
+			LineText=Depth
+			Move=1370
+			Text=Eq. Path Length
+			HorizontalLine=50;1500
+			Loop=RefPoints
+			Move=50
+			LineText=$RefPointId
+			Move=300
+			LineText=$FieldDose
+			Move=800
+			LineText=$RefPointType
+			Move=1020
+			LineText=$FieldRefPointSSD
+			Move=1200
+			LineText=$FieldRefPointPointDepth
+			Move=1370
+			Text=$FieldRefPointEffectiveDepth
+			EndLoop
+			HorizontalLine=50;1500
+			RelativeMoveText=0;1
+		Else
+			# Header Line 1
+			Move=50
+			LineText=Id
+			Move=300
+			LineText=Fraction Dose
+			Move=600
+			LineText=Point Type
+			Move=900
+			LineText=PSSD
+			Move=1100
+			LineText=Depth
+			Move=1300
+			Text=Eq. Path Length
+			HorizontalLine=50;1500
+			Loop=RefPoints
+			Move=50
+			LineText=$RefPointId
+			Move=300
+			LineText=$FieldDose
+			Move=600
+			LineText=$RefPointType
+			Move=900
+			LineText=$FieldRefPointSSD
+			Move=1100
+			LineText=$FieldRefPointPointDepth
+			Move=1300
+			Text=$FieldRefPointEffectiveDepth
+			EndLoop
+			HorizontalLine=50;1500
+			RelativeMoveText=0;1
+		EndIf
+	EndIf
+	EndIf
+# monitor units for carriage groups inside fractionations
+Move=50
+Font=30;700;Arial
+If=$IsFieldIMRT
+	LineText=Monitor Units for Carriage Groups:
+	Text=
+	Loop=CarriageGroups
+	Move=90
+	Font=30;400;Arial
+	LineText=$FieldCarriageGroup
+	Move=600
+	Text= $MU_CarriageGroup
+	EndLoop
+EndIf
+  
+	If=$IsFieldIMRT
+		If=$LmcCalculationTimestamp
+			Move=0
+			Font=30;700;Arial
+			Text=Leaf Motions $LmcCalculationTimestamp
+		EndIf
+		
+		Move=0
+		Font=30;700;Arial
+		Text=LMC Calculation Errors:
+		Font=30;400;Arial
+		Loop=LmcCalculationErrors
+			Move=50
+			If=$LmcCalculationError
+				Text=$LmcCalculationError
+			EndIf
+		EndLoop
+
+		Move=0
+		Font=30;700;Arial
+		Text=LMC Calculation Warnings:
+		Font=30;400;Arial
+		Loop=LmcCalculationWarnings
+			Move=50
+			If=$LmcCalculationWarning
+				Text=$LmcCalculationWarning
+			EndIf
+		EndLoop
+
+		Move=0
+		Font=30;700;Arial
+		Text=LMC Calculation Notes:
+		Font=30;400;Arial
+		Loop=LmcCalculationInfos
+			Move=50
+			If=$LmcCalculationInfo
+				Text=$LmcCalculationInfo
+			EndIf
+		EndLoop
+		Loop=LmcCalculationNotes
+		Move=50
+			If=$LmcCalculationNote
+				Text=$LmcCalculationNote
+			EndIf
+		EndLoop
+	EndIf
+	
+	If=$FieldCompensators
+		If=$CompCalculationTimestamp
+			Move=0
+			Font=30;700;Arial
+			Text=Compensator $CompCalculationTimestamp
+		EndIf
+		
+		Move=0
+		Font=30;700;Arial
+		Text=Compensator Calculation Errors:
+		Font=30;400;Arial
+		Loop=CompCalculationErrors
+			Move=50
+			If=$CompCalculationError
+				Text=$CompCalculationError
+			EndIf
+		EndLoop
+
+		Move=0
+		Font=30;700;Arial
+		Text=Compensator Calculation Warnings:
+		Font=30;400;Arial
+		Loop=CompCalculationWarnings
+			Move=50
+			If=$CompCalculationWarning
+				Text=$CompCalculationWarning
+			EndIf
+		EndLoop
+
+		Move=0
+		Font=30;700;Arial
+		Text=Compensator Calculation Notes:
+		Font=30;400;Arial
+		Loop=CompCalculationInfos
+			Move=50
+			If=$CompCalculationInfo
+				Text=$CompCalculationInfo
+			EndIf
+		EndLoop
+		Loop=CompCalculationNotes
+			Move=50
+			If=$CompCalculationNote
+				Text=$CompCalculationNote
+			EndIf
+		EndLoop
+	EndIf
+
+If=$ProtonFields
+		If=$BLCalculationTimestamp
+			Move=0
+			Font=30;700;Arial
+			Text=Beam Line $BLCalculationTimestamp
+		EndIf
+		
+		Move=0
+		Font=30;700;Arial
+		Text=Beam Line Calculation Errors:
+		Font=30;400;Arial
+		Loop=BLCalculationErrors
+			Move=50
+			If=$BLCalculationError
+				Text=$BLCalculationError
+			EndIf
+		EndLoop
+
+		Move=0
+		Font=30;700;Arial
+		Text=Beam Line Calculation Warnings:
+		Font=30;400;Arial
+		Loop=BLCalculationWarnings
+			Move=50
+			If=$BLCalculationWarning
+				Text=$BLCalculationWarning
+			EndIf
+		EndLoop
+
+		Move=0
+		Font=30;700;Arial
+		Text=Beam Line Calculation Notes:
+		Font=30;400;Arial
+		Loop=BLCalculationInfos
+			Move=50
+			If=$BLCalculationInfo
+				Text=$BLCalculationInfo
+			EndIf
+		EndLoop
+		Loop=BLCalculationNotes
+			Move=50
+			If=$BLCalculationNote
+				Text=$BLCalculationNote
+			EndIf
+		EndLoop
+	EndIf
+
+	If=$FieldCalculationTimestamp
+		Move=0
+		Font=30;700;Arial
+		Text=Dose Calculated $FieldCalculationTimestamp
+	EndIf
+	
+	Move=0
+	Font=30;700;Arial
+	Text=Dose Calculation Errors:
+	Font=30;400;Arial
+	Loop=CalculationErrors
+		Move=50
+		If=$FieldCalculationError
+			Text=$FieldCalculationError
+		EndIf
+	EndLoop
+
+	Move=0
+	Font=30;700;Arial
+	Text=Dose Calculation Warnings:
+	Font=30;400;Arial
+	Loop=CalculationWarnings
+		Move=50
+		If=$FieldCalculationWarning
+			Text=$FieldCalculationWarning
+		EndIf
+	EndLoop
+
+	Move=0
+	Font=30;700;Arial
+	Text=Dose Calculation Notes:
+	Font=30;400;Arial
+	Loop=CalculationInfos
+		Move=50
+		If=$FieldCalculationInfo
+			Text=$FieldCalculationInfo
+		EndIf
+	EndLoop
+	Loop=CalculationNotes
+		Move=50
+		If=$FieldCalculationNote
+			Text=$FieldCalculationNote
+		EndIf
+	EndLoop
+  EndIf
+  #End of IsSetupField Else
+
+  Move=0
+  RelativeMoveText=0;1
+EndLoop
+##### HERE ENDS THE FIELD LOOP
+
+PageBreak=0.9
+##### REFPOINT DATA
+If=$RefPoints
+  Margin=200
+  Move=0
+  Font=42;700;Arial
+  Text=Reference Points
+
+  Margin=250
+  Move=0
+  Font=30;700;Arial
+  # Header Line 1
+  Font=30;700;Arial
+  Move=0
+  LineText=Fractionation
+  Move=200
+  LineText=Point
+  Move=500
+  LineText=3D-coordinates
+  Move=1000
+  LineText=Fraction
+  Move=1150
+  LineText=Total
+  Move=1300
+  LineText=Primary
+  Move=1450
+  Text=Volume
+
+  # Header Line 2
+  Move=0
+  LineText=Id
+  Move=200
+  LineText=Id
+  Move=500
+  LineText=X
+  Move=650
+  LineText=Y
+  Move=800
+  LineText=Z
+  Move=1000
+  LineText=Dose
+  Move=1150
+  LineText=Dose
+  Move=1300
+  LineText=Point
+  Move=1450
+  Text=Id
+
+  RelativeMove=0;10
+  HorizontalLine=0;1650
+  RelativeMove=0;10
+  Font=30;400;Arial
+
+  Loop=RefPoints
+    Move=200
+    LineText=$RefPointId
+    Move=500
+    LineText=$RefPointX
+    Move=650
+    LineText=$RefPointY
+    Move=800
+    LineText=$RefPointZ
+    Move=1000
+    LineText=$RefPointTotalDosePerFraction
+    Move=1150
+    LineText=$RefPointTotalDose
+    Move=1300
+    If=$IsPrimaryRefPoint
+      LineText=X
+    EndIf
+    Move=1450
+    Text=$RefPointPatientVolumeId
+  EndLoop
+  RelativeMove=0;10
+  HorizontalLine=0;1650
+  RelativeMove=0;10
+  Move=0
+  RelativeMoveText=0;1
+EndIf
+
+#PageBreak=0.9
+##### DOSE DATA
+### REMOVED 13.12.2000
+#RelativeMove=0;50
+#HorizontalLine=0;1750
+#RelativeMove=0;2
+#HorizontalLine=0;1750
+#RelativeMove=0;10
+#
+#Font=60;700;Arial
+#Text=DOSE
+#Font=30;300;Arial
+#Font=30;400;Arial
+#
+## Header Line 1
+#Move=0
+#LineText=Field Id
+#Move=300
+#LineText=MU
+#Move=700
+#LineText=MU/Gy
+#Move=1200
+#Text=Reference Dose
+#RelativeMove=0;10
+#HorizontalLine=0;1500
+#RelativeMove=0;10
+#Loop=Fields
+#  Move=0
+#  LineText=$FieldId
+#  Move=300
+#  LineText=$FieldMonitorUnits
+#  Move=700
+#  LineText=$FieldMonitorUnitsPerGy
+#  Move=1200
+#  Text=$FieldRefDose
+#EndLoop
+#RelativeMoveText=0;1
+
+PageBreak=0.9
+##### WARNINGS
+Margin=200
+Move=0
+Font=42;700;Arial
+Text=Warnings
+
+Margin=250
+Move=0
+Font=30;300;Arial
+If=$IsPlanModified
+  Move=0
+  Text=Plan has been modified since it was last saved into database. 
+  If=$IsAllMUperGyValid
+  Else=
+    Move=0
+    Text=All the fields do not have valid MU/Gy values.
+  EndIf
+Else
+  If=$IsAllMUperGyValid
+    Text=None
+  Else=
+    Move=0
+    Text=All the fields do not have valid MU/Gy values.
+  EndIf
+EndIf
+
+# If=$ImageContrastBolusAgentExists
+#  Move=0
+#  Text=The plan image has been taken using contrast agent
+# EndIf
+
+PageBreak=0.9
+##### SIGNATURES
+Margin=200
+Move=0
+Font=42;700;Arial
+Text=Approvals
+
+Margin=250
+If=$PlanningApprovalDate
+  Move=0
+  Text=
+  Text=
+  Font=30;700;Arial
+  LineText=Planning Approval:
+  Move=600
+  Font=30;400;Arial
+  Text=$PlanningApprovalDate  by $PlanningApprover
+EndIf
+
+If=$TreatmentApprovalDate
+  Move=0
+  Text=
+  Text=
+  Font=30;700;Arial
+  LineText=Treatment Approval:
+  Move=600
+  Font=30;400;Arial
+  Text=$TreatmentApprovalDate  by $TreatmentApprover
+EndIf
+

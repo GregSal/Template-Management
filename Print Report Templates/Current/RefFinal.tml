@@ -1,0 +1,830 @@
+﻿###
+### Converted from code page 1252 into Unicode UTF-8 by ConvertTml on 2017-06-04T17:23:28
+###
+##############################################################################
+# Treatment Plan Report Template File 
+# 
+# Created: May 17, 2001 by Mikko Laitinen
+# Modified: September 6, 2007 by Ryan Flatters
+	    April 3, 2008 by Matthew Hartman & Kit Tam
+#           Final Plan Report
+# Copyright, Varian Medical Systems, Inc., 1995 - 2001
+# All Rights Reserved
+#
+# ---------------------------------------------------------------------------
+# Instructions:
+#
+# All measurements are in 1/10 mm's. E.g 2000 = 200mm = 20cm
+#
+# Font size is also in 1/10 mm's.  Typical sizes are:
+#   94 = 28 pt
+#   84 = 24 pt
+#   60 = 18 pt
+#   42 = 12 pt 
+#   38 = 11 pt
+#   34 = 10 pt
+#   30 =  9 pt
+#
+# Font weight is in logical units. Number can be anything between 1 and 999.
+# Usual values used are:
+#  100 = THIN
+#  300 = LIGHT
+#  400 = NORMAL
+#  700 = BOLD
+#  900 = HEAVY
+#
+#
+##############################################################################
+Section=CoverPage
+PaperSize=Letter
+# Defines the paper size.  Allowed sizes are:
+#   A4
+#   A3
+#   Legal
+#   Letter
+#   Tabloid
+# This command is valid only in Header-section
+
+PaperOrientation=Portrait
+# Defines paper orientation.  Allowed options are:
+#   Portrait
+#   Landscape
+# This command is valid only in Header-section
+
+Height=300
+# Defines the height of the space reserved for the header.
+
+LineSpacing=1.50
+# Linespace is 1.1 times height of the font.
+
+#HorizontalLine=0
+# Draw a line from column 0 to the width of the page.
+
+Move=0
+# Move-command without y-value moves only in x direction and keeps the y intact.
+# This one moves the cursor to the beginning of current line.
+
+Move=0;200
+
+LineSpacing=1.3
+Margin=200
+# 2 cm left margin in the form.
+
+Move=0
+Font=94;900;Arial
+Text=SUMPLAN REPORT
+RelativeMove=0;-10
+HorizontalLine=0;1750
+RelativeMove=0;0.5
+HorizontalLine=0;1750
+RelativeMove=0;10
+Text=
+
+Font=34;400;Arial
+LineText=Patient:
+Move=250
+Font=60;700;Arial
+Text=$PatientLastName , $PatientFirstName  $PatientMiddleName 
+Move=0
+Font=34;400;Arial
+LineText=Patient IDs:
+Move=250
+Font=60;700;Arial
+LineText=$PatientId
+If=$PatientId2
+  Text=, $PatientId2
+Else
+  Text=
+EndIf
+
+Move=0
+Font=34;400;Arial
+LineText=Date:
+Move=250
+Font=60;700;Arial
+Text=$CurrentDateShort
+
+Move=0
+Font=34;400;Arial
+LineText=Plan Sum Id:
+Font=60;700;Arial
+Move=250
+Text=$PlanSumId
+
+Move=0
+Font=34;400;Arial
+LineText=Plan Sum Name:
+Font=60;700;Arial
+Move=250
+Text=$PlanSumName
+
+Move=0
+Font=34;400;Arial
+LineText=Course:
+Font=60;700;Arial
+Move=250
+Text=$PlanSumCourseId
+
+LineSpacing=1.1
+
+Loop=SumPlans
+  Font=34;400;Arial
+  Text=
+  Move=0
+  LineText=Plan Id:
+  Move=250
+  Font=42;400;Arial
+  Text=$PlanIdOfSum
+  Font=34;400;Arial
+  Move=0
+  LineText=Plan Name:
+  Move=250
+  Font=42;400;Arial
+  Text=$PlanNameOfSum
+  Move=0
+  Font=34;400;Arial
+  LineText=Fractionation Id
+  Move=400
+  LineText=Prescription dose
+  Move=1000
+  LineText=Nbr of Fractions
+  Move=1300 
+  Text=Dose at primary reference point
+  Font=42;400;Arial
+  HorizontalLine=0;1750
+  Loop=SumFractions
+    Move=0
+    Move=400
+    LineText=$TotalDose_ForSum ($DosePerFraction_ForSum  / fraction)
+    Move=1000
+    LineText=$NbrOfFrac_ForSum
+    Move=1300
+    Text=$TotalDoseAtPrimary_ForSum
+  EndLoop
+EndLoop
+
+
+PageBreak=0
+##############################################################################
+# end of the plan sum cover page
+##############################################################################
+
+Section=Header
+# Defines that this section of commands is for the header which is printed on 
+# top of each page
+
+Description=Final plan report
+# Description of the template, shown in print report dialog.
+
+PaperSize=Letter
+# Defines the paper size.  Allowed sizes are:
+#   A4
+#   A3
+#   Legal
+#   Letter
+#   Tabloid
+# This command is valid only in Header-section
+
+PaperOrientation=Portrait
+# Defines paper orientation.  Allowed options are:
+#   Portrait
+#   Landscape
+# This command is valid only in Header-section
+
+Height=150
+# Defines the height of the space reserved for the header.
+
+LineSpacing=1.10
+# Linespace is 1.1 times height of the font.
+
+Margin=50
+# Only small margins in header.
+
+Font=60;900;Arial
+# 18 pt heavy Arial font
+
+Move=0;20
+# Move to the left margin and down 5 mm
+
+Text=$ApplicationName
+# Write text and do Line Feed + Carriage Return
+
+Font=30;400;Arial
+# 9 pt normal Arial font
+
+LineText=$TaskName  $TaskVersion 
+# Text is written without Line Feed + Carriage Return
+
+Move=-10
+# Negative x-value in Move-command implicates distance measured from the right edge.
+
+TextRight=$Hospital
+# Text is written so that it ends on the current cursor location, (-10).
+# Line Feed + Carriage Return
+
+RelativeMove=0;10
+# Move down 1 mm
+
+HorizontalLine=0
+# Draw a line from column 0 to the width of the page.
+
+RelativeMove=0;2
+# Move down 1 mm
+
+##############################################################################
+Section=Footer
+
+Height=300
+# Defines the height of the space reserved for footer.
+# The form is printed between +headerHeight and PaperLength - FooterHeight.
+# The legtht and the width of the paper are taken from the printer properties.
+
+LineSpacing=1.10
+# Linespace is 1.1 times height of the font.
+
+Margin=50
+# Only small margins in footer.
+
+Move=0;-150
+# Negative y-value in Move-command implicates distance measured from the bottom 
+# of the page.
+
+RelativeMove=0;10
+# Move down 1 mm
+
+HorizontalLine=0
+# Draw a line from column 0 to the width of the page.
+
+RelativeMove=0;10
+# Move down 1 mm
+
+Move=0
+# Move-command without y-value moves only in x direction and keeps the y intact.
+# This one moves the cursor to the beginning of current line.
+
+Font=30;400;Arial
+# 9 pt normal Arial font
+
+LineText=Patient: 
+Move=150
+LineText=$PatientLastName , $PatientFirstName  $PatientMiddleName  ($PatientId 
+If=$PatientId2
+  LineText=, $PatientId2
+EndIf
+LineText=)
+# Write Patient Id 2 only if it has been defined for this patient.
+
+Move=-10 
+# Negative x-value in Move-command implicates distance measured from the right edge.
+TextRight=Printed $CurrentDateShort  by $UserId
+
+If=$NotCoverPage
+  Move=0
+  LineText=Course:
+  Move=150
+  Text=$CourseId
+
+  Move=0
+  LineText=Plan:
+  Move=150
+  LineText=$PlanId   -  $ApprovalStatus
+Else 
+  Move=0
+  LineText=Plan Sum:
+  Move=150
+  Text=$PlanSumName
+EndIf
+
+Move=-10
+TextRight=Page: $PageNumber
+
+##############################################################################
+Section=Form
+LineSpacing=1.3
+Margin=100
+# 2 cm left margin in the form.
+
+Loop=Fields
+If=$IsSetupFIeld
+
+Move=0
+Font=70-;900;Arial
+LineText=REFERENCE PLAN REPORT
+
+Else
+Move=0
+Font=70-;900;Arial
+LineText=FINAL PLAN REPORT
+EndIf
+EndLoop
+RelativeMove=0;70
+RelativeMove=0;-10
+HorizontalLine=0;1750
+RelativeMove=0;0.5
+HorizontalLine=0;1750
+RelativeMove=0;2
+
+
+##### PATIENT DATA
+Move=0
+Font=50;700;Arial
+Text=PATIENT
+
+Margin=150
+# Line 1: patient name and IDs
+Move=0
+Font=42;700;Arial
+LineText=Name:
+Move=300
+Font=42;400;Arial
+LineText=$PatientLastName , $PatientFirstName  $PatientMiddleName  
+Move=900
+Font=42;700;Arial
+LineText=IDs:
+Font=42;400;Arial
+Move=1200
+LineText=$PatientId
+If=$PatientId2
+  Text=, $PatientId2
+Else
+  Text=
+EndIf
+
+# Line 2: Birth Date and sex
+Move=0
+Font=42;700;Arial
+LineText=Birthdate:
+Move=300
+Font=42;400;Arial
+LineText=$PatientDateOfBirth
+Move=900
+Font=42;700;Arial
+LineText=Sex:
+Move=1200
+Font=42;400;Arial
+Text=$PatientSex
+
+# Line3: Primary Oncologist
+Move=0
+Font=42;700;Arial
+LineText=Primary Oncologist:
+Move=370
+Font=42;400;Arial
+Text=$PrimaryOncologist
+
+If=$PatientComment
+  Move=0
+  Font=42;700;Arial
+  LineText=Patient Comment:
+  Move=300
+  Font=42;400;Arial
+  Text=$PatientComment
+EndIf
+RelativeMoveText=0;0.5
+
+
+
+##### PROTOCOL DATA
+
+If=$ProtocolId
+  Margin=100
+  Move=0
+  Font=60;700;Arial
+  Text=PROTOCOL
+
+  Margin=150
+  Move=0
+  Font=42;700;Arial
+  LineText=Protocol Id:
+  Move=300
+  Font=42;400;Arial
+  Text=$ProtocolId
+
+  Move=0
+  Font=42;700;Arial
+  Font=42;400;Arial
+  LineText=Status:
+  Move=300
+  Text=$ProtocolStatus
+
+  # Phases
+  Loop=Phases
+
+    If=$IsPlanPhase
+      # Phase information
+      Move=0
+      Font=42;700;Arial
+      LineText=Protocol Plan Id:
+      Move=300
+      Font=42;400;Arial
+      Text=$PhaseId
+
+      Move=0
+      Font=42;700;Arial
+      LineText=Total Fractions:
+      Move=300
+      Font=42;400;Arial
+      Text=$PhaseTotalFractions
+
+      Move=0
+      Font=42;700;Arial
+      LineText=Fractions Per Week:
+      Move=300
+      Font=42;400;Arial
+      Text=$PhaseFractionsPerWeek
+
+      Move=0
+      Font=42;700;Arial
+      LineText=Fractions Per Day:
+      Move=300
+      Font=42;400;Arial
+      Text=$PhaseFractionsPerDay
+      RelativeMoveText=0;1  	
+    
+      # Phase prescriptions    
+      Move=0
+      Font=42;700;Arial
+      Text=Prescriptions:
+
+      # Header Line
+      Move=30
+      Font=42;400;Arial
+      LineText=Prescription
+      Move=1150
+      Text=Dose
+      Font=42;400;Arial
+      HorizontalLine=30;1320
+
+      # Prescription items
+      Loop=PrescriptionItems
+        Move=30
+        LineText=$PrescriptionType
+        Move=330
+        LineText=$PrescriptionModifier
+        Move=630
+        LineText=$PrescriptionText
+        Move=1150
+        Text=$PrescriptionDose
+      EndLoop
+      RelativeMoveText=0;1 
+    EndIf
+  EndLoop
+EndIf
+
+#### PLAN & COURSE DATA
+
+Margin=100
+Move=0
+Font=50;700;Arial
+Text=PLAN
+Margin =150
+# Line 1: Plan Id and name
+Move=0
+Font=42;700;Arial
+LineText=Plan Id:
+Move=300
+Font=42;400;Arial
+LineText=$PlanId
+Move=900
+Font=42;700;Arial
+LineText=Plan Name:
+Move=1200
+Font=42;400;Arial
+Text=$PlanName
+
+# Line 2: Course Id and intent
+Move=0
+Font=42;700;Arial
+LineText=Course Id:
+Move=300
+Font=42;400;Arial
+LineText=$CourseId
+Move=900
+Font=42;700;Arial
+LineText=Course Intent:
+Move=1200
+Font=42;400;Arial
+Text=$CourseIntent
+
+If=$PlanComment
+  Move=0
+  Font=42;700;Arial
+  LineText=Plan Comment:
+  Move=300
+  Font=42;400;Arial
+  Text=$PlanComment
+EndIf
+
+If=$CourseComment
+  Move=0
+  Font=42;700;Arial
+  LineText=Course Comment:
+  Move=300
+  Font=42;400;Arial
+  Text=$CourseComment
+EndIf
+
+Move=0
+Font=42;700;Arial
+LineText=Plan Created:
+Move=300
+Font=42;400;Arial
+Text=$PlanCreationDate  by $PlanCreator
+
+Move=0
+Font=42;700;Arial
+LineText=Plan Last Modified:
+Move=350
+Font=42;400;Arial
+Text=$PlanModificationDate  by $PlanModifier
+
+
+#### PATIENT ORIENTATION & IMAGE ORIGIN & PLANNING COORDINATE SYSTEM
+
+If=$IsIRREGPlan
+  Move=0
+  Font=42;700;Arial
+  LineText=Patient Treatment Orientation:
+  Move=600
+  Font=42;400;Arial
+  Text=$PatientTreatmentOrientation
+  RelativeMoveText=0;0.5
+Else
+  RelativeMoveText=0;0.5
+
+  Margin=100
+
+  Move=0
+  Font=50;700;Arial
+  Text=IMAGE
+
+  Margin=150
+
+  # Image Id & name
+  Move=0
+  Font=42;700;Arial
+  LineText=Image Id:
+  Move=300
+  Font=42;400;Arial
+  LineText=$ImageId
+  Move=900
+  Font=42;700;Arial
+  LineText=Image Name:
+  Move=1200
+  Font=42;400;Arial
+  Text=$ImageName
+  Move=0
+  Font=42;700;Arial
+  LineText=Image Series Id:
+  Move=300
+  Font=42;400;Arial
+  LineText=$ImageSeriesId
+  Move=900
+  Font=42;700;Arial
+  LineText=Image Modality:
+  Move=1200
+  Font=42;400;Arial
+  Text=$ImageModality
+
+  # Image comment, if defined
+  If=$ImageComment
+    Move=0
+    Font=42;700;Arial
+    LineText=Image Comment:
+    Move=600
+    Font=42;400;Arial
+    Text=$ImageComment
+  EndIf
+
+  Move=0
+  Font=42;700;Arial
+  LineText=Patient Imaging Orientation:
+  Move=600
+  Font=42;400;Arial
+  Text=$PatientImagingOrientation
+
+  Move=0
+  Font=42;700;Arial
+  LineText=Patient Treatment Orientation:
+  Move=600
+  Font=42;400;Arial
+  Text=$PatientTreatmentOrientation
+
+  Move=0
+  Font=42;700;Arial
+  LineText=Image Origin:
+  Move=600
+  Font=50;400;Arial
+  Text=$ImageUserOrigin
+
+  If=$ImageUserOriginComment
+    Move=0
+    Font=42;700;Arial
+    LineText=Image Origin Comment:
+    Move=600
+    Font=42;400;Arial
+    Text=$ImageUserOriginComment
+  EndIf
+
+  Move=0
+  Font=42;700;Arial
+  If=$ImageApprovalDate
+    LineText=Image Approval:
+    Move=600
+    Font=42;400;Arial
+    Text=$ImageApprovalDate  by $ImageApprover
+  Else
+    Text=IMAGE NOT APPROVED
+  EndIf
+EndIf
+
+RelativeMoveText=0;0.5
+
+PageBreak=0.9
+RelativeMove=1;60
+################# Indicate whether Its a Reference Plan (SEtup Fields) or a Plan
+Loop=Fields
+
+If=$IsSetupField
+  Margin=100
+  Move=0
+  Font=50;700;Arial
+  LineText=SETUP FIELD INFORMATION
+
+Else
+
+  Margin=100
+  Move=0
+  Font=50;700;Arial
+  LineText=ISOCENTRE AND REFERENCE POINT DATA
+EndIf
+EndLoop
+RelativeMove=1;60
+Loop=Fields
+If=$IsSetupField
+  Margin=150
+  Move=0
+  Font=42;700;Arial
+  Move=0
+  Move=330
+  LineText=Isocentre Location
+  Move = 900
+  Font=42;700;Arial
+  LineText=Source Skin Distance
+Else
+  Margin=150
+  Move=0
+  Font=42;700;Arial
+  Move=0
+  Move=330
+  LineText=Id
+  Move=520
+  LineText=Frct Dose
+  Move=730
+  LineText=Location X,Y,Z
+  Move=1160
+  LineText=PSSD
+  Move=1360
+  LineText=Depth
+  Move=1550
+  LineText=Eq. Path Length
+EndIf
+EndLoop
+RelativeMove=1;60
+
+##### FIELD DATA
+Loop=Fields
+
+
+
+  ##### FRACTIONATION DOSE DATA - INSIDE FIELD
+  If=$IsSetupField
+  			# Header Line 1
+			Move=0
+		        Margin =50
+			HorizontalLine=0;1800
+			  Margin=50
+			  Font=50;700;Arial
+			  Move=0
+			  LineText=$FieldId 
+			Font=42;400;Arial
+			Move=430
+			LineText=$FieldIsocentreX , $FieldIsocentreY , $FieldIsocentreZ
+			Move=1100
+			Font=42;400;Arial
+			Text = $FieldSSD
+			HorizontalLine=0;1800
+			RelativeMoveText=0;0.5
+  Else
+	##### REFPOINT DATA - INSIDE FIELD & FRACTIONATION
+	If=$RefPoints
+	
+		# For ordinary plan print out ref point doses from each field
+		# Header Line 1
+		Move=0
+	        Margin =50
+		HorizontalLine=0;1800
+		  Margin=50
+		  Font=50;700;Arial
+		  Move=0
+		  LineText=$FieldId 
+		Font=42;400;Arial
+		Loop=RefPoints
+		Move=430
+		LineText=$RefPointId
+		Move=620
+		LineText=$FieldDose
+		Move=830
+		LineText=$RefPointType
+		LineText=$RefPointX , $RefPointY , $REfPointZ
+		Move=1260
+		LineText=$FieldRefPointSSD
+		Move=1460
+		LineText=$FieldRefPointPointDepth
+		Move=1660
+		Text=$FieldRefPointEffectiveDepth
+		EndLoop
+		Move=0	
+		Move=100
+		Font=40;700;Arial
+		LineText=Isocentre:
+		Move=300
+		Font=40;400;Arial
+		Text=$FieldIsocentreX , $FieldIsocentreY , $FieldIsocentreZ
+		Move=0
+		Move=100
+		Font=40;700;Arial
+		LineText=Source Skin Distance = 
+		Move=500
+		Font=40;400;Arial
+		LineText=$FieldSSD
+		Move= 650
+		  If=$FieldBoluses
+		  Font=40;700;Arial
+		  LineText=Source to Bolus Distance = 
+		  Move=1100
+		  Loop=Boluses			  
+		  Font=40;400;Arial
+		  Text=$FieldSBD
+		  EndLoop
+		 Else
+		  Font=40;700;Arial
+		  Text = NO BOLUS
+		 EndIf
+		HorizontalLine=0;1800
+		RelativeMoveText=0;0.5
+		
+	EndIf
+  
+  EndIf
+  #End of IsSetupField Else
+	
+EndLoop
+  # END of Field Loop
+
+
+##### WARNINGS
+Margin=150
+Move=0
+Font=42;300;Arial
+If=$IsPlanModified
+  Move=0
+  Text=Plan has been modified since it was last saved into database. 
+  If=$IsAllMUperGyValid
+  Else=
+    Move=0
+    Text=All the fields do not have valid MU/Gy values.
+  EndIf
+Else
+  If=$IsAllMUperGyValid
+    Else=
+    Move=0
+    Text=All the fields do not have valid MU/Gy values.
+  EndIf
+EndIf
+RelativeMoveText=0;1
+##### SIGNATURES
+Margin=100
+Move=0
+Font=50;700;Arial
+Text=APPROVALS
+
+Margin=150
+If=$PlanningApprovalDate
+  Move=0
+  Font=42;700;Arial
+  LineText=Planning Approval:
+  Move=600
+  Font=42;400;Arial
+  Text=$PlanningApprovalDate  by $PlanningApprover
+EndIf
+
+If=$TreatmentApprovalDate
+  Move=0
+  Font=42;700;Arial
+  LineText=Treatment Approval:
+  Move=600
+  Font=42;400;Arial
+  Text=$TreatmentApprovalDate  by $TreatmentApprover
+EndIf
+

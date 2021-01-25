@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VCouchModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ModelUid>883934e9-0f4e-48a1-b38d-c14f492066b9</ModelUid>
+  <ModelName>RDS Couch</ModelName>
+  <Public>true</Public>
+  <CreationDate>2017-12-19T14:59:46.110000+01:00</CreationDate>
+  <CreationUser>Varian</CreationUser>
+  <ModelType>CrossSection</ModelType>
+  <PatientPosition>HFS</PatientPosition>
+  <ModelStructures>
+    <ModelStructure DisplayName="CouchSurface" StructureId="CouchSurface" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchInterior" StructureId="CouchInterior" StructureRep="Volume" />
+  </ModelStructures>
+  <StructureHuMappings>
+    <StructureHuMapping StructureId="CouchSurface" AssignedHuValue="-300" />
+    <StructureHuMapping StructureId="CouchInterior" AssignedHuValue="-1000" />
+  </StructureHuMappings>
+</VCouchModelInfo>

@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModelConfiguration>
+  <Version>1</Version>
+  <CollisionModelConfiguration>HET_Vos_MV_OBI_ID6D_IGRT_EncompassOverlay.xml</CollisionModelConfiguration>
+  <SetupTechniques>
+    <SetupTechnique>
+      <Id>VMS_CSC_1</Id>
+      <ProtectionZone>
+        <LineLoop LateralityTowardsGantry="Left">
+          <PointInIecTableTop>
+            <X>-86.5</X>
+            <Z>46</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>-86.5</X>
+            <Z>255</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>-61.6</X>
+            <Z>255</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>0</X>
+            <Z>195.4</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>32.3</X>
+            <Z>148.8</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>57.9</X>
+            <Z>83.8</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>50.4</X>
+            <Z>46</Z>
+          </PointInIecTableTop>
+        </LineLoop>
+        <ReferencePosition>
+          <PointInIecTableTop>
+            <X>0</X>
+            <Z>109</Z>
+          </PointInIecTableTop>
+        </ReferencePosition>
+        <TopFromReferencePosition>-9.2</TopFromReferencePosition>
+        <BottomFromReferencePosition>292.8</BottomFromReferencePosition>
+      </ProtectionZone>
+    </SetupTechnique>
+  </SetupTechniques>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>Nl7uI7hG0ymtrlA1E5kH3hIdJC8=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>AMAnIYqidEzDvcpeRCFCilgYvCdaC6BCQu7NfqGjeT5F8oFPpSvgPHhFtlWFZlqkpjufcrLPM/EX1W3YuLW/HPFNkdv6KvVQ5dnfK3BnhfQt+0LNYkh/D5vJ0sBQOTkCeb02iVuEjdW79yBK/jB93efSK1S0EHkloYNo56yZ7T3PH/WEZBJ9xC0R9YVvA82yx8rHOjVdPVpoE+dqT3Xn6NUtVtmlElvoI/PnN7gT/bzlCXeoDTAFLRVETEgJkYuTrfNdvJ804lgv1meVxrbnnbV0iH4MDLm0w5ccJILApNAfrLbxRsZJyNIunRP5olI+Ej8FlsWuFeesTnwVxiuR2g==</SignatureValue>
+  </Signature>
+</ModelConfiguration>

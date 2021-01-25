@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VCouchModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ModelUid>f5849f63-7e65-46b6-b531-5dbe969cc6ce</ModelUid>
+  <ModelName>QFix Calypso kVue Couch</ModelName>
+  <Public>true</Public>
+  <CreationDate>2015-11-05T10:56:34.3396295+01:00</CreationDate>
+  <CreationUser>Varian</CreationUser>
+  <ModelType>CrossSection</ModelType>
+  <PatientPosition>HFS</PatientPosition>
+  <ModelStructures>
+    <ModelStructure DisplayName="CouchSurface" StructureId="CouchSurface" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchInterior" StructureId="CouchInterior" StructureRep="Volume" />
+    <ModelStructure DisplayName="LeftOuterRail" StructureId="LeftOuterRailIn" StructureRep="Volume" />
+    <ModelStructure DisplayName="RightOuterRail" StructureId="RightOuterRailIn" StructureRep="Volume" />
+    <ModelStructure DisplayName="LeftInnerRail" StructureId="LeftInnerRailIn" StructureRep="Volume" />
+    <ModelStructure DisplayName="RightInnerRail" StructureId="RightInnerRailIn" StructureRep="Volume" />
+	<ModelStructure DisplayName="LeftOuterRail" StructureId="LeftOuterRailOut" StructureRep="Volume" />
+    <ModelStructure DisplayName="RightOuterRail" StructureId="RightOuterRailOut" StructureRep="Volume" />
+    <ModelStructure DisplayName="LeftInnerRail" StructureId="LeftInnerRailOut" StructureRep="Volume" />
+    <ModelStructure DisplayName="RightInnerRail" StructureId="RightInnerRailOut" StructureRep="Volume" />
+  </ModelStructures>
+  <StructureHuMappings>
+    <StructureHuMapping StructureId="CouchSurface" AssignedHuValue="-300" />
+    <StructureHuMapping StructureId="CouchInterior" AssignedHuValue="-1000" />
+    <StructureHuMapping StructureId="LeftOuterRailIn" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="RightOuterRailIn" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="LeftInnerRailIn" AssignedHuValue="-1000" />
+    <StructureHuMapping StructureId="RightInnerRailIn" AssignedHuValue="-1000" />    
+	<StructureHuMapping StructureId="LeftOuterRailOut" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="RightOuterRailOut" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="LeftInnerRailOut" AssignedHuValue="-1000" />
+    <StructureHuMapping StructureId="RightInnerRailOut" AssignedHuValue="-1000" />
+  </StructureHuMappings>
+  <Configurations>
+    <Configuration Id="LeftOutRightOut">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>LeftOuterRailOut</StructureId>
+        <StructureId>RightOuterRailOut</StructureId>        
+		<StructureId>LeftInnerRailOut</StructureId>
+        <StructureId>RightInnerRailOut</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftInRightOut">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>LeftOuterRailIn</StructureId>
+        <StructureId>RightOuterRailOut</StructureId>        
+		<StructureId>LeftInnerRailIn</StructureId>
+        <StructureId>RightInnerRailOut</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftOutRightIn">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>LeftOuterRailOut</StructureId>
+        <StructureId>RightOuterRailIn</StructureId>        
+		<StructureId>LeftInnerRailOut</StructureId>
+        <StructureId>RightInnerRailIn</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftInRightIn">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>LeftOuterRailIn</StructureId>
+        <StructureId>RightOuterRailIn</StructureId>        
+		<StructureId>LeftInnerRailIn</StructureId>
+        <StructureId>RightInnerRailIn</StructureId>
+      </StructureIds>
+    </Configuration>
+	</Configurations>
+</VCouchModelInfo>

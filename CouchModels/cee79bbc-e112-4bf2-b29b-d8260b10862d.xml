@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VCouchModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ModelUid>cee79bbc-e112-4bf2-b29b-d8260b10862d</ModelUid>
+  <ModelName>Exact Couch with Unipanel, large window</ModelName>
+  <Public>true</Public>
+  <CreationDate>2015-11-04T15:53:37.9836138+01:00</CreationDate>
+  <CreationUser>Varian</CreationUser>
+  <ModelType>CrossSection</ModelType>
+  <PatientPosition>HFS</PatientPosition>
+  <ModelStructures>
+    <ModelStructure DisplayName="CouchSurface" StructureId="CouchSurface" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchInterior" StructureId="CouchInterior" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchRailLeft" StructureId="CouchRailLeftIn" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchRailLeft" StructureId="CouchRailLeftOut" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchRailRight" StructureId="CouchRailRightIn" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchRailRight" StructureId="CouchRailRightOut" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchGrid" StructureId="CouchGrid" StructureRep="Volume" />
+  </ModelStructures>
+  <StructureHuMappings>
+    <StructureHuMapping StructureId="CouchSurface" AssignedHuValue="-300" />
+    <StructureHuMapping StructureId="CouchInterior" AssignedHuValue="-1000" />
+    <StructureHuMapping StructureId="CouchRailLeftIn" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="CouchRailLeftOut" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="CouchRailRightIn" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="CouchRailRightOut" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="CouchGrid" AssignedHuValue="-1000" />
+  </StructureHuMappings>
+  <Configurations>
+    <Configuration Id="LeftOutRightOut">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>CouchRailLeftOut</StructureId>
+        <StructureId>CouchRailRightOut</StructureId>
+        <StructureId>CouchGrid</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftInRightOut">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>CouchRailLeftIn</StructureId>
+        <StructureId>CouchRailRightOut</StructureId>
+        <StructureId>CouchGrid</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftOutRightIn">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>CouchRailLeftOut</StructureId>
+        <StructureId>CouchRailRightIn</StructureId>
+        <StructureId>CouchGrid</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftInRightIn">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>CouchRailLeftIn</StructureId>
+        <StructureId>CouchRailRightIn</StructureId>
+        <StructureId>CouchGrid</StructureId>
+      </StructureIds>
+    </Configuration>
+  </Configurations>
+</VCouchModelInfo>

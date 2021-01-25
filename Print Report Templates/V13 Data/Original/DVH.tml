@@ -1,0 +1,298 @@
+﻿###
+### Converted from code page 1252 into Unicode UTF-8 by ConvertTml on 2017-06-04T17:23:28
+###
+##############################################################################
+# DVH Report Template File 
+#
+# Copyright, Varian Medical Systems, Inc., 2004-2007
+# All Rights Reserved
+#
+# ---------------------------------------------------------------------------
+# Instructions:
+#
+# All measurements are in 1/10 mm's. E.g 2000 = 200mm = 20cm
+#
+# Font size is also in 1/10 mm's.  Typical sizes are:
+#   94 = 28 pt
+#   84 = 24 pt
+#   60 = 18 pt
+#   42 = 12 pt 
+#   38 = 11 pt
+#   34 = 10 pt
+#   30 =  9 pt
+#
+# Font weight is in logical units. Number can be anything between 1 and 999.
+# Usual values used are:
+#  100 = THIN
+#  300 = LIGHT
+#  400 = NORMAL
+#  700 = BOLD
+#  900 = HEAVY
+#
+#
+##############################################################################
+Section=Header
+# Defines that this section of commands is for the header which is printed on 
+# top of each page
+
+Description=This is a report form for DVH graph and its statistics.
+# Description of the template, shown in print report dialog.
+
+PaperSize=Letter
+# Defines the paper size.  Allowed sizes are:
+#   A4
+#   A3
+#   Legal
+#   Letter
+#   Tabloid
+
+PaperOrientation=Landscape
+# Defines paper orientation.  Allowed options are:
+#   Portrait
+#   Landscape
+
+Height=200
+# Defines the height of the space reserved for the header.
+
+LineSpacing=1.10
+# Linespace is 1.1 times height of the font.
+
+Margin=50
+# Only small margins in header.
+
+Font=60;900;Arial
+# 18 pt heavy Arial font
+
+Move=0;50
+# Move to the left margin and down 5 mm
+
+Text=$ApplicationName
+# Write text and do Line Feed + Carriage Return
+
+Font=30;400;Arial
+# 9 pt normal Arial font
+
+LineText=$TaskName  $TaskVersion 
+# Text is written without Line Feed + Carriage Return
+
+Move=-10
+# Negative x-value in Move-command implicates distance measured from the right edge.
+
+TextRight=$Hospital
+# Text is written so that it ends on the current cursor location, (-10).
+# Line Feed + Carriage Return
+
+RelativeMove=0;10
+# Move down 1 mm
+
+HorizontalLine=0
+# Draw a line from column 0 to the width of the page.
+
+RelativeMove=0;10
+# Move down 1 mm
+
+##############################################################################
+Section=Form
+LineSpacing=1.1
+Margin=100
+# 10 mm left margin in the form.
+
+Move=0
+Font=30;700;Arial
+LineText=Patient:
+Move=250
+Text=$PatientLastName , $PatientFirstName  $PatientMiddleName 
+
+Move=0
+LineText=Patient IDs:
+Move=250
+LineText=$PatientId
+If=$PatientId2
+  Text=, $PatientId2
+Else
+  Text=
+EndIf
+
+Move=0
+LineText=Comment:
+Move=250
+If=$Comment
+  Text=$Comment
+Else
+  Text=
+EndIf
+
+RelativeMoveText=0;-1
+RelativeMoveText=0;-1
+RelativeMoveText=0;-1
+
+Font=30;700;Arial
+Move=1800
+LineText=Plan Id
+Move=2050
+LineText=Plan Status
+Move=2300
+LineText=Course Id
+
+RelativeMoveText=0;1
+HorizontalLine=1800;2490
+Font=30;400;Arial
+
+Loop=DVHPlanSummaryRows
+  Move=1710
+  Color=$DVHColor
+  Move=1800
+  If=$PlanSumId
+    LineText=$PlanSumId
+    Move=2050
+    LineText=-
+    Move=2300
+    Text=$PlanSumCourseId
+  Else
+    LineText=$PlanId
+    Move=2050
+    LineText=$ApprovalStatus
+    Move=2300
+    Text=$CourseId
+EndIf
+EndLoop
+
+
+# DVH Graph and it's width and height
+RelativeMoveText=0;1
+Move=0
+RelativeMove=0;20
+DVHGraph=2400;1200
+RelativeMove=0;20
+
+# DVH Summary Header
+
+# Indicates start of DVH statistics table header
+PageBreak=0.95
+BeginDVHTableHeader
+
+Font=30;700;Arial
+Move=0
+Move=90
+LineText=Structure
+Move=420
+LineText=Structure Status
+
+Move=800
+LineText=Coverage [%/%]
+Move=1040
+LineText=Volume
+Move=1250
+LineText=Min Dose
+Move=1440
+LineText=Max Dose
+Move=1640
+LineText=Mean Dose
+Move=1830
+LineText=Modal Dose
+Move=2020
+LineText=Median Dose
+Move=2220
+If=$DVHNDR
+  LineText=Std Dev
+  Move=2410
+  Text=NDR
+Else
+  Text=Std Dev
+EndIf  
+HorizontalLine=0;2490
+Font=30;400;Arial
+
+# Indicates end of DVH statistics table header
+EndDVHTableHeader
+
+# DVH Summary Rows
+Loop=DVHSummaryRows
+  PageBreak=0.97
+  Move=0
+  Color=$DVHColor
+  Move=90
+  LineText=$DVHStructure
+
+  Move=420
+  LineText=$StructureStatus
+
+  Move=800
+  LineText=$DVHCoverage
+  Move=1040
+  LineText=$DVHVolume
+  Move=1250
+  LineText=$DVHMin
+  Move=1440
+  LineText=$DVHMax
+  Move=1640
+  LineText=$DVHMean
+  Move=1830
+  LineText=$DVHModal
+  Move=2020
+  LineText=$DVHMedian
+  Move=2220
+  If=$DVHNDR
+    LineText=$DVHStdDev
+    Move=2410
+    Text=$DVHNDR
+  Else
+    Text=$DVHStdDev
+  EndIf
+EndLoop
+
+
+HorizontalLine=0;2490
+
+##############################################################################
+Section=Footer
+
+Height=160
+# Defines the height of the space reserved for footer.
+# The form is printed between +headerHeight and PaperLength - FooterHeight.
+# The legtht and the width of the paper are taken from the printer properties.
+
+LineSpacing=1.10
+# Linespace is 1.1 times height of the font.
+
+Margin=50
+# Only small margins in footer.
+
+Move=0;-160
+# Negative y-value in Move-command implicates distance measured from the bottom 
+# of the page.
+
+RelativeMove=0;10
+# Move down 1 mm
+
+HorizontalLine=0
+# Draw a line from column 0 to the width of the page.
+
+RelativeMove=0;10
+# Move down 1 mm
+
+Font=30;400;Arial
+# 9 pt normal Arial font
+
+LineText=Patient: 
+Move=150
+LineText=$PatientLastName , $PatientFirstName  $PatientMiddleName  ($PatientId 
+If=$PatientId2
+  LineText=, $PatientId2
+EndIf
+LineText=)
+# Write Patient Id 2 only if it has been defined for this patient.
+
+Move=-10 
+# Negative x-value in Move-command implicates distance measured from the right edge.
+TextRight=Printed $CurrentDateShort  by $UserId
+
+Move=-10
+TextRight=Page: $PageNumber
+
+
+
+
+
+
+

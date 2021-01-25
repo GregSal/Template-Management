@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VCouchModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ModelUid>faef9cb2-4db9-4095-a86a-625f6016e309</ModelUid>
+  <ModelName>BrainLAB - iBeam Couch H&amp;N Extension</ModelName>
+    <Public>true</Public>
+  <CreationDate>2015-08-18T10:09:46.5825436+02:00</CreationDate>
+  <CreationUser>Varian</CreationUser>
+  <ModelType>CrossSection</ModelType>
+  <PatientPosition>HFS</PatientPosition>
+  <ModelStructures>
+    <ModelStructure DisplayName="CouchSurface" StructureId="CouchSurface" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchInterior" StructureId="CouchInterior" StructureRep="Volume" />
+  </ModelStructures>
+    <StructureHuMappings>
+    <StructureHuMapping StructureId="CouchSurface" AssignedHuValue="-300" />
+    <StructureHuMapping StructureId="CouchInterior" AssignedHuValue="-1000" />
+  </StructureHuMappings>
+</VCouchModelInfo>

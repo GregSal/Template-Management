@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrossSectionData xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CutStructures>
+    <CutStructure>
+      <StructureName>CouchSurface</StructureName>
+      <Contours>
+        <Contour>
+          <ContourPoints>
+            <Point X="-141.2" Y="2.1" />
+				<Point X="-140.7" Y="1.3" />
+				<Point X="-140.2" Y="0.6" />
+				<Point X="-139.5" Y="0.1" />
+				<Point X="-138.8" Y="0" />
+				<Point X="138.8" Y="0" />
+				<Point X="139.5" Y="0.1" />
+				<Point X="140.2" Y="0.6" />
+				<Point X="140.7" Y="1.3" />
+				<Point X="141.2" Y="2.1" />
+				<Point X="141.1" Y="2.6" />
+				<Point X="140.8" Y="3.2" />
+				<Point X="140.2" Y="3.9" />
+				<Point X="139.3" Y="4.4" />
+				<Point X="137.8" Y="4.7" />
+				<Point X="135.4" Y="5" />
+				<Point X="133.2" Y="5.3" />
+				<Point X="120.2" Y="5.3" />
+				<Point X="118.2" Y="5.8" />
+				<Point X="116.8" Y="6.2" />
+				<Point X="115.8" Y="7.1" />
+				<Point X="107.7" Y="17.6" />
+				<Point X="106.6" Y="18.6" />
+				<Point X="105.1" Y="19.5" />
+				<Point X="103.4" Y="19.9" />
+				<Point X="-103.4" Y="19.9" />
+				<Point X="-105.1" Y="19.5" />
+				<Point X="-106.6" Y="18.6" />
+				<Point X="-107.7" Y="17.6" />
+				<Point X="-115.8" Y="7.1" />
+				<Point X="-116.8" Y="6.2" />
+				<Point X="-118.2" Y="5.8" />
+				<Point X="-120.2" Y="5.3" />
+				<Point X="-133.2" Y="5.3" />
+				<Point X="-135.4" Y="5" />
+				<Point X="-137.8" Y="4.7" />
+				<Point X="-139.3" Y="4.4" />
+				<Point X="-140.2" Y="3.9" />
+				<Point X="-140.8" Y="3.2" />
+				<Point X="-141.1" Y="2.6" />
+          </ContourPoints>
+        </Contour>
+        <Contour>
+          <ContourPoints>
+            <Point X="-111.1" Y="4.8" />
+			<Point X="-110.9" Y="3.8" />
+			<Point X="-107.3" Y="3.6" />
+			<Point X="-99.6" Y="3.5" />
+			<Point X="99.6" Y="3.5" />
+			<Point X="107.3" Y="3.6" />
+			<Point X="110.9" Y="3.8" />
+			<Point X="111.1" Y="4.8" />
+			<Point X="106.6" Y="13.5" />
+			<Point X="105.5" Y="14.7" />
+			<Point X="104.1" Y="15.7" />
+			<Point X="103" Y="16.4" />
+			<Point X="101.7" Y="16.8" />
+			<Point X="100.3" Y="17.1" />
+			<Point X="-100.3" Y="17.1" />
+			<Point X="-101.7" Y="16.8" />
+			<Point X="-103" Y="16.4" />
+			<Point X="-104.1" Y="15.7" />
+			<Point X="-105.5" Y="14.7" />
+			<Point X="-106.6" Y="13.5" />
+          </ContourPoints>
+        </Contour>
+      </Contours>
+    </CutStructure>
+    <CutStructure>
+      <StructureName>CouchInterior</StructureName>
+      <Contours>
+        <Contour>
+          <ContourPoints>
+            <Point X="-111.1" Y="4.8" />
+			<Point X="-110.9" Y="3.8" />
+			<Point X="-107.3" Y="3.6" />
+			<Point X="-99.6" Y="3.5" />
+			<Point X="99.6" Y="3.5" />
+			<Point X="107.3" Y="3.6" />
+			<Point X="110.9" Y="3.8" />
+			<Point X="111.1" Y="4.8" />
+			<Point X="106.6" Y="13.5" />
+			<Point X="105.5" Y="14.7" />
+			<Point X="104.1" Y="15.7" />
+			<Point X="103" Y="16.4" />
+			<Point X="101.7" Y="16.8" />
+			<Point X="100.3" Y="17.1" />
+			<Point X="-100.3" Y="17.1" />
+			<Point X="-101.7" Y="16.8" />
+			<Point X="-103" Y="16.4" />
+			<Point X="-104.1" Y="15.7" />
+			<Point X="-105.5" Y="14.7" />
+			<Point X="-106.6" Y="13.5" />
+          </ContourPoints>
+        </Contour>
+      </Contours>
+    </CutStructure>
+  </CutStructures>
+</CrossSectionData>

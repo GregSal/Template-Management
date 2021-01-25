@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FilterInstances xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;false&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;false&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;false&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;false&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;false&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;false&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;true&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;false&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;false&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;false&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;false&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;true&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;false&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+    &lt;fsoMedia:CharacterSetOverride&gt;ISO_IR 192&lt;/fsoMedia:CharacterSetOverride&gt;
+    &lt;fsoMedia:ShowAsISOIR100&gt;false&lt;/fsoMedia:ShowAsISOIR100&gt;
+    &lt;fsoMedia:OmitDICOMCS&gt;false&lt;/fsoMedia:OmitDICOMCS&gt;
+    &lt;fsoMedia:FilenameCreationOption&gt;UID&lt;/fsoMedia:FilenameCreationOption&gt;
+    &lt;fsoMedia:PatientIDObjectIDOption4RTImage&gt;RTImageLabel&lt;/fsoMedia:PatientIDObjectIDOption4RTImage&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\krcc-3\Home\PHYSICS\QA\QA Images&lt;/fsoMedia:WorkingDirectory&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>PHYSICS QA IMAGES</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;false&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;false&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;false&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;false&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;false&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;true&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;true&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;true&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;false&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;false&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;true&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;true&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;false&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoStorage="http://xsd.baden.varian.com/VFilterSpecificOptionsStorage.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsStorage, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoStorage:VFilterSpecificOptionsStorage Version="1"&gt;
+    &lt;fsoStorage:DefaultCharacterSet&gt;ISO_IR 192&lt;/fsoStorage:DefaultCharacterSet&gt;
+    &lt;fsoStorage:OmitDICOMCS&gt;false&lt;/fsoStorage:OmitDICOMCS&gt;
+    &lt;fsoStorage:SCUAETitle&gt;PlanningCT&lt;/fsoStorage:SCUAETitle&gt;
+    &lt;fsoStorage:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider"&gt;
+      &lt;pacs:SCPAETitle&gt;OTP_INCOMING&lt;/pacs:SCPAETitle&gt;
+      &lt;pacs:SCPIP&gt;10.40.62.172&lt;/pacs:SCPIP&gt;
+      &lt;pacs:SCPPort&gt;104&lt;/pacs:SCPPort&gt;
+      &lt;pacs:SCPAdvanced&gt;false&lt;/pacs:SCPAdvanced&gt;
+      &lt;pacs:AssociationTimeout&gt;5000&lt;/pacs:AssociationTimeout&gt;
+      &lt;q1:ISQRFilter&gt;false&lt;/q1:ISQRFilter&gt;
+      &lt;q1:ISStorageFilter&gt;true&lt;/q1:ISStorageFilter&gt;
+    &lt;/fsoStorage:SelectedPACS&gt;
+  &lt;/fsoStorage:VFilterSpecificOptionsStorage&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMStorageExportFilterID</Id>
+    <Name>DICOM Export to HDR</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;false&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;false&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;false&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;false&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;false&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;false&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;false&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;true&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;false&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;false&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;false&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;true&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;false&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoStorage="http://xsd.baden.varian.com/VFilterSpecificOptionsStorage.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsStorage, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoStorage:VFilterSpecificOptionsStorage Version="1"&gt;
+    &lt;fsoStorage:DefaultCharacterSet&gt;ISO_IR 192&lt;/fsoStorage:DefaultCharacterSet&gt;
+    &lt;fsoStorage:OmitDICOMCS&gt;false&lt;/fsoStorage:OmitDICOMCS&gt;
+    &lt;fsoStorage:SCUAETitle&gt;DICOM_CLEANER&lt;/fsoStorage:SCUAETitle&gt;
+    &lt;fsoStorage:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider"&gt;
+      &lt;pacs:SCPAETitle&gt;DICOM_CLEANER&lt;/pacs:SCPAETitle&gt;
+      &lt;pacs:SCPIP&gt;10.40.15.141&lt;/pacs:SCPIP&gt;
+      &lt;pacs:SCPPort&gt;11112&lt;/pacs:SCPPort&gt;
+      &lt;pacs:SCPAdvanced&gt;false&lt;/pacs:SCPAdvanced&gt;
+      &lt;pacs:AssociationTimeout&gt;5000&lt;/pacs:AssociationTimeout&gt;
+      &lt;q1:ISQRFilter&gt;true&lt;/q1:ISQRFilter&gt;
+      &lt;q1:ISStorageFilter&gt;true&lt;/q1:ISStorageFilter&gt;
+    &lt;/fsoStorage:SelectedPACS&gt;
+  &lt;/fsoStorage:VFilterSpecificOptionsStorage&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMStorageExportFilterID</Id>
+    <Name>DICOM Cleaner</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;false&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;false&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;false&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;false&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;false&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;false&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;true&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;false&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;false&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;false&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;false&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;false&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;false&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+    &lt;fsoMedia:CharacterSetOverride&gt;ISO_IR 192&lt;/fsoMedia:CharacterSetOverride&gt;
+    &lt;fsoMedia:ShowAsISOIR100&gt;false&lt;/fsoMedia:ShowAsISOIR100&gt;
+    &lt;fsoMedia:OmitDICOMCS&gt;false&lt;/fsoMedia:OmitDICOMCS&gt;
+    &lt;fsoMedia:FilenameCreationOption&gt;PatientID_ObjectId&lt;/fsoMedia:FilenameCreationOption&gt;
+    &lt;fsoMedia:PatientIDObjectIDOption4RTImage&gt;BeamLabel_FractionNumber&lt;/fsoMedia:PatientIDObjectIDOption4RTImage&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\krcc-3\home\PHYSICS\QA\QA Images&lt;/fsoMedia:WorkingDirectory&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>QA Images</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;true&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;true&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;true&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;true&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;true&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;true&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;true&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;true&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;true&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;true&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;true&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;false&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;true&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;true&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;true&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;true&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;true&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+    &lt;fsoMedia:CharacterSetOverride&gt;ISO_IR 192&lt;/fsoMedia:CharacterSetOverride&gt;
+    &lt;fsoMedia:ShowAsISOIR100&gt;false&lt;/fsoMedia:ShowAsISOIR100&gt;
+    &lt;fsoMedia:OmitDICOMCS&gt;false&lt;/fsoMedia:OmitDICOMCS&gt;
+    &lt;fsoMedia:FilenameCreationOption&gt;UID&lt;/fsoMedia:FilenameCreationOption&gt;
+    &lt;fsoMedia:PatientIDObjectIDOption4RTImage&gt;RTImageLabel&lt;/fsoMedia:PatientIDObjectIDOption4RTImage&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\dkphysicspv1\Radiation_Therapy\DICOM_Import\Anonymization&lt;/fsoMedia:WorkingDirectory&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>Export With Anonymization</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;false&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;false&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;false&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;false&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;false&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;false&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;true&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;false&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;false&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;false&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;false&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;true&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;false&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoStorage="http://xsd.baden.varian.com/VFilterSpecificOptionsStorage.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsStorage, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoStorage:VFilterSpecificOptionsStorage Version="1"&gt;
+    &lt;fsoStorage:DefaultCharacterSet&gt;ISO_IR 192&lt;/fsoStorage:DefaultCharacterSet&gt;
+    &lt;fsoStorage:OmitDICOMCS&gt;false&lt;/fsoStorage:OmitDICOMCS&gt;
+    &lt;fsoStorage:SCUAETitle&gt;VMSFSD&lt;/fsoStorage:SCUAETitle&gt;
+    &lt;fsoStorage:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider"&gt;
+      &lt;pacs:SCPAETitle&gt;CCSEO_AW2&lt;/pacs:SCPAETitle&gt;
+      &lt;pacs:SCPIP&gt;10.40.186.52&lt;/pacs:SCPIP&gt;
+      &lt;pacs:SCPPort&gt;4006&lt;/pacs:SCPPort&gt;
+      &lt;pacs:SCPAdvanced&gt;false&lt;/pacs:SCPAdvanced&gt;
+      &lt;pacs:AssociationTimeout&gt;5000&lt;/pacs:AssociationTimeout&gt;
+      &lt;q1:ISQRFilter&gt;true&lt;/q1:ISQRFilter&gt;
+      &lt;q1:ISStorageFilter&gt;true&lt;/q1:ISStorageFilter&gt;
+    &lt;/fsoStorage:SelectedPACS&gt;
+  &lt;/fsoStorage:VFilterSpecificOptionsStorage&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMStorageExportFilterID</Id>
+    <Name>Advantage Workstation AW2</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;false&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;false&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;false&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;false&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;false&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;true&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;true&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;false&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;false&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;false&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;true&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;true&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;false&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoStorage="http://xsd.baden.varian.com/VFilterSpecificOptionsStorage.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsStorage, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoStorage:VFilterSpecificOptionsStorage Version="1"&gt;
+    &lt;fsoStorage:DefaultCharacterSet&gt;1252&lt;/fsoStorage:DefaultCharacterSet&gt;
+    &lt;fsoStorage:OmitDICOMCS&gt;false&lt;/fsoStorage:OmitDICOMCS&gt;
+    &lt;fsoStorage:SCUAETitle&gt;VMSFSD&lt;/fsoStorage:SCUAETitle&gt;
+    &lt;fsoStorage:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider"&gt;
+      &lt;pacs:SCPAETitle&gt;CARINAnav&lt;/pacs:SCPAETitle&gt;
+      &lt;pacs:SCPIP&gt;10.40.65.20&lt;/pacs:SCPIP&gt;
+      &lt;pacs:SCPPort&gt;104&lt;/pacs:SCPPort&gt;
+      &lt;pacs:SCPAdvanced&gt;false&lt;/pacs:SCPAdvanced&gt;
+      &lt;pacs:AssociationTimeout&gt;5000&lt;/pacs:AssociationTimeout&gt;
+      &lt;q1:ISQRFilter&gt;false&lt;/q1:ISQRFilter&gt;
+      &lt;q1:ISStorageFilter&gt;true&lt;/q1:ISStorageFilter&gt;
+    &lt;/fsoStorage:SelectedPACS&gt;
+  &lt;/fsoStorage:VFilterSpecificOptionsStorage&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMStorageExportFilterID</Id>
+    <Name>LAP Laser Export</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;false&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;false&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;false&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;false&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;false&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;false&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;false&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;false&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;false&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;false&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;false&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;false&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;true&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+    &lt;fsoMedia:CharacterSetOverride&gt;ISO_IR 192&lt;/fsoMedia:CharacterSetOverride&gt;
+    &lt;fsoMedia:ShowAsISOIR100&gt;false&lt;/fsoMedia:ShowAsISOIR100&gt;
+    &lt;fsoMedia:OmitDICOMCS&gt;false&lt;/fsoMedia:OmitDICOMCS&gt;
+    &lt;fsoMedia:FilenameCreationOption&gt;PatientID_ObjectId&lt;/fsoMedia:FilenameCreationOption&gt;
+    &lt;fsoMedia:PatientIDObjectIDOption4RTImage&gt;RTImageLabel&lt;/fsoMedia:PatientIDObjectIDOption4RTImage&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\dkphysicspv1\e$\Software\IMSure\DICOM&lt;/fsoMedia:WorkingDirectory&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>DICOM Media File Export Filter</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;false&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;false&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;false&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;false&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;false&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;false&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;false&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;false&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;false&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;false&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;false&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;false&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;true&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+    &lt;fsoMedia:CharacterSetOverride&gt;ISO_IR 192&lt;/fsoMedia:CharacterSetOverride&gt;
+    &lt;fsoMedia:ShowAsISOIR100&gt;false&lt;/fsoMedia:ShowAsISOIR100&gt;
+    &lt;fsoMedia:OmitDICOMCS&gt;false&lt;/fsoMedia:OmitDICOMCS&gt;
+    &lt;fsoMedia:FilenameCreationOption&gt;UID&lt;/fsoMedia:FilenameCreationOption&gt;
+    &lt;fsoMedia:PatientIDObjectIDOption4RTImage&gt;RTImageLabel&lt;/fsoMedia:PatientIDObjectIDOption4RTImage&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\dkphysicspv1\e$\Software\IMSure\Dicom&lt;/fsoMedia:WorkingDirectory&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>Export to IMSURE</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;true&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;true&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;true&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;true&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;true&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;true&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;true&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;true&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;true&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;true&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;true&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;true&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;true&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;true&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;true&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;true&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;true&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;true&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;true&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;true&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId&gt;QA1&lt;/confProfAria:ReplacementPatientId&gt;
+      &lt;confProfAria:ReplacementPatientName&gt;TestQA1&lt;/confProfAria:ReplacementPatientName&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;true&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;true&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileExport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileExport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+    &lt;fsoMedia:CharacterSetOverride&gt;ISO_IR 192&lt;/fsoMedia:CharacterSetOverride&gt;
+    &lt;fsoMedia:ShowAsISOIR100&gt;false&lt;/fsoMedia:ShowAsISOIR100&gt;
+    &lt;fsoMedia:OmitDICOMCS&gt;false&lt;/fsoMedia:OmitDICOMCS&gt;
+    &lt;fsoMedia:FilenameCreationOption&gt;UID&lt;/fsoMedia:FilenameCreationOption&gt;
+    &lt;fsoMedia:PatientIDObjectIDOption4RTImage&gt;BeamLabel_FractionNumber&lt;/fsoMedia:PatientIDObjectIDOption4RTImage&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\Client\L$\temp\Plan Checking Temp\DICOM&lt;/fsoMedia:WorkingDirectory&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileExport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileExportFilterID</Id>
+    <Name>Plan Check Export</Name>
+    <Shared>false</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaE="http://xsd.baden.varian.com/VFilterIndependentOptionsExport.xsd" xmlns:confProf="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfile.xsd" xmlns:confProfAria="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileAria.xsd" xmlns:options="http://xsd.baden.varian.com/Anonymization/VOptions.xsd" xmlns:confProfItem="http://xsd.baden.varian.com/Anonymization/VConfidentialityProfileItem.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsExport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaE:VFilterIndependentOptionsExport&gt;
+    &lt;fioMediaE:Plan_PrimaryRefImgs&gt;true&lt;/fioMediaE:Plan_PrimaryRefImgs&gt;
+    &lt;fioMediaE:Plan_AllRefImgs&gt;true&lt;/fioMediaE:Plan_AllRefImgs&gt;
+    &lt;fioMediaE:Plan_PlanningImgs&gt;true&lt;/fioMediaE:Plan_PlanningImgs&gt;
+    &lt;fioMediaE:Plan_PlanningSS&gt;true&lt;/fioMediaE:Plan_PlanningSS&gt;
+    &lt;fioMediaE:Plan_MM&gt;true&lt;/fioMediaE:Plan_MM&gt;
+    &lt;fioMediaE:Plan_PlanDose&gt;true&lt;/fioMediaE:Plan_PlanDose&gt;
+    &lt;fioMediaE:Plan_FieldDoses&gt;false&lt;/fioMediaE:Plan_FieldDoses&gt;
+    &lt;fioMediaE:Plan_TR&gt;false&lt;/fioMediaE:Plan_TR&gt;
+    &lt;fioMediaE:Plan_IncludeSetupFields&gt;true&lt;/fioMediaE:Plan_IncludeSetupFields&gt;
+    &lt;fioMediaE:Volume_IncludeSS&gt;true&lt;/fioMediaE:Volume_IncludeSS&gt;
+    &lt;fioMediaE:SS_IncludeImgs&gt;true&lt;/fioMediaE:SS_IncludeImgs&gt;
+    &lt;fioMediaE:SR_IncludeImgs&gt;true&lt;/fioMediaE:SR_IncludeImgs&gt;
+    &lt;fioMediaE:MM_IncludePlan&gt;false&lt;/fioMediaE:MM_IncludePlan&gt;
+    &lt;fioMediaE:MM_IncludeRefMM&gt;false&lt;/fioMediaE:MM_IncludeRefMM&gt;
+    &lt;fioMediaE:EPPlan_ExportFluences&gt;false&lt;/fioMediaE:EPPlan_ExportFluences&gt;
+    &lt;fioMediaE:EPPlan_GenSO&gt;false&lt;/fioMediaE:EPPlan_GenSO&gt;
+    &lt;fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;true&lt;/fioMediaE:EPPlan_ExportDeprecatedStereotacticApplicator&gt;
+    &lt;fioMediaE:Dose_Abs&gt;true&lt;/fioMediaE:Dose_Abs&gt;
+    &lt;fioMediaE:DVHType&gt;Cumulative&lt;/fioMediaE:DVHType&gt;
+    &lt;fioMediaE:DVHVolumeUnit&gt;CM3&lt;/fioMediaE:DVHVolumeUnit&gt;
+    &lt;fioMediaE:DoseBinWidth&gt;0.01&lt;/fioMediaE:DoseBinWidth&gt;
+    &lt;fioMediaE:OmitPartiallyCalculatedStructures&gt;false&lt;/fioMediaE:OmitPartiallyCalculatedStructures&gt;
+    &lt;fioMediaE:Brachy_Geometry&gt;false&lt;/fioMediaE:Brachy_Geometry&gt;
+    &lt;fioMediaE:ConfidentialityProfile&gt;
+      &lt;confProf:Options xmlns:q1="http://xsd.baden.varian.com/Anonymization/VOptionsAria.xsd" xsi:type="q1:VOptionsAria"&gt;
+        &lt;options:RetainSafePrivateOption&gt;false&lt;/options:RetainSafePrivateOption&gt;
+        &lt;options:RetainUIDsOption&gt;false&lt;/options:RetainUIDsOption&gt;
+        &lt;options:RetainDeviceIdentOption&gt;false&lt;/options:RetainDeviceIdentOption&gt;
+        &lt;options:RetainPatientCharsOption&gt;false&lt;/options:RetainPatientCharsOption&gt;
+        &lt;options:RetainLongFullDatesOption&gt;false&lt;/options:RetainLongFullDatesOption&gt;
+        &lt;options:RetainLongModifDatesOption&gt;false&lt;/options:RetainLongModifDatesOption&gt;
+        &lt;options:CleanDescOption&gt;false&lt;/options:CleanDescOption&gt;
+        &lt;options:CleanStructContOption&gt;false&lt;/options:CleanStructContOption&gt;
+        &lt;options:CleanGraphOption&gt;false&lt;/options:CleanGraphOption&gt;
+        &lt;q1:CustomizedOption&gt;true&lt;/q1:CustomizedOption&gt;
+      &lt;/confProf:Options&gt;
+      &lt;confProf:Enabled&gt;false&lt;/confProf:Enabled&gt;
+      &lt;confProfAria:ReplacementPatientId /&gt;
+      &lt;confProfAria:ReplacementPatientName /&gt;
+      &lt;confProfAria:Sponsor /&gt;
+      &lt;confProfAria:Protocol /&gt;
+      &lt;confProfAria:Case /&gt;
+      &lt;confProfAria:Initials /&gt;
+      &lt;confProfAria:AnonymClinicalTrial&gt;false&lt;/confProfAria:AnonymClinicalTrial&gt;
+    &lt;/fioMediaE:ConfidentialityProfile&gt;
+    &lt;fioMediaE:TreatmentConsole&gt;Release8_8&lt;/fioMediaE:TreatmentConsole&gt;
+    &lt;fioMediaE:PerformIHEROCompliantExport&gt;true&lt;/fioMediaE:PerformIHEROCompliantExport&gt;
+    &lt;fioMediaE:TransferSyntaxUsedForExport&gt;ImplicitVRLittleEndian&lt;/fioMediaE:TransferSyntaxUsedForExport&gt;
+    &lt;fioMediaE:Automated&gt;true&lt;/fioMediaE:Automated&gt;
+    &lt;fioMediaE:AtcCompliant&gt;false&lt;/fioMediaE:AtcCompliant&gt;
+  &lt;/fioMediaE:VFilterIndependentOptionsExport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoStorage="http://xsd.baden.varian.com/VFilterSpecificOptionsStorage.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsStorage, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoStorage:VFilterSpecificOptionsStorage Version="1"&gt;
+    &lt;fsoStorage:DefaultCharacterSet&gt;ISO_IR 192&lt;/fsoStorage:DefaultCharacterSet&gt;
+    &lt;fsoStorage:OmitDICOMCS&gt;false&lt;/fsoStorage:OmitDICOMCS&gt;
+    &lt;fsoStorage:SCUAETitle&gt;VMSDBD&lt;/fsoStorage:SCUAETitle&gt;
+    &lt;fsoStorage:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider"&gt;
+      &lt;pacs:SCPAETitle&gt;VMSGRID0437&lt;/pacs:SCPAETitle&gt;
+      &lt;pacs:SCPIP&gt;10.40.68.181&lt;/pacs:SCPIP&gt;
+      &lt;pacs:SCPPort&gt;104&lt;/pacs:SCPPort&gt;
+      &lt;pacs:SCPAdvanced&gt;false&lt;/pacs:SCPAdvanced&gt;
+      &lt;pacs:AssociationTimeout&gt;5000&lt;/pacs:AssociationTimeout&gt;
+      &lt;q1:ISQRFilter&gt;true&lt;/q1:ISQRFilter&gt;
+      &lt;q1:ISStorageFilter&gt;true&lt;/q1:ISStorageFilter&gt;
+    &lt;/fsoStorage:SelectedPACS&gt;
+  &lt;/fsoStorage:VFilterSpecificOptionsStorage&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMStorageExportFilterID</Id>
+    <Name>VelocitySend</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsImport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaI:VFilterIndependentOptionsImport&gt;
+    &lt;fioMediaI:UseIDMapping&gt;false&lt;/fioMediaI:UseIDMapping&gt;
+  &lt;/fioMediaI:VFilterIndependentOptionsImport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+    &lt;fsoMedia:DefaultCharacterSet /&gt;
+    &lt;fsoMedia:EnforceOverride&gt;false&lt;/fsoMedia:EnforceOverride&gt;
+    &lt;fsoMedia:BackupDirectory /&gt;
+    &lt;fsoMedia:IncludeSubdirectories&gt;true&lt;/fsoMedia:IncludeSubdirectories&gt;
+    &lt;fsoMedia:SetUserOriginToDataCollectionCenter&gt;false&lt;/fsoMedia:SetUserOriginToDataCollectionCenter&gt;
+    &lt;fsoMedia:ZOffsetUserOrigin&gt;0&lt;/fsoMedia:ZOffsetUserOrigin&gt;
+    &lt;fsoMedia:UseBackupDirectory&gt;false&lt;/fsoMedia:UseBackupDirectory&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\ariaimgpv1\va_transfer\Gating&lt;/fsoMedia:WorkingDirectory&gt;
+    &lt;fsoMedia:ImageConversionOption&gt;DRR&lt;/fsoMedia:ImageConversionOption&gt;
+    &lt;fsoMedia:ImageConversionEnabled&gt;false&lt;/fsoMedia:ImageConversionEnabled&gt;
+    &lt;fsoMedia:ContourResolution&gt;Automatic&lt;/fsoMedia:ContourResolution&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>RPM Import</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsImport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaI:VFilterIndependentOptionsImport&gt;
+    &lt;fioMediaI:UseIDMapping&gt;false&lt;/fioMediaI:UseIDMapping&gt;
+  &lt;/fioMediaI:VFilterIndependentOptionsImport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+    &lt;fsoMedia:DefaultCharacterSet /&gt;
+    &lt;fsoMedia:EnforceOverride&gt;false&lt;/fsoMedia:EnforceOverride&gt;
+    &lt;fsoMedia:BackupDirectory&gt;\\ariaimgpv1\va_data$\To_Be_Deleted&lt;/fsoMedia:BackupDirectory&gt;
+    &lt;fsoMedia:IncludeSubdirectories&gt;true&lt;/fsoMedia:IncludeSubdirectories&gt;
+    &lt;fsoMedia:SetUserOriginToDataCollectionCenter&gt;false&lt;/fsoMedia:SetUserOriginToDataCollectionCenter&gt;
+    &lt;fsoMedia:ZOffsetUserOrigin&gt;0&lt;/fsoMedia:ZOffsetUserOrigin&gt;
+    &lt;fsoMedia:UseBackupDirectory&gt;true&lt;/fsoMedia:UseBackupDirectory&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\ariaimgpv1\va_data$\Dicom&lt;/fsoMedia:WorkingDirectory&gt;
+    &lt;fsoMedia:ImageConversionOption&gt;DRR&lt;/fsoMedia:ImageConversionOption&gt;
+    &lt;fsoMedia:ImageConversionEnabled&gt;false&lt;/fsoMedia:ImageConversionEnabled&gt;
+    &lt;fsoMedia:ContourResolution&gt;Automatic&lt;/fsoMedia:ContourResolution&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>Import from CT scanner</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsImport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaI:VFilterIndependentOptionsImport&gt;
+    &lt;fioMediaI:UseIDMapping&gt;false&lt;/fioMediaI:UseIDMapping&gt;
+  &lt;/fioMediaI:VFilterIndependentOptionsImport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+    &lt;fsoMedia:DefaultCharacterSet /&gt;
+    &lt;fsoMedia:EnforceOverride&gt;false&lt;/fsoMedia:EnforceOverride&gt;
+    &lt;fsoMedia:BackupDirectory&gt;\\ariaimgpv1\va_data$\To_Be_Deleted&lt;/fsoMedia:BackupDirectory&gt;
+    &lt;fsoMedia:IncludeSubdirectories&gt;true&lt;/fsoMedia:IncludeSubdirectories&gt;
+    &lt;fsoMedia:SetUserOriginToDataCollectionCenter&gt;false&lt;/fsoMedia:SetUserOriginToDataCollectionCenter&gt;
+    &lt;fsoMedia:ZOffsetUserOrigin&gt;0&lt;/fsoMedia:ZOffsetUserOrigin&gt;
+    &lt;fsoMedia:UseBackupDirectory&gt;true&lt;/fsoMedia:UseBackupDirectory&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\dkphysicspv1\Radiation_Therapy\DICOM_Import\HDIRS&lt;/fsoMedia:WorkingDirectory&gt;
+    &lt;fsoMedia:ImageConversionOption&gt;DRR&lt;/fsoMedia:ImageConversionOption&gt;
+    &lt;fsoMedia:ImageConversionEnabled&gt;false&lt;/fsoMedia:ImageConversionEnabled&gt;
+    &lt;fsoMedia:ContourResolution&gt;Automatic&lt;/fsoMedia:ContourResolution&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>Import from HDIRS</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsImport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaI:VFilterIndependentOptionsImport&gt;
+    &lt;fioMediaI:UseIDMapping&gt;false&lt;/fioMediaI:UseIDMapping&gt;
+  &lt;/fioMediaI:VFilterIndependentOptionsImport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+    &lt;fsoMedia:DefaultCharacterSet&gt;ISO_IR 192&lt;/fsoMedia:DefaultCharacterSet&gt;
+    &lt;fsoMedia:EnforceOverride&gt;false&lt;/fsoMedia:EnforceOverride&gt;
+    &lt;fsoMedia:BackupDirectory&gt;\\dkphysicspv1\Radiation_Therapy\DICOM_IMPORT\To_Be_Deleted&lt;/fsoMedia:BackupDirectory&gt;
+    &lt;fsoMedia:IncludeSubdirectories&gt;true&lt;/fsoMedia:IncludeSubdirectories&gt;
+    &lt;fsoMedia:SetUserOriginToDataCollectionCenter&gt;false&lt;/fsoMedia:SetUserOriginToDataCollectionCenter&gt;
+    &lt;fsoMedia:ZOffsetUserOrigin&gt;0&lt;/fsoMedia:ZOffsetUserOrigin&gt;
+    &lt;fsoMedia:UseBackupDirectory&gt;true&lt;/fsoMedia:UseBackupDirectory&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\dkphysicspv1\Radiation_Therapy\DICOM_IMPORT\Anonymization&lt;/fsoMedia:WorkingDirectory&gt;
+    &lt;fsoMedia:ImageConversionOption&gt;DRR&lt;/fsoMedia:ImageConversionOption&gt;
+    &lt;fsoMedia:ImageConversionEnabled&gt;false&lt;/fsoMedia:ImageConversionEnabled&gt;
+    &lt;fsoMedia:ContourResolution&gt;Automatic&lt;/fsoMedia:ContourResolution&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>DICOM Cleaner</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsImport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaI:VFilterIndependentOptionsImport&gt;
+    &lt;fioMediaI:UseIDMapping&gt;false&lt;/fioMediaI:UseIDMapping&gt;
+  &lt;/fioMediaI:VFilterIndependentOptionsImport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoMedia="http://xsd.baden.varian.com/VFilterSpecificOptionsDICOMMediaFileImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsDICOMMediaFileImport, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+    &lt;fsoMedia:DefaultCharacterSet /&gt;
+    &lt;fsoMedia:EnforceOverride&gt;false&lt;/fsoMedia:EnforceOverride&gt;
+    &lt;fsoMedia:BackupDirectory&gt;\\dkphysicspv1\Radiation_Therapy\DICOM_IMPORT\To_Be_Deleted&lt;/fsoMedia:BackupDirectory&gt;
+    &lt;fsoMedia:IncludeSubdirectories&gt;false&lt;/fsoMedia:IncludeSubdirectories&gt;
+    &lt;fsoMedia:SetUserOriginToDataCollectionCenter&gt;false&lt;/fsoMedia:SetUserOriginToDataCollectionCenter&gt;
+    &lt;fsoMedia:ZOffsetUserOrigin&gt;0&lt;/fsoMedia:ZOffsetUserOrigin&gt;
+    &lt;fsoMedia:UseBackupDirectory&gt;false&lt;/fsoMedia:UseBackupDirectory&gt;
+    &lt;fsoMedia:WorkingDirectory&gt;\\dkphysicspv1\Radiation_Therapy\DICOM_IMPORT&lt;/fsoMedia:WorkingDirectory&gt;
+    &lt;fsoMedia:ImageConversionOption&gt;DRR&lt;/fsoMedia:ImageConversionOption&gt;
+    &lt;fsoMedia:ImageConversionEnabled&gt;false&lt;/fsoMedia:ImageConversionEnabled&gt;
+    &lt;fsoMedia:ContourResolution&gt;Automatic&lt;/fsoMedia:ContourResolution&gt;
+  &lt;/fsoMedia:VFilterSpecificOptionsDICOMMediaFileImport&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMMediaFileImportFilterID</Id>
+    <Name>External Plan Import</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+  <VFilterInstanceXml>
+    <FilterIndependentOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fioMediaI="http://xsd.baden.varian.com/VFilterIndependentOptionsImport.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Base.VFilterIndependentOptionsImport, VMS.DCIE.Filter.Base, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fioMediaI:VFilterIndependentOptionsImport&gt;
+    &lt;fioMediaI:UseIDMapping&gt;false&lt;/fioMediaI:UseIDMapping&gt;
+  &lt;/fioMediaI:VFilterIndependentOptionsImport&gt;
+&lt;/VXmlObject&gt;</FilterIndependentOptions>
+    <FilterSpecificOptions>&lt;?xml version="1.0"?&gt;
+&lt;VXmlObject xmlns:fsoQuery="http://xsd.baden.varian.com/VFilterSpecificOptionsQueryRetrieve.xsd" xmlns:pacs="http://xsd.baden.varian.com/VPACS.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="VMS.DCIE.Filter.Configuration.VFilterSpecificOptionsQueryRetrieve, VMS.DCIE.Filter.Configuration, Version=2.2.12.0, Culture=neutral, PublicKeyToken=bd317adc1d7d9856"&gt;
+  &lt;fsoQuery:VFilterSpecificOptionsQueryRetrieve Version="1" RetrieveLevel="Automatic"&gt;
+    &lt;fsoQuery:SCUAETitle&gt;VDCMD&lt;/fsoQuery:SCUAETitle&gt;
+    &lt;fsoQuery:SCUNetworkID /&gt;
+    &lt;fsoQuery:SCUPort&gt;105&lt;/fsoQuery:SCUPort&gt;
+    &lt;fsoQuery:InstanceDate&gt;true&lt;/fsoQuery:InstanceDate&gt;
+    &lt;fsoQuery:SelectedPACS xmlns:q1="http://xsd.baden.varian.com/VServiceProvider.xsd" xsi:type="q1:VServiceProvider"&gt;
+      &lt;pacs:SCPAETitle&gt;CCSEO_D_RT&lt;/pacs:SCPAETitle&gt;
+      &lt;pacs:SCPIP&gt;10.40.186.40&lt;/pacs:SCPIP&gt;
+      &lt;pacs:SCPPort&gt;4006&lt;/pacs:SCPPort&gt;
+      &lt;pacs:SCPAdvanced&gt;false&lt;/pacs:SCPAdvanced&gt;
+      &lt;pacs:AssociationTimeout&gt;5000&lt;/pacs:AssociationTimeout&gt;
+      &lt;q1:ISQRFilter&gt;true&lt;/q1:ISQRFilter&gt;
+      &lt;q1:ISStorageFilter&gt;false&lt;/q1:ISStorageFilter&gt;
+    &lt;/fsoQuery:SelectedPACS&gt;
+    &lt;fsoQuery:EnforceOverride&gt;false&lt;/fsoQuery:EnforceOverride&gt;
+    &lt;fsoQuery:SetUserOriginToDataCollectionCenter&gt;false&lt;/fsoQuery:SetUserOriginToDataCollectionCenter&gt;
+    &lt;fsoQuery:ZOffsetUserOrigin&gt;0&lt;/fsoQuery:ZOffsetUserOrigin&gt;
+    &lt;fsoQuery:ContourResolution&gt;Automatic&lt;/fsoQuery:ContourResolution&gt;
+  &lt;/fsoQuery:VFilterSpecificOptionsQueryRetrieve&gt;
+&lt;/VXmlObject&gt;</FilterSpecificOptions>
+    <Id>DICOMQueryRetrieveImportFilterID</Id>
+    <Name>GE Discovery RT</Name>
+    <Shared>true</Shared>
+  </VFilterInstanceXml>
+</FilterInstances>

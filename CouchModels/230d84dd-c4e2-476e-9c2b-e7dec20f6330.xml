@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<VCouchModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ModelUid>230d84dd-c4e2-476e-9c2b-e7dec20f6330</ModelUid>
+  <ModelName>Exact Couch with Flat panel</ModelName>
+  <Public>true</Public>
+  <CreationDate>2015-08-19T13:12:01.0404475+02:00</CreationDate>
+  <CreationUser>Varian</CreationUser>
+  <ModelType>CrossSection</ModelType>
+  <PatientPosition>HFS</PatientPosition>
+  <ModelStructures>
+    <ModelStructure DisplayName="CouchSurface" StructureId="CouchSurface" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchInterior" StructureId="CouchInterior" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchRailLeft" StructureId="CouchRailLeftIn" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchRailLeft" StructureId="CouchRailLeftOut" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchRailRight" StructureId="CouchRailRightIn" StructureRep="Volume" />
+    <ModelStructure DisplayName="CouchRailRight" StructureId="CouchRailRightOut" StructureRep="Volume" />
+  </ModelStructures>
+  <StructureHuMappings>
+    <StructureHuMapping StructureId="CouchSurface" AssignedHuValue="-300" />
+    <StructureHuMapping StructureId="CouchInterior" AssignedHuValue="-1000" />
+    <StructureHuMapping StructureId="CouchRailLeftIn" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="CouchRailLeftOut" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="CouchRailRightIn" AssignedHuValue="200" />
+    <StructureHuMapping StructureId="CouchRailRightOut" AssignedHuValue="200" />
+  </StructureHuMappings>
+  <Configurations>
+    <Configuration Id="LeftOutRightOut">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>CouchRailLeftOut</StructureId>
+        <StructureId>CouchRailRightOut</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftInRightOut">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>CouchRailLeftIn</StructureId>
+        <StructureId>CouchRailRightOut</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftOutRightIn">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>CouchRailLeftOut</StructureId>
+        <StructureId>CouchRailRightIn</StructureId>
+      </StructureIds>
+    </Configuration>
+    <Configuration Id="LeftInRightIn">
+      <StructureIds>
+        <StructureId>CouchSurface</StructureId>
+        <StructureId>CouchInterior</StructureId>
+        <StructureId>CouchRailLeftIn</StructureId>
+        <StructureId>CouchRailRightIn</StructureId>
+      </StructureIds>
+    </Configuration>
+  </Configurations>
+</VCouchModelInfo>

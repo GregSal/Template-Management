@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlanTemplate Version="1.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Preview ID="MV-MV Low Dose" Name="MV-MV Low Dose" Description="MV-MV imaging using 2 x 1.0 MU" Type="Plan" ApprovalStatus="Approved" ApprovalHistory="" Diagnosis="" TreatmentSite="" TreatmentStyle="" Mode="Photon"/>
+  <PrescribedPercentage xsi:nil="true"/>
+  <DosePerFraction xsi:nil="true"/>
+  <FractionCount xsi:nil="true"/>
+  <FieldAlignmentRules/>
+  <DefaultSessionProcedureTemplate>[MVIntegrated]</DefaultSessionProcedureTemplate>
+  <PrescriptionSite>
+    <VolumeID/>
+    <VolumeCode/>
+    <VolumeType/>
+    <VolumeCodeTable/>
+  </PrescriptionSite>
+  <Boluses/>
+  <Fields>
+    <Field ID="MV-0" FixedSSD="false" UsingCompensator="false" UsingMLC="false" Setup="false" DRRVisible="false">
+      <Type>BeamLinac</Type>
+      <SessionProcedureTemplate>[MVLowDose]</SessionProcedureTemplate>
+      <Target>
+        <VolumeID/>
+        <VolumeCode/>
+        <VolumeType/>
+        <VolumeCodeTable/>
+      </Target>
+      <TreatmentUnit></TreatmentUnit>
+      <Technique>STATIC</Technique>
+      <Energy>
+        <Type>X</Type>
+        <EnergyKV>6000</EnergyKV>
+        <MaxEnergyKV xsi:nil="true"></MaxEnergyKV>
+      </Energy>
+      <PrimaryFluenceMode>FFF</PrimaryFluenceMode>
+      <DRRTemplate></DRRTemplate>
+      <DoseRate>600</DoseRate>
+      <Meterset>1</Meterset>
+      <SFED xsi:nil="true"></SFED>
+      <Gantry>
+        <Rtn>0</Rtn>
+        <StopRtn xsi:nil="true"></StopRtn>
+        <RtnDirection>NONE</RtnDirection>
+      </Gantry>
+      <Collimator>
+        <Rtn>0</Rtn>
+        <Mode>Symmetry</Mode>
+        <X1>-14</X1>
+        <X2>14</X2>
+        <Y1>-14</Y1>
+        <Y2>14</Y2>
+      </Collimator>
+      <TableRtn>0</TableRtn>
+      <ToleranceTableID></ToleranceTableID>
+      <Weight>1.0</Weight>
+      <FieldMargin BEVMarginFlag="false" EllipticalMarginFlag="false" OptimizeCollRtnFlag="false">
+        <Left xsi:nil="true"></Left>
+        <Right xsi:nil="true"></Right>
+        <Top xsi:nil="true"></Top>
+        <Bottom xsi:nil="true"></Bottom>
+      </FieldMargin>
+      <SkinFlashMargin xsi:nil="true"></SkinFlashMargin>
+      <FieldBoluses></FieldBoluses>
+      <Isocenter Placement="RFTS" X="0.0" Y="0.0" Z="0.0"/>
+      <Blocks/>
+      <MLCPlans>
+        <MLCPlan ID="MLC" DynamicFlag="false">
+          <ModelName>SX1</ModelName>
+          <SegmentCount>1</SegmentCount>
+          <MLCMargin BEVMarginFlag="false" EllipticalMarginFlag="true" OptimizeCollRtnFlag="false" JawFittingMode="0">
+            <Left>0</Left>
+            <Right>0</Right>
+            <Top>0</Top>
+            <Bottom>0</Bottom>
+          </MLCMargin>
+          <ContourMeetPoint>Middle</ContourMeetPoint>
+          <ClosedMeetPoint>Center</ClosedMeetPoint>
+          <Target>
+            <VolumeID/>
+            <VolumeCode/>
+            <VolumeType/>
+            <VolumeCodeTable/>
+          </Target>
+        </MLCPlan>
+      </MLCPlans>
+      <Wedges/>
+      <Applicators/>
+    </Field>
+    <Field ID="MV-90" FixedSSD="false" UsingCompensator="false" UsingMLC="false" Setup="false" DRRVisible="false">
+      <Type>BeamLinac</Type>
+      <SessionProcedureTemplate>[MVLowDose]</SessionProcedureTemplate>
+      <Target>
+        <VolumeID/>
+        <VolumeCode/>
+        <VolumeType/>
+        <VolumeCodeTable/>
+      </Target>
+      <TreatmentUnit></TreatmentUnit>
+      <Technique>STATIC</Technique>
+      <Energy>
+        <Type>X</Type>
+        <EnergyKV>6000</EnergyKV>
+        <MaxEnergyKV xsi:nil="true"></MaxEnergyKV>
+      </Energy>
+      <PrimaryFluenceMode>FFF</PrimaryFluenceMode>
+      <DRRTemplate></DRRTemplate>
+      <DoseRate>600</DoseRate>
+      <Meterset>1</Meterset>
+      <SFED xsi:nil="true"></SFED>
+      <Gantry>
+        <Rtn>90</Rtn>
+        <StopRtn xsi:nil="true"></StopRtn>
+        <RtnDirection>NONE</RtnDirection>
+      </Gantry>
+      <Collimator>
+        <Rtn>0</Rtn>
+        <Mode>Symmetry</Mode>
+        <X1>-14</X1>
+        <X2>14</X2>
+        <Y1>-14</Y1>
+        <Y2>14</Y2>
+      </Collimator>
+      <TableRtn>0</TableRtn>
+      <ToleranceTableID></ToleranceTableID>
+      <Weight>1.0</Weight>
+      <FieldMargin BEVMarginFlag="false" EllipticalMarginFlag="false" OptimizeCollRtnFlag="false">
+        <Left xsi:nil="true"></Left>
+        <Right xsi:nil="true"></Right>
+        <Top xsi:nil="true"></Top>
+        <Bottom xsi:nil="true"></Bottom>
+      </FieldMargin>
+      <SkinFlashMargin xsi:nil="true"></SkinFlashMargin>
+      <FieldBoluses></FieldBoluses>
+      <Isocenter Placement="RFTS" X="0.0" Y="0.0" Z="0.0"/>
+      <Blocks/>
+      <MLCPlans>
+        <MLCPlan ID="MLC" DynamicFlag="false">
+          <ModelName>SX1</ModelName>
+          <SegmentCount>1</SegmentCount>
+          <MLCMargin BEVMarginFlag="false" EllipticalMarginFlag="true" OptimizeCollRtnFlag="false" JawFittingMode="0">
+            <Left>0</Left>
+            <Right>0</Right>
+            <Top>0</Top>
+            <Bottom>0</Bottom>
+          </MLCMargin>
+          <ContourMeetPoint>Middle</ContourMeetPoint>
+          <ClosedMeetPoint>Center</ClosedMeetPoint>
+          <Target>
+            <VolumeID/>
+            <VolumeCode/>
+            <VolumeType/>
+            <VolumeCodeTable/>
+          </Target>
+        </MLCPlan>
+      </MLCPlans>
+      <Wedges/>
+      <Applicators/>
+    </Field>
+  </Fields>
+</PlanTemplate>

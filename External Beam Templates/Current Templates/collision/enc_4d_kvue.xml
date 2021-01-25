@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModelConfiguration>
+  <Version>1</Version>
+  <CollisionModelConfiguration>HET_Vos_MV_OBI_ID_KVUE_EncompassInsert.xml</CollisionModelConfiguration>
+  <SetupTechniques>
+    <SetupTechnique>
+      <Id>VMS_CSC_1</Id>
+      <ProtectionZone>
+        <LineLoop LateralityTowardsGantry="Left">
+          <PointInIecTableTop>
+            <X>-86.5</X>
+            <Z>16</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>-86.5</X>
+            <Z>229</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>-20</X>
+            <Z>229</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>0</X>
+            <Z>207</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>34</X>
+            <Z>146</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>69</X>
+            <Z>62</Z>
+          </PointInIecTableTop>
+          <PointInIecTableTop>
+            <X>73</X>
+            <Z>16</Z>
+          </PointInIecTableTop>
+        </LineLoop>
+        <ReferencePosition>
+          <PointInIecTableTop>
+            <X>0</X>
+            <Z>80.8</Z>
+          </PointInIecTableTop>
+        </ReferencePosition>
+        <TopFromReferencePosition>50</TopFromReferencePosition>
+        <BottomFromReferencePosition>280</BottomFromReferencePosition>
+      </ProtectionZone>
+    </SetupTechnique>
+  </SetupTechniques>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>agN80+paX3FPcvOYWDI7zNxxwtA=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>Em64oN5bRI0Y7Pgup2/14YJvVEnOn86KbtBALiK+oiQ2FTA3qGvHCHrg6KTeR7Be3UcOTBgl8hd0IwZ2KeTQaecFJJOd12vYwKoNKNIPoM1ZtKtO4hp6QUR/gGGVliwiwv7GjmNKdkNUBo5HHh7HW7DZFXh7jh4zpAVYoLAa00TSmTfWrLYdXs2UpmcMJGoUi1EurfifV0nV3fgAZTfqSRNtO5b12VBSPXU9TpgnfiTOATE+HhdbB+7l5iXmHE7/LlRYNOaa74Rvtteatc/2gOGjp4krC+XQX/GFHltxht3gWFGSAXklMb+coOqQPhwaiuEDhDfycK73xbYH+HZKHQ==</SignatureValue>
+  </Signature>
+</ModelConfiguration>

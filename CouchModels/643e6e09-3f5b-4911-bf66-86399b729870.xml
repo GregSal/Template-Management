@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VCouchModelInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ModelUid>643e6e09-3f5b-4911-bf66-86399b729870</ModelUid>
+  <ModelName>Encompass Support</ModelName>
+  <Public>true</Public>
+  <CreationDate>2017-02-03T11:10:03.1769653+01:00</CreationDate>
+  <CreationUser>Varian</CreationUser>
+  <ModelType>FullStructureSet</ModelType>
+  <PatientPosition>HFS</PatientPosition>
+  <ModelStructures>
+    <ModelStructure DisplayName="Encompass" StructureId="Encompass" StructureRep="Volume" />
+    <ModelStructure DisplayName="Encompass Base" StructureId="Encompass Base" StructureRep="Volume" />
+    <ModelStructure DisplayName="Enc Marker C" StructureId="Enc Marker C" StructureRep="Point" />
+    <ModelStructure DisplayName="Enc Marker L" StructureId="Enc Marker L" StructureRep="Point" />
+    <ModelStructure DisplayName="Enc Marker R" StructureId="Enc Marker R" StructureRep="Point" />
+  </ModelStructures>
+  <StructureHuMappings>
+    <StructureHuMapping StructureId="Encompass" AssignedHuValue="400" />
+    <StructureHuMapping StructureId="Encompass Base" AssignedHuValue="-400" />
+  </StructureHuMappings>
+</VCouchModelInfo>
